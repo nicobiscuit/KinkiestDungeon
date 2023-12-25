@@ -1049,6 +1049,7 @@ let KinkyDungeonSpellList = { // List of spells you can unlock in the 3 books. W
 
 		{name: "TelekineticSlash", castCondition: "FloatingWeapon", prerequisite: "FloatingWeapon", tags: ["telekinesis", "kinetic", "offense"], sfx: "FireSpell", school: "Conjure", manacost: 5.0, components: ["Verbal"], level:1,
 			type:"special", special: "TelekineticSlash", aoetype: "slash", aoe: 1,
+			CastInWalls: true,
 			events: [
 				{trigger: "calcMana", type: "HeavyKinetic", power: 1.0},
 			],
@@ -1056,6 +1057,7 @@ let KinkyDungeonSpellList = { // List of spells you can unlock in the 3 books. W
 
 		{name: "KineticLance", castCondition: "FloatingWeapon", prerequisite: "TelekineticSlash", tags: ["telekinesis", "kinetic", "offense"], sfx: "Lightning", school: "Conjure",
 			noise: 6,
+			CastInWalls: true,
 			manacost: 6, components: ["Verbal"], level:1, type:"bolt", pierceEnemies: true, projectileTargeting:true, onhit:"", power: 0.0, delay: 0, time: 1, range: 6, speed: 7, size: 3, damage: "crush",
 			events: [
 				{trigger: "bulletHitEnemy", type: "KineticLance", mult: 1.6, power: 3.0},

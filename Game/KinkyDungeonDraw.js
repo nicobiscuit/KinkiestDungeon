@@ -1164,7 +1164,7 @@ function KinkyDungeonDrawGame() {
 						let spellRange = KinkyDungeonTargetingSpell.range * KinkyDungeonMultiplicativeStat(-KinkyDungeonGetBuffedStat(KinkyDungeonPlayerBuffs, "spellRange"));
 
 						let spellValid = (x, y, projAimOverride) => {
-							let free = KinkyDungeonOpenObjects.includes(KinkyDungeonMapGet(x, y)) || KinkyDungeonVisionGet(x, y) < 0.1;
+							let free = KinkyDungeonOpenObjects2.includes(KinkyDungeonMapGet(x, y)) || KinkyDungeonVisionGet(x, y) < 0.1;
 							if (!KinkyDungeonTargetingSpell.projectileTargeting && !KinkyDungeonTargetingSpell.CastInDark && !KinkyDungeonVisionGet(x, y)) return false;
 							let Valid = (!KinkyDungeonTargetingSpell.castCondition
 								|| (!KDPlayerCastConditions[KinkyDungeonTargetingSpell.castCondition] || KDPlayerCastConditions[KinkyDungeonTargetingSpell.castCondition](KinkyDungeonPlayerEntity, x, y)))
@@ -1172,7 +1172,7 @@ function KinkyDungeonDrawGame() {
 									((!projAimOverride && KinkyDungeonTargetingSpell.projectileTargeting)
 									|| spellRange >= Math.sqrt((x - KinkyDungeonPlayerEntity.x) *(x - KinkyDungeonPlayerEntity.x) + (y - KinkyDungeonPlayerEntity.y) * (y - KinkyDungeonPlayerEntity.y)))
 									&& (KinkyDungeonTargetingSpell.projectileTargeting || KinkyDungeonTargetingSpell.CastInWalls || free)
-									&& (!KinkyDungeonTargetingSpell.WallsOnly || !KinkyDungeonOpenObjects.includes(KinkyDungeonMapGet(x, y))));
+									&& (!KinkyDungeonTargetingSpell.WallsOnly || !KinkyDungeonOpenObjects2.includes(KinkyDungeonMapGet(x, y))));
 							if (KinkyDungeonTargetingSpell.noTargetEnemies) {
 								let enemy = KinkyDungeonEnemyAt(x, y);
 								let faction = KDGetFaction(enemy);
