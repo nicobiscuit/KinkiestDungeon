@@ -4183,7 +4183,7 @@ function KinkyDungeonEnemyLoop(enemy, player, delta, visionMod, playerItems) {
 						let targetx = player.x;
 						let targety = player.y;
 
-						if (player.player && KDWarningCache[targetx + ',' + targety] && KDWarningCache[targetx + ',' + targety] != enemy) {
+						if (player.player && KDWarningCache[targetx + ',' + targety] && KDWarningCache[targetx + ',' + targety] != enemy && !KDPlayerIsDisabled() && !KDPlayerIsImmobilized()) {
 							let diff = KinkyDungeonDifficulty / 60 + KDEnemyRank(enemy)*0.1 + KDGetEffLevel() * 0.05;
 							if (KDRandom() < diff) {
 								targetx = player.x*2 - player.lastx;

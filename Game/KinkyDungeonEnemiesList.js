@@ -4401,9 +4401,17 @@ let KDSpecialBuffs = {
 				aurasprite: "Armored",
 				noAuraColor: true,
 				duration: 9999,
-				power: 3,
+				power: 1,
 				type: "Armor",
 			});
+			KinkyDungeonApplyBuffToEntity(enemy, {
+				id: "Armored2",
+				duration: 9999,
+				power: 2.5,
+				type: "BlockPhys",
+			});
+
+
 		},
 	},
 	"Fast": {
@@ -4450,6 +4458,12 @@ let KDSpecialBuffs = {
 				power: 1.5,
 				type: "AttackWidth",
 			});
+			KinkyDungeonApplyBuffToEntity(enemy, {
+				id: "Muscle3",
+				duration: 9999,
+				power: 1,
+				type: "BlockPhys",
+			});
 		},
 	},
 	"EnergyShield": {
@@ -4466,7 +4480,7 @@ let KDSpecialBuffs = {
 				aurasprite: "EnergyShield",
 				duration: 9999,
 				noAuraColor: true,
-				power: enemy.Enemy.maxhp * 0.25,
+				power: enemy.Enemy.maxhp * 0.5,
 				type: "MaxShield",
 			});
 			KinkyDungeonApplyBuffToEntity(enemy, {
@@ -4560,7 +4574,7 @@ let KDSpecialBuffs = {
 				duration: 9999,
 				power: 1,
 				events: [
-					{trigger: "afterEnemyTick", type: "spellX", time: 4, spell: "WitchElectrify"},
+					{trigger: "afterEnemyTick", type: "spellX", time: 5, spell: "WitchElectrify"},
 				],
 			});
 		},
@@ -4579,7 +4593,7 @@ let KDSpecialBuffs = {
 				duration: 9999,
 				power: 1,
 				events: [
-					{trigger: "afterEnemyTick", type: "spellX", time: 3, spell: "Fireexp"},
+					{trigger: "afterEnemyTick", type: "spellX", time: 4, spell: "Fireexp"},
 				],
 			});
 		},
@@ -4597,7 +4611,7 @@ let KDSpecialBuffs = {
 				duration: 9999,
 				power: 1,
 				events: [
-					{trigger: "afterEnemyTick", type: "spellX", time: 3, spell: "Vineexp"},
+					{trigger: "afterEnemyTick", type: "spellX", time: 4, spell: "Vineexp"},
 				],
 			});
 		},
@@ -4616,7 +4630,7 @@ let KDSpecialBuffs = {
 				duration: 9999,
 				power: 1,
 				events: [
-					{trigger: "afterEnemyTick", type: "spellX", time: 6, spell: "Bubbleexp"},
+					{trigger: "afterEnemyTick", type: "spellX", time: 7, spell: "Bubbleexp"},
 				],
 			});
 		},
@@ -4634,7 +4648,7 @@ let KDSpecialBuffs = {
 				duration: 9999,
 				power: 1,
 				events: [
-					{trigger: "afterEnemyTick", type: "spellX", time: 6, spell: "Iceexp"},
+					{trigger: "afterEnemyTick", type: "spellX", time: 7, spell: "Iceexp"},
 				],
 			});
 		},
@@ -4653,7 +4667,7 @@ let KDSpecialBuffs = {
 				duration: 9999,
 				power: 1,
 				events: [
-					{trigger: "afterEnemyTick", type: "spellX", time: 8, spell: "BearTrap", always: true, count: 1},
+					{trigger: "afterEnemyTick", type: "spellX", time: 9, spell: "BearTrap", always: true, count: 1},
 				],
 			});
 		},
