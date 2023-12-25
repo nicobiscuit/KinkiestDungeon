@@ -1659,6 +1659,9 @@ interface effectTile {
 	spin?: number,
 	spinAngle?: number,
 
+	/** Place a stationary copy under the spinning one */
+	portalDouble?: boolean,
+
 };
 
 /** For spells */

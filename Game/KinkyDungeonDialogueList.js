@@ -999,8 +999,11 @@ let KDDialogue = {
 					let params = KinkyDungeonMapParams[KinkyDungeonMapIndex[MiniGameKinkyDungeonCheckpoint]];
 
 					if (KDTile() && KDTile().Portal == "CommercePortal") {
-						KinkyDungeonMapSet(KinkyDungeonPlayerEntity.x, KinkyDungeonPlayerEntity.y, '0');
+						KinkyDungeonMapSet(player.x, player.y, '0');
 						KDTileDelete();
+						for (let tile of Object.values(KDGetEffectTiles(player.x, player.y))) {
+							if (tile.tags?.includes("portal")) tile.duration = 0;
+						}
 					}
 
 					MiniGameKinkyDungeonLevel = 0;
@@ -1010,6 +1013,10 @@ let KDDialogue = {
 					// Place return portal
 					KinkyDungeonMapSet(KDMapData.EndPosition.x, KDMapData.EndPosition.y, ';');
 					KinkyDungeonTilesSet("" + (KDMapData.EndPosition.x) + "," + (KDMapData.EndPosition.y), {Portal: "CommercePortalReturn", Light: 5, lightColor: 0xffff88});
+					KDCreateEffectTile(KDMapData.EndPosition.x, KDMapData.EndPosition.y, {
+						name: "Portals/CommercePortalReturn",
+						duration: 9999,
+					}, 0);
 
 					KinkyDungeonSetFlag("noportal", 3);
 
@@ -1042,6 +1049,9 @@ let KDDialogue = {
 					if (KDTile() && KDTile().Portal == "CommercePortalReturn") {
 						KinkyDungeonMapSet(player.x, player.y, '0');
 						KDTileDelete();
+						for (let tile of Object.values(KDGetEffectTiles(player.x, player.y))) {
+							if (tile.tags?.includes("portal")) tile.duration = 0;
+						}
 					}
 
 					if (!KDGameData.TeleportLocations) KDGameData.TeleportLocations = {};

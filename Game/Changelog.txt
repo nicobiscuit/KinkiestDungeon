@@ -9,7 +9,8 @@ Vague todo:
 TODO add sugar magic ('Blood Energy Magic')
 
 
-5.1 ()
+
+
 - Goals:
 Add new cyber assets
 Fix graphical glitches
@@ -21,6 +22,10 @@ Spellcaster witch that channels a defensive ward, rapidly gives shield to nearby
 Monk class?
 - Passive: enchantments apply to unarmed strikes
 - Active: Increase unarmed base damage for 20 turns. After using, need to meditate 10 turns to recharge. Free.
+
+5.1
+- Animal ears now stick out of witch hat properly!
+
 
 5.0.4 D
 - The past now comes back to haunt you if you abuse time magic

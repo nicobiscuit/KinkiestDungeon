@@ -482,16 +482,30 @@ function KDDrawEffectTiles(canvasOffsetX, canvasOffsetY, CamX, CamY) {
 					zIndex: -0.1 + 0.01 * tile.priority,
 					alpha: KDApplyAlpha(tileid, kdpixisprites.get(tileid)?.alpha, tile.fade, delta),
 				};
+				let op2 = {
+					zIndex: -0.105 + 0.01 * tile.priority,
+					alpha: 1 - KDApplyAlpha(tileid, kdpixisprites.get(tileid)?.alpha, tile.fade, delta),
+				};
+
 				if (tile.spin) {
 					op.anchorx = 0.5;
 					op.anchory = 0.5;
+					op2.anchorx = 0.5;
+					op2.anchory = 0.5;
 					if (tile.spinAngle == undefined)
 						tile.spinAngle = 0;
 					tile.spinAngle += tile.spin * KDTimescale*delta;
 					if (tile.spinAngle > Math.PI * 2) tile.spinAngle -= Math.PI*2;
 					else if (tile.spinAngle < 0) tile.spinAngle += Math.PI*2;
 				}
-				if (color != undefined) op.tint = color;
+				if (color != undefined) {
+					op.tint = color;
+					op2.tint = color;
+				}
+				if (tile.portalDouble)
+					KDDraw(kdeffecttileboard, kdpixisprites, tileid+"d", KinkyDungeonRootDirectory + "EffectTiles/" + sprite + ".png",
+						(tile.x + (tile.xoffset ? tile.xoffset : 0) - CamX)*KinkyDungeonGridSizeDisplay, (tile.y - CamY + (tile.yoffset ? tile.yoffset : 0))*KinkyDungeonGridSizeDisplay,
+						KinkyDungeonGridSizeDisplay, KinkyDungeonGridSizeDisplay, 0, op2);
 				KDDraw(kdeffecttileboard, kdpixisprites, tileid, KinkyDungeonRootDirectory + "EffectTiles/" + sprite + ".png",
 					(tile.x + (tile.xoffset ? tile.xoffset : 0) - CamX)*KinkyDungeonGridSizeDisplay, (tile.y - CamY + (tile.yoffset ? tile.yoffset : 0))*KinkyDungeonGridSizeDisplay,
 					KinkyDungeonGridSizeDisplay, KinkyDungeonGridSizeDisplay, tile.spinAngle, op);

@@ -2931,7 +2931,7 @@ let KinkyDungeonEnemies = [
 		],
 	},
 
-	{name: "Monolith", clusterWith: "chaos", color: "#ff5277",
+	{name: "Monolith", clusterWith: "construct", color: "#ff5277",
 		tags: KDMapInit(["opendoors", "ignoreharmless", "construct", "nosignal", "poisonimmune", "soulimmune", "temple", "minor", "chaos", "ranged", "slashimmune", "unarmedresist", "pierceimmune", "fireresist", "unstoppable", "tickleresist", "groperesist", "electricresist", "flying"]),
 		cohesion: 0, cohesionRange: 10, difficulty: 0.3,
 		evasion: -2.0,
@@ -2939,7 +2939,7 @@ let KinkyDungeonEnemies = [
 		followLeashedOnly: true, ignorechance: 0, armor: 1.5, spellResist: 0.5, followRange: 2.5, AI: "guard", buffallies: true, spellRdy: false, sneakthreshold: 0.95,
 		spells: ["MonolithBeam"], spellCooldownMult: 1, spellCooldownMod: 0, stopToCast: true, kite: 1.5, kiteChance: 0.9,
 		visionRadius: 5, blindSight: 5, maxhp: 7, minLevel:10, weight:4, movePoints: 4, attackPoints: 4, attack: "Spell", attackWidth: 8, attackRange: 1, power: 3, dmgType: "fire",
-		terrainTags: {"open": 25, "temple": 6}, shrines: [], floors:KDMapInit(["tmp", "tmb", "cry"]), dropTable: [{name: "EarthRune", weight: 7}, {name: "ElfCrystal", weight: 3}],
+		terrainTags: {"open": 40, "temple": 8}, shrines: [], floors:KDMapInit(["tmp", "tmb", "cry"]), dropTable: [{name: "EarthRune", weight: 7}, {name: "ElfCrystal", weight: 3}],
 	},
 
 	{name: "Pixie", clusterWith: "nature", tags: KDMapInit(["ignorenoSP", "fairy", "soulresist", "chaos", "melee", "minor", "magicweakness", "flying"]), followRange: 1, AI: "hunt",  squeeze: true, ethereal: true, cohesion: 1.0,
@@ -2998,7 +2998,7 @@ let KinkyDungeonEnemies = [
 		visionRadius: 4, maxhp: 8, minLevel:0, weight:25, movePoints: 99999, attackPoints: 4, attack: "Spell", attackWidth: 8, attackRange: 3, power: 4, dmgType: "souldrain",
 		terrainTags: {"passage": -999, "temple": 72, "open": 15}, floors:KDMapInit(["tmp"]), shrines: []},
 
-	{name: "SoulCrystal", clusterWith: "chaos", color: "#880000", immobile: true, hitsfx: "Evil", tags: KDMapInit(["crystal", "soul", "minor", "unstoppable", "ranged", "crushweakness", "soulimmune", "flying"]), spellResist: 0.33, sneakThreshold: 0.01,
+	{name: "SoulCrystal", clusterWith: "construct", color: "#880000", immobile: true, hitsfx: "Evil", tags: KDMapInit(["crystal", "soul", "minor", "unstoppable", "ranged", "crushweakness", "soulimmune", "flying"]), spellResist: 0.33, sneakThreshold: 0.01,
 		evasion: -9, ignorechance: 1.0, armor: 1.5, followRange: 1, AI: "wander",
 		events: [
 			{trigger: "getLights", type: "enemyTorch", power: 2, color: "#ff0000"}
@@ -3007,7 +3007,7 @@ let KinkyDungeonEnemies = [
 		visionRadius: 100, maxhp: 20, minLevel:0, weight:-99, movePoints: 99999, attackPoints: 4, attack: "MeleeWill", attackWidth: 2.5, attackRange: 3, power: 4, dmgType: "souldrain",
 		terrainTags: {"passage": -999, "temple": 20, "open": 125}, floors:KDMapInit(["tmp"]), shrines: ["Conjure"],
 		dropTable: [{name: "AncientPowerSourceSpent", weight: 9}, {name: "AncientPowerSource", weight: 1}]},
-	{name: "SoulCrystalActive", clusterWith: "chaos", color: "#880000", immobile: true, hitsfx: "Evil", tags: KDMapInit(["crystal", "soul", "active", "unstoppable", "miniboss", "ranged", "crushweakness", "soulimmune", "flying"]), spellResist: 0.33,
+	{name: "SoulCrystalActive", clusterWith: "construct", color: "#880000", immobile: true, hitsfx: "Evil", tags: KDMapInit(["crystal", "soul", "active", "unstoppable", "miniboss", "ranged", "crushweakness", "soulimmune", "flying"]), spellResist: 0.33,
 		evasion: -9, ignorechance: 1.0, armor: 1.5, followRange: 1, AI: "wander",
 		events: [
 			{trigger: "getLights", type: "enemyTorch", power: 5.5, color: "#ff0000"}

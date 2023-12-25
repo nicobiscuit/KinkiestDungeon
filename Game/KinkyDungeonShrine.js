@@ -317,6 +317,10 @@ function KinkyDungeonPayShrine(type) {
 				KDGameData.ShopRewardProgramThreshold += KDRewardProgramScaling;
 				KinkyDungeonMapSet(point.x, point.y, ';');
 				KinkyDungeonTilesSet("" + (point.x) + "," + (point.y), {Portal: "CommercePortal", Light: 5, lightColor: 0xffff88});
+				KDCreateEffectTile(point.x, point.y, {
+					name: "Portals/CommercePortal",
+					duration: 9999,
+				}, 0);
 			}
 
 			rep = item.rarity + 1;

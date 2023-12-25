@@ -1171,7 +1171,7 @@ let KDEventMapInventory = {
 					KDPlayerEffectRestrain(undefined, e.count, e.tags, "Ghost", false, true, false, false, false);
 				} else if (KDNearbyEnemies(KinkyDungeonPlayerEntity.x, KinkyDungeonPlayerEntity.y,
 					KDEntityBuffedStat(KinkyDungeonPlayerEntity, "ForcedSubmission") ? e.dist : 1.5,
-					KinkyDungeonPlayerEntity).filter((en) => {return en.Enemy?.bound && !en.Enemy.nonHumanoid}).length > 0) {
+					KinkyDungeonPlayerEntity).filter((en) => {return en.Enemy?.bound && !en.Enemy.nonHumanoid;}).length > 0) {
 					KinkyDungeonApplyBuffToEntity(KinkyDungeonPlayerEntity, {
 						id: "ForcedSubmission",
 						type: "ForcedSubmission",
