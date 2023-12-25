@@ -2526,8 +2526,10 @@ function KDBoundEffects(enemy) {
 	return 0;
 }
 
+let KDWarningCache = {};
 
 function KinkyDungeonUpdateEnemies(maindelta, Allied) {
+	KDWarningCache = {};
 	KDGameData.tickAlertTimer = false;
 	KDGameData.HostileFactions = [];
 	let visionMod = 1.0;
@@ -4178,17 +4180,42 @@ function KinkyDungeonEnemyLoop(enemy, player, delta, visionMod, playerItems) {
 					let minrange = enemy.Enemy.tilesMinRange ? enemy.Enemy.tilesMinRange : 1;
 					if (enemy.usingSpecial && enemy.Enemy.tilesMinRangeSpecial) minrange = enemy.Enemy.tilesMinRangeSpecial;
 					if ((!enemy.usingSpecial && enemy.attackPoints > 0) || enemy.specialCD < 1) {
-						enemy.fx = player.x;
-						enemy.fy = player.y;
-						enemy.warningTiles = KinkyDungeonGetWarningTiles(player.x - enemy.x, player.y - enemy.y, AIData.range, AIData.width, minrange, enemy);
-						let playerIn = false;
+						let targetx = player.x;
+						let targety = player.y;
+
+						if (player.player && KDWarningCache[targetx + ',' + targety] && KDWarningCache[targetx + ',' + targety] != enemy) {
+							let diff = KinkyDungeonDifficulty / 60 + KDEnemyRank(enemy)*0.1 + KDGetEffLevel() * 0.05;
+							if (KDRandom() < diff) {
+								targetx = player.x*2 - player.lastx;
+								targety = player.y*2 - player.lasty;
+								let tries = 21;
+								for (let T = 0; T < tries; T++) {
+									if (!KDWarningCache[targetx + ',' + targety] || KDWarningCache[targetx + ',' + targety] == enemy) {
+										if (!KinkyDungeonEntityAt(targetx, targety))
+											if (KDistChebyshev(enemy.x - targetx, enemy.y - targety) < 1.5 && KinkyDungeonMovableTilesSmartEnemy.includes(KinkyDungeonMapGet(targetx, targety))) break;
+									}
+									if (T == tries-1) {
+										targetx = player.x;
+										targety = player.y;
+									} else {
+										targetx = player.x + (KDRandom() < 0.33 ? -1 : (KDRandom() < 0.5 ? 1 : 0));
+										targety = player.y + (KDRandom() < 0.33 ? -1 : ((KDRandom() < 0.5 || targetx == player.x) ? 1 : 0));
+									}
+								}
+							}
+						}
+
+						enemy.fx = targetx;
+						enemy.fy = targety;
+						enemy.warningTiles = KinkyDungeonGetWarningTiles(targetx - enemy.x, targety - enemy.y, AIData.range, AIData.width, minrange, enemy);
+						/*let playerIn = false;
 						for (let tile of enemy.warningTiles) {
 							if (KinkyDungeonPlayerEntity.x == enemy.x + tile.x && KinkyDungeonPlayerEntity.y == enemy.y + tile.y) {playerIn = true; break;}
 						}
 						if (!playerIn) {
 							enemy.fx = player.x;
 							enemy.fy = player.y;
-						}
+						}*/
 					}
 					if (AIData.refreshWarningTiles && enemy.usingSpecial) enemy.attackPoints = Math.min(enemy.attackPoints, delta);
 				} else {
@@ -5136,6 +5163,15 @@ function KinkyDungeonEnemyLoop(enemy, player, delta, visionMod, playerItems) {
 
 	if (AIData.ignore) enemy.ignore = true;
 	else delete enemy.ignore;
+
+	if (enemy.warningTiles) {
+		for (let tile of enemy.warningTiles) {
+			let tx = enemy.x + tile.x;
+			let ty = enemy.y + tile.y;
+			if (!KDWarningCache[tx + ',' + ty]) KDWarningCache[tx + ',' + ty] = enemy;
+			else if (KDWarningCache[tx + ',' + ty].Enemy && KDEnemyRank(enemy) > KDEnemyRank(KDWarningCache[tx + ',' + ty])) KDWarningCache[tx + ',' + ty] = enemy;
+		}
+	}
 
 	return {idle: AIData.idle, defeat: AIData.defeat, defeatEnemy: enemy};
 }

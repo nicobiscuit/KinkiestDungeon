@@ -4441,13 +4441,13 @@ let KDSpecialBuffs = {
 				aurasprite: "Muscle",
 				noAuraColor: true,
 				duration: 9999,
-				power: enemy.Enemy.power*2,
+				power: 2 + enemy.Enemy.power*2,
 				type: "AttackPower",
 			});
 			KinkyDungeonApplyBuffToEntity(enemy, {
 				id: "Muscle2",
 				duration: 9999,
-				power: 1,
+				power: 1.5,
 				type: "AttackWidth",
 			});
 		},
