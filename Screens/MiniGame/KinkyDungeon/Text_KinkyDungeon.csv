@@ -1238,13 +1238,14 @@ KinkyDungeonInventoryItem3SmokeDesc,"A type of pyrotechnic often employed by sab
 KinkyDungeonInventoryItem3SmokeDesc2,"Creates a smoke screen lasting 8 turns. You are harder to see while inside the smoke."
 KinkyDungeonInventoryItemFlashBomb,Flash Bomb
 KinkyDungeonInventoryItem3Flash,Flash Bomb x3
+KinkyDungeonInventoryItem3Flashbang,Flashbang x3
 KinkyDungeonInventoryItem3Smoke,Smoke Bomb x3
 KinkyDungeonSpellCastFlashBomb,You toss the flash bomb and the fuse starts ticking...
 KinkyDungeonInventoryItemFlashBombUse,You ready a flash bomb...
 KinkyDungeonInventoryItemFlashBombDesc,"A type of explosive used by agents. Blinds nearby targets without causing significant injury."
 KinkyDungeonInventoryItemFlashBombDesc2,"Blinds for 20 turns in a 3x3 area."
-KinkyDungeonInventoryItem3FlashBombDesc,"A type of explosive used by agents. Blinds nearby targets without causing significant injury."
-KinkyDungeonInventoryItem3FlashBombDesc2,"Blinds for 20 turns in a 3x3 area."
+KinkyDungeonInventoryItem3FlashDesc,"A type of explosive used by agents. Blinds nearby targets without causing significant injury."
+KinkyDungeonInventoryItem3FlashDesc2,"Blinds for 20 turns in a 3x3 area."
 
 
 KinkyDungeonInventoryItemFlashbang,Flashbang
