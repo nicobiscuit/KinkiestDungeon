@@ -69,8 +69,9 @@ const KinkyDungeonMapParams = {
 		"cacheInterval" : 1,
 		"forbiddenChance" : 0.7, // If a forbidden gold chance is generated. Otherwise a silver chest will appear
 		"forbiddenGreaterChance" : 0.33, // Chance after a forbidden area is generated with a restraint, otherwise its a lesser gold chest
-		"torchchance": 0.35,
-		"torchchanceboring": 1.0,
+		torchchance: 0.45,
+		torchlitchance: 1,
+		torchchanceboring: 1.5,
 
 		music: {
 			"AREA1-GRAVEYARD.ogg": 10,
@@ -171,7 +172,8 @@ const KinkyDungeonMapParams = {
 		"forbiddenGreaterChance" : 0.33,
 		cageChance: 0.8,
 		torchchance: 0.05,
-		torchchanceboring: 0.7,
+		torchlitchance: 1,
+		torchchanceboring: 1,
 
 		worldGenCode: () => {
 			KDAddPipes(0.1, 0.05, 0.7, 0.05);
@@ -276,7 +278,8 @@ const KinkyDungeonMapParams = {
 		"forbiddenChance" : 0.72,
 		"forbiddenGreaterChance" : 0.33,
 		torchchance: 0.2,
-		torchchanceboring: 0.25,
+		torchlitchance: 0.4,
+		torchchanceboring: 0.35,
 
 		worldGenCode: () => {
 			KDAddPipes(0.03, 0.6, 0.8, 0.1);
@@ -451,8 +454,8 @@ const KinkyDungeonMapParams = {
 		"forbiddenChance" : 0.8,
 		"forbiddenGreaterChance" : 0.4,
 		torchchance: 0.4,
-		torchchanceboring: -0.4,
-		torchlitchance: 0.15,
+		torchlitchance: .5,
+		torchchanceboring: 0.8,
 		torchreplace: {
 			sprite: "Lantern",
 			unlitsprite: "LanternUnlit",
@@ -562,8 +565,9 @@ const KinkyDungeonMapParams = {
 		// Side routes have more high-value loot
 		"forbiddenChance" : 1.0,
 		"forbiddenGreaterChance" : 0.45,
-		torchchance: 0.1,
-		torchchanceboring: 0.1,
+		torchchance: 0.2,
+		torchlitchance: 0.0,
+		torchchanceboring: -0.33,
 
 		specialChests: {
 			kitty: 3,
@@ -679,7 +683,8 @@ const KinkyDungeonMapParams = {
 		"forbiddenChance" : 1.0,
 		"forbiddenGreaterChance" : 0.45,
 		torchchance: 0.6,
-		torchchanceboring: -0.4,
+		torchlitchance: 0.5,
+		torchchanceboring: .8,
 		torchreplace: {
 			sprite: "TorchOrb",
 			brightness: 4,
@@ -771,8 +776,9 @@ const KinkyDungeonMapParams = {
 		"grateChance" : 0.7,
 		"rubblechance" : 0.45,
 		"brickchance" : 0.2,
-		torchchance: 0.3,
-		torchchanceboring: 0.1,
+		torchchance: 0.45,
+		torchlitchance: 0.75,
+		torchchanceboring: 0.45,
 
 		music: {
 			"AREA6-CRYSTALCAVE.ogg": 10,
@@ -883,9 +889,9 @@ const KinkyDungeonMapParams = {
 		"cacheInterval" : 1,
 		"forbiddenChance" : 1.0,
 		"forbiddenGreaterChance" : 0.45,
-		torchlitchance: 0.2,
 		torchchance: 1.0,
-		torchchanceboring: -0.4,
+		torchlitchance: -0.4,
+		torchchanceboring: -0.65,
 		torchreplace: {
 			sprite: "IllusOrb",
 			unlitsprite: "IllusOrbDead",
@@ -991,9 +997,9 @@ const KinkyDungeonMapParams = {
 		"cacheInterval" : 1,
 		"forbiddenChance" : 1.0,
 		"forbiddenGreaterChance" : 0.45,
-		torchlitchance: 0.45,
 		torchchance: 1.0,
-		torchchanceboring: -0.7,
+		torchlitchance: 1,
+		torchchanceboring: 0.9,
 		torchreplace: {
 			sprite: "Lantern",
 			unlitsprite: "LanternUnlit",
@@ -1111,8 +1117,8 @@ const KinkyDungeonMapParams = {
 		"forbiddenChance" : 0.72,
 		"forbiddenGreaterChance" : 0.33,
 		cageChance: 0.8,
-		torchlitchance: 0.2,
-		torchchance: 1.0,
+		torchlitchance: 0.1,
+		torchchance: .5,
 		torchchanceboring: -0.4,
 		torchreplace: {
 			sprite: "EdgeOrb",

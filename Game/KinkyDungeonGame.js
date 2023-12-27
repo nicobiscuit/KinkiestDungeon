@@ -2399,7 +2399,7 @@ function KinkyDungeonPlaceShrines(chestlist, shrinelist, shrinechance, shrineTyp
 			shrinePoints.set(s.x + "," + s.y, true);
 	}
 
-	let maxcount = shrinecount + orbcount;
+	let maxcount = shrinecount * 1.33 + orbcount;
 
 
 	let tablets = {
@@ -2650,7 +2650,7 @@ function KinkyDungeonPlaceChargers(chargerlist, chargerchance, litchargerchance,
 							&& !KDRandomDisallowedNeighbors.includes(KinkyDungeonMapGet(X-1, Y+1))
 							&& !KDRandomDisallowedNeighbors.includes(KinkyDungeonMapGet(X, Y+1))
 							&& !KDRandomDisallowedNeighbors.includes(KinkyDungeonMapGet(X+1, Y+1))) {
-							chargerlist.push({x:X, y:Y});
+							chargerlist.push({x:X, y:Y, boringness: KinkyDungeonBoringGet(X, Y)});
 							chargerPoints.set(X + "," + Y, true);
 						}
 					}
@@ -2669,6 +2669,16 @@ function KinkyDungeonPlaceChargers(chargerlist, chargerchance, litchargerchance,
 		} else list.push(chest);
 		chargerlist.splice(N, 1);
 	}
+
+	chargerlist.sort((a, b) => {
+		let boringa = a.boringness ? a.boringness : 0;
+		let boringb = b.boringness ? b.boringness : 0;
+		if (a.priority) boringa += 1000;
+		if (b.priority) boringb += 1000;
+		return boringa - boringb;
+
+	});
+
 	while (list.length > 0) {
 		let N = 0;
 		if (count <= chargercount) {
@@ -3298,7 +3308,7 @@ function KinkyDungeonPlaceFood(foodChance, width, height, altType) {
 		let boringb = b.boringness ? b.boringness : 0;
 		if (a.priority) boringa += 1000;
 		if (b.priority) boringb += 1000;
-		return boringb - boringa;
+		return boringa - boringb;
 
 	});
 	let foodcount = list.length * foodChance;
@@ -3348,9 +3358,9 @@ function KinkyDungeonPlaceTorches(torchchance, torchlitchance, torchchanceboring
 				&& !KinkyDungeonTilesGet((X) + "," + (Y+1))
 				&& !KinkyDungeonTilesGet((X + 1) + "," + (Y+1))
 				&& !KinkyDungeonTilesGet((X) + "," + (Y))
-				&& KDRandom() < torchchance + KinkyDungeonBoringGet(X, Y) * torchchanceboring) {
+				&& KDRandom() < torchchance) {
 				let spr = torchreplace ? torchreplace.sprite : "Torch";
-				if ((!torchreplace || torchreplace.unlitsprite) && KDRandom() > torchlitchance) {
+				if ((!torchreplace || torchreplace.unlitsprite) && KDRandom() > torchlitchance + KinkyDungeonBoringGet(X, Y) * torchchanceboring) {
 					spr = torchreplace ? torchreplace.unlitsprite : "TorchUnlit";
 				}
 				let torchref = {

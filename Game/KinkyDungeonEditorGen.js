@@ -631,7 +631,7 @@ function KDGenMaze(startX, startY, tile, seed, MazeBlock) {
 
 let KDEffectTileGen = {
 	"TorchUnlit": (x, y, tile, tileGenerator, data) => {
-		let torchlitchance = data.params.torchlitchance || 0.6;
+		let torchlitchance = (data.params.torchlitchance != undefined ? data.params.torchlitchance : 0.6) + KinkyDungeonBoringGet(x, y) * (data.params.torchchanceboring || 0);
 		/*
 		let torchreplace = data.params.torchreplace;
 
