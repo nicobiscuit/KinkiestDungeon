@@ -27,6 +27,15 @@ Monk class?
 - Animal ears now stick out of witch hat properly!
 
 
+5.0.5
+- Fixed a few more bugs
+- You can now devote yourself to a goddess to guarantee a quest on future floors
+- 2.5% goddess rep on first quest completed on a floor
+- Bondage offers only give goddess rep the first time
+- Security level penalty for stealing from a faction chest is doubled
+- Bows now count as attacks for purpose of enchanted gear and Grounded in Reality
+- Added options to disable player and enemy buff auras
+
 5.0.4 D
 - The past now comes back to haunt you if you abuse time magic
 - More hairstyles by Dask!
