@@ -28,7 +28,10 @@ Monk class?
 - Animal ears now stick out of witch hat properly!
 
 
+5.0.7
+
 5.0.6
+- New perks: Can't Touch That, Grounded
 - Fixed bugs with moirai's scissors (now costs charge instead of generating it, description matches ability)
 - Fixed vine trap message
 - Fixed librarian spawn message
