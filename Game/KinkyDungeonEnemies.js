@@ -1055,7 +1055,7 @@ function KDMaxEnemyViewDist(enemy) {
 	//KinkyDungeonSendEvent("calcEnemyRad", data);
 	if (enemy.hp < enemy.Enemy.maxhp || enemy.attackPoints > 0) return KDMaxVisionDist;
 	if (KinkyDungeonBlindLevel < 2) return KDMaxVisionDist;
-	else return Math.max(1.5, KDMaxVisionDist - KinkyDungeonBlindLevel * data.blindMult);
+	else return Math.max(KinkyDungeonStatsChoice.get("TotalBlackout") ? 0.5 : 1.5, KDMaxVisionDist - KinkyDungeonBlindLevel * data.blindMult);
 }
 
 /**
@@ -4464,8 +4464,9 @@ function KinkyDungeonEnemyLoop(enemy, player, delta, visionMod, playerItems) {
 							if (AIData.leashed) {
 
 								let leashToExit = AIData.leashing && !KinkyDungeonHasWill(0.1) && AIData.playerDist < 1.5;
-
-								KDAssignLeashPoint(enemy);
+								if (!enemy.IntentLeashPoint) {
+									KDAssignLeashPoint(enemy);
+								}
 
 								let leashPos = AIData.aggressive ? (AIData.nearestJail) : {x: enemy.x, y: enemy.y, type: "", radius: 1};
 								let findMaster = undefined;

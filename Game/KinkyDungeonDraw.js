@@ -797,6 +797,12 @@ let KDLastKeyTime = {
 
 // Draw function for the game portion
 function KinkyDungeonDrawGame() {
+	if (KDToggles.ZoomIn) {
+		KinkyDungeonGridSizeDisplay = 100;
+	} else if (KDToggles.ZoomOut) {
+		KinkyDungeonGridSizeDisplay = 50;
+	} else KinkyDungeonGridSizeDisplay = 72;
+
 	// Breath the sound outlines
 	if (StandalonePatched)
 		kdoutlinefilter.alpha = 0.5 + 0.1 * Math.sin(2 * Math.PI * (CommonTime() % 2000 / 2000) );
@@ -808,7 +814,7 @@ function KinkyDungeonDrawGame() {
 		DrawTextFitKD(TextGet("KinkyDungeon") + " v" + TextGet("KDVersionStr"), 1990, 50, 200, "#ffffff", KDTextGray2, undefined, "right");
 	}
 	KDDrawMinimap(1990-KDMinimapWCurrent, 25);
-	KDDrawPartyMembers(500, Math.min(500, KDMinimapHeight()+81), tooltips);
+	KDDrawPartyMembers(500 + ((KDToggles.BuffSide && !KDToggleShowAllBuffs) ? 60 : 0), Math.min(500, KDMinimapHeight()+81), tooltips);
 
 	if (StandalonePatched)
 		PIXI.BaseTexture.defaultOptions.scaleMode = PIXI.SCALE_MODES.LINEAR;
