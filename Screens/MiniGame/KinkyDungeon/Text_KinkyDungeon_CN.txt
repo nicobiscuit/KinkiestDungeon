@@ -43,7 +43,7 @@ Version
 Kinky Dungeon
 淫荡地牢
 By Ada18980
-由 Ada18980 制作
+ 由 Ada18980 制作
 You are an adventurer descending into an ancient underground city of magic.
 你是一名冒险家，前往了一个古老的地下魔法城市探险。
 Beneath its depths lies the Mistress' Staff, an artifact of untold power.
@@ -58,6 +58,8 @@ Character
 角色
 Main
 主要
+UI
+界面
 Controls
 控制
 Skip Intro
@@ -5301,45 +5303,45 @@ Blacksteel Chastity Belt
 Charms (Arms)
 丝带（手臂）
 A band of faintly magic ribbon wrapped tight around your arms.
-一条微弱的魔法丝带紧紧地缠绕在你的手臂上。
+一条带着微弱魔力的丝带紧紧缠绕在你的手臂上。
 It clings, almost of its own accord, but seems vulnerable to both cutting and stretching.
-它几乎是自发地紧贴着它，但似乎很容易受到切割和拉扯的影响。
+像是有生命一般的缠绕住，但似乎面对切割和拉扯很脆弱。
 Charms (Legs)
 丝带（腿）
 A band of faintly magic ribbon wrapped tight around your thighs.
-一条微弱的魔法丝带紧紧地缠绕在你的大腿上。
+一条带着微弱魔力的丝带紧紧缠绕在你的大腿上。
 Charms (Feet)
 丝带（脚）
 A band of faintly magic ribbon wrapped tight around your ankles.
-一条微弱的魔法丝带紧紧地缠绕在你的脚踝上。
+一条带着微弱魔力的丝带紧紧缠绕在你的脚踝上。
 Charms (Head)
 丝带（头）
 A band of faintly magic ribbon wrapped tight around your eyes.
-一条淡淡的魔法丝带紧紧地缠绕在你的眼睛上。
+一条带着微弱魔力的丝带紧紧缠绕在你的眼睛上。
 Charm Gag
 绷带堵嘴
 A band of faintly magic ribbon wrapped tight around your mouth.
-一条微弱的魔法丝带紧紧地缠绕在你的嘴边。
+一条带着微弱魔力的丝带紧紧缠绕在你的嘴边。
 Charm Wrapping (Toes)
 丝带包裹（脚趾）
 A layer of faintly magic ribbon wrapped tight around your feet.
-一层淡淡的魔法丝带紧紧的缠绕在你的脚边。
+一层带着微弱魔力的丝带紧紧的缠绕在你的脚边。
 Charm Wrapping (Head)
 丝带包裹（头）
 A layer of faintly magic ribbon wrapped tight around your face.
-一层淡淡的魔法丝带紧紧的缠绕在你的脸上。
+一层带着微弱魔力的丝带紧紧的缠绕在你的脸上。
 Charm Wrapping (Arms)
 丝带包裹（手臂）
 A layer of faintly magic ribbon wrapped tight around your body.
-一层淡淡的魔法丝带紧紧的缠绕在你的身上。
+一层带着微弱魔力的丝带紧紧的缠绕在你的身上。
 Charm Wrapping (Feet)
 丝带包裹（脚）
 A layer of faintly magic ribbon wrapped tight around your shins.
-一层淡淡的魔法丝带紧紧的缠绕在你的小腿上。
+一层带着微弱魔力的丝带紧紧的缠绕在你的小腿上。
 Charm Wrapping (Legs)
 丝带包裹（腿）
 A layer of faintly magic ribbon wrapped tight around your thighs.
-一层淡淡的魔法丝带紧紧的缠绕在你的大腿上。
+一层带着微弱魔力的丝带紧紧的缠绕在你的大腿上。
 Leather Panel Gag
 皮革面板堵嘴
 A gag that seals your lips tightly and stuffs your mouth with a ball.
@@ -7088,8 +7090,8 @@ Elemental's Gust
 元素之风
 Gust
 风
-A ball of flame that does DamageDealt damage.
-释放造成 DamageDealt 点火焰伤害的火焰弹。
+A ball of flame that does DamageDealt damage to one target.
+一个火焰球，对第一个目标造成 DamageDealt 点火焰伤害。
 You a hurl a firebolt!
 你投掷了火焰弹！
 Choose aim direction
@@ -7166,6 +7168,8 @@ You a hurl a frigid orb!
 你掷出一个严寒结晶！
 Freeze
 冻结
+Chill an adjacent target for DamageDealt ice damage and slows for Duration turns. Freezes if already slowed or drenched.
+使身边的一个目标变得冰冷，造成 DamageDealt 寒冰伤害，并减速 Duration 回合。如果该目标已被淋湿或减速，使其冻结
 You utter dark words of ice-cold truths.
 你说出冰封的黑暗咒语。
 Choose a target to freeze
@@ -7343,11 +7347,13 @@ Choose target location
 The elemental channels the force of the storm!
 元素引导风暴之力！
 Fireball
-火球
+炎爆术
 Fireblast
-火焰冲击波
-A slow moving ball of flame that explodes for 100 fire damage to the target and DamageDealt damage to surrounding enemies.
-缓慢移动的火球爆炸，对目标造成 100 点火焰伤害，并对周围的敌人造成伤害。
+火球术
+A bolt of flame that explodes for DamageDealt fire damage in an area.
+释放一个火球，击中敌人后在一个小范围区域造成 DamageDealt 火焰伤害
+A slow moving ball of flame that explodes for DamageDealt fire damage in a wide area.
+释放一个缓慢的大火球，击中一个敌人后在其所在区域造成 DamageDealt 点火焰伤害。
 You a hurl a blast of flame!
 你扔出一道冲击波！
 Incinerate
@@ -7429,9 +7435,11 @@ Freeze Rune
 You conjure an icy trap!
 你设置了一个霜冻陷阱！
 Flame Rune
-火焰符文
+爆炸符文
+A trap that deals DamageDealt fire damage in an area. Takes 3 turns to setup. 200% crit multiplier.
+设置一个触发后对该方格敌人造成 DamageDealt 点火焰伤害的陷阱。设置后需要 3 个回合才能生效。暴击伤害为 200%。
 You conjure an incendiary trap!
-你设置了一个火焰陷阱！
+你设置了一个爆炸陷阱！
 Conjure a sphere for Duration turns that makes nearby entities Conductive and each turn deals DamageDealt electric damage to one of them.
 召唤一个球体 Duration 回合，使相邻的个体导电，且每回合对其中一个个体造成 DamageDealt 电击伤害。
 You summon a grey, featureless sphere adorned by static!
@@ -15434,6 +15442,8 @@ Adjacent NPCs count as corners/hooks for purposes of escaping. After being restr
 相邻的NPC被视为用于逃生的角落/钩子。被束缚后，逃跑速度和力量增加12回合（逃脱力增加+20%，加上2%的束缚抗性）。如果你自缚的话，就会被移除。
 Struggling is improved and escape is quicker!
 挣扎能力提升，逃跑速度更快！
+Akashic Conflux
+以太超流
 Costs 100 Arcane Energy and refunds 100 Mana. Bringing memories to life, you call upon your magical knowledge to ignore arm, leg, and verbal spell components for 3 turns.
 花费 100 奥术能量并返还 100 法力。将记忆带入生活，无需手臂、腿和言语即可进行施法，持续 3 回合。
 You can ignore Arm, Leg, and Verbal components!
@@ -17262,3 +17272,11 @@ SUSPICIOUS MOD DETECTED
 检测到可疑模组
 The bright light hurts your dark-adjusted eyes!
 明亮的光线会伤害你适应黑暗的眼睛！
+Back to Game
+回到游戏
+Breastplate
+胸铠
+Rock-solid and form-fitting.
+坚硬但贴身
+Provides minor protection against enemy attacks. Decreases stealth.
+在敌人攻击时可以提供简单防护，降低隐秘效果。
