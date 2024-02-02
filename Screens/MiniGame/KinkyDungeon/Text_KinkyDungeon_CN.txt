@@ -702,8 +702,8 @@ Regenerate WP when unimpaired, up to 10% of max WP. Unimpaired means no arm, han
 身体自由时恢复 WP，最多可达最大 WP 的 10%。 自由意味着没有手臂、手、腿、眼睛或嘴巴的束缚且未受到减速。（可在技能树中升级）
 Second Wind Perk
 再生之风技能
-Regenerate WP when you are free, up to 10% of max WP. Free means no arm, hand, leg, blindfold, or gag bondage.
-身体自由时恢复 WP，最多可达最大 WP 的 10%。 自由意味着没有手臂、手、腿、眼睛或嘴巴的束缚。
+Regenerate WP when you are unimpaired, up to 10% of max WP. Unimpaired means no arm, hand, leg, blindfold, or gag bondage, and no slows.
+身体自由时恢复 WP，最多可达最大 WP 的 10%。 自由意味着没有手臂、手、腿、眼睛或嘴巴的束缚且未受到减速。
 Triumphant Wind
 凯旋之风
 Second Wind now regenerates up to 25% of your max WP
@@ -1299,7 +1299,7 @@ Normal
 Stunned!
 眩晕！
 Slowed
-缓慢
+被减速
 Very Slow
 非常慢
 Immobile
@@ -5027,7 +5027,7 @@ As long as it's... inserted, you won't be going anywhere!
 As long as it's attached, you won't be going anywhere!
 只要它附在身上，你就哪儿也去不了！
 You're not fooling anyone...
-你骗不到任何人...
+你谁都欺骗不了...
 You might be able to fool someone like this...
 你也许能像这样骗到某些人...
 You look like you're right at home!
@@ -6651,9 +6651,9 @@ Stare into the void...
 Liquid Latex
 液态乳胶
 Engulfs creatures
-吞噬生物
+吞噬单位
 Slows creatures
-减慢生物速度
+减慢单位速度
 Glue
 胶
 Ice
@@ -6723,7 +6723,7 @@ Makes creatures unsteady
 Can be controlled using CMD spells
 可以使用 CMD 法术进行控制
 Can be controlled using Rubbermancy
-可以使用 Rubbermancy 控制
+可以使用 乳胶魔法 进行控制
 Floor
 地板
 Brickwork
@@ -7530,8 +7530,8 @@ Choose area containing Latex
 选择含有乳胶的区域
 Slime Repulsion
 粘液排斥
-Gain +50 glue resist.
-增加 50 点胶水抗性。
+Gain +50 glue resist. (Having 45 or more Glue Resist negates many negative effects from slime)
+增加 50 点胶水抗性。(拥有 45 或更高的胶水抗性可以抵抗 粘液的许多负面效果）。
 Spread
 增殖
 Slime in the target area expands by 1 unit in the four cardinal directions. Refreshes duration to 12-20 turns.
@@ -8106,6 +8106,8 @@ Binding Chains
 捆绑锁链
 Awaken
 唤醒
+Activates the slime in an area, causing it to deal 25 glue damage. Encases fully bound targets.
+激活区域内的粘液，对上面的目标造成 25 点胶水伤害。并包裹完全束缚的目标。
 The slime awakens and turns on you!!!
 粘液被激活并开始攻击你！！！
 Select area to awaken
@@ -9983,7 +9985,7 @@ The hook is too high up! You can't reach it...
 There's a hook on the wall.
 墙上有个钩子。
 The wall is cracked.
-墙裂了。
+墙是裂开的。
 You rub yourself on the corner...
 你在角落里摩擦自己……
 Many ropes emerge around you, removing weaker ropes from your body and binding enemies!
@@ -15474,8 +15476,8 @@ You avoid the attack in a flurry of impressive maneuvers!
 你在一系列令人印象深刻的动作中避开了攻击！
 Arcane Barrier
 奥术屏障
-When you spend mana by casting spells, you store up 40% of it as Arcane Energy, up to 100% Max Mana. When enabled, slowly convert Arcane Energy into a shield at a 2:1 ratio. Max shield is equal to 60 + 10% Max Mana.
-当你通过施法消耗法力时，你会储存 40% 的奥术能量，最高可达 100% 最大法力。启用后，以 2:1 的比例缓慢将奥术能量转化为护盾。最大护盾等于 60 + 10% 的最大魔法值。
+When you spend mana by casting spells, you store up 40% of it as Arcane Energy, up to 100% Max Mana. When enabled, slowly convert Arcane Energy into a shield at a 1:2 ratio. Max shield is equal to 40 + 10% Max Mana.
+当你通过施法消耗法力时，你会储存 40% 的奥术能量，最高可达 100% 最大法力。启用后，以 1:2 的比例缓慢将奥术能量转化为护盾。最大护盾等于 40 + 10% 的最大魔法值。
 You sense that a high value target is near.
 你感觉到一个高价值目标正在靠近。
 You push yourself beyond physical limits!
@@ -15577,7 +15579,7 @@ You apply the RSTR to the ENNME! (AMNT% bound)
 TargetEnemy receives AMNT binding!
 TargetEnemy 受到 AMNT 捆绑！
 TargetEnemy is disabled and receives an increased AMNT binding!
-TargetEnemy 被禁用并收到附加的 AMNT 捆绑！
+TargetEnemy 丧失反抗能力并收到附加的 AMNT 捆绑！
 TargetEnemy resists bondage and receives a reduced AMNT binding!
 TargetEnemy 抵抗捆绑并减少受到的 AMNT 捆绑！
 Target must be helpless.
@@ -17374,3 +17376,25 @@ Unconventional Warfare
 非常规作战
 Select a weapon to attach it to your body. You can have one attached weapon at a time. Attaching it takes 5 turns.|An attached weapon can be equipped without hands and maintains 60% accuracy as long as you have arms or legs unbound.
 选择一件武器，将其附在身上。你同时只能拥有一件附加武器。需要 5 个回合来准备。|附加武器可以不用手来装备，只要你的手臂或腿没有被绑住，就能保持 60% 的准确度。
+They thought they could have my legendary blade... but the fools forgot to tie my legs! I was able to Blink out of jail and into the hallway where they kept all my things!
+他们以为可以拿走我的传奇之刃......但这些傻瓜忘了绑住我的双腿！我眨眼间就逃出了监狱 走进了他们存放我所有东西的走廊
+Tentacle Slap
+触手猛击
+You have the power to make tentacles out of slime when you attack. When enabled: Your attacks deal +20 glue damage and create slime.
+你有能力在攻击时用粘液制造触手。当技能开启时 您的攻击会造成 +20 胶水伤害并产生粘液。
+Ahh!
+哈啊！！
+Armored Boots
+铠甲靴
+Noisy,but fashionable!
+有噪音，但时尚！
+Provides +5 armor and protection against enemy attacks.Decreases stealth.
+提供 +5 护甲，可抵御敌人的攻击。降低隐秘效果
+Make Bullets Transparent
+弹道透明化
+(Eat it to restore AMOUNT% WP)
+(吃下并回复 AMOUNT% WP）
+Tsk tsk, you won't get away!
+啧啧，你逃不掉的！
+Adventuring Corset
+探险胸衣
