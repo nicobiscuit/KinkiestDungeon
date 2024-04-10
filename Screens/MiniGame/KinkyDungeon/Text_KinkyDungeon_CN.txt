@@ -17690,3 +17690,161 @@ Toggle this to set bondage resist, evasion, and block to 0. While enabled, using
 切换此选项可将束缚抵抗、闪避和格挡设置为 0。启用后，使用 "等待至被打断 "按钮将不会被击中或捆绑中断。
 I'll turn you into a newt! If you don't stop me...
 我要把你变成蝾螈 如果你不阻止我...
+(The Warden glances at you)|Oh? What do we have here?|An adventurer?|You're not in my records...
+(典狱长瞥了你一眼)|这是什么？|一个冒险者？|我的记录里没有你...
+Cut to the chase. Do I have to fight you or not?
+开门见山。我到底要不要跟你打？
+What is this place?
+这里是哪里？
+(She smiles)|Why, this is my private prison.|I bring only my prettiest toys to stay here with me.|You can see them up there.|(She motions to the north)
+(她微笑着说)|"这是我的私人监狱。|这是我的私人监狱。|我只带最漂亮的玩具来这里。|你可以在上面看到它们。|(她指了指北边）
+Tell me about your collection.
+和我谈谈你的收藏。
+(SPEAKER smiles pleasantly)|Its a fitting reward, isn't it?|Long ago, this mountain was home to a vicious empire.|Machines went out to sea, bringing back countless prisoners.|As commander of the invasion, I earned this title!
+(SPEAKER 愉快地微笑)|这是最应得的奖赏，不是吗？|很久以前，这座山曾是一个邪恶帝国的家园。|机器出海，带回无数战俘。|作为进攻的指挥官，我赢得了这个头衔！
+Who are the prisoners, anyway?
+这些囚犯到底是谁？
+(SPEAKER grins)|When we stormed the prisons, we encountered many fierce defenders.|Many of them now reside in these halls, earning their rightful punishment.
+(SPEAKER 咧嘴一笑)|当我们攻打监狱时，我们遇到了许多凶猛的守卫者。|他们中的许多人现在就住在这些大厅里，接受应有的惩罚。
+What about the former prisoners?
+那些曾经的囚犯呢？
+(SPEAKER shrugs)|Most of them had already been... conditioned.|It will take centuries to undo centuries of training.|After all, we have plenty of time.
+(SPEAKER 耸耸肩)|他们中的大多数人已经被......调教过了。|要解除几百年来的训练需要几个世纪的时间。|总之，我们有的是时间。
+Can I see the leader of this old civilization?
+我能见见这个古老文明的领袖吗？
+(SPEAKER looks to the side)|The leader was nowhere to be found.|The coward fled deeper underground.|Her robot guardians protect her, to this day.
+(SPEAKER 望向一旁)|领导者不知所踪。|懦夫逃到了更深的地下。|直到今天，她的机器人守护者还在保护着她。
+(SPEAKER frowns)|Absolutely not.|They are under my strict supervision.
+(SPEAKER 皱眉)|当然不行|他们都处于我严格的监管之中。
+(SPEAKER grins)|Very funny.|I heard rumors of an up-and-coming adventurer stirring up trouble.|It seems my intuitions were correct.
+(SPEAKER 咧嘴一笑)|很有趣|我听说有位新来冒险家在制造麻烦|看来我的直觉是对的
+Can I talk to the former prisoners?
+我可以和以前的囚犯们谈谈吗？
+So you stopped at the upper floors?
+所以你就留在了高层？
+(SPEAKER shrugs)|You beat that zombie girl?|She's the weakest of the paladins.|She loves to boast about how she's special,|But she's really just a spoiled brat.
+(SPEAKER 耸耸肩)|你打败了那个僵尸女？|她是圣骑士中最弱的一个。|她总是喜欢吹嘘自己有多特别|但其实她只是个被宠坏的小屁孩。
+...Zombie girl?
+...僵尸女？
+(SPEAKER tilts her head)|Yes, she was around before Vinlaga.|Her magic was gifted to her by the Goddess,|it is only natural that it works on her too.
+(SPEAKER 歪着头)|是的，她在文拉加之前就存在了。|她的魔法是女神赐予她的，|自然也会对她起作用。
+...Paladins?
+...圣骑士？
+(SPEAKER smirks)|What's the point of going deeper?|The tyrant lost control of her petty empire.|Now the world is safe from her.
+(SPEAKER 冷笑）再深入下去还有什么意义？|暴君失去了对她的小帝国的控制。|现在，世界不会再受到她的威胁了。
+Sounds like you have an impressive collection
+听起来你的收藏令人印象深刻
+(SPEAKER frowns)|It's easy to take for granted the peace you didn't work for.
+(SPEAKER 皱眉)|人们很容易认为，自己不劳而获的安宁是理所当然的。
+Must be comfy living up here then
+住在这里一定很舒服吧
+(SPEAKER grins)|Oh please.|Only this era's finest warriors can be part of my collection~|My subordinates take care of the rest.
+(SPEAKER 咧嘴笑)|哦，拜托。|只有这个时代最优秀的战士才能成为我的收藏品|剩下的就交给我的部下吧。
+What makes you any better than the old rulers?
+你比旧统治者优秀在哪里？
+(SPEAKER scoffs at you)|Adventurers are always like this.|Ever since your kind started prying,|I've had no choice but to enact my own kind of discipline~
+(SPEAKER 嘲笑你)|冒险者总是这样。|自从你们这种人开始探索|我别无选择，就只能制定自己的纪律了~
+(SPEAKER readies her whip)|Allow me to introduce myself properly.|I am The Warden, divinely appointed judge and enforcer.|Those who enter this mountain do so under my watchful eye.|To ensure this, I have crafted a special collar.|It will ensure that you do not defile the holy places.|I can let you through if you accept it~
+(SPEAKER 抽出了鞭子)|请允许我正式介绍一下自己。|我是典狱长，上帝任命的法官和执法者。|进入这座山的人都要受到我的监视。|为了确保这一点，我制作了一个特殊的项圈。|它能确保你不会玷污圣地|如果你接受，我可以让你通过。
+I will never be collared by you!
+我永远不会被你领走！
+It sounds like the gods are trying to hide something
+听起来好像众神在尝试隐藏什么。
+(SPEAKER smirks at you)|If that were so, then perhaps it would be best not to pry...|Forbidden knowledge has its price, after all.
+(SPEAKER 对你冷笑)|如果是这样的话，也许最好还是不要打听......|毕竟，禁忌的知识是有代价的。
+(SPEAKER folds her arms)|And what makes you think an old myth would be relevant here?|Would the Archmagus herself lead a rebellion against the divine?
+(SPEAKER 双手合十)|你凭什么认为古老的神话会与此有关？|大魔导师本人会领导一场反抗神灵的叛乱吗？
+(She chuckles)|Oh my~|I hope your skills are on the same level as your attitude.|I don't have time for mere troublemakers~
+(她笑着说)|哦，天哪|我希望你的水平能和你的态度一样。|我可没时间陪小坏蛋玩。
+(SPEAKER folds her arms)|So be it.
+(SPEAKER 摊摊手)|那就这样吧
+I defeated Fuuka. Now you're next!
+我打败了Fuuka。现在下一个是你！
+Quite a boast for someone who's about to lose.
+对于一个要输的人来说可真是夸口。
+It is an honor to fight a worthy opponent.
+与一个有价值的对手交手是一种荣耀。
+Was Sariel Vinlaga the leader of the old civilization?
+萨里尔·文拉加是古老文明的领袖吗？
+(SPEAKER frowns)|You don't trust me? That's too bad...
+(SPEAKER 皱眉)|你不相信我？那可真是太糟了...
+It's the way you keep dodging questions.
+是你一直在回避问题。
+(SPEAKER scoffs)|I'd love to have a word with your sources~
+(SPEAKER 嘲笑)|我很乐意和你的消息来源谈谈~
+I have it good authority that Vinlaga is here.
+我有可靠消息说，文拉加就在这里。
+(SPEAKER smirks)|Don't believe everything you hear~
+(演讲者冷笑)|不要相信你听到的一切~
+Maybe you're right.
+或许你是对的。
+(SPEAKER pouts)|Old?|Grrr...
+(SPEAKER 噘嘴)|老？|咕...
+Says an old woman under the mountain...
+山下的一位老妇人说...
+(SPEAKER smiles)|Fascinating. Do keep explaining.
+(SPEAKER 微笑)|令人着迷，继续讲。
+(SPEAKER frowns)|That is not the attitude I appreciate from my guests.
+(SPEAKER 皱眉)|我不欣赏我客人的这种态度。
+Why should I listen to you?
+我为什么要听你的？
+(Pout)
+(撅起嘴）
+That's a shame about your records, I'll be going now.
+你的记录可真丢人，我现在要走了。
+(She smirks)|Not so fast, dear~|You'll have to wear a special collar to pass.
+(她笑着说)|别急，亲爱的|你必须戴上一个特殊的项圈才能通过。
+I won't wear anyone's collar!
+我不会戴任何人的项圈！
+(She smirks)|Tsk tsk. Then you won't pass.
+(她笑着说)|啧啧。那你就不能通过。
+Why don't you wear it yourself?
+你为什么不自己戴呢？
+(She frowns)|Watch your tongue~
+(她皱起眉头)|注意你的言辞~
+(Shake your head)
+(摇摇头）
+(She frowns)|I do not wear collars.
+(她皱起眉头)|我不戴项圈。
+You'd be better off wearing mine instead.
+你还是戴我的比较好。
+You're missing out~
+你错过了~
+This is a nice place you got here.
+你这地方真不错。
+(Admire the locale)
+(欣赏周边环境）
+(SPEAKER smiles and nods)|It has existed for a thousand years,|and it shall exist for another thousand.|No thanks, of course, to the adventurers who storm through here,|breaking the orbs as if it all belongs to them...
+(SPEAKER 微笑点头)|它已经存在了一千年|它还将存在一千年。|当然，这要归功于那些冒险家们，他们冲进这里，|打破这些球体，好像这一切都是属于他们的......
+(She giggles)|How cute!|You're so used to yours that you forgot about it~
+(她咯咯地笑起来)|真可爱！|你太习惯你的了，以至于都忘了~
+I hope you don't mind me looting the lower levels~
+我希望你不介意我拿走低层的东西~
+Why did the Goddesses intervene?
+女神们为什么要介入？
+(SPEAKER folds her arms)|Is it not holy and just to bring down tyrants?
+(SPEAKER 合起双手)|打倒暴君难道不是神圣和正义的吗？
+I am indeed an adventurer.
+我真是个冒险家。
+I forge my own path.
+我开辟了自己的道路。
+I'm in charge of my own path.
+我的路我自己做主。
+There must be a mistake. Sign me up!
+那肯定是个失误。把我加上！
+That won't be necessary, miss.
+没这个必要，小姐。
+(SPEAKER smiles)|Oh, it's quite necessary~|Why don't I show you?
+(SPEAKER 微笑)|哦，很有必要|我来给你展示一下？
+I would rather fight you.
+我宁愿和你打一场。
+(SPEAKER shrugs)|Straight and to the point, eh?
+(SPEAKER 耸耸肩)|直奔主题，是吗？
+(SPEAKER grins)|Let's see how long you can keep up that attitude~
+(SPEAKER 咧嘴笑)|让我们看看你还能保持这种态度多久~
+Ready yourself!
+做好准备！
+Let's go!
+我们开始吧！
+I guess I have no choice...
+我想我别无选择...
