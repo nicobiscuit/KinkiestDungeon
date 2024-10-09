@@ -2076,7 +2076,8 @@ You find a snow-like potion that's cold to the touch.
 You find a medley of potions.
 你会发现一堆药水。
 
-### Rarity: 
+Rarity: 
+稀有度 :
 Lesser
 无价值的
 Common
@@ -2974,10 +2975,14 @@ Satisfied. Miscast chance is reduced.
 满足。减少失误的概率
 
 
-### Damage: 
-### Bind: 
-### Crit: 
-### SP Cost: 
+Damage: 
+基础伤害 :
+Bind: 
+束缚值 :
+Crit: 
+暴击倍率 :
+SP Cost: 
+SP 消耗 :
 Cut PWR: AMNT%
 力量削减 : ‎AMNT%
 
@@ -4683,7 +4688,8 @@ Armorer
 Bowyer
 制弓师
 ### You rob the bowyer!
-### Not a Kidnapper
+Not a Kidnapper
+不是绑匪
 ### You bring the kidnapper to justice!
 
 Dressmaker
@@ -6561,9 +6567,12 @@ This collar is designed to make sure its wearer does not escape their tape.
 ### Magical charms from the ancient graveyard.
 ### Its magic is not enough to protect it from damage, but it is surprisingly effective at restraining both intruders and cursed entities.
 
-### Blessed Wrapping
-### A layer of magic embalming ribbon.
-### It clings of its own accord to intruders and naughty catgirls.
+Blessed Wrapping
+受祝福的丝带
+A layer of magic embalming ribbon.
+一条神奇的防腐丝带
+It clings of its own accord to intruders and naughty catgirls.
+它会主动粘住入侵者和淘气的猫娘。
 
 Autotape (Hands)
 自动胶带 ( 手 )
@@ -13664,7 +13673,8 @@ I'll take a look.
 
 
 
-### Kya~ I have no mana, I'm so defenseless right now~
+Kya~ I have no mana, I'm so defenseless right now~
+呀~我没有法力了，我现在毫无还手之力~
 ### I have all this bondage gear on me, I sure hope nobody ties me up with it~!
 ### Oh no, how will I ever find my way out of here~
 ### If I focus really hard, I can make my blade go on fire!
@@ -13677,7 +13687,8 @@ I'll take a look.
 ### I'm out of practice... you wouldn't mind helping me, right?
 ### Thank you for cleaning up! I can take that off your hands~
 ### Oooh, I wonder where that key leads!
-### Hey you! Where do you think you're going?
+Hey you! Where do you think you're going?
+嘿！你想去哪儿！
 ### Kya~! I challenge you!
 ### What say you to a duel?
 ### Let's fight! For honor and cuddles!
@@ -16883,11 +16894,16 @@ This is unethical! I refuse! (PERCENT chance to avoid)
 (The SPEAKER giggles)|I like to include these as a gift with every purchase~
 ( SPEAKER 咯咯笑 ) |我喜欢在每次成交时附上这个作为礼物~
 
-### (The SPEAKER whispers in a hushed tone)|Welcome.|I'm not supposed to be here, so|if you don't want to do business, get out.|I only sell in packs of 10, by the way.
-### (The SPEAKER tries to get away)|Damn!
-### (The SPEAKER looks you over and shrugs)|Don't joke around.
-### (The SPEAKER folds her arms)|Don't have money? Better go find some.
-### (The SPEAKER produces a bag of stuffings)|Quite the staple.
+(The SPEAKER whispers in a hushed tone)|Welcome.|I'm not supposed to be here, so|if you don't want to do business, get out.|I only sell in packs of 10, by the way.
+( SPEAKER 用沙哑的嗓音说道 ) |欢迎|我本来不该在这里，|如果你不想做交易，就赶紧出去。|顺便一提我卖的东西都是一组十个的
+(The SPEAKER tries to get away)|Damn!
+( SPEAKER 试图逃跑 ) |该死！
+(The SPEAKER looks you over and shrugs)|Don't joke around.
+( SPEAKER 看看你并耸了耸肩 ) |不要开玩笑。
+(The SPEAKER folds her arms)|Don't have money? Better go find some.
+( SPEAKER 交叉双臂 ) |没有钱？那你最好去找点来。
+(The SPEAKER produces a bag of stuffings)|Quite the staple.
+( SPEAKER 制作了一包填充物 ) |相当重要
 ### (The SPEAKER produces a bundle of rope)|Aren't you quite the artist.|That was rhetorical.
 ### (The SPEAKER produces some bondage tape)|It only sticks to itself, doesn't leave residue.|Gotta be responsible, you know?
 ### (The SPEAKER produces a bag of cloth gags)|It's a matter of taste, really.|No, I didn't mean that literally...
@@ -18043,7 +18059,7 @@ You might be wondering what all these barrels are for.|Don't worry, they're, uh,
 你可能想知道这些桶是干什么用的|别担心，他们完全安全|当你在里面时，你可以点击自己等待|敌人很难在桶里看到你，所以你可以等到他们从你身边经过。
 
 On the right you'll see your stats and spells slots.|Your DP, SP, MP, and WP are displayed there, we'll get into what these do.|Below that you'll see your current consumable items,|your gold, and your currently equipped weapon.
-在右侧，您会看到您的统计数据和法术槽。|您的 DP、SP、MP 和 WP 都显示在那里，我们将介绍它们的作用。|在下面，您会看到您当前的消耗品，|您的金币，以及你当前装备的武器。
+在右侧，您会看到您的统计数据和法术槽。|您的 SP、MP、WP 和 DP 都显示在那里，我们将介绍它们的作用。|在下面，您会看到您当前的消耗品，|您的金币，以及你当前装备的武器。
 Your WP, or willpower, is an important resource.|Without it, escaping from restraints is more difficult.|There is a willpower potion on the floor up there. Go get it!
 你的WP或意志力是一个重要的资源|没有它，摆脱束缚更加困难|前面的地板上有一种意志力药剂。去拿着吧！
 Oh no! That trap reduced your willpower!|Fortunately you have a potion.|You can drink it by clicking the '+' icon next to your WP bar.|You can also go into your Inventory in the bottom bar.|There is also a quick-inventory icon (backpack).
@@ -21361,9 +21377,12 @@ A playful ghost now accompanies you on your journey.
 The ghost haunting you decides to have a little fun! (+RestraintAdded)
 困扰你的幽灵决定找点乐子！ ( +RestraintAdded )
 
-### Hemp Rope
-### The most common type of bondage rope.
-### Soft and comfy. Great for casual wear!
+Hemp Rope
+麻绳
+The most common type of bondage rope.
+最常见的捆绑绳。
+Soft and comfy. Great for casual wear!
+柔软舒适。作为休闲装很合适
 
 Boxtie
 后手缚捆扎带
@@ -21387,7 +21406,8 @@ A very strict and tight hogtie, good for subduing unruly captives.
 非常严格且紧密的捆绑，适合制服不守规矩的俘虏。
 It holds you strictly in a boxtie. You tug on the rope connecting your feet and struggle.
 它把你严格地束缚在后手缚捆扎带里。你需要首先挣扎开连接腿部的绳子。
-### It holds you strictly with your back arched. You tug on the rope connecting your feet and struggle.
+It holds you strictly with your back arched. You tug on the rope connecting your feet and struggle.
+它强迫你背部弓起并严格束缚住。你需要首先挣扎开连接腿部的绳子。
 Rope Belt
 绳衣
 Rope Harness
@@ -21573,10 +21593,12 @@ Inaccessible
 Lower
 低部
 
-### Spellbound Rope
-### An enchanted rope with a powerful sealing spell. It cannot be cut by mundane means.
-### It almost has a kinky mind of its own.
-
+Spellbound Rope
+绳子 ( 符咒 )
+An enchanted rope with a powerful sealing spell. It cannot be cut by mundane means.
+带有强大封印咒语的魔法绳索。无法用一般方法切断。
+It almost has a kinky mind of its own.
+它就快要有一些自己的怪癖了。
 Spellbound Boxtie
 后手缚 ( 符咒 )
 The knots appear to tie themselves together again, making them impossible to undo!
@@ -22014,9 +22036,9 @@ Infuse weapon AMNT% TYPE
 AMNT TYPE on attack
 AMNT TYPE 在攻击时
 AMNT Mana Efficiency
-+AMNT 魔力效果
++AMNT 法力效率
 AMNT TYPE Mana Efficiency
-+AMNT TYPE 魔力效果
++AMNT TYPE 法力效率
 AMNT% regen from mana pool
 来自魔力池 AMNT% 的回复
 AMNT mana pool on capture
@@ -22827,7 +22849,8 @@ Equip to hotbar and cast to designate an Offhand weapon to gain passive effects 
 
 Arcane Tome
 奥术之书
-### Contains advanced formulas and thrilling tales of thirsty wizards. Can not critically strike.
+Contains advanced formulas and thrilling tales of thirsty wizards. Can not critically strike.
+包含高级咒语和饥渴魔法师的惊险故事。普通攻击无法暴击。
 +5% magic damage. Offhand: Applies passive bonus.
 +5% 魔法伤害。副手 : ‎应用被动奖励。
 You find a magical tome.
@@ -23514,7 +23537,7 @@ The Goddess calls you a good girl.
 Rescue some alchemists from their own experiment.
 从他们自己的实验中拯救一些炼金术士。
 Stop a rebels from making a pact with primordial beings.
-阻止叛乱者与原始生物签订契约。
+阻止叛乱者与当地生物签订契约。
 Decommission some malfunctioning drones.
 停用一些出现故障的无人机。
 
