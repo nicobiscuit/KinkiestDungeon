@@ -27013,7 +27013,7 @@ Catherine Willows' Journal (pg. 25)
 Willows 25
 条 25
 There are two 'castes' in the Bast cult. The first are the 'blessed,' and the second are their watchful guardians. The unintuitive bit is that the 'blessed' are the ones wrapped up and sealed away inside statues, sarcophagi, and anything else the guardians can stick a person into. The free ones wandering around grabbing people? They're the ones who weren't 'blessed' apparently.
-在野兽(best)教会中有两种阶级。第一种是 “受祝福者”，第二种是他们的守护者。反直觉的一点是，“受祝福者”是那些被包裹起来，封印在雕像、石棺或被守护者塞到任何可以塞得进去的地方的人。那些自由自在到处抓人的？他们显然是那些“未受祝福者”。
+在Bast教会中有两种阶级。第一种是 “受祝福者”，第二种是他们的守护者。反直觉的一点是，“受祝福者”是那些被包裹起来，封印在雕像、石棺或被守护者塞到任何可以塞得进去的地方的人。那些自由自在到处抓人的？他们显然是那些“未受祝福者”。
 Catherine Willows' Journal (pg. 26)
 凯瑟琳-韦乐丝的日记（第 26 页）
 Willows 26
@@ -27121,51 +27121,48 @@ The Chronicles of Ejahl
 Ejahl 1
 埃亚尔 1
 The Kingdom of Ejahl ruled the island of Agartha for 30 years before its collapse. During the last war, an unknown figure captured the majority of its army and the majority of the population fled by boat. No one was left on the island.
-
+埃亚尔王国统治阿加莎岛30余年直至其灭亡。在最后的战争中，一个不知名的人物俘虏了其大部分军队，大部分人口乘船逃离。岛上一个人也没有留下。
 The Fall of Ejahl
-
+埃亚尔王国的覆灭
 Ejahl 2
-
+埃亚尔 2
 Danger Level: Nearly Harmless|A reanimated corpse from before the Great Work. I can't tell if the original soul still inhabits the body, since it can barely speak let alone explain its identity.||-Denizens of the Dungeon by Catherine Willows
-
+危险等级: 几乎无害|一具伟大工程之前复活的尸体。我无法判断这具躯体中是否还居住着最初的灵魂，因为它几乎不会说话，更不用说解释自己的身份了。||《地下城居民》————凯瑟琳-韦乐丝
 Zombie
-
-Zombie
-
+僵尸
 Danger Level: Normal|These zombies are more motivated than the others. Their behavior is similar to that of vengeful spirits I've encountered in the depths.||-Denizens of the Dungeon by Catherine Willows
-
+危险等级： 正常|这些僵尸比其他僵尸更有动机。它们的行为类似于我在深渊中遇到的复仇之灵。||《地下城居民》————凯瑟琳-韦乐丝
 Angry Zombie
-
+愤怒僵尸
 Fast Z.
-
+愤怒僵尸 Z
 Danger Level: Normal|A zombie that can use magic. It doesn't look like any magic I've seen outside the ruins, which makes me think that it was taught to use magic. Some of them have tattoos associated with magic in the old times. Since magic comes from the soul, I assume there is some hint of the original soul still present.|-Denizens of the Dungeon by Catherine Willows
-
+危险等级： 普通|会使用魔法的僵尸。它看起来不像我在废墟外见过的任何魔法，这让我觉得它是被教会使用魔法的。有些僵尸身上的纹身与旧时代的魔法有关。因为魔法来自灵魂，所以我认为他们身上还残留着一些原始灵魂的影子。||《地下城居民》————凯瑟琳-韦乐丝
 Mage Zombie
-
+魔法僵尸
 Mage Z.
-
+魔法僵尸 Z
 Danger Level: High|A zombie with impeccable sword technique. I've never seen an undead handle a sword so smoothly. Probably buried with their weapons and gear, since most of it is aged. Even their binding techniques resemble those in the textbooks rather than modern ropework.||-Denizens of the Dungeon by Catherine Willows
-
+危险等级：高|一个有着高超剑术的僵尸。我从没见过一个亡灵能把剑用得如此顺手。可能是他们的武器和装备被埋没了，因为大部分都已经老化。甚至他们的捆绑技术也很像教科书上的，而不是现代的绳索。||《地下城居民》————凯瑟琳-韦乐丝
 Warrior Zombie
-
+战士僵尸
 Warrior Z.
-
+战士僵尸 Z
 Danger Level: High|A zombie that uses sealing charms and healing magic. Irony aside, I've seen these with rope marks and gag strap marks on their skin and face. It seems like someone is playing with them. Who could that be?||-Denizens of the Dungeon by Catherine Willows
-
+危险等级：高|使用封印符咒和治疗魔法的僵尸。除了讽刺之外，我还见过这些僵尸的皮肤和脸上有绳子和塞口带的痕迹。好像有人在玩弄他们。会是谁呢？||《地下城居民》————凯瑟琳-韦乐丝
 Talisman Zombie
-
+护符僵尸
 Talisman Z.
-
+护符僵尸 Z
 Danger Level: Annoying|A playful spirit residing in the dungeon, taking advantage of any adventurers they come across. They can pass through walls, and most physical weapons go right through them. Using a magical weapon seems to banish them for some time, at least.||-Denizens of the Dungeon by Catherine Willows
-
+危险等级： 令人讨厌|居住在地牢中的嬉戏精灵，会利用遇到的冒险者。它们可以穿墙而过，大多数物理武器都能直接穿过它们。使用魔法武器似乎能驱逐它们一段时间。||《地下城居民》————凯瑟琳-韦乐丝
 Ghost
-
-Ghost
-
+幽灵
 Danger Level: Very Annoying|It is said that ghosts are the spirits of pre-Great Work humans whose souls are bound to this world by unfinished dreams and ambitions. But I don't believe a word of that. These little guys care about nothing except humiliating people. Ask me how I know.||-Denizens of the Dungeon by Catherine Willows
-
+危险等级： 非常令人讨厌|据说鬼魂是伟大成就之前人类的灵魂，他们的灵魂被未完成的梦想和抱负束缚在这个世界上。但我一点也不相信。这些小家伙除了羞辱人，什么都不在乎。问问我是怎么知道的||《地下城居民》————凯瑟琳-韦乐丝
 Poltergeist
-
-Poltergeist
-
+鬼怪
 Danger Level: High|They appear to be influential figures in the ancient Bast cult. Not only are they able to wield explosive magics, they can conjure magical wrappings at close range.||-Denizens of the Dungeon by Catherine Willows
+危险等级：高|他们似乎是古代Bast邪教中颇具影响力的人物。他们不仅能施展爆炸魔法，还能在近距离变出魔法包裹。||《地下城居民》————凯瑟琳-韦乐丝
+Mummy
+木乃伊
