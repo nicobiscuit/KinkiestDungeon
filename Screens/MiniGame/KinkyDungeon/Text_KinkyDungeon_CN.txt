@@ -24776,14 +24776,15 @@ Back to Game
 Slimy Spit
 粘糊糊的口水
 
-### Servants
+Servants
+仆人
 Prisoners
 囚犯
 
 Promote to Servant
 晋升为仆人
-### Demote
-
+Demote
+降级
 The ENMY tries to grab you!
 ENMY 试图抓住你！
 
@@ -26676,8 +26677,10 @@ OVERWRITE All!
 Need Positive Opinion to Promote
 需要更正面的评价来擢升
 
-### Servant Cuddle Points: AMNT (+OPN opinion/cycle)
-### Prisoner Cuddle Points: AMNT (+OPN opinion/cycle)
+Servant Cuddle Points: AMNT (+OPN opinion/cycle)
+仆人拥抱点数: AMNT (+OPN 点/轮)
+Prisoner Cuddle Points: AMNT (+OPN opinion/cycle)
+囚犯拥抱点数: AMNT (+OPN 点/轮)
 Submissive prisoners and dominant servants add different amounts of opinion per cycle
 顺从的囚犯和占主导地位的仆人每周期增加不同的好感度
 
@@ -26686,6 +26689,11 @@ Release Prisoners
 释放囚犯
 Release
 释放
+ 
+KDFacility_Warden
+KD设施管理员
+KDFacilityDesc_Warden
+KD设施管理说明
 
 Mark
 标记
@@ -26876,7 +26884,8 @@ You'll need an ancient key to unlock the ancient-made collar.
 你需要一把古老的钥匙来解开古老的项圈。
 
 
-### Ancient Worshipper
+Ancient Worshipper
+古代追随者
 ### The ancient worshipper repents of her ways.
 ### The ancient worshipper's crystal restraints spread to you! (+RestraintAdded)
 ### Crystals start to grow on one of your restraints! (DamageTaken)
