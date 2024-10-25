@@ -58,7 +58,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Filters: {
 			Tape: {"gamma":1.35,"saturation":1,"contrast":0.6,"brightness":0.6666666666666666,"red":1.9,"green":0.8333333333333333,"blue":1,"alpha":1},
 		},
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		factionFilters: {
 			Tape: {color: "LightNeutral", override: false},
 		},
@@ -70,7 +70,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Filters: {
 			Tape: {"gamma":1.35,"saturation":1,"contrast":0.6,"brightness":0.6666666666666666,"red":1.9,"green":0.8333333333333333,"blue":1,"alpha":1},
 		},
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		factionFilters: {
 			Tape: {color: "LightNeutral", override: false},
 		},
@@ -85,7 +85,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		factionFilters: {
 			Tape: {color: "LightNeutral", override: false},
 		},
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		Model: "TapeAnkles",
 		maxwill: 0.1,
 		enemyTags: {"scarfRestraints":2}, playerTags: {"ItemFeetFull":2}, minLevel: 0, allFloors: true, shrine: ["Rope", "Tape"]},
@@ -95,7 +95,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Filters: {
 			Cloth: {"gamma":1,"saturation":1,"contrast":1,"brightness":0.3833333333333333,"red":2.3666666666666667,"green":1,"blue":1,"alpha":1},
 		},
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		factionFilters: {
 			Cloth: {color: "LightNeutral", override: false},
 		},
@@ -106,7 +106,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Filters: {
 			Cloth: {"gamma":1,"saturation":1,"contrast":0.8333333333333333,"brightness":0.48333333333333334,"red":2.3666666666666667,"green":1,"blue":1,"alpha":1},
 		},
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		factionFilters: {
 			Cloth: {color: "LightNeutral", override: false},
 		},
@@ -189,7 +189,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeArms",
 		addTag: ["HandsBehind"],
 		disassembleAs: "CharmRaw",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
 		},
@@ -198,7 +198,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeAnkles",
 		maxwill: 0.1,
 		disassembleAs: "CharmRaw",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
 		},
@@ -206,7 +206,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "DuctTapeBoots", unlimited: true, debris: "Fabric", inaccessible: true, Asset: "ToeTape", Type: "Full", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Color: "#AA2222", Group: "ItemBoots", blockfeet: true, addTag: ["FeetLinked"],power: -2, weight: 0, escapeChance: {"Struggle": 0.3, "Cut": 0.9, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeHeavyBoots",
 		disassembleAs: "CharmRaw",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		maxwill: 0.05,
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -216,7 +216,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeLegs",
 		maxwill: 0.4,
 		disassembleAs: "CharmRaw",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
 		},
@@ -224,7 +224,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "DuctTapeHead", unlimited: true, debris: "Fabric", inaccessible: true, Type: "Wrap", Asset: "DuctTape", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Color: "#AA2222", Group: "ItemHead", power: -2, blindfold: 3, weight: 0, escapeChance: {"Struggle": 0.3, "Cut": 0.9, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "BlindfoldTape",
 		disassembleAs: "CharmRaw",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		quickBindCondition: "TapeBlindfold",
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -233,7 +233,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "DuctTapeMouth", unlimited: true, debris: "Fabric", Asset: "DuctTape", Color: "#AA2222", Group: "ItemMouth", AssetGroup: "ItemMouth2", gag: 0.5, power: -2, weight: 0, escapeChance: {"Struggle": 0.3, "Cut": 0.9, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeWrapOver",
 		disassembleAs: "CharmRaw",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		quickBindCondition: "TapeGag",
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -245,7 +245,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "DuctTapeHeadMummy", unlimited: true, debris: "Fabric", inaccessible: true, Asset: "LeatherSlimMask", LinkableBy: [...KDWrappingLink], renderWhenLinked: [...KDWrappingLink], Color: "#AA2222", Group: "ItemHead", gag: 0.5, blindfold: 4, power: 2, weight: 0,  escapeChance: {"Struggle": 0.15, "Cut": 0.8, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeFace",
 		disassembleAs: "CharmRaw",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -255,7 +255,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		remove: ["Cloth", "ClothLower", "Tops"],
 		addTag: ["HandsBehind"],
 		disassembleAs: "CharmRaw",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		disassembleCount: 2,
 		Asset: "DuctTape", Color: "#AA2222", Group: "ItemArms", bindarms: true, power: 2, weight: 0,  escapeChance: {"Struggle": 0.1, "Cut": 0.8, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeHeavyArmsFull",
@@ -268,7 +268,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeHeavyBottomFull",
 		maxwill: 0.3,
 		disassembleAs: "CharmRaw",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -278,7 +278,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeHeavyAnkles",
 		maxwill: 0.1,
 		disassembleAs: "CharmRaw",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -3568,23 +3568,23 @@ const KinkyDungeonRestraints: restraint[] = [
 	// Simple cloth stuff
 	{inventory: true, name: "ClothGag", LinkableBy: [...KDBallGagLink], debris: "Fabric", renderWhenLinked: [...KDBallGagLink], Asset: "ClothGag", gag: 0.35, Type: "Knotted", Color: "#959595", Group: "ItemMouth", AssetGroup: "ItemMouth2", power: 0.1, weight: 2, escapeChance: {"Struggle": 0.5, "Cut": 1.0, "Remove": 0.8},
 		Model: "ClothCleave",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		maxwill: 0.75, enemyTags: {"clothRestraints":8, "ropeAuxiliary": 3}, playerTags: {}, minLevel: 0, allFloors: true, shrine: ["ClothGag", "Rope", "BallGags", "Gags"]},
 	{inventory: true, name: "ClothGag2", LinkableBy: [...KDBallGagLink], debris: "Fabric", renderWhenLinked: [...KDBallGagLink], Asset: "ClothGag", gag: 0.45, Type: "Knotted", Color: "#959595", Group: "ItemMouth", AssetGroup: "ItemMouth2", power: 0.1, weight: 2, escapeChance: {"Struggle": 0.5, "Cut": 1.0, "Remove": 0.8},
 		Model: "ClothCleaveThick",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		maxwill: 0.6, enemyTags: {"clothRestraints":6, "ropeAuxiliary": 2}, playerTags: {}, minLevel: 2, allFloors: true, shrine: ["ClothGag", "Rope", "BallGags", "Gags"]},
 	{inventory: true, name: "ClothGag3", LinkableBy: [...KDBallGagLink], debris: "Fabric", renderWhenLinked: [...KDBallGagLink], Asset: "ClothGag", gag: 0.65, Type: "Knotted", Color: "#959595", Group: "ItemMouth", AssetGroup: "ItemMouth2", power: 0.1, weight: 2, escapeChance: {"Struggle": 0.5, "Cut": 1.0, "Remove": 0.8},
 		Model: "ClothKnot",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		maxwill: 0.35, enemyTags: {"clothRestraints":4, "ropeAuxiliary": 1}, playerTags: {}, minLevel: 3, allFloors: true, shrine: ["ClothGag", "Rope", "BallGags", "Gags"]},
 	{inventory: true, name: "ClothGagOver", LinkableBy: [...KDFlatGagLink], renderWhenLinked: [...KDFlatGagLink], Asset: "ClothGag", gag: 0.35, Type: "OTN", Color: "#959595", Group: "ItemMouth", AssetGroup: "ItemMouth3", power: 0.1, weight: 2, escapeChance: {"Struggle": 0.5, "Cut": 1.0, "Remove": 0.8},
 		Model: "ClothOTN",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		maxwill: 0.75, enemyTags: {"clothRestraints":4, "ropeAuxiliary": 1}, debris: "Fabric", playerTags: {"ItemMouthEmpty": -4, "ItemMouth2Empty": -4}, minLevel: 0, allFloors: true, shrine: ["ClothGag", "FlatGags", "Rope", "Gags"]},
 	{inventory: true, name: "ClothBlindfold", Asset: "ClothBlindfold", debris: "Fabric", Color: "#959595", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemHead", power: 0.1, weight: 2, escapeChance: {"Struggle": 0.5, "Cut": 1.0, "Remove": 0.8},
 		Model: "ClothBlindfold",
-		sfxGroup: "Rope",
+		sfxGroup: "Ropes",
 		affinity: {Struggle: ["Sticky", "Hook"], Remove: ["Hook"],},
 		maxwill: 0.85, blindfold: 2, enemyTags: {"clothRestraints":8, "ropeAuxiliary": 1}, playerTags: {}, minLevel: 0, allFloors: true, shrine: ["ClothBlindfold", "Rope", "Blindfolds"]},
 
