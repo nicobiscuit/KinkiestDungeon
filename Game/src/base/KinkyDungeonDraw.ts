@@ -4734,6 +4734,13 @@ function KDDoGraphicsSanitize(): void {
 		t.destroy(true);
 	}
 	KDRenderTexToDestroy = [];
+	for (let t of KDMeshToDestroy) {
+		t.destroy({
+			children: true,
+			baseTexture: true,
+		});
+	}
+	KDMeshToDestroy = [];
 	for (let f of KDFilterCacheToDestroy) {
 		f.destroy();
 	}

@@ -33,6 +33,8 @@ TODO Add Cuddle play type
 
 5.3.50
 - More sound effects
+- Giving Good Girl Gifts to NPCs will now temporarily increase their submissiveness
+-
 
 5.3.49
 - Cursed item offer from enemies now includes a real curse

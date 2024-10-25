@@ -58,6 +58,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Filters: {
 			Tape: {"gamma":1.35,"saturation":1,"contrast":0.6,"brightness":0.6666666666666666,"red":1.9,"green":0.8333333333333333,"blue":1,"alpha":1},
 		},
+		sfxGroup: "Rope",
 		factionFilters: {
 			Tape: {color: "LightNeutral", override: false},
 		},
@@ -69,6 +70,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Filters: {
 			Tape: {"gamma":1.35,"saturation":1,"contrast":0.6,"brightness":0.6666666666666666,"red":1.9,"green":0.8333333333333333,"blue":1,"alpha":1},
 		},
+		sfxGroup: "Rope",
 		factionFilters: {
 			Tape: {color: "LightNeutral", override: false},
 		},
@@ -83,6 +85,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		factionFilters: {
 			Tape: {color: "LightNeutral", override: false},
 		},
+		sfxGroup: "Rope",
 		Model: "TapeAnkles",
 		maxwill: 0.1,
 		enemyTags: {"scarfRestraints":2}, playerTags: {"ItemFeetFull":2}, minLevel: 0, allFloors: true, shrine: ["Rope", "Tape"]},
@@ -92,6 +95,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Filters: {
 			Cloth: {"gamma":1,"saturation":1,"contrast":1,"brightness":0.3833333333333333,"red":2.3666666666666667,"green":1,"blue":1,"alpha":1},
 		},
+		sfxGroup: "Rope",
 		factionFilters: {
 			Cloth: {color: "LightNeutral", override: false},
 		},
@@ -102,6 +106,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Filters: {
 			Cloth: {"gamma":1,"saturation":1,"contrast":0.8333333333333333,"brightness":0.48333333333333334,"red":2.3666666666666667,"green":1,"blue":1,"alpha":1},
 		},
+		sfxGroup: "Rope",
 		factionFilters: {
 			Cloth: {color: "LightNeutral", override: false},
 		},
@@ -112,6 +117,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	// region Kigu
 	{inventory: true, name: "KiguMask", inaccessible: true, Asset: "KirugumiMask", Color: ["Default", "Default"], AssetGroup: "ItemHood", Group: "ItemHead", LinkableBy: [...KDMaskLink], gag: 0.3, blindfold: 1, power: 7, weight: 0,
 		Model: "KiguMask",
+		sfxGroup: "Rubber",
 		escapeChance: {"Struggle": -0.2, "Cut": -0.1, "Remove": 0.33, "Pick": 0.15, "Unlock": 0.6},
 		enemyTags: {"kiguRestraints":1}, playerTags: {"ItemMouth1Full":2, "ItemMouth2Full":1, "NoKigu": -1000}, minLevel: 0, allFloors: true, shrine: ["Latex", "Masks", "Block_ItemMouth"], events: [
 			//{trigger: "onWear", type: "setSkinColor"},
@@ -122,6 +128,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{inventory: true, name: "LeatherHood", inaccessible: true, Color: ["Default", "Default"],
 		Group: "ItemHead", LinkableBy: [...KDMaskLink], gag: 0.7, blindfold: 3, power: 5, weight: 0,
 		Model: "LeatherHood",
+		sfxGroup: "Leather",
 		escapeChance: {"Struggle": -0.35, "Cut": -0.15, "Remove": 0.12, "Pick": 0.11, "Unlock": 0.7},
 		enemyTags: {"sensedep":10},
 		maxwill: 0.1,
@@ -132,6 +139,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{inventory: true, name: "LeatherMask", inaccessible: true, Color: ["Default", "Default"],
 		Group: "ItemHead", LinkableBy: [...KDMaskLink], gag: 0.7, blindfold: 3, power: 5, weight: 0,
 		Model: "LeatherMask",
+		sfxGroup: "Leather",
 		escapeChance: {"Struggle": -0.35, "Cut": -0.15, "Remove": 0.12, "Pick": 0.11, "Unlock": 0.7},
 		enemyTags: {"sensedep":10},
 		maxwill: 0.1,
@@ -162,6 +170,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{inventory: true, name: "DuctTapeCollar", debris: "Fabric", Asset: "LatexCollar2", factionColor: [[], [0]], Color: "Default", Group: "ItemNeck", LinkableBy: [...KDCollarLink],renderWhenLinked: [...KDCollarRender],power: 9, weight: 4, DefaultLock: "Blue",
 		Model: "ElfCollarRestraint",
 		struggleBreak: true,
+		sfxGroup: "Rubber",
 		escapeChance: {"Struggle": -0.5, "Cut": -0.5, "Remove": 0.33, "Pick": -0.15},
 		unlimited: true,
 		maxwill: 0.25, enemyTags: {"livingCollar":10}, playerTags: {"ItemNeckFull":-2}, minLevel: 0, allFloors: true, shrine: ["Collars","Tape"],
@@ -171,6 +180,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		factionColor: [[], [0]],
 		Model: "TapeHeavyHands",
 		disassembleAs: "DuctTapeRaw",
+		sfxGroup: "Rubber",
 		bindhands: 0.9, power: 1, weight: 0, escapeChance: {"Struggle": -0.1, "Cut": 0.4, "Remove": 0.4}, struggleMaxSpeed: {"Remove": 0.1},
 		strictness: 0.05, strictnessZones: ["ItemHands"], failSuffix: {"Remove": "Tape"},
 		maxwill: 0.6, enemyTags: {"tapeRestraints":8, "ropeAuxiliary": 4}, playerTags: {"ItemHandsFull": -4}, minLevel: 0, allFloors: true, shrine: ["Tape", "Wrapping"]},
@@ -179,6 +189,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeArms",
 		addTag: ["HandsBehind"],
 		disassembleAs: "CharmRaw",
+		sfxGroup: "Rope",
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
 		},
@@ -187,6 +198,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeAnkles",
 		maxwill: 0.1,
 		disassembleAs: "CharmRaw",
+		sfxGroup: "Rope",
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
 		},
@@ -194,6 +206,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "DuctTapeBoots", unlimited: true, debris: "Fabric", inaccessible: true, Asset: "ToeTape", Type: "Full", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Color: "#AA2222", Group: "ItemBoots", blockfeet: true, addTag: ["FeetLinked"],power: -2, weight: 0, escapeChance: {"Struggle": 0.3, "Cut": 0.9, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeHeavyBoots",
 		disassembleAs: "CharmRaw",
+		sfxGroup: "Rope",
 		maxwill: 0.05,
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -203,6 +216,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeLegs",
 		maxwill: 0.4,
 		disassembleAs: "CharmRaw",
+		sfxGroup: "Rope",
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
 		},
@@ -210,6 +224,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "DuctTapeHead", unlimited: true, debris: "Fabric", inaccessible: true, Type: "Wrap", Asset: "DuctTape", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Color: "#AA2222", Group: "ItemHead", power: -2, blindfold: 3, weight: 0, escapeChance: {"Struggle": 0.3, "Cut": 0.9, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "BlindfoldTape",
 		disassembleAs: "CharmRaw",
+		sfxGroup: "Rope",
 		quickBindCondition: "TapeBlindfold",
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -218,6 +233,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "DuctTapeMouth", unlimited: true, debris: "Fabric", Asset: "DuctTape", Color: "#AA2222", Group: "ItemMouth", AssetGroup: "ItemMouth2", gag: 0.5, power: -2, weight: 0, escapeChance: {"Struggle": 0.3, "Cut": 0.9, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeWrapOver",
 		disassembleAs: "CharmRaw",
+		sfxGroup: "Rope",
 		quickBindCondition: "TapeGag",
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -229,6 +245,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "DuctTapeHeadMummy", unlimited: true, debris: "Fabric", inaccessible: true, Asset: "LeatherSlimMask", LinkableBy: [...KDWrappingLink], renderWhenLinked: [...KDWrappingLink], Color: "#AA2222", Group: "ItemHead", gag: 0.5, blindfold: 4, power: 2, weight: 0,  escapeChance: {"Struggle": 0.15, "Cut": 0.8, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeFace",
 		disassembleAs: "CharmRaw",
+		sfxGroup: "Rope",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -238,6 +255,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		remove: ["Cloth", "ClothLower", "Tops"],
 		addTag: ["HandsBehind"],
 		disassembleAs: "CharmRaw",
+		sfxGroup: "Rope",
 		disassembleCount: 2,
 		Asset: "DuctTape", Color: "#AA2222", Group: "ItemArms", bindarms: true, power: 2, weight: 0,  escapeChance: {"Struggle": 0.1, "Cut": 0.8, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeHeavyArmsFull",
@@ -250,6 +268,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeHeavyBottomFull",
 		maxwill: 0.3,
 		disassembleAs: "CharmRaw",
+		sfxGroup: "Rope",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -259,6 +278,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeHeavyAnkles",
 		maxwill: 0.1,
 		disassembleAs: "CharmRaw",
+		sfxGroup: "Rope",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":0.18333333333333335,"saturation":1,"contrast":0.8333333333333333,"brightness":1.2166666666666668,"red":5,"green":1.607843137254902,"blue":2.3333333333333335,"alpha":1},
@@ -320,6 +340,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "MysticDuctTapeHead", unlimited: true, debris: "FabricGreen", inaccessible: true, Type: "Wrap", Asset: "DuctTape", Color: "#55AA22", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemHead", blindfold: 4, power: 1, weight: 0, escapeChance: {"Struggle": 0.2, "Cut": 0.6, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeFace",
 		disassembleAs: "MysticDuctTapeRaw",
+		sfxGroup: "Rubber",
 		quickBindCondition: "TapeBlindfold",
 		Filters: {
 			Tape: {"gamma":1,"saturation":1,"contrast":1.2666666666666668,"brightness":0.6666666666666666,"red":1,"green":1.6833333333333333,"blue":0.6666666666666666,"alpha":1},
@@ -328,6 +349,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "MysticDuctTapeEyes", unlimited: true, debris: "FabricGreen", inaccessible: true, Type: "Wrap", Asset: "DuctTape", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Color: "#AA2222", Group: "ItemHead", power: 3, blindfold: 3, weight: 0, escapeChance: {"Struggle": 0.3, "Cut": 0.9, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "BlindfoldTape",
 		disassembleAs: "MysticDuctTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":1,"saturation":1,"contrast":1.2666666666666668,"brightness":0.6666666666666666,"red":1,"green":1.6833333333333333,"blue":0.6666666666666666,"alpha":1},
 		},
@@ -336,6 +358,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeFull",
 		LinkableBy: [...KDTapeLink],
 		disassembleAs: "MysticDuctTapeRaw",
+		sfxGroup: "Rubber",
 		renderWhenLinked: [...KDTapeRender],
 		quickBindCondition: "TapeGag",
 		Filters: {
@@ -346,6 +369,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeHeavyArmsFull",
 		addTag: ["HandsBehind"],
 		disassembleAs: "MysticDuctTapeRaw",
+		sfxGroup: "Rubber",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":1,"saturation":1,"contrast":1.2666666666666668,"brightness":0.6666666666666666,"red":1,"green":1.6833333333333333,"blue":0.6666666666666666,"alpha":1},
@@ -355,6 +379,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeHeavyBottomFull",
 		maxwill: 0.3,
 		disassembleAs: "MysticDuctTapeRaw",
+		sfxGroup: "Rubber",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":1,"saturation":1,"contrast":1.2666666666666668,"brightness":0.6666666666666666,"red":1,"green":1.6833333333333333,"blue":0.6666666666666666,"alpha":1},
@@ -364,6 +389,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeHeavyAnkles",
 		maxwill: 0.1,
 		disassembleAs: "MysticDuctTapeRaw",
+		sfxGroup: "Rubber",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":1,"saturation":1,"contrast":1.2666666666666668,"brightness":0.6666666666666666,"red":1,"green":1.6833333333333333,"blue":0.6666666666666666,"alpha":1},
@@ -373,6 +399,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeHeavyBoots",
 		maxwill: 0.05,
 		disassembleAs: "MysticDuctTapeRaw",
+		sfxGroup: "Rubber",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":1,"saturation":1,"contrast":1.2666666666666668,"brightness":0.6666666666666666,"red":1,"green":1.6833333333333333,"blue":0.6666666666666666,"alpha":1},
@@ -384,6 +411,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		},
 		Model: "TapeHeavyHands",
 		disassembleAs: "MysticDuctTapeRaw",
+		sfxGroup: "Rubber",
 		bindhands: 0.9, power: 3, weight: 0, escapeChance: {"Struggle": 0.05, "Cut": 0.5, "Remove": 0},
 		strictness: 0.05, strictnessZones: ["ItemHands"], failSuffix: {"Remove": "Tape"},
 		maxwill: 0.6, enemyTags: {"mummyRestraints":100}, playerTags: {"ItemHandsFull": -4}, minLevel: 0, allFloors: true, shrine: ["MysticDuctTape", "Charms", "Wrapping", "Will"]},
@@ -413,6 +441,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{inventory: true, name: "AutoTapeHands", unlimited: true, inaccessible: true, Asset: "DuctTape", Color: "#6E9FA3", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemHands",
 		Model: "TapeHeavyHands",
 		disassembleAs: "AutoTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":0.8333333333333333,"saturation":0.9833333333333333,"contrast":1.4166666666666665,"brightness":0.7833333333333334,"red":1,"green":1.4333333333333333,"blue":3.216666666666667,"alpha":1},
 		},
@@ -423,6 +452,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeStrappedArms",
 		addTag: ["HandsBehind"],
 		disassembleAs: "AutoTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":0.8333333333333333,"saturation":0.9833333333333333,"contrast":1.4166666666666665,"brightness":0.7833333333333334,"red":1,"green":1.4333333333333333,"blue":3.216666666666667,"alpha":1},
 		},
@@ -438,6 +468,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "AutoTapeBoots", unlimited: true, accessible: true, Asset: "ToeTape", Type: "Full", Color: "#6E9FA3", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemBoots", blockfeet: true, addTag: ["FeetLinked"],power: 5, weight: 0, escapeChance: {"Struggle": 0.1, "Cut": 0.2, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeMedBoots",
 		disassembleAs: "AutoTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":0.8333333333333333,"saturation":0.9833333333333333,"contrast":1.4166666666666665,"brightness":0.7833333333333334,"red":1,"green":1.4333333333333333,"blue":3.216666666666667,"alpha":1},
 		},
@@ -445,6 +476,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "AutoTapeLegs", unlimited: true, accessible: true, Type: "MostLegs", Asset: "DuctTape", Color: "#6E9FA3", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemLegs", hobble: 1, addTag: ["FeetLinked"], power: 5, weight: 0, escapeChance: {"Struggle": 0.1, "Cut": 0.2, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeMedLegs",
 		disassembleAs: "AutoTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":0.8333333333333333,"saturation":0.9833333333333333,"contrast":1.4166666666666665,"brightness":0.7833333333333334,"red":1,"green":1.4333333333333333,"blue":3.216666666666667,"alpha":1},
 		},
@@ -452,6 +484,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "AutoTapeHead", unlimited: true, inaccessible: true, Type: "Wrap", Asset: "DuctTape", Color: "#6E9FA3", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemHead", power: 5, blindfold: 4, weight: 0, escapeChance: {"Struggle": 0.1, "Cut": 0.2, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "BlindfoldTape",
 		disassembleAs: "AutoTapeRaw",
+		sfxGroup: "Rubber",
 		quickBindCondition: "TapeBlindfold",
 		Filters: {
 			Tape: {"gamma":0.8333333333333333,"saturation":0.9833333333333333,"contrast":1.4166666666666665,"brightness":0.7833333333333334,"red":1,"green":1.4333333333333333,"blue":3.216666666666667,"alpha":1},
@@ -460,6 +493,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "AutoTapeMouth", unlimited: true, accessible: true, Asset: "DuctTape", Type: "Double", Color: "#6E9FA3", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemMouth", AssetGroup: "ItemMouth2", gag: 0.5, power: 5, weight: 0, escapeChance: {"Struggle": 0.1, "Cut": 0.2, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeWrapOver",
 		disassembleAs: "AutoTapeRaw",
+		sfxGroup: "Rubber",
 		quickBindCondition: "TapeGag",
 		Filters: {
 			Tape: {"gamma":0.8333333333333333,"saturation":0.9833333333333333,"contrast":1.4166666666666665,"brightness":0.7833333333333334,"red":1,"green":1.4333333333333333,"blue":3.216666666666667,"alpha":1},
@@ -469,6 +503,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		escapeChance: {"Struggle": 0.0, "Cut": 0.2, "Remove": -.1}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeFullOver",
 		disassembleAs: "AutoTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":0.8333333333333333,"saturation":0.9833333333333333,"contrast":1.4166666666666665,"brightness":0.7833333333333334,"red":1,"green":1.4333333333333333,"blue":3.216666666666667,"alpha":1},
 		},
@@ -483,6 +518,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		escapeChance: {"Struggle": -0.5, "Cut": -0.5, "Remove": 0.33, "Pick": -0.15},
 		unlimited: true,
 		tightType: "Secure",
+		sfxGroup: "Rubber",
 		maxwill: 0.25, enemyTags: {"livingCollar":10}, playerTags: {"ItemNeckFull":-2}, minLevel: 0, allFloors: true, shrine: ["VinylTape", "Collars","Tape"],
 		events: [{trigger: "tick", type: "livingRestraints", tags: ["vinylTape"], cloneTags: [], inheritLinked: true, frequencyMax: 60, frequencyMin: 10, frequencyStep: 0.8, count: 4}]
 	},
@@ -498,6 +534,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{inventory: true, name: "VinylTapeHands", unlimited: true, inaccessible: true, Asset: "DuctTape", Color: "#6E9FA3", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemHands",
 		Model: "TapeHeavyHands",
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":0.21666666666666667,"saturation":1,"contrast":1.0166666666666666,"brightness":1.6833333333333333,"red":1,"green":1,"blue":1,"alpha":1},
 		},
@@ -511,6 +548,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeStrappedArms",
 		addTag: ["HandsBehind"],
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":0.21666666666666667,"saturation":1,"contrast":1.0166666666666666,"brightness":1.6833333333333333,"red":1,"green":1,"blue":1,"alpha":1},
 		},
@@ -528,10 +566,12 @@ const KinkyDungeonRestraints: restraint[] = [
 			Tape: {color: "Highlight", override: false},
 		},
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		enemyTags: {"vinylTape":10}, playerTags: {"ItemLegsFull":8}, minLevel: 0, allFloors: true, shrine: ["VinylTape", "Tape", "Latex"]},
 	{removePrison: true, name: "VinylTapeBoots", unlimited: true, accessible: true, Asset: "ToeTape", Type: "Full", Color: "#6E9FA3", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemBoots", blockfeet: true, addTag: ["FeetLinked"],power: 5, weight: 0, escapeChance: {"Struggle": 0.1, "Cut": 0.2, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeMedBoots",
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":0.21666666666666667,"saturation":1,"contrast":1.0166666666666666,"brightness":1.6833333333333333,"red":1,"green":1,"blue":1,"alpha":1},
 		},
@@ -542,6 +582,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "VinylTapeLegs", unlimited: true, accessible: true, Type: "MostLegs", Asset: "DuctTape", Color: "#6E9FA3", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemLegs", hobble: 1, addTag: ["FeetLinked"], power: 5, weight: 0, escapeChance: {"Struggle": 0.1, "Cut": 0.2, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeMedLegs",
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":0.21666666666666667,"saturation":1,"contrast":1.0166666666666666,"brightness":1.6833333333333333,"red":1,"green":1,"blue":1,"alpha":1},
 		},
@@ -552,6 +593,7 @@ const KinkyDungeonRestraints: restraint[] = [
 	{removePrison: true, name: "VinylTapeHead", unlimited: true, inaccessible: true, Type: "Wrap", Asset: "DuctTape", Color: "#6E9FA3", LinkableBy: [...KDTapeLink], renderWhenLinked: [...KDTapeRender], Group: "ItemHead", power: 5, blindfold: 4, weight: 0, escapeChance: {"Struggle": 0.1, "Cut": 0.2, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "BlindfoldTape",
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		quickBindCondition: "TapeBlindfold",
 		Filters: {
 			Tape: {"gamma":0.21666666666666667,"saturation":1,"contrast":1.0166666666666666,"brightness":1.6833333333333333,"red":1,"green":1,"blue":1,"alpha":1},
@@ -564,6 +606,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		escapeChance: {"Struggle": 0.1, "Cut": 0.2, "Remove": 0}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeWrapOver",
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		quickBindCondition: "TapeGag",
 		Filters: {
 			Tape: {"gamma":0.21666666666666667,"saturation":1,"contrast":1.0166666666666666,"brightness":1.6833333333333333,"red":1,"green":1,"blue":1,"alpha":1},
@@ -576,6 +619,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		escapeChance: {"Struggle": 0.0, "Cut": 0.2, "Remove": -.1}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeFullOver",
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		Filters: {
 			Tape: {"gamma":0.21666666666666667,"saturation":1,"contrast":1.0166666666666666,"brightness":1.6833333333333333,"red":1,"green":1,"blue":1,"alpha":1},
 		},
@@ -589,6 +633,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		escapeChance: {"Struggle": 0.0, "Cut": 0.2, "Remove": -.1}, failSuffix: {"Remove": "Tape"},
 		Model: "TapeFace",
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":0.21666666666666667,"saturation":1,"contrast":1.0166666666666666,"brightness":1.6833333333333333,"red":1,"green":1,"blue":1,"alpha":1},
@@ -601,6 +646,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		remove: ["Cloth", "ClothLower", "Tops"],
 		addTag: ["HandsBehind"],
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		disassembleCount: 2,
 		Asset: "VinylTape", Color: "#AA2222", Group: "ItemArms", bindarms: true, power: 2, weight: 0,
 		escapeChance: {"Struggle": 0.0, "Cut": 0.2, "Remove": -.1}, failSuffix: {"Remove": "Tape"},
@@ -618,6 +664,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeHeavyBottomFull",
 		maxwill: 0.3,
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":0.21666666666666667,"saturation":1,"contrast":1.0166666666666666,"brightness":1.6833333333333333,"red":1,"green":1,"blue":1,"alpha":1},
@@ -631,6 +678,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		Model: "TapeHeavyAnkles",
 		maxwill: 0.1,
 		disassembleAs: "VinylTapeRaw",
+		sfxGroup: "Rubber",
 		disassembleCount: 2,
 		Filters: {
 			Tape: {"gamma":0.21666666666666667,"saturation":1,"contrast":1.0166666666666666,"brightness":1.6833333333333333,"red":1,"green":1,"blue":1,"alpha":1},

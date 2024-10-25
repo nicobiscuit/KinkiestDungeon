@@ -7015,6 +7015,10 @@ let KDDomThresh_Strict = -0.4;
 let KDDomThresh_Variance = 0.15; // random variance
 let KDDomThresh_PerkMod = -0.5;
 
+function KDSetDomVariance(enemy: entity) {
+	if (enemy.domVariance == undefined) enemy.domVariance = (KDEnemyPersonalities[enemy.personality]?.domVariance || KDDomThresh_Variance) * (2 * KDRandom() - 1);
+}
+
 /**
  * @param enemy - the enemy to check if the player can domme
  * @param ignoreRelative - ignore the relative determinants
@@ -7031,9 +7035,7 @@ function KDCanDom(enemy: entity, ignoreRelative: boolean = false): boolean {
 	if (!ignoreRelative) {
 		if (KinkyDungeonIsArmsBound(false, true) || KinkyDungeonIsHandsBound(false, true, 0.1) || KinkyDungeonGagTotal() > 0.1) return false;
 	}
-	// Very bad pseudo RNG based on enemy.id as seed
-	// TODO replace with better prng with variable seed
-	if (enemy.domVariance == undefined) enemy.domVariance = (KDEnemyPersonalities[enemy.personality]?.domVariance || KDDomThresh_Variance) * (2 * KDRandom() - 1);
+	KDSetDomVariance(enemy);
 	let modifier = (KinkyDungeonGoddessRep.Ghost + 50)/100 + enemy.domVariance;
 	if (!ignoreRelative) {
 		if (KinkyDungeonStatsChoice.get("Dominant")) modifier += KDDomThresh_PerkMod;
@@ -9176,4 +9178,19 @@ function KDCanApplyBondage(target: entity, player: entity, extraCondition: (t: e
 function KDWillingBondage(target: entity, player: entity): boolean {
 	return (KDIsDistracted(target) && KDLoosePersonalities.includes(target.personality))
 		|| (player?.player && (target.playWithPlayer && KDCanDom(target)));
+}
+
+
+function KDIsSubmissive(entity: entity, threshold: number = 0.5): boolean {
+	if (!entity.player) {
+		KDSetDomVariance(entity);
+		let submissiveness = (-entity.domVariance || 0) + KDEntityBuffedStat(entity, "submissiveness");
+		if (entity.personality && KDEnemyPersonalities[entity.personality]?.submissiveness)
+			submissiveness += KDEnemyPersonalities[entity.personality].submissiveness;
+
+		return submissiveness > threshold;
+	} else {
+		return KDIsSubmissiveEnough();
+	}
+	return false;
 }

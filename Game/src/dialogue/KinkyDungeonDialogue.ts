@@ -2447,8 +2447,8 @@ function DialogueBringSpecific(x: number, y: number, enemy: entity): entity {
  * Returns if you are submissive enough to be played with by this enemy
  * @param enemy
  */
-function KDIsSubmissiveEnough(_enemy: entity): boolean {
-	let diff = KDPersonalitySpread(20, -20, -51);
+function KDIsSubmissiveEnough(_enemy?: entity): boolean {
+	let diff = KDPersonalitySpread(20, -20, -51, _enemy);
 	if (KinkyDungeonGoddessRep.Ghost >= diff) return true;
 	return false;
 }
