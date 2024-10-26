@@ -34,7 +34,7 @@ TODO Add Cuddle play type
 5.3.50
 - More sound effects
 - Giving Good Girl Gifts to NPCs will now temporarily increase their submissiveness
--
+- Field of Frost has been split into progressively bigger upcasts.
 
 5.3.49
 - Cursed item offer from enemies now includes a real curse

@@ -31,7 +31,7 @@ RestartNeededRU,"Restart required!"
 
 KDVersion,"Version"
 KinkyDungeon,"Kinky Dungeon"
-KDVersionStr,"5.3.49"
+KDVersionStr,"5.3.50"
 KDLogo2,"By Ada18980"
 Intro,"You are an adventurer descending into an ancient underground city of magic."
 Intro2,"Beneath its depths lies the Mistress' Staff, an artifact of untold power."
@@ -6041,8 +6041,16 @@ KinkyDungeonSpellTargetRainstorm,Choose target AoE location
 
 KinkyDungeonSpellSleet,Field of Frost
 KinkyDungeonSpellDescriptionSleet,Freezes a 5x5 area (ice slows entities). Enemies in the area take DamageDealt damage per turn for LifeTime turns.
-KinkyDungeonSpellCastSleet,You stomp your foot and call forth the storm!
+KinkyDungeonSpellCastSleet,You stomp your foot and call forth the blizzard!
 KinkyDungeonSpellTargetSleet,Choose target AoE location (5x5)
+KinkyDungeonSpellZoneOfFrost,Zone of Frost
+KinkyDungeonSpellDescriptionZoneOfFrost,Freezes a 3x3 area (ice slows entities). Enemies in the area take DamageDealt damage per turn for LifeTime turns.
+KinkyDungeonSpellCastZoneOfFrost,You sweep your foot and call forth the storm!
+KinkyDungeonSpellTargetZoneOfFrost,Choose target AoE location (3x3)
+KinkyDungeonSpellColdFeet,Cold Feet
+KinkyDungeonSpellDescriptionColdFeet,Freezes a single tile (ice slows entities). Any enemy standing on the tile takes take DamageDealt damage per turn for LifeTime turns.
+KinkyDungeonSpellCastColdFeet,You tap your foot and call forth the frost!
+KinkyDungeonSpellTargetColdFeet,Choose target location (1x1)
 
 KinkyDungeonSpellHeal,Healing Light
 KinkyDungeonSpellDescriptionHeal,Channel to heal 15 hitpoints per turn to summoned allies within a 5x5 area.
@@ -12272,7 +12280,7 @@ rBlacksmithShopAttack,"(The SPEAKER drops her hammer and cracks her knuckles)|Pu
 rBlacksmithShop_AlreadyHave,"(The SPEAKER looks at you.)|But you already have one?"
 rBlacksmithShop_NoMoney,"(The SPEAKER folds her arms)|I don't do charity, ma'am."
 rBlacksmithShopRedKey,"(The SPEAKER smirks)|Another adventurer found this lying around.|I wonder who it's for~"
-rBlacksmithShopLockpick,"(The SPEAKER smiles)|Now don't be up to no good~|Or else I'll have to put you in cuffs..."
+rBlacksmithShopPick,"(The SPEAKER smiles)|Now don't be up to no good~|Or else I'll have to put you in cuffs..."
 rBlacksmithShopSword,"(The SPEAKER nods)|A versatile weapon. One of my favorites."
 rBlacksmithShopSpear,"(The SPEAKER nods)|Keep your friends close, and your enemies far away."
 rBlacksmithShopKnife,"(The SPEAKER nods)|Handy to have one of these around."
@@ -24343,7 +24351,7 @@ KinkyDungeonBuffTaunted,"Defeat all taunting enemies or stay within the tiles to
 KinkyDungeonSpellTaunt,Degradating Taunts
 KDTauntPunishment,You failed to come up with a proper comeback!
 
-KDSleetDmg,The field of frost damages you as you are chilled!
+KDSleetDmg,The zone of frost damages you as you are chilled!
 KDNavMapConfirm,Confirm Path
 
 

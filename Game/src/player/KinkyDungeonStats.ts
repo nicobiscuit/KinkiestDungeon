@@ -1413,7 +1413,7 @@ function KinkyDungeonUpdateStats(delta: number): void {
 	KinkyDungeonDifficulty = KinkyDungeonNewGame * 20;
 	//if (KinkyDungeonStatsChoice.get("hardMode")) KinkyDungeonDifficulty += 10;
 	KinkyDungeonTeaseLevel = Math.max(KinkyDungeonTeaseLevel * (1 - KinkyDungeonChastityMult()) + (delta > 0 ? KinkyDungeonTeaseLevelBypass : 0), 0);
-	if (delta > 0) {
+	if (delta > 0 && KinkyDungeonTeaseLevel) {
 		KDDistractionFlashLastTime = CommonTime();
 		KDDistractionFlashStrength = Math.max(KinkyDungeonTeaseLevel, KDDistractionFlashStrength);
 	}
