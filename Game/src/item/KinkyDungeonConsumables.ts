@@ -166,7 +166,7 @@ function KinkyDungeonConsumableEffect(Consumable: consumable, type?: string) {
 	if (!type) type = Consumable.type;
 
 	if (KDConsumableEffects[type]) {
-		KDConsumableEffects[type](Consumable);
+		KDConsumableEffects[type](Consumable, KDPlayer());
 	} else if (type == "spell") {
 		KinkyDungeonCastSpell(KinkyDungeonPlayerEntity.x, KinkyDungeonPlayerEntity.y, KinkyDungeonFindSpell(Consumable.spell, true), undefined, undefined, undefined);
 		KDStunTurns(1, true);
@@ -196,6 +196,16 @@ function KinkyDungeonConsumableEffect(Consumable: consumable, type?: string) {
 		}
 	}
 }
+
+function KinkyDungeonConsumableEffectNPC(Consumable: consumable, entity: entity, type?: string) {
+	if (!type) type = Consumable.type;
+
+	if (KDConsumableEffects[type]) {
+		KDConsumableEffects[type](Consumable, entity);
+	}
+}
+
+
 
 function KinkyDungeonPotionCollar() {
 	for (let r of KinkyDungeonAllRestraint()) {

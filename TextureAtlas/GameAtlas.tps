@@ -259,6 +259,8 @@
             <key type="filename">../Game/Bullets/ClericBeamBeamTrail.png</key>
             <key type="filename">../Game/Bullets/ClericBeamBeamTrailHit.png</key>
             <key type="filename">../Game/Bullets/ClericBeamHit.png</key>
+            <key type="filename">../Game/Bullets/ColdFeet.png</key>
+            <key type="filename">../Game/Bullets/ColdFeetHit.png</key>
             <key type="filename">../Game/Bullets/Corona.png</key>
             <key type="filename">../Game/Bullets/CoronaBeam.png</key>
             <key type="filename">../Game/Bullets/CoronaBeamHit.png</key>
@@ -2355,6 +2357,7 @@
             <key type="filename">../Game/Spells/Charge.png</key>
             <key type="filename">../Game/Spells/Chastity.png</key>
             <key type="filename">../Game/Spells/Coalesce.png</key>
+            <key type="filename">../Game/Spells/ColdFeet.png</key>
             <key type="filename">../Game/Spells/CommandBind.png</key>
             <key type="filename">../Game/Spells/CommandCapture.png</key>
             <key type="filename">../Game/Spells/CommandDisenchant.png</key>
@@ -2534,6 +2537,7 @@
             <key type="filename">../Game/Spells/WindBlast.png</key>
             <key type="filename">../Game/Spells/ZeroResistance.png</key>
             <key type="filename">../Game/Spells/ZoneOfExcitement.png</key>
+            <key type="filename">../Game/Spells/ZoneOfFrost.png</key>
             <key type="filename">../Game/Spells/ZoneOfPurity.png</key>
             <key type="filename">../Game/Sprint.png</key>
             <key type="filename">../Game/Target.png</key>
@@ -3304,6 +3308,8 @@
             <key type="filename">../Game/Bullets/RainstormHit.png</key>
             <key type="filename">../Game/Bullets/TrapShadowLatex.png</key>
             <key type="filename">../Game/Bullets/TrapShadowLatexHit.png</key>
+            <key type="filename">../Game/Bullets/ZoneOfFrost.png</key>
+            <key type="filename">../Game/Bullets/ZoneOfFrostHit.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0,0</point_f>

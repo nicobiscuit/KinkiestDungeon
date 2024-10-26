@@ -6,6 +6,7 @@ let RenderCharacterLock = new Map();
 
 let KDFilterCacheToDestroy: PIXIFilter[] = [];
 let KDRenderTexToDestroy: PIXITexture[] = [];
+let KDMeshToDestroy: PIXIMesh[] = [];
 let KDSpritesToCull: PIXISprite[] = [];
 
 let KDCulling = true;
@@ -400,7 +401,8 @@ function DrawCharacter(C: Character, X: number, Y: number, Zoom: number, IsHeigh
 		// Refresh the container!
 		DrawCanvas.removeChild(MC.Containers.get(containerID).Mesh);
 		MC.Containers.get(containerID).Container.destroy();
-		MC.Containers.get(containerID).Mesh.destroy();
+		//MC.Containers.get(containerID).Mesh.destroy();
+		KDMeshToDestroy.push(MC.Containers.get(containerID).Mesh);
 		KDRenderTexToDestroy.push(MC.Containers.get(containerID).RenderTexture);
 		MC.Containers.delete(containerID);
 		MC.ContainersDrawn.delete(containerID);

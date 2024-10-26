@@ -1299,6 +1299,12 @@ let KDInventoryAction: Record<string, KDInventoryActionDef> = {
 						KinkyDungeonChangeFactionRep(faction2, 0.01 * KDConsumable(item)?.wp_instant);
 					}
 
+					if (KDConsumable(item)?.sideEffects) {
+						for (let effect of KDConsumable(item).sideEffects) {
+							KinkyDungeonConsumableEffectNPC(KDConsumable(item), enemy, effect);
+						}
+					}
+
 					KinkyDungeonSendTextMessage(10,
 						TextGet("KDGiveFood")
 							.replace("RSTR", KDGetItemName(item))//TextGet("Restraint" + KDRestraint(item)?.name))

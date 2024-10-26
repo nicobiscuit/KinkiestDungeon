@@ -1178,6 +1178,7 @@ let KinkyDungeonSpellSpecials: Record<string, KDSpellSpecialCode> = {
 
 			let bondage = en.specialBoundLevel;
 			let mult = 4;
+			let repgain = en.boundLevel > 0;
 			if (bondage)
 				for (let b of Object.entries(bondage)) {
 					if (KDSpecialBondage[b[0]]?.latex) {
@@ -1187,14 +1188,16 @@ let KinkyDungeonSpellSpecials: Record<string, KDSpellSpecialCode> = {
 							delete bondage[b[0]];
 					}
 				}
-
+			if ((KDRescueEnemy("Slime", en, true) || repgain) && !KDHelpless(en)) {
+				KDRescueRepGain(en);
+			}
 			KinkyDungeonSendActionMessage(3, TextGet("KDUniversalSolventSucceedEnemy")
 				.replace("ENMY", KDGenEnemyName(en)),
 			"#88FFAA", 2 + (spell.channel ? spell.channel - 1 : 0));
 
 
 			return "Cast";
-		} else if (en.player) {
+		} else if (en?.player) {
 			let dmg = KinkyDungeonDealDamage({damage: spell.power, type: spell.damage}, bullet);
 
 			KDAddSpecialStat("LatexIntegration", KDPlayer(), -25, true);
@@ -1672,11 +1675,12 @@ let KinkyDungeonSpellSpecials: Record<string, KDSpellSpecialCode> = {
 		if (enList.length > 0) {
 			count += enList.length;
 			for (let en of enList) {
+				let repgain = false;
 				if (en.boundLevel) {
+					repgain = true;
 					en.boundLevel = Math.max(0, en.boundLevel - 5);
 				}
-				KDRescueEnemy("Slime", en, true);
-				if (!KDHelpless(en)) {
+				if ((KDRescueEnemy("Slime", en, true) || repgain) && !KDHelpless(en)) {
 					KDRescueRepGain(en);
 				}
 				KinkyDungeonRemoveBuffsWithTag(en, ["encased", "slimed"]);
@@ -1734,13 +1738,15 @@ let KinkyDungeonSpellSpecials: Record<string, KDSpellSpecialCode> = {
 		if (enList.length > 0) {
 			count += enList.length;
 			for (let en of enList) {
+				let repgain = false;
 				if (en.boundLevel) {
+					repgain = true;
 					en.boundLevel = Math.max(0, en.boundLevel - spell.power);
 
 				}
 
-				KDRescueEnemy("Remove", en, true);
-				if (!KDHelpless(en)) {
+
+				if ((KDRescueEnemy("Remove", en, true) || repgain) && !KDHelpless(en)) {
 					KDRescueRepGain(en);
 				}
 			}

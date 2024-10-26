@@ -19,6 +19,7 @@ let KDEnemyPersonalities = {
 		strict: false,
 		brat: false,
 		domVariance: 0.4,
+		submissiveness: 0.25,
 		tags: {
 			"robot": -100,
 			"switch": 10,
@@ -30,6 +31,7 @@ let KDEnemyPersonalities = {
 		loose: false,
 		strict: false,
 		brat: false,
+		submissiveness: 0.25,
 		tags: {
 			"robot": 200,
 			"cyborg": -200,
@@ -40,6 +42,7 @@ let KDEnemyPersonalities = {
 		loose: false,
 		strict: false,
 		brat: false,
+		submissiveness: 0.0,
 		tags: {
 			"nobrain": 200,
 		},
@@ -48,6 +51,7 @@ let KDEnemyPersonalities = {
 		loose: false,
 		strict: true,
 		brat: false,
+		submissiveness: 0,
 		tags: {
 			"minor": -3,
 			"alchemist": 2,
@@ -65,6 +69,7 @@ let KDEnemyPersonalities = {
 		loose: true,
 		strict: false,
 		brat: false,
+		submissiveness: 1.0,
 		tags: {
 			"minor": 3,
 			"human": 1,
@@ -83,6 +88,8 @@ let KDEnemyPersonalities = {
 		strict: false,
 		brat: true,
 		domMod: 0.7,
+		domVariance: 0.2,
+		submissiveness: 0.75,
 		tags: {
 			"minor": 3,
 			"brat": 10,
