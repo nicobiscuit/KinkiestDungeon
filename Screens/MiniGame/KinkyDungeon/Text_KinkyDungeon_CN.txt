@@ -2960,7 +2960,8 @@ Deals unarmed damage.
 造成徒手伤害。
 Sword
 剑
-### the steel is strong, and the blade true.
+the steel is strong, and the blade true.
+钢坚刃利
 
 A fast and accurate weapon that deals slash damage.
 一种快速而精准的武器，可造成斩击伤害。
@@ -3366,10 +3367,10 @@ Storm Crystal
 风暴水晶
 The storm crystal shatters into many crackling pieces.
 风暴水晶破碎成许多噼啪作响的碎片。
-### Fire Mote
-
-### The fire mote is extinguished.
-
+Fire Mote
+火尘
+The fire mote is extinguished.
+火尘渐熄
 ### Air Mote
 
 ### The air mote returns to dust.
@@ -4913,9 +4914,10 @@ The water witch vanishes into a pile of ash.
 水之女巫消失在一堆灰烬中。
 
 
-### Aqua Witch
-
-### The aqua witch vanishes into a pile of ash.
+Aqua Witch
+水之女巫
+The aqua witch vanishes into a pile of ash.
+水之女巫化为一堆灰烬消失了。
 
 Ice Witch
 冰之女巫
@@ -7109,10 +7111,10 @@ Comes in convenient cartridges for machine loading.
 A specialized tape used for capturing purposes during the time of the Old Civilization. Despite its appearance, it contains a gas-permeable membrane that allows ventilation, while its hydrophobic properties resist solvents that would otherwise disrupt the adhesive bond. The adhesive layer is special in that it activates only in contact with other auto-tape, making it safer to use and remove.
 旧文明时期用于捕捉目的的专用胶带。尽管它的外观与普通胶带不同，但它含有一层透气膜，可以透气，同时它的疏水特性可以抵御溶剂，否则溶剂会破坏粘合剂的粘合。粘合层的特殊之处在于，它只有在与其他自动胶带接触时才会激活，因此使用和清除起来都更安全。
 
-### Rubberized Tape
+Rubberized Tape
 橡胶胶带
 
-### Magic Charms
+Magic Charms
 魔法符咒
 Magical charms from the ancient graveyard.
 来自古老墓地的魔法符咒。
@@ -8320,10 +8322,10 @@ It will occasionally cause slime to appear out of nowhere and bind the wearer.  
 它偶尔会使得黏液突然出现并束缚佩戴者。效果增加的速度取决于你身上的黏液量。
 
 
-### Made from hardened slime.
-
-### The classic smooth, shiny material for full encasement.
-
+Made from hardened slime.
+由硬化的粘液制成。
+The classic smooth, shiny material for full encasement.
+经典的光滑闪亮材料，可实现全面包裹。
 ### A semi-organic substance of alchemical origin.
 
 ### It has a mind of its own, and tends to spread if not properly contained.
@@ -9075,11 +9077,11 @@ A book of manipulative spells
 
 
 Verbal
-口头
+言语
 
 
-### Components: 
-
+Components: 
+释放部位
 Arm Movements
 手臂动作
 Leg Gestures
@@ -9290,8 +9292,8 @@ Defeating a non-humanoid enemy causes vines to sprout on their space temporarily
 
 Battle Rhythm
 战斗节拍
-### Stores 10% of the stamina cost of attacks as Rhythm, up to a total of 40. While you have over 10 Rhythm, you gain +10 Block and Evasion. Enemy base accuracy against you is decreased by a % equal to your Rhythm. If an attack misses or is blocked because of this, reduce Rhythm by 25% of the enemy attack power. Decays when not attacking.
-
+Stores 10% of the stamina cost of attacks as Rhythm, up to a total of 40. While you have over 10 Rhythm, you gain +10 Block and Evasion. Enemy base accuracy against you is decreased by a % equal to your Rhythm. If an attack misses or is blocked because of this, reduce Rhythm by 25% of the enemy attack power. Decays when not attacking.
+将攻击消耗的体力的 10%储存为节拍，最多储存 40 个节拍。当你的节拍超过 10 时，你会获得 +10 格挡和闪避。此外。敌人对你的基本准确度会降低，降低的百分比等于你的节拍。如果攻击因此而未命中或被阻挡，将消耗数值为敌人攻击力的 25% 的节拍值。不攻击时节拍 衰减。
 Limit Surge
 限制浪涌
 Spend 50 WP to fully restore Stamina, also stamina gain is increased by 30% for 20 turns. If your Willpower ends up 0 because of this, you are stunned for 2 turns.
@@ -9353,9 +9355,9 @@ Calling upon chaotic energies, your willpower is assaulted in exchange for power
 
 
 Way of Pleasure
-快乐之道
-### You have chosen the path of absolute pleasure. After letting go of yourself, you restore 50 mana, which can refill the mana pool if you have spare willpower. Blocks Way of Discipline.
-
+愉悦之路
+You have chosen the path of absolute pleasure. After letting go of yourself, you restore 50 mana, which can refill the mana pool if you have spare willpower. Blocks Way of Discipline.
+你选择了极乐之路。高潮后，你将恢复 50 法力、如果你有多余的意志力，还能重新填满法力池。无法选择 “戒律之路”。
 Intense Power
 强劲动力
 After letting go of yourself, you feel an immense surge of power, increasing magic damage by 40% for 8 turns after you regain control, and by 10% while you remain satisfied.
@@ -9383,9 +9385,9 @@ Mental Resistance: You are allowing yourself to let go if forced to. Click to to
 
 
 Way of Discipline
-纪律之道
+戒律之路
 You have chosen the path of absolute discipline. Being in an Edged state increases passive mana recovery and you regenerate 0.5 mana per turn, restoring the same amount to the Mana Pool if you have willpower to spare. Blocks Way of Pleasure.
-你选择了绝对纪律的道路。处于即将高潮的边缘时会增加被动魔力恢复，并且每回合可再生 0.5 魔力，如果你有多余的意志力，则可以将相同数量的魔力恢复到魔力池中。阻碍快乐之路。
+你选择了克己之路。处于即将高潮的边缘时会增加被动魔力恢复，并且每回合可再生 0.5 魔力，如果你有多余的意志力，则可以将相同数量的魔力恢复到魔力池中。无法选择 “愉悦之路”。
 
 
 Way of Denial
@@ -11882,10 +11884,12 @@ Learn Spell
 Spell Points:
 技能点
 
-### Level:
-### Spell Point Cost:
+Level:
+等级：
+Spell Point Cost:
+技能点花费：
 Mana Cost:
-魔力花费
+魔力花费：
 
 
 Remove Spell 1
@@ -11898,10 +11902,10 @@ Remove Spell 4
 移除法术 4
 Remove Spell 5
 移除法术 5
-### Remove Spell 6
-
-### Remove Spell 7
-
+Remove Spell 6
+移除法术 6
+Remove Spell 7
+移除法术 7
 Replace Spell 1
 替换法术 1
 Replace Spell 2
@@ -11912,10 +11916,10 @@ Replace Spell 4
 替换法术 4
 Replace Spell 5
 替换法术 5
-### Replace Spell 6
-
-### Replace Spell 7
-
+Replace Spell 6
+替换法术 6
+Replace Spell 7
+替换法术 7
 ### Current Spell 1: 
 
 ### Current Spell 2: 
@@ -26259,14 +26263,10 @@ Living Spellbound Rope Collar
 活体符咒绳项圈
 It will occasionally cause spellbound ropes to appear out of nowhere and bind the wearer.  Effect increases in speed based on the number of ropes you have on you.
 它偶尔会使得符咒绳索突然出现并将佩戴者捆绑起来。速度的效果增加取决于你身上的符咒绳索数量。
-
-
-
-
-### A novice-level enchanted rope, relatively trivial to untie but resistant to mundane tools.
-
-### Faintly glows with traces of devious thoughts.
-
+A novice-level enchanted rope, relatively trivial to untie but resistant to mundane tools.
+新手级别的附魔绳索，解绳比较简单，但对普通工具有抵抗力。
+Faintly glows with traces of devious thoughts.
+微弱的光芒闪烁着狡猾的思想痕迹。
 Magic Boxtie
 后手缚 ( 附魔 )
 They glow with a trace of magic.
@@ -26311,10 +26311,10 @@ It will occasionally cause magic ropes to appear out of nowhere and bind the wea
 
 ### Celestial Rope
 
-### Rope that has been exposed to solar energies.
-
-### Squeezes the wearer if she tries to escape, so that she knows her place.
-
+Rope that has been exposed to solar energies.
+暴露在太阳能下的绳索。
+Squeezes the wearer if she tries to escape, so that she knows her place.
+如果佩戴者试图逃跑，它就会挤压她并让她知道自己的处境。
 Holy Boxtie
 神圣后手缚捆扎带
 A set of ropes that emit a calm, soothing aura. They magically stretch to fit your body.
@@ -26357,12 +26357,12 @@ It will occasionally cause holy ropes to appear out of nowhere and bind the wear
 
 
 
-### Mithril Rope
-
-### Rope made from silver thread, exposed to lunar energies.
-
-### Lightweight yet unyielding. Truly a high class rope.
-
+Mithril Rope
+秘银绳索
+Rope made from silver thread, exposed to lunar energies.
+用银线制成的绳索，暴露在月球能量之下。
+Lightweight yet unyielding. Truly a high class rope.
+轻巧而坚韧。真正的高级绳索。
 
 
 Mithril Boxtie
@@ -26447,11 +26447,12 @@ The liquid metal cube expands across your body and hardens, taking the form of r
 液态金属立方体在你的身体上膨胀并变硬，以束缚的形式出现！ ( +RestraintAdded )
 
 
-### Liquid Metal
-
-### Primordial latex infused with mineral form.
-
-### Heavy and weighs the wearer down.
+Liquid Metal
+液态金属
+Primordial latex infused with mineral form.
+注入矿物形态的原始乳胶。
+Heavy and weighs the wearer down.
+很重，穿戴者会觉得很累。
 
 Liquid Metal (Feet)
 液态金属 ( 脚 )
@@ -26697,10 +26698,10 @@ AMNT Distraction Per Turn
 AMNT 每回合分心
 ### AMNT AP from attacks
 
-### After attacking with a teasing weapon:
-
-### Gain AMNT% Spell Damage for DRTN turns
-
+After attacking with a teasing weapon:
+用挑逗性武器攻击后：
+Gain AMNT% Spell Damage for DRTN turns
+在 DRTN 回合内造成 AMNT% 法术伤害
 Drains mana from the wearer.
 吸取佩戴者的魔力。
 
@@ -27061,12 +27062,12 @@ It's not sophisticated enough to work on higher-quality locks, but can be used m
 它不够复杂，无法用于更高质量的锁，但可以多次使用。
 
 
-### You twirl a key around your finger.
-
-### You twirl a magic key around your finger. Careful not to lose it!
-
-### You fidget with a lockpick.
-
+You twirl a key around your finger.
+你用指尖轻转钥匙。
+You twirl a magic key around your finger. Careful not to lose it!
+你用手指旋转魔法钥匙。小心别弄掉了
+You fidget with a lockpick.
+你盘弄着开锁器
 
 
 You pick up a tool for picking disc detainer locks.
@@ -27200,7 +27201,7 @@ You don't have enough Arcane Energy. You need AMNT.
 Chaotic Overflow
 混沌溢出
 Draw upon 25% of your max Willpower to ignore spell components for Duration turns and fully restore your mana. The energy is uncontrollable, so there will be consequences...
-利用你最大意志力的 25% 在持续时间回合中忽略法术成分并完全恢复你的魔力。能量是无法控制的，所以会产生某些后果……
+汲取你最大意志力的 25% 完全恢复你的魔力并在持续时内无视施法部位要求。这股能量是难以控制的，所以会产生某些后果……
 Chaotic energy flows through you!!!
 混乱的能量流过你的身体！！！
 You try to call forth the chaotic energy, but it isn't interested in you anymore...
@@ -27271,8 +27272,8 @@ Inner power now recharges after 6 turns instead of 16.
 
 Precise Targeting
 精确定位
-### Your first critical hit on a target is 1.5x more powerful.
-
+Your first critical hit on a target is 1.5x more powerful.
+你对目标的第一次暴击威力将提高 1.5 倍。
 Surprise Bondage
 突袭束缚
 Binding from critical hits is 40% stronger
@@ -27389,9 +27390,10 @@ The latex around you dampens your attacks, reducing physical damage by 30% and l
 你周围的乳胶会限制你的攻击，减少 30% 的物理伤害并降低你的可视范围。
 
 
-### Latex Bubbl
-
-### Latex Ball
+Latex Bubbl
+乳胶气泡
+Latex Ball
+乳胶球
 
 ...Lab Assistant?
 ...实验室助理？
@@ -27485,7 +27487,8 @@ Designate an Offhand weapon to gain passive effects such as a light source, armo
 
 Equip Offhand
 装备副手
-### Remove Offhand
+Remove Offhand
+移除副手
 
 Make a ranged attack with the spear.
 用矛进行远程攻击。
@@ -27601,8 +27604,8 @@ Open the book. What can go wrong?
 打开这本书。会出现什么问题？
 
 
-### Contains a malevolent spirit that wishes only to tie up damsels. Can not critically strike.
-
+Contains a malevolent spirit that wishes only to tie up damsels. Can not critically strike.
+蕴含着只想捆绑少女的恶灵。无法暴击。
 +10% binding effectiveness. Offhand: Applies passive bonus.
 +10% 绑定效率。副手 : ‎应用被动奖励。
 You find a magical tome with a sealed padlock on it.
@@ -27631,10 +27634,10 @@ Your RestraintName shatters and falls off!
 你的 RestraintName 破碎并掉落！
 
 
-### Load Hotbar 
-
-### Save Hotbar 
-
+Load Hotbar 
+加载热键
+Save Hotbar 
+保存热键
 Clear Hotbar
 清空快捷栏
 
@@ -28622,7 +28625,7 @@ Spend 90 stamina to shield yourself from damage equal to your Block. Lasts 10 tu
 Evasive Maneuvers
 机动躲避
 While active, you evade almost all attacks, but your stamina is drained by 50 per turn plus 10 per slow level. The base stamina cost is reduced by your Evasion.
-活跃时，你可以躲避几乎所有攻击，但你的体力每回合会消耗 50 点，加上每缓慢等级 10 点。基础体力消耗会因躲避而减少。
+开启时，你可以躲避几乎所有攻击，但你的体力每回合会消耗 50 点，加上每缓慢等级 10 点。基础体力消耗会因躲避而减少。
 Break Free
 挣脱
 Consume 20 Battle Rhythm to increase escape power by +20% plus 1% of Bondage Resist. Lasts 60 turns or until your willpower reaches 0.
@@ -29099,12 +29102,12 @@ You have formed a mental barrier...
 
 Desire Burst
 欲望爆发
-### Reduce your Desire by up to 30% of max DP, and convert the amount into a powerful explosion dealing (30 + 25% max DP) charm damage to nearby enemies (200% crit multiplier). If you don't have at least 50% Desire, the damage is reduced based on the amount.||(Desire is the heart-shaped meter below your DP bar, and is gained slowly by being distracted)
-
+Reduce your Desire by up to 30% of max DP, and convert the amount into a powerful explosion dealing (30 + 25% max DP) charm damage to nearby enemies (200% crit multiplier). If you don't have at least 50% Desire, the damage is reduced based on the amount.||(Desire is the heart-shaped meter below your DP bar, and is gained slowly by being distracted)
+将你的欲望值最多减少最大 DP 的 30%，并将其转化为强大的爆炸，对附近的敌人造成（30 + 25% 最大 DP ）魅惑伤害（200% 暴击倍率）。如果你没有至少 50% 的欲望，伤害会根据数量减少。||(欲望是 DP 条下方的心形仪表，通过分心缓慢获得）。
 You channel your distraction into a powerful explosion!
 你可以将你的分心转化为强大的爆炸！
 You don't have enough of a desire to do that.
-你没有足够的意志力去做这件事。
+你没有足够的欲望去做这件事。
 You have the desire but not the mana!
 你有性欲，但没有魔力！
 
@@ -29131,8 +29134,8 @@ There is nothing to harvest.
 
 Telekinesis 101
 念动力 101
-### Unlocks telekinetic abilities. Toggle on to equip weapons while bound, but at 0% accuracy. Learn Recover Object.
-
+Unlocks telekinetic abilities. Toggle on to equip weapons while bound, but at 0% accuracy. Learn Recover Object.
+解锁念动力能力，可以在被束缚的时候切换武器，但是命中率为 0%，并习得咒术“隔空取物”
 
 
 Recover Object
@@ -29647,8 +29650,8 @@ Guest #NUMR/TTL
 
 Select a character to examine
 选择要检查的角色
-### Former Faction: 
-
+Former Faction: 
+前派别：
 Minigun
 机枪
 
@@ -29665,8 +29668,8 @@ Scholarly
 学术
 Witch's Coven
 女巫团
-### Warden
-
+Warden
+典狱长
 Curse
 诅咒
 Fungal
@@ -29719,16 +29722,16 @@ Slimy Spit
 粘糊糊的口水
 
 
-### Servants
-
+Servants
+仆人
 Prisoners
 囚犯
 
 
 Promote to Servant
 晋升为仆人
-### Demote
-
+Demote
+降职
 The ENMY tries to grab you!
 ENMY 试图抓住你！
 
@@ -31776,8 +31779,8 @@ Assign to
 分配给
 Remove from 
 移除自
-### Can't assign to 
-
+Can't assign to 
+无法指派到
 Imprison
 监禁
 
@@ -31878,10 +31881,10 @@ Need Positive Opinion to Promote
 需要更正面的评价来擢升
 
 
-### Servant Cuddle Points: AMNT (+OPN opinion/cycle)
-
-### Prisoner Cuddle Points: AMNT (+OPN opinion/cycle)
-
+Servant Cuddle Points: AMNT (+OPN opinion/cycle)
+仆人拥抱点： AMNT (+OPN 观点/周期)
+Prisoner Cuddle Points: AMNT (+OPN opinion/cycle)
+囚犯拥抱点： AMNT (+OPN 观点/周期)
 Submissive prisoners and dominant servants add different amounts of opinion per cycle
 顺从的囚犯和占主导地位的仆人每周期增加不同的好感度
 
@@ -31934,30 +31937,31 @@ idle
 闲置
 
 
-### (As you approach the statue, you hear a crumbling sound)|(The stone crumbles along the statue's slender frame)|(...revealing inside a beautiful, and extremely angry catgirl)|Who dares disturb my slumber?|I shall see to it that you receive your punishment!
+(As you approach the statue, you hear a crumbling sound)|(The stone crumbles along the statue's slender frame)|(...revealing inside a beautiful, and extremely angry catgirl)|Who dares disturb my slumber?|I shall see to it that you receive your punishment!
+（当你走近雕像时，你会听到一阵碎裂的声音）|（石头沿着雕像纤细的框架碎裂）|（......露出里面一个美丽而又极其愤怒的猫娘）|谁敢打扰我的沉睡？
+Mysterious Statue
+神秘雕像
+Select a Binding Slot
+选择一个绑定插槽
 
-### Mysterious Statue
-
-### Select a Binding Slot
-
-### Cost: 
-
+Cost: 
+花费:
 Zoom set to PCNT%
 缩放设置为 PCNT%
-### You need free arms to tie others!
-
-### You can use the quick inventory to bind yourself or others
-
-### Error. Please screenshot and report.
-
-### You can't wear that item, regrettably.
-
-### Must be stunned 3+ turns or fully bound
-
-### Depends on another item to be added first
-
-### The conjured RSTN vanishes as you remove it.
-
+You need free arms to tie others!
+你需要自由的手臂来捆绑他人！
+You can use the quick inventory to bind yourself or others
+你可以用快速清单绑住自己或他人
+Error. Please screenshot and report.
+错误。请截图并报告。
+You can't wear that item, regrettably.
+很遗憾，你不能穿戴该物品。
+Must be stunned 3+ turns or fully bound
+必须眩晕 3 个以上回合或完全捆绑
+Depends on another item to be added first
+取决于先添加另一件物品
+The conjured RSTN vanishes as you remove it.
+变出的 RSTN 会在你移除它时消失。
 No free slots to bind in
 没有空闲槽位可以绑定
 
@@ -32062,36 +32066,36 @@ Set Palette
 
 
 
-### Target must be vulnerable.
+Target must be vulnerable.
+目标必须是脆弱的。
+Target must be vulnerable or have casted a verbal spell.
+目标必须是脆弱的或已释放语言法术
+Target must have casted a verbal spell.
+目标必须已释放语言法术
 
-### Target must be vulnerable or have casted a verbal spell.
 
-### Target must have casted a verbal spell.
-
-
-
-### Diggy diggy hole
-
-### Select a cracked wall.
-
-### You strike the earth!
-
-### Must select a cracked wall.
-
-### Your arms aren't free to swing the axe!
-
-### You strike the earth, but it is nothing but solid wall on the other side.
-
-### You strike the earth! It crumbles before you!
-
-### The planar focus resonates with the teleportation magic!
-
-### The planar focusing crystal activates! Mana is drained, and turns into bindings!
-
-### The planar diffractor blocks the teleportation!
-
-### Set Character Palette
-
+Diggy diggy hole
+挖洞
+Select a cracked wall.
+选择有裂缝的墙壁。
+You strike the earth!
+你向环境发起攻击
+Must select a cracked wall.
+必须选择裂开的墙壁
+Your arms aren't free to swing the axe!
+你的手臂无法自由挥动斧头！
+You strike the earth, but it is nothing but solid wall on the other side.
+你向环境发起攻击，但另一边却是坚固的墙壁。
+You strike the earth! It crumbles before you!
+你向环境发起攻击！它在你面前崩塌
+The planar focus resonates with the teleportation magic!
+平面聚焦与传送魔法产生共鸣
+The planar focusing crystal activates! Mana is drained, and turns into bindings!
+平面聚焦水晶启动！法力耗尽，化为束缚
+The planar diffractor blocks the teleportation!
+平面衍射器阻挡了传送！
+Set Character Palette
+设置角色调色板
 Reset all Keybindings
 重置所有按键绑定
 
@@ -32100,13 +32104,14 @@ That item is blocked! You can't remove it.
 那个物品被挡住了! 你不能移除它。
 
 
-###  min.
-
-###  max.
-
-###  bonus
-
-###  penalty
+min.
+最小.
+max.
+最大.
+bonus
+倍数.
+penalty
+惩罚.
 
 You put it on, why would you want to take it off?~
 你戴上它了，干嘛要摘下来呢?~
@@ -32114,42 +32119,42 @@ You'll need an ancient key to unlock the ancient-made collar.
 你需要一把古老的钥匙来解开古老的项圈。
 
 
-### Ancient Worshipper
-
-### The ancient worshipper repents of her ways.
-
-### The ancient worshipper's crystal restraints spread to you! (+RestraintAdded)
-
-### Crystals start to grow on one of your restraints! (DamageTaken)
-
-### The ancient worshipper mumbles at you for assistance! (DamageTaken)
-
-### Ancient Congregant
-
-### The ancient congregant repents of her ways.
-
-### The ancient congregant's crystal restraints spread to you! (+RestraintAdded)
-
-### Crystals start to grow on your restraints! (DamageTaken)
-
-### The ancient congregant mumbles at you for assistance! (DamageTaken)
-
-### Ancient Hierophant
-
-### The ancient hierophant repents of her ways.
-
-### The ancient hierophant's crystal restraints spread to you! (+RestraintAdded)
-
-### The ancient hierophant mumbles at you for assistance! (DamageTaken)
-
-### The crystals break off, revealing a keyhole and weakening the item.
-
-### Your distraction causes the crystals to grow back, encasing the lock again!
-
-### After popping the gag out of your mouth, it hangs loose around your neck.
-
-### The gag is now in your mouth.
-
+Ancient Worshipper
+古代追随者
+The ancient worshipper repents of her ways.
+古代追随者对自己的行为悔恨不已。
+The ancient worshipper's crystal restraints spread to you! (+RestraintAdded)
+古代追随者的水晶束缚扩散到你身上！（+束缚已添加）
+Crystals start to grow on one of your restraints! (DamageTaken)
+水晶开始在你的一拘束具上上生长！（受到伤害）
+The ancient worshipper mumbles at you for assistance! (DamageTaken)
+古代追随者喃喃地向你求助！（受到伤害）
+Ancient Congregant
+古代教徒
+The ancient congregant repents of her ways.
+古代教徒悔悟了
+The ancient congregant's crystal restraints spread to you! (+RestraintAdded)
+古代教徒的水晶束缚扩散到你身上！（+束缚增加）
+Crystals start to grow on your restraints! (DamageTaken)
+水晶开始在你的一拘束具上上生长！（受到伤害）
+The ancient congregant mumbles at you for assistance! (DamageTaken)
+古代教徒喃喃地向你求助！（受到伤害）
+Ancient Hierophant
+古代祭司
+The ancient hierophant repents of her ways.
+古代祭司悔悟了
+The ancient hierophant's crystal restraints spread to you! (+RestraintAdded)
+古代祭司的水晶束缚扩散到你身上！（+束缚增加）
+The ancient hierophant mumbles at you for assistance! (DamageTaken)
+古代祭司喃喃地向你求助！（受到伤害）
+The crystals break off, revealing a keyhole and weakening the item.
+水晶断裂，露出一个钥匙孔，削弱了锁的强度。
+Your distraction causes the crystals to grow back, encasing the lock again!
+你的分心让水晶重新长出，再次把锁包住！
+After popping the gag out of your mouth, it hangs loose around your neck.
+从你嘴里取出塞子后，它松松垮垮地挂在你脖子上。
+The gag is now in your mouth.
+塞子现在在你嘴里。
 ERROR: Restraint does not exist. Did you forget to load mods?
 错误: 束缚具不存在。你是否忘记了加载模组？
 
@@ -32184,8 +32189,8 @@ Magical disenchantment suspends your living collar for AMNT turns
 
 Hardlight
 硬光
-### Knocked Out
-
+Knocked Out
+击倒
 ### Vine
 
 Saving...
@@ -32202,19 +32207,20 @@ ENMY unlocks the ITMN!
 ENMY 解开了 ITMN 的锁!
 ### The conjured ITMN vanishes as it comes off.
 
-### AMNT restraints added since last tick~
+AMNT restraints added since last tick~
+自上个周期以来增加了 AMNT 拘束具~
+AMNT restraints confiscated since last tick~
+自上个周期以没收的 AMNT 拘束具~
+You have no restraints in storage. Go to the Summit to deposit restraints.
+您的仓库中没有拘束具。前往巅峰设施存放约束装置。
 
-### AMNT restraints confiscated since last tick~
 
-### You have no restraints in storage. Go to the Summit to deposit restraints.
-
-
-
-### Back to Facilities
-
-### Your Inventory
-
-### Warden's Storage
+Back to Facilities
+返回设施
+Your Inventory
+你的库存
+Warden's Storage
+典狱长储藏室
 Here you will find various scraps of documents and lore you've recovered throughout your adventures.
 在这里可以翻阅你在冒险过程中找到的各种碎片化文档和传说。
 Your Journal
@@ -32552,61 +32558,60 @@ Deals heavy crush damage and knocks the target back 2 spaces. Deals bonus damage
 You pick up a heavy sledgehammer.
 你拿起重型大锤。
 
-### Store 1 ITMN
+Store 1 ITMN
+储存 1 ITMN
+Take 1 ITMN
+拿取 1 ITMN
+Store 5 ITMN
+储存 5 ITMN
+Take 5 ITMN
+拿取 5 ITMN
+Store ALL ITMN
+储存 全部 ITMN
+Take ALL ITMN
+拿取 全部 ITMN
+Store ALL-1 ITMN
+储存 全部-1 ITMN
+Take ALL-1 ITMN
+拿取 全部-1 ITMN
+Take Everything
+拿取全部
+Deposit All
+全部存入
+Auto-loot found 
+发现自动锁定
+(not picked up)
+(未拾取）
+Automatically Flip When Moving
+在移动时自动翻转
+Go to the summit to deposit restraints
+前往巅峰存放约束装置
 
-### Take 1 ITMN
 
-### Store 5 ITMN
-
-### Take 5 ITMN
-
-### Store ALL ITMN
-
-### Take ALL ITMN
-
-### Store ALL-1 ITMN
-
-### Take ALL-1 ITMN
-
-### Take Everything
-
-### Deposit All
-
-### Auto-loot found 
-
-###  (not picked up)
-
-### Automatically Flip When Moving
-
-### Go to the summit to deposit restraints
-
-
-
-### AMNTx damage when SP is over 50%
-
+AMNTx damage when SP is over 50%
+在 SP 超过50%时造成 AMNTx 伤害 
 ### Barrage of Barrier Orb
 
 ### Barrier Orb
 
 ### Barrage of Sealing Talisman
 
-### Self Unlock
-
-### Crystal Storm
-
-### Shadow Walk
-
-### Your ITMN1 inflates inside your mouth to become a ITMN2!
-
-### Bigger Ball Gags
-
-### Smaller ball gags are replaced by their larger versions.
-
+Self Unlock
+自我解锁
+Crystal Storm
+水晶风暴
+Shadow Walk
+阴影步
+Your ITMN1 inflates inside your mouth to become a ITMN2!
+你的 ITMN1 在口腔内膨胀成为 ITMN2！
+Bigger Ball Gags
+更大的口球
+Smaller ball gags are replaced by their larger versions.
+较小的口球被较大的口球所取代。
 ### Screen effect when letting go
 
-### Screen flash when distracted
-
-
+Screen flash when distracted
+分心时屏幕闪烁
 
 ### Essentia Aliquam
 
@@ -32725,3 +32730,6 @@ You pick up a heavy sledgehammer.
 ### Magical Missile
 
 ### Cursing Circle
+
+Latex Homunculus
+乳胶生命体
