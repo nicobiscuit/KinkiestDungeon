@@ -1721,6 +1721,7 @@ interface entity {
 	distraction?: number,
 	desire?: number,
 	lifetime?: number,
+	temporary?: boolean,
 	maxlifetime?: number,
 	attackPoints?: number,
 	attackBonus?: number,
@@ -2125,6 +2126,8 @@ interface spell {
 	range?: number;
 	/** lifetime of the Hit bullet created by the spell, not the bullet itself in the case of an "inert" bullet*/
 	lifetime?: number;
+	/** Prevents the bullet from having a source, i.e. the bullet is not associated from the caster*/
+	noSource?: boolean,
 	/** Specifically for the bullet lifetime, currently unused */
 	bulletLifetime?: number;
 	/** channel turns */

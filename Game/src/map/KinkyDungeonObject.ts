@@ -69,7 +69,17 @@ let KDObjectInteract: Record<string, (x: number, y: number, dist?: number) => vo
 	},
 	"Door": (x, y) => {
 		if (KinkyDungeonMapGet(x, y) == 'D') {
-			KDAttemptDoor(x, y);
+
+			if (KinkyDungeonTilesGet(x + ',' + y)?.Lock) {
+				KDDelayedActionPrune(["Action", "World"]);
+				KinkyDungeonTargetTileLocation = "" + x + "," + y;
+				KinkyDungeonTargetTile = KinkyDungeonTilesGet(KinkyDungeonTargetTileLocation);
+
+
+				KinkyDungeonTargetTileMsg();
+			} else {
+				KDAttemptDoor(x, y);
+			}
 		} else if (!KinkyDungeonEntityAt(x, y, false, undefined, undefined, true)) {
 			KinkyDungeonCloseDoor(x, y);
 		}

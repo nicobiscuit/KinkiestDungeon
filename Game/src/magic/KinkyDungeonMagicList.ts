@@ -2446,6 +2446,7 @@ let KinkyDungeonSpellListEnemies: spell[] = [
 	{enemySpell: true, name: "EnemyFlashBomb", color: "#ff2200", minRange: 0, sfx: "Miss", landsfx: "Lightning", school: "Illusion", manacost: 3, specialCD: 12, components: ["Verbal"], hideWarnings: true,
 		hitColor: 0xffffff, hitLight: 7,
 		noise: 4,
+		faction: "Trap",
 		hitevents: [
 			{type: "BlindAll", trigger: "bulletHitEnemy", time: 9},
 		],
@@ -2618,7 +2619,8 @@ let KinkyDungeonSpellListEnemies: spell[] = [
 		}},
 
 
-	{enemySpell: true, name: "SporesHappy", bulletSpin: 0.1, color: "#ff00ff", sfx: "FireSpell", noCastMsg: true, selfcast: true, manacost: 3, components: ["Verbal"], level:1, type:"inert", onhit:"aoe", time: 5, delay: 1, power: 2.5, range: 3, size: 3, aoe: 1.5, lifetime: 1, damage: "happygas", playerEffect: {name: "SporesHappy", power: 2.5, damage: "happygas"}},
+	{enemySpell: true, name: "SporesHappy", bulletSpin: 0.1,
+		color: "#ff00ff", sfx: "FireSpell", noCastMsg: true, selfcast: true, manacost: 3, components: ["Verbal"], level:1, type:"inert", onhit:"aoe", time: 5, delay: 1, power: 2.5, range: 3, size: 3, aoe: 1.5, lifetime: 1, damage: "happygas", playerEffect: {name: "SporesHappy", power: 2.5, damage: "happygas"}},
 	{enemySpell: true, name: "SporesSick", bulletSpin: 0.1, color: "#55ff55", noCastMsg: true, hitsfx: "DamageWeak", selfcast: true, manacost: 0, components: ["Verbal"], level:1, type:"hit", onhit:"aoe", time: 5, delay: 0, power: 0.5, range: 2, size: 3, aoe: 1.5, lifetime: 1, damage: "poison", playerEffect: {name: "SporesSick", power: 0.5, damage: "poison"}},
 	{enemySpell: true, name: "SoulCrystalBind", color: "#ff5277", minRange: 0, sfx: "Evil", manacost: 7, components: ["Verbal"], level:1, type:"inert", onhit:"aoe", time: 5, delay: 2, power: 6, range: 6, size: 3, aoe: 1.5, lifetime: 1, damage: "drain", playerEffect: {name: "ObsidianEngulf", count: 1, power: 6, damage: "drain"}},
 

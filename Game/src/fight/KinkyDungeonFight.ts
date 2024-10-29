@@ -2194,6 +2194,7 @@ function KinkyDungeonBulletHit(b: any, born: number, outOfTime?: boolean, outOfR
 		}
 		for (let enemy of KDMapData.Entities) {
 			if ((b.reflected
+				|| KDEntityHasFlag(enemy, "takeFF")
 				|| (!b.bullet.spell || !b.bullet.faction
 					|| (!KDFactionHostile(b.bullet.faction, enemy))
 				))
@@ -2604,6 +2605,7 @@ function KDBulletAoECanHitEntity(bullet: any, enemy: entity): boolean {
 			&& (!bullet.bullet.spell || !bullet.bullet.spell.noUniqueHits || !KDUniqueBulletHits.get(KDBulletID(bullet, KinkyDungeonPlayerEntity)));
 	} else {
 		return (bullet.reflected
+			|| KDEntityHasFlag(enemy, "takeFF")
 			|| (!bullet.bullet.spell || !bullet.bullet.faction
 				|| (!KDFactionFavorable(bullet.bullet.faction, enemy) && (!bullet.bullet.damage || bullet.bullet.damage.type != "heal"))
 				|| (!KDFactionHostile(bullet.bullet.faction, enemy) && (bullet.bullet.damage && bullet.bullet.damage.type == "heal"))
@@ -2625,6 +2627,7 @@ function KDBulletCanHitEntity(bullet: any, enemy: entity, inWarningOnly?: boolea
 			&& (!bullet.bullet.spell || !bullet.bullet.spell.noUniqueHits || !KDUniqueBulletHits.get(KDBulletID(bullet, KinkyDungeonPlayerEntity)));
 	} else {
 		return (enemy.x == bullet.x && enemy.y == bullet.y) && (bullet.reflected || overrideCollide
+			|| KDEntityHasFlag(enemy, "takeFF")
 			|| (!bullet.bullet.spell || !bullet.bullet.faction
 				|| (!KDFactionFavorable(bullet.bullet.faction, enemy) && (!bullet.bullet.damage || bullet.bullet.damage.type != "heal"))
 				|| (!KDFactionHostile(bullet.bullet.faction, enemy) && (bullet.bullet.damage && bullet.bullet.damage.type == "heal"))

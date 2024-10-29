@@ -1504,7 +1504,7 @@ function KDRepairRubble(JailBorderOnly: boolean) {
  * @param enemy
  */
 function KDEnemyIsTemporary(enemy: entity): boolean {
-	return enemy.Enemy.tags.temporary || (enemy.lifetime > 0);
+	return enemy.Enemy.tags.temporary || (enemy.lifetime > 0) || enemy.temporary;
 }
 
 /**

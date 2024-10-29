@@ -1062,7 +1062,7 @@ function KinkyDungeonCastSpell(targetX: number, targetY: number, spell: spell, e
 					volatilehit: spell.volatilehit,
 					width:size, height:size, summon:spell.summon,
 					targetX: tX, targetY: tY,
-					source: (entity?.player ? -1 : entity?.id) || bullet?.bullet?.source, cast: cast, dot: spell.dot,
+					source: spell.noSource ? undefined : ((entity?.player ? -1 : entity?.id) || bullet?.bullet?.source), cast: cast, dot: spell.dot,
 					bulletColor: spell.bulletColor, bulletLight: spell.bulletLight,
 					bulletSpin: spell.bulletSpin,
 					followPlayer: (!enemy && player && spell.followCaster) ? true : undefined,
@@ -1108,7 +1108,8 @@ function KinkyDungeonCastSpell(targetX: number, targetY: number, spell: spell, e
 					width:sz, height:sz, summon:spell.summon,
 					targetX: tX, targetY: tY,
 					aoe: spell.type == "dot" ? spell.bulletAoE : undefined,
-					source: (entity?.player ? -1 : entity?.id) || bullet?.bullet?.source, lifetime:spell.delay +
+					source: spell.noSource ? undefined : ((entity?.player ? -1 : entity?.id) || bullet?.bullet?.source),
+					lifetime:spell.delay +
 						(spell.delayRandom ? Math.floor(KDRandom() * spell.delayRandom) : 0),
 					cast: cast, dot: spell.dot, events: spell.events, alwaysCollideTags: spell.alwaysCollideTags,
 					bulletColor: spell.bulletColor, bulletLight: spell.bulletLight,
@@ -1154,7 +1155,8 @@ function KinkyDungeonCastSpell(targetX: number, targetY: number, spell: spell, e
 					targetX: tX, targetY: tY,
 					followPlayer: (!enemy && player && spell.followCaster) ? true : undefined,
 					followCaster: (enemy && spell.followCaster) ? enemy.id : undefined,
-					source: (entity?.player ? -1 : entity?.id) || bullet?.bullet?.source, lifetime:spell.lifetime, cast: cast, dot: spell.dot, events: spell.events,
+					source: spell.noSource ? undefined : ((entity?.player ? -1 : entity?.id) || bullet?.bullet?.source),
+					lifetime:spell.lifetime, cast: cast, dot: spell.dot, events: spell.events,
 					aoe: spell.aoe,
 					passthrough:(spell.CastInWalls || spell.WallsOnly || spell.noTerrainHit), hit:spell.onhit, noDoubleHit: spell.noDoubleHit, effectTile: spell.effectTile, effectTileDurationMod: spell.effectTileDurationMod,
 					damage: {evadeable: spell.evadeable, noblock: spell.noblock,  damage:spell.power, type:spell.damage, distract: spell.distract, distractEff: spell.distractEff, desireMult: spell.desireMult, bindEff: spell.bindEff,

@@ -6294,9 +6294,12 @@ function KinkyDungeonCanSwapWith(e: entity, Enemy: entity): boolean {
 	if (e && KDEnemyHasFlag(e, "noswap")) return false; // Definition of noSwap
 	if (Enemy && KDEnemyHasFlag(Enemy, "donotswap")) return false; // Definition of noSwap
 
-	if (Enemy && Enemy.Enemy && Enemy.Enemy.ethereal && e && e.Enemy && !e.Enemy.ethereal) return false; // Ethereal enemies NEVER have seniority, this can teleport other enemies into walls
-	if (Enemy && Enemy.Enemy && (Enemy.Enemy.squeeze && KinkyDungeonMapGet(Enemy.x, Enemy.y) == 'b') && e && e.Enemy && !e.Enemy.squeeze) return false; // Squeeze enemies NEVER have seniority, this can teleport other enemies into walls
-	if (Enemy && Enemy.Enemy && (Enemy.Enemy.earthmove && KinkyDungeonMapGet(Enemy.x, Enemy.y) == '4') && e && e.Enemy && !e.Enemy.earthmove) return false; // Squeeze enemies NEVER have seniority, this can teleport other enemies into walls
+	if (Enemy && Enemy.Enemy && Enemy.Enemy.ethereal
+		&& e && !(e.Enemy && e.Enemy.ethereal)) return false;
+	if (Enemy && Enemy.Enemy && (Enemy.Enemy.squeeze && KinkyDungeonMapGet(Enemy.x, Enemy.y) == 'b')
+		&& e && !(e.Enemy && e.Enemy.squeeze)) return false;
+	if (Enemy && Enemy.Enemy && (Enemy.Enemy.earthmove && KinkyDungeonMapGet(Enemy.x, Enemy.y) == '4')
+		&& e && !(e.Enemy && e.Enemy.earthmove)) return false;
 
 	if (!e.Enemy.tags || (e.Enemy.tags.scenery && !Enemy.Enemy.tags.scenery))
 		return true;
@@ -6474,8 +6477,12 @@ function KinkyDungeonEnemyTryMove (
 			} else if (move == 0) {
 				return false;
 			}
-		} else if (KinkyDungeonEntityAt(enemy.x + Direction.x, enemy.y + Direction.y)?.player) {
+		} else if (KinkyDungeonEntityAt(enemy.x + Direction.x, enemy.y + Direction.y)?.player
+			&& KDPlayerCanMove(KinkyDungeonEntityAt(enemy.x + Direction.x, enemy.y + Direction.y),
+			enemy.x + Direction.x, enemy.y + Direction.y)) {
 			KDMovePlayer(enemy.x, enemy.y, false, false, false, true);
+		} else {
+			return false;
 		}
 		if (!ee || !KinkyDungeonEnemyAt(enemy.x + Direction.x, enemy.y + Direction.y)) {
 			KDMoveEntity(enemy, enemy.x + Direction.x, enemy.y + Direction.y, true,undefined, undefined, true);

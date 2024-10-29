@@ -562,7 +562,13 @@ let KDCommanderOrders: Record<string, KDCommanderOrder> = {
 								KinkyDungeonTilesGet(xxx+','+yyy)?.Jail
 							)) {
 								let barricade = KDGetBarricade(enemy, xxx, yyy, checkpoint);
-								if (barricade) {
+								if (barricade && KDRepopQueueGet(KDMapData, xxx, yyy).filter(
+									(rp) => {
+										return rp.entity?.Enemy?.name == barricade
+											|| rp.entity.Enemy?.immobile
+											|| rp.entity.Enemy?.tags?.barricade;
+									}
+								).length == 0) {
 									let en = DialogueCreateEnemy(xxx, yyy, barricade);
 									if (en) {
 										//placed = true;
@@ -577,6 +583,7 @@ let KDCommanderOrders: Record<string, KDCommanderOrder> = {
 											en.maxlifetime = lt*0.25;
 											en.lifetime = lt;
 										}
+										en.temporary = true;
 									}
 								}
 							}

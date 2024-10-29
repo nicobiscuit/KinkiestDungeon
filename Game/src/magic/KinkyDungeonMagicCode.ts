@@ -937,6 +937,7 @@ let KinkyDungeonSpellSpecials: Record<string, KDSpellSpecialCode> = {
 								lasty = en.y;
 								KDCreateParticle(en.x, en.y, "ElasticGripHit");
 							}
+							KinkyDungeonSetEnemyFlag(en, "takeFF", 2);
 						}
 					} else break;
 				}
@@ -1143,6 +1144,7 @@ let KinkyDungeonSpellSpecials: Record<string, KDSpellSpecialCode> = {
 					KDMovePlayer(en.x, en.y, true, false, false, true);
 					KDMoveEntity(en, newX, newY, false, false, KDHostile(en));
 
+					KinkyDungeonSetEnemyFlag(en, "takeFF", 3);
 					KinkyDungeonSendActionMessage(3, TextGet("KinkyDungeonSpellCast"+spell.name), "#88AAFF", 2 + (spell.channel ? spell.channel - 1 : 0));
 					KinkyDungeonChangeMana(-KinkyDungeonGetManaCost(spell));
 				} else {

@@ -7080,6 +7080,8 @@ let KDEventMapWeapon: Record<string, Record<string, (e: KinkyDungeonEvent, weapo
 					if (KinkyDungeonMovableTilesEnemy.includes(KinkyDungeonMapGet(newX, newY)) && KinkyDungeonNoEnemy(newX, newY, true)
 						&& (e.dist == 1 || KinkyDungeonCheckProjectileClearance(data.enemy.x, data.enemy.y, newX, newY, false))) {
 						KDMoveEntity(data.enemy, newX, newY, false);
+
+						KinkyDungeonSetEnemyFlag(data.enemy, "takeFF", 1);
 					}
 				}
 			}
@@ -7502,6 +7504,7 @@ let KDEventMapBullet: Record<string, Record<string, (e: KinkyDungeonEvent, b: an
 						if (KinkyDungeonMovableTilesEnemy.includes(KinkyDungeonMapGet(newX, newY)) && KinkyDungeonNoEnemy(newX, newY, true)
 						&& (e.dist == 1 || KinkyDungeonCheckProjectileClearance(data.enemy.x, data.enemy.y, newX, newY, false))) {
 							KDMoveEntity(data.enemy, newX, newY, false);
+							KinkyDungeonSetEnemyFlag(data.enemy, "takeFF", 1);
 						}
 					}
 

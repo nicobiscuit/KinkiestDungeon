@@ -4849,6 +4849,11 @@ function KinkyDungeonLaunchAttack(Enemy: entity, skip?: number): string {
 	return result;
 }
 
+
+function KDPlayerCanMove(player, x, y) {
+	return KinkyDungeonGetMovable().includes(KinkyDungeonMapGet(x, y));
+}
+
 function KinkyDungeonMove(moveDirection: {x: number, y: number }, delta: number, AllowInteract: boolean, SuppressSprint?: boolean): boolean {
 	let moveX = moveDirection.x + KinkyDungeonPlayerEntity.x;
 	let moveY = moveDirection.y + KinkyDungeonPlayerEntity.y;
@@ -6075,6 +6080,13 @@ function KDAddRepopQueue(repopdata: RepopQueueData, data: KDMapDataType) {
 		data.RepopulateQueue = [];
 
 	data.RepopulateQueue.push(repopdata);
+}
+
+function KDRepopQueueGet(data: KDMapDataType, x: number, y: number): RepopQueueData[] {
+	if (data.RepopulateQueue?.length > 0) {
+		return data.RepopulateQueue.filter((q) => {return q.x == x && q.y == y;})
+	}
+	return [];
 }
 
 function KDUpdateRepopQueue(data: KDMapDataType, delta: number) {

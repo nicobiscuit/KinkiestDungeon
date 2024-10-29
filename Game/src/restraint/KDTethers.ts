@@ -338,8 +338,11 @@ function KinkyDungeonUpdateTether(Msg: boolean, Entity: entity, xTo?: number, yT
 					let mindist = playerDist;
 					for (let X = Entity.x-1; X <= Entity.x+1; X++) {
 						for (let Y = Entity.y-1; Y <= Entity.y+1; Y++) {
-							if ((X !=  Entity.x || Y != Entity.y) && KinkyDungeonMovableTilesEnemy.includes(KinkyDungeonMapGet(X, Y)) && KDistEuclidean(X-leash.x, Y-leash.y) < mindist
-							&& !(KinkyDungeonEntityAt(X-leash.x, Y-leash.y) && KDIsImmobile(KinkyDungeonEntityAt(X-leash.x, Y-leash.y), true))) {
+							if ((X !=  Entity.x || Y != Entity.y)
+								&& KinkyDungeonMovableTilesEnemy.includes(KinkyDungeonMapGet(X, Y))
+								&& KDistEuclidean(X-leash.x, Y-leash.y) < mindist
+								&& !(KinkyDungeonEntityAt(X-leash.x, Y-leash.y)
+								&& KDIsImmobile(KinkyDungeonEntityAt(X-leash.x, Y-leash.y), true))) {
 								mindist = KDistEuclidean(X-leash.x, Y-leash.y);
 								slot = {x:X, y:Y};
 							}
@@ -359,7 +362,10 @@ function KinkyDungeonUpdateTether(Msg: boolean, Entity: entity, xTo?: number, yT
 						let mindist2 = playerDist;
 						for (let X = enemy.x-1; X <= enemy.x+1; X++) {
 							for (let Y = enemy.y-1; Y <= enemy.y+1; Y++) {
-								if ((X !=  enemy.x || Y != enemy.y) && !KinkyDungeonEntityAt(X, Y) && KinkyDungeonMovableTilesEnemy.includes(KinkyDungeonMapGet(X, Y)) && KDistEuclidean(X-Entity.x, Y-Entity.y) < mindist2) {
+								if ((X !=  enemy.x || Y != enemy.y)
+									&& !KinkyDungeonEntityAt(X, Y)
+									&& KinkyDungeonMovableTilesEnemy.includes(KinkyDungeonMapGet(X, Y))
+									&& KDistEuclidean(X-Entity.x, Y-Entity.y) < mindist2) {
 									mindist2 = KDistEuclidean(X-Entity.x, Y-Entity.y);
 									slot2 = {x:X, y:Y};
 								}
