@@ -771,13 +771,6 @@ function DrawCharacterModels(containerID: string, MC: ModelContainer, X, Y, Zoom
 						(Properties.Rotation * Math.PI / 180) || 0
 					);
 				}
-				let ox = transform.ox;
-				let oy = transform.oy;
-				let ax = transform.ax;
-				let ay = transform.ay;
-				let sx = transform.sx;
-				let sy = transform.sy;
-				let rot = transform.rot;
 
 				for (let ll of Object.entries(l.DisplaceLayers)) {
 					let id = ModelLayerStringCustom(m, l, MC.Poses, l.DisplacementSprite, "DisplacementMaps", false, l.DisplacementInvariant, l.DisplacementMorph, l.NoAppendDisplacement);
@@ -799,6 +792,36 @@ function DrawCharacterModels(containerID: string, MC: ModelContainer, X, Y, Zoom
 
 					for (let dg of Object.keys(LayerGroups[ll[0]])) {
 						if (!DisplaceFilters[dg]) DisplaceFilters[dg] = [];
+
+						let tt = transform;
+						if (KDOptimizeDisplacementMapInfo[id]) {
+							tt = new Transform(
+								tt.ox,
+								tt.oy,
+								tt.ax,
+								tt.ay,
+								tt.sx,
+								tt.sy,
+								tt.rot,
+							).recursiveTransform(
+								KDOptimizeDisplacementMapInfo[id].xPad || 0,
+								KDOptimizeDisplacementMapInfo[id].yPad || 0,
+								0,
+								0,
+								1,
+								1,
+								0
+							);
+						}
+
+						let ox = tt.ox;
+						let oy = tt.oy;
+						let ax = tt.ax;
+						let ay = tt.ay;
+						let sx = tt.sx;
+						let sy = tt.sy;
+						let rot = tt.rot;
+
 						DisplaceFilters[dg].push(
 							{
 								amount: (l.DisplaceAmount || 50) * Zoom,
@@ -881,13 +904,6 @@ function DrawCharacterModels(containerID: string, MC: ModelContainer, X, Y, Zoom
 					);
 				}
 
-				let ox = transform.ox;
-				let oy = transform.oy;
-				let ax = transform.ax;
-				let ay = transform.ay;
-				let sx = transform.sx;
-				let sy = transform.sy;
-				let rot = transform.rot;
 
 				for (let ll of Object.entries(l.EraseLayers)) {
 					let id = ModelLayerStringCustom(m, l, MC.Poses, l.EraseSprite, "DisplacementMaps", false, l.EraseInvariant, l.EraseMorph, l.NoAppendErase);
@@ -909,6 +925,37 @@ function DrawCharacterModels(containerID: string, MC: ModelContainer, X, Y, Zoom
 
 					for (let dg of Object.keys(LayerGroups[ll[0]])) {
 						if (!EraseFilters[dg]) EraseFilters[dg] = [];
+
+						let tt = transform;
+						if (KDOptimizeDisplacementMapInfo[id]) {
+							tt = new Transform(
+								tt.ox,
+								tt.oy,
+								tt.ax,
+								tt.ay,
+								tt.sx,
+								tt.sy,
+								tt.rot,
+							).recursiveTransform(
+								KDOptimizeDisplacementMapInfo[id].xPad || 0,
+								KDOptimizeDisplacementMapInfo[id].yPad || 0,
+								0,
+								0,
+								1,
+								1,
+								0
+							);
+						}
+
+						let ox = tt.ox;
+						let oy = tt.oy;
+						let ax = tt.ax;
+						let ay = tt.ay;
+						let sx = tt.sx;
+						let sy = tt.sy;
+						let rot = tt.rot;
+
+
 						EraseFilters[dg].push(
 							{
 								amount: (l.EraseAmount || 50) * Zoom,

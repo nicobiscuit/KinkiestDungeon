@@ -132,6 +132,13 @@ let KDButtonFont = KDFontName;
 let KDButtonFontListIndex = 0;
 let KDButtonFontList = Array.from(KDFonts.keys());
 
+let KDOptimizeDisplacementMapInfo: Record<string, {xPad: number, yPad: number}> = {
+	'DisplacementMaps/CorsetSquish.png': {
+		xPad: 0,
+		yPad: 1000,
+	}
+};
+
 let DisplacementMaps = [
 'SlimeLeftClosed.png',
 'SlimeRightClosed.png',
@@ -476,6 +483,8 @@ async function PreloadDisplacement(list) {
 			CurrentLoading = "Loaded " + dataFile;
 			//console.log(dataFile);
 			KDTex(dataFile, false);
+
+
 			KDLoadingDone += amount;
 		}, () => {
 			CurrentLoading = "Error Loading " + dataFile;

@@ -6477,12 +6477,13 @@ function KinkyDungeonEnemyTryMove (
 			} else if (move == 0) {
 				return false;
 			}
-		} else if (KinkyDungeonEntityAt(enemy.x + Direction.x, enemy.y + Direction.y)?.player
-			&& KDPlayerCanMove(KinkyDungeonEntityAt(enemy.x + Direction.x, enemy.y + Direction.y),
-			enemy.x + Direction.x, enemy.y + Direction.y)) {
-			KDMovePlayer(enemy.x, enemy.y, false, false, false, true);
-		} else {
-			return false;
+		} else if (KinkyDungeonEntityAt(enemy.x + Direction.x, enemy.y + Direction.y)?.player) {
+			if (KDPlayerCanMove(KinkyDungeonEntityAt(enemy.x + Direction.x, enemy.y + Direction.y),
+				enemy.x + Direction.x, enemy.y + Direction.y)) {
+				KDMovePlayer(enemy.x, enemy.y, false, false, false, true);
+			} else {
+				return false;
+			}
 		}
 		if (!ee || !KinkyDungeonEnemyAt(enemy.x + Direction.x, enemy.y + Direction.y)) {
 			KDMoveEntity(enemy, enemy.x + Direction.x, enemy.y + Direction.y, true,undefined, undefined, true);
