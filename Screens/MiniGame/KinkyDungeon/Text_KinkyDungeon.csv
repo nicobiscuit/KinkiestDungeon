@@ -2479,7 +2479,6 @@ KinkyDungeonSpellRedSlime,The red liquid bubbles and a round slime pops out!
 KinkyDungeonSummonSingleElementalLatex,Latex Homunculus
 KinkyDungeonSpellCastSummonLatexElemental,Latex Homunculus
 
-KinkyDungeonSpellRedSlime,Red Slime
 NameRedSlime,Red Slime
 KillRedSlime,"The red slime bounces away."
 AttackRedSlime,"The red slime bounces off you! (DamageTaken)"
@@ -2754,7 +2753,6 @@ KillFungal,"The fun-gal retreats into the ground."
 AttackFungalBind,"The fun-gal clips a restraint around your neck! (+RestraintAdded)"
 AttackFungalLock,"The fun-gal produces a magical lock on all your restraints! (DamageTaken)"
 AttackFungal,"The fun-gal rubs your chest with her long, slender fingers! (DamageTaken)"
-KinkyDungeonSpellCrystalPuff,Crystal Glyph
 KinkyDungeonSpellCrystalSlash,Crystal Slash
 KinkyDungeonSpellCrystalBolt,Crystal Bolt
 KinkyDungeonSpellCrystalBoltSingle,Crystal Bolt
@@ -5682,10 +5680,7 @@ KinkyDungeonSpellShatterAmpuleRed,The rubber ampule shatters on impact!
 KinkyDungeonSpellShatterBindAmpuleBlue,The latex ampule shatters on impact and forms a restraint!
 KinkyDungeonSpellShatterDressAmpuleBlue,The latex ampule shatters on impact and coats your body!
 KinkyDungeonSpellShatterAmpuleBlue,The latex ampule shatters on impact and sticks to you!
-KinkyDungeonSpellAmpuleGreen,Gas Ampule
-KinkyDungeonSpellAmpuleYellow,Glue Ampule
-KinkyDungeonSpellAmpuleRed,Rubber Ampule
-KinkyDungeonSpellAmpuleBlue,Latex Ampule
+
 
 KinkyDungeonSpellShadowStrike,Shadowy chains appear from a rift in space!
 KinkyDungeonInfernoBurn,The roaring inferno deals 10 damage to you!
@@ -5952,13 +5947,9 @@ KinkyDungeonRestrainingDevice,The restraining device wraps many elastic cables a
 
 KinkyDungeonSpellShadowBolt,Shadowy Grip
 KinkyDungeonShadowBolt,A dark hand latches onto you and holds you tight!
-KinkyDungeonSpellCelestialBolt,Celestial Orb
 KinkyDungeonCelestialBolt,You are snugly wrapped in glowing ropes!
 KinkyDungeonSpellObsidianBolt,Obsidian Orb
 KinkyDungeonObsidianBolt,Metallic restraints encircle your body!
-KinkyDungeonSpellRubberBolt,Rubberizing Bolt
-KinkyDungeonSpellEncaseBolt,Rubber Bolt
-KinkyDungeonSpellEncaseBoltDrone,Latex Bolt
 KinkyDungeonRubberBolt,"The latex spreads across your limbs and rubberizes, forming a tough barrier!"
 KinkyDungeonEncaseBolt,"The latex spreads across your limbs and hardens, forming a stretchy layer!"
 KinkyDungeonEncaseBoltDroneSlow,"The latex clings to you and slows you down, making you vulnerable to the barrage!"
@@ -6001,7 +5992,6 @@ KinkyDungeonSpellDescriptionThunderstorm,"Creates a conductive area for Duration
 KinkyDungeonSpellCastThunderstorm,You energize the targeted area!
 KinkyDungeonSpellTargetThunderstorm,Choose target 3x3 area
 
-KinkyDungeonSpellWitchElectrify,Witch's Electricity
 KinkyDungeonSpellFireexp,Firey Explosion
 KinkyDungeonSpellIceexp,Icey Explosion
 KinkyDungeonSpellWitchElectricOrb,Witch's Electric Orb
@@ -6058,7 +6048,6 @@ KinkyDungeonSpellCastHeal,You conjure a healing light!
 KinkyDungeonSpellTargetHeal,Choose target AoE location (5x5)
 
 KinkyDungeonSpellCrackle,Crackle
-KinkyDungeonSpellWolfCrackle,Stun Blast
 KinkyDungeonSpellAllyCrackle,Storm Bolt
 KinkyDungeonSpellDescriptionCrackle,A bolt of lightning that does DamageDealt electric damage to enemies in a 4-range line and briefly stuns.
 KinkyDungeonSpellCastCrackle,Lightning erupts from your fingertips!
@@ -6831,7 +6820,6 @@ KinkyDungeonSpellCastFailElasticGrip,There's an obstacle in the way!
 KinkyDungeonSpellTargetElasticGrip,Select a target to pull
 
 KinkyDungeonSpellSlime,Slime Blast
-KinkyDungeonSpellSlimePuddle,Apprentice's Slime
 KinkyDungeonSpellWitchSlime,Witch's Slime
 KinkyDungeonSpellRubberSlime,Rubber Explosion
 KinkyDungeonSpellMiniSlime,Witch's Slime Ball
@@ -6870,10 +6858,6 @@ KinkyDungeonSpellDescriptionIceBreath,A field of icicles that deals DamageDealt 
 KinkyDungeonSpellCastIceBreath,You breath out a chilling frost!
 KinkyDungeonSpellTargetIceBreath,Select where to put the icicles (SpellArea radius)
 
-KinkyDungeonSpellZombieOrb,Zombie Orb
-KinkyDungeonSpellZombieOrbMini,Lesser Zombie Orb
-KinkyDungeonSpellZombieOrbIce,Freezing Zombie Orb
-KinkyDungeonSpellMummyBolt,Mystic Bolt
 KinkyDungeonMysticShock,The mummy's curse paralyzes you!
 
 KinkyDungeonSpellRubberBullets,Rubber Bullets
@@ -6898,14 +6882,11 @@ KinkyDungeonSpellCastDisarm,You swing your weapon and pull away the target's equ
 KinkyDungeonSpellCastBeltStrike,You swing Dragonslaver and it lashes out in a whip-like fashion!
 KinkyDungeonSpellCastSlimeForm,"The slime from your staff coats your body, granting you strange powers!"
 KinkyDungeonSpellCastAvatarForm,"The power of the four elements flows through your veins!"
-KinkyDungeonSpellHeatBolt,Firebolt
 KinkyDungeonHeatBlast,An explosion knocks you to the ground!
 
 KinkyDungeonSpellHighBolt,Curious Spell
 KinkyDungeonFlummox,You have been flummoxed!
 
-KinkyDungeonSpellNurseBola,Cuff Bola
-KinkyDungeonSpellNurseSyringe,Throw Syringe
 KinkyDungeonNurseSyringe,"You feel a prick as a small syringe hits you, and you start feeling drowsy..."
 KinkyDungeonNurseBola,"The thrown cuffs snap shut around your ankles and slow you down!!!"
 KinkyDungeonSpellRibbonBurst,Ribbon Burst
@@ -22470,7 +22451,6 @@ KDLatexBall,A ball of latex envelops you!
 KinkyDungeonBuffLatexBubble,"The latex around you dampens your attacks, reducing physical damage by 30% and lowering your sight range."
 KinkyDungeonBuffLatexBall,"The latex around you dampens your attacks, reducing physical damage by 30% and lowering your sight range."
 
-KinkyDungeonSpellLatexBubble,Latex Bubbl
 KinkyDungeonSpellLatexBall,Latex Ball
 
 NamePinkLabAssistant,...Lab Assistant?
@@ -22759,9 +22739,6 @@ KDKeeperFlameDash,"The flame keeper rides forth on a wave of fire!"
 KinkyDungeonSpellFlameTrail,Smoldering Trail
 KinkyDungeonSpellFlameKeeperBlade,Fiery Greatsword
 
-KinkyDungeonSpellBubbleBurst,Enchanted Bubble
-KinkyDungeonSpellBubbleBurstLatex,Latex Bubble
-KinkyDungeonSpellBubbleBurstSlime,Slime Bubble
 
 KinkyDungeonSpellVineexp,Tangling Vines
 KinkyDungeonSpellBubbleexp,Enchanted Bubble
@@ -22870,7 +22847,6 @@ KDVariableModifier_AoEDamageFrozen,"AMNT ice damage/turn vs. Frozen"
 KDVariableModifier_ShadowBleed,"AMNT shadow bleed (10 turns)"
 
 KinkyDungeonSpellFuukaOrb,Sealing Talisman
-KinkyDungeonSpellFuukaOrbMulti,Sealing Talisman
 KinkyDungeonFuukaOrb1,"You were hit by one of Fuuka's talismans. Fuuka's magic begins sealing your power!"
 KinkyDungeonFuukaOrb2,"You were hit by one of Fuuka's talismans. Fuuka's magic makes you sluggish!!"
 KinkyDungeonFuukaOrb3,"You were hit by one of Fuuka's talismans. Fuuka's magic renders you helpless!!!"
@@ -23804,7 +23780,6 @@ KDPrisonerNum_Guest,Guest #NUMR/TTL
 KDCollectionSelect,Select a character to examine
 KDFormerFaction,"Former Faction: "
 
-KinkyDungeonSpellMinigun,Minigun
 
 KDPalette,None
 KDPaletteJail,Prisoner
@@ -23851,7 +23826,6 @@ KDDressNPC,Change Outfit
 KDZoomNPC,Enlarged View
 KDBackToGame,Back to Game
 
-KinkyDungeonSpellVineSlimeBall,Slimy Spit
 
 KDServants,Servants
 KDPrisoners,Prisoners
@@ -25252,6 +25226,7 @@ KDAutoBindPasteAll,Paste to All!
 KDAutoBindPasteAllOver,OVERWRITE All!
 
 KDPromoteNotEnough,Need Positive Opinion to Promote
+KDPromoteRemoveFromParty,Remove From Party Before Promoting?
 
 KDCuddleLounge1,Servant Cuddle Points: AMNT (+OPN opinion/cycle)
 KDCuddleLounge2,Prisoner Cuddle Points: AMNT (+OPN opinion/cycle)
@@ -25515,77 +25490,23 @@ KinkyDungeonSpellLatexBubble,Aliquam Orbis
 KinkyDungeonSpellAmpuleGreen,Potio Requiem
 KinkyDungeonSpellAmpuleYellow,Ultimate Glue no. 91
 KinkyDungeonSpellBubbleBurstSlime,Slime Encapsulation
-KinkyDungeonSpellGlueBomb,Glue Bomb
-KinkyDungeonSpellAllyShadowStrike,Shadow Strike
-KinkyDungeonSpellAllyFirebolt,Firebolt
-KinkyDungeonSpellNatureMoteBolt,Nature Bolt
-KinkyDungeonSpellAllyHolyBolt,Holy Bolt
-KinkyDungeonSpellAllyWindBlast,Wind Blast
-KinkyDungeonSpellAllyCrackle,Crackle
 KinkyDungeonSpellCelestialBolt,Judgement Bolt
 KinkyDungeonSpellHeatBolt,Flame Bolt
 KinkyDungeonSpellWitchElectrify,Electrification
-KinkyDungeonSpellEnemyCorona,Dazzle
 KinkyDungeonSpellZombieOrb,Charming Orb
 KinkyDungeonSpellZombieOrbIce,Freezing Orb
-KinkyDungeonSpellHairpin,Hairpin
-KinkyDungeonSpellMirrorImage,Mirror Image
-KinkyDungeonSpellRubberBullets,Rubber Bullets
 KinkyDungeonSpellMinigun,Heavy Ordnance
-KinkyDungeonSpellRestrainingDevice,Restraining Device
-KinkyDungeonSpellCursedArrow,Cursed Arrow
 KinkyDungeonSpellShadowStrike,Shadow Strike
-KinkyDungeonSpellMagicChain,Magic Chain
-KinkyDungeonSpellMagicRope,Magic Rope
-KinkyDungeonSpellMagicBelt,Magic Belt
 KinkyDungeonSpellEntangle,Entangle
-KinkyDungeonSpellWitchSlimeBall,Slime Ball
-KinkyDungeonSpellWitchSlime,Slime Eruption
-KinkyDungeonSpellSoulCrystalBind,Crystal Bind
 KinkyDungeonSpellMummyBolt,Blessed Orb
-KinkyDungeonSpellVineSlimeBall,Slime Ball
+KinkyDungeonSpellVineSlimeBall,Slimy Sphere
 KinkyDungeonSpellAmpuleRed,Rubberization Protocol
 KinkyDungeonSpellBubbleBurstLatex,Latex Encapsulation
 KinkyDungeonSpellRedSlime,Red Slime Experiment
 KinkyDungeonSpellEncaseBoltDrone,Encasement Protocol
 KinkyDungeonSpellEncaseBolt,Encasement Protocol
-KinkyDungeonSpellRubberMissile,Homing Missile
-KinkyDungeonSpellRobotBolt,Energy Bolt
-KinkyDungeonSpellEnemyBlast,Energy Bolt
 KinkyDungeonSpellWolfCrackle,Electrical Discharge
-KinkyDungeonSpellBanditBola,Bola
-KinkyDungeonSpellMinerBomb,Bomb
-KinkyDungeonSpellGravityPullEarth,Gravitation
-KinkyDungeonSpellSporesHappy,Spores
-KinkyDungeonSpellSporesSick,Spores
-KinkyDungeonSpellPoisonBreath,Poison Breath
-KinkyDungeonSpellCrystalBolt,Crystal Bolt
-KinkyDungeonSpellCrystalSlash,Crystal Slash
-KinkyDungeonSpellCrystalBoltSingle,Crystal Bolt
-KinkyDungeonSpellDarkTele,Shadow Teleportation
-KinkyDungeonSpellDragonIceBolt,Ice Blast
-KinkyDungeonSpellEnemyWinterblast,Winterblast
-KinkyDungeonSpellPoisonDragonBlast,Poison Blast
-KinkyDungeonSpellRopeEngulfWeak,Forbidden Rope
-KinkyDungeonSpellWitchRope,Forbidden Rope
-KinkyDungeonSpellWitchBoulder,Rock
-KinkyDungeonSpellElfArrow,Enchanted Arrow
-KinkyDungeonSpellEnemyFlash,Flash
-KinkyDungeonSpellSleepDart,Sleep Dart
-KinkyDungeonSpellCrystalBoltMany,Crystal Barrage
-KinkyDungeonSpellShadowBolt,Shadow Bolt
-KinkyDungeonSpellObsidianBolt,Obsidian Bolt
-KinkyDungeonSpellGravityPull,Gravitation
-KinkyDungeonSpellShadowGraspMulti,Shadow Grasp
-KinkyDungeonSpellBoundByFate,Bound by Fate
-KinkyDungeonSpellCrushingFate,Crushing Fate
-KinkyDungeonSpellLockBullet,Conjure Lock
-KinkyDungeonSpellRopeEngulf,Magical Rope
-KinkyDungeonSpellSarcoHex,Hex
-KinkyDungeonSpellRubberBolt,Rubber Projector
-KinkyDungeonSpellEnemyEnchantRope,Enhance Ropes
 KinkyDungeonSpellSlimePuddle,Slime Blast
-KinkyDungeonSpellEnemyEnchantRope2,Enchant Ropes
 KinkyDungeonSpellWitchIcebolt,Icebolt
 KinkyDungeonSpellWitchWaterBall,Water Ball
 KinkyDungeonSpellBubbleBurst,Bubble Burst
@@ -25596,19 +25517,90 @@ KinkyDungeonSpellSummonSkeletons,Skeleton Minions
 KinkyDungeonSpellHighBolt,Flummoxing Orb
 KinkyDungeonSpellSpores,Spores
 KinkyDungeonSpellCrystalPuff,Crystallize
-KinkyDungeonSpellRibbonBurst,Ribbon Burst
 KinkyDungeonSpellNurseBola,Capture Device
 KinkyDungeonSpellNurseSyringe,Sedative
-KinkyDungeonSpellPoisonDagger,Poison Dart
-KinkyDungeonSpellBearTrap,Bear Trap
-KinkyDungeonSpellLustBomb,Lust Bomb
-KinkyDungeonSpellManyOrbs,Charming Orbs
-KinkyDungeonSpellEnemyCM_self,Unlock
+KinkyDungeonSpellManySlimes,Slime Barrage
 KinkyDungeonSpellFuukaOrbMulti,Seal of the 5th Era
-KinkyDungeonSpellRestrainingBolt,Restraining Bolt
-KinkyDungeonSpellTaunt,Taunt
-KinkyDungeonSpellMagicMissile,Magical Missile
-KinkyDungeonSpellOneBarMissile,One Bar Missile
-KinkyDungeonSpellEnemySteelRainBurst,Steel Rain
-KinkyDungeonSpellCursingCircle,Cursing Circle
-KinkyDungeonSpellCursingCircle2,Cursing Circle
+
+
+
+KinkyDungeonSpellOrbHeal,Healing Flash
+KinkyDungeonSpellZombieBuff,Undead Frenzy
+KinkyDungeonSpellEnemyCM1,Command Word
+KinkyDungeonSpellRopeAttack,Rope Ambush
+KinkyDungeonSpellParasolBuff,Defensive Charm
+KinkyDungeonSpellEnemyFlashBomb,Flashbang
+KinkyDungeonSpellMinigunWindup,Tracer Rounds
+KinkyDungeonSpellGhostAttack,The Spookening
+KinkyDungeonSpellGagGeistAttack,The Muffling
+KinkyDungeonSpellSummonTickleHand,Conjure Tickle Hands
+KinkyDungeonSpellSummonEnemyGag2,Conjure Gags
+KinkyDungeonSpellSummonBookChain,Scriptum Ferri
+KinkyDungeonSpellSummonBookBelt,Scrimptum Habena
+KinkyDungeonSpellSummonBookRope,Scriptum Ligni
+KinkyDungeonSpellAreaElectrify,Electric Storm
+KinkyDungeonSpellIceSlowPrepare,Icy Breath
+KinkyDungeonSpellIceDragonBreathPrepare,Icy Breath
+KinkyDungeonSpellDragonVine,Vine Pod
+KinkyDungeonSpellDragonFlowerSpores,Flower Spores
+KinkyDungeonSpellSummonLatexElemental,Magnum Opus
+KinkyDungeonSpellLatexSpray,Latex Integrator
+KinkyDungeonSpellSummonForceFields,Forcefield Protocol
+KinkyDungeonSpellNevermereBoost,Motivation
+KinkyDungeonSpellSummonWolfDrone,Drone Assault
+KinkyDungeonSpellSummonWolfTapeDrone,Tape Drone Assault
+KinkyDungeonSpellSummonSlimeMold,*summon slime mold*
+KinkyDungeonSpellSummonDragonVinePlant,Vine Growth
+KinkyDungeonSpellSummonDragonFlower,Flower Growth
+KinkyDungeonSpellDragonSlash,Thorn Whip
+KinkyDungeonSpellCrystalShockBolt,Crystal Surge
+KinkyDungeonSpellShadowShroud,Shadow Shroud
+KinkyDungeonSpellShadowShroudTele,Shadow Step
+KinkyDungeonSpellShadowShroudGirl,Shadow Shroud
+KinkyDungeonSpellSummonIceWall,Ice Wall
+KinkyDungeonSpellSummonIceWall2,Ice Wall
+KinkyDungeonSpellIceBreathChannel,Ice Breath
+KinkyDungeonSpellArmorUpArea,Armor Up
+KinkyDungeonSpellSummonCrystals,Crystal Growth
+KinkyDungeonSpellShadowOrb,Shadow Orb
+KinkyDungeonSpellArmorUp,Armor Up
+KinkyDungeonSpellEarthfield,Earthfield
+KinkyDungeonSpellMonolithBeam,Soul Beam
+KinkyDungeonSpellSummonShadowHand,Summon Shadows
+KinkyDungeonSpellObserverBeam,Observation
+KinkyDungeonSpellEnemySummonLatexArmbinder,Conjure Latex Armbinder
+KinkyDungeonSpellEnemySummonLatexLegbinder,Conjure Latex Legbinder
+KinkyDungeonSpellEnemySummonLatexGag,Conjure Latex Gag
+KinkyDungeonSpellEnemySummonLatexRestraint,Conjure Latex Restraint
+KinkyDungeonSpellEnemyEnchantRope3,Rope Sealing
+KinkyDungeonSpellSummonRopeTentacle,Rope Tentacle
+KinkyDungeonSpellSummonSlimeMinion,Slime Minion
+KinkyDungeonSpellSummonSarcoTentacle,Magical Wrappings
+KinkyDungeonSpellRubberBolt,Capture Bolt
+KinkyDungeonSpellDollConvert,Training Protocol
+KinkyDungeonSpellDollBoost,Motivation Protocol
+KinkyDungeonSpellSummonSingleTickleHand,Conjure Tickle Hand
+KinkyDungeonSpellSummonEnemyGag,Conjure Gag
+KinkyDungeonSpellSummonLock,Conjure Locks
+KinkyDungeonSpellSummonCuff,Conjure Cuffs
+KinkyDungeonSpellManyChains,Chainstorm
+KinkyDungeonSpellSummonChainWalls,Chain Wall
+KinkyDungeonSpellRibbons,Binding Ribbons
+KinkyDungeonSpellSummonBookSlime,Scriptum Limus
+KinkyDungeonSpellSummonBookIce,Scriptum Glacis
+KinkyDungeonSpellSummonBookNature,Scriptim Vinea
+KinkyDungeonSpellSummonBookForbidden,Scriptum Infernus
+KinkyDungeonSpellSummonBookArcane,Scriptum Arcanum
+KinkyDungeonSpellSummonBookCelestial,Scriptum Celeste
+KinkyDungeonSpellSummonBookElectric,Scriptum Electri
+KinkyDungeonSpellClericBeam,Blessed Rays
+KinkyDungeonSpellSummonMikoGhosts,Ghostly Pets
+KinkyDungeonSpellSummonZombies,Zombie Pets
+KinkyDungeonSpellMagicMissileChannel,Bondage Blast
+KinkyDungeonSpellSummonDrones,Drone Support
+KinkyDungeonSpellDollConvertMany,Doll Training
+KinkyDungeonSpellSummonCaptureDrones,Capture Drone
+KinkyDungeonSpellManyCables,Full Capture
+KinkyDungeonSpellManyShadowHands,Shadow Hands
+KinkyDungeonSpellManyObsidianBolts,Obsidian Orbs
+KinkyDungeonSpellManyMithrilBolts,Mithril Orbs

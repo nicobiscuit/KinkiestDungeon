@@ -1102,6 +1102,15 @@ function KDDrawCollectionInventory(x: number, y: number, drawCallback?: (value: 
 						zIndex: 110
 					});
 			}
+			if (value.Facility) {
+				KDDraw(kdcanvas, kdpixisprites, value.name + "_fac," + value.id,
+					KinkyDungeonRootDirectory + "UI/Facility/" + value.Facility + ".png",
+					XX,
+					YY + 36,
+					36, 36, undefined, {
+						zIndex: 110
+					});
+			}
 		} else {
 			// Render empty square
 			FillRectKD(kdcanvas, kdpixisprites, "guestslot_" + i, {
@@ -1363,12 +1372,19 @@ let KDCollectionTabDraw: Record<string, KDCollectionTabDrawDef> = {
 					KDSortCollection();
 					if (KDSoundEnabled())
 						AudioPlayInstantSoundKD(KinkyDungeonRootDirectory + "Audio/" + "Magic" + ".ogg");
+				} else if (KDIsInPartyID(value.id)) {
+					KDRemoveFromPartyID(value.id, false);
+					KDSortCollection();
+					if (KDSoundEnabled())
+						AudioPlayInstantSoundKD(KinkyDungeonRootDirectory + "Audio/" + "Magic" + ".ogg");
 				}
 			}
 			return true;
 		}, true, x + 10 + buttonSpacing*III++, y + 730 - 10 - 80, 80, 80, "", "#ffffff", KinkyDungeonRootDirectory + "UI/Promote.png",
 		undefined, undefined, false, (!KDCanPromote(value) || KDGameData.CollectionGuests >= KDCollectionGuestRows*KDCollectionColumns) ? "#ff5555" : "")) {
-			DrawTextFitKD(TextGet(KDCanPromote(value) ? "KDPromoteNPC" : "KDPromoteNotEnough"), x + 220, y + 750, 500, "#ffffff", KDTextGray0);
+			DrawTextFitKD(TextGet(KDCanPromote(value) ? "KDPromoteNPC" :
+			(KDIsInPartyID(value.id) ? "KDPromoteRemoveFromParty" : "KDPromoteNotEnough")
+		), x + 220, y + 750, 500, "#ffffff", KDTextGray0);
 		} else if (value.status == "Servant" && DrawButtonKDEx("demoteNPC", (_b) => {
 			value.status = value.oldstatus || "";
 			delete value.Facility;

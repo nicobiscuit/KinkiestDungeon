@@ -427,7 +427,7 @@ function KinkyDungeonHandleSpellCast(spell: spell) {
 		KinkyDungeonTargetingSpell = null;
 		KinkyDungeonTargetingSpellItem = null;
 		KinkyDungeonTargetingSpellWeapon = null;
-		KinkyDungeonSendActionMessage(7, TextGet("KinkyDungeonComponentsFail" + KinkyDungeoCheckComponents(spell)[0]), "#ff5277", 1);
+		KinkyDungeonSendActionMessage(7, TextGet("KinkyDungeonComponentsFail" + KinkyDungeoCheckComponents(spell)?.components[0]), "#ff5277", 1);
 	}
 	return null;
 }
@@ -1217,9 +1217,12 @@ function KinkyDungeonCastSpell(targetX: number, targetY: number, spell: spell, e
 							let special = KinkyDungeonPlayerDamage ? KinkyDungeonPlayerDamage.special : null;
 							if (special) {
 								let energyCost = KinkyDungeonPlayerDamage.special.energyCost;
-								if (KDGameData.AncientEnergyLevel < energyCost) return {result: "Fail", data: data};
-								if (energyCost) KinkyDungeonChangeCharge(- energyCost);
-
+								if (KDGameData.AncientEnergyLevel < energyCost) {
+									if (!KinkyDungeonPlayerDamage.special.noSkip)
+										return {result: "Fail", data: data};
+								} else {
+									if (energyCost) KinkyDungeonChangeCharge(- energyCost);
+								}
 								KinkyDungeonSendEvent("playerCastSpecial", data);
 								KinkyDungeonSendEvent("afterPlayerCastSpecial", data);
 							}

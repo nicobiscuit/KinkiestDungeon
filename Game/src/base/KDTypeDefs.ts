@@ -1448,6 +1448,7 @@ interface weapon extends damageInfo, NamedAndTyped {
 	noblock?: boolean,
 	tags?: string[];
 	special?: {
+		noSkip?: boolean,
 		type: string,
 		spell?: string,
 		prereq?: string,

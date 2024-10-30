@@ -543,7 +543,7 @@ let KinkyDungeonWeapons: Record<string, weapon> = {
 	"Dragonslaver": {name: "Dragonslaver", crit: 1.4, damage: 3.5, chance: 1.25, staminacost: 2.5, type: "slash", unarmed: false, rarity: 10, shop: false, cutBonus: 0.1, sfx: "LightSwing",
 		tags: ["ranged", "sword", "divine"],
 		events: [{type: "CastSpell", spell: "BeltStrike", trigger: "playerAttack", requireEnergy: true, energyCost: 0.008}],
-		special: {type: "hitorspell", spell: "BeltStrike", requiresEnergy: true, energyCost: 0.0075, range: 2.99}},
+		special: {type: "hitorspell", noSkip: true, spell: "BeltStrike", requiresEnergy: true, energyCost: 0.0075, range: 2.99}},
 	"Arbiter": {name: "Arbiter", crit: 1.1, bindcrit: 2.0, damage: 3.5, bindEff: 1.25, chance: 2.0, bindType: "Metal", staminacost: 3, type: "chain", unarmed: false, rarity: 10, shop: false, magic: true, sfx: "HeavySwing",
 		tags: ["sword", "divine"], addBind: true,
 		events: [

@@ -4736,7 +4736,6 @@ function KDDoGraphicsSanitize(): void {
 	KDRenderTexToDestroy = [];
 	for (let t of KDMeshToDestroy) {
 		t.destroy({
-			children: true,
 			baseTexture: true,
 		});
 	}

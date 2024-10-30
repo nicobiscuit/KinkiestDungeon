@@ -366,7 +366,8 @@ function KDDrawColorSliders(X: number, Y: number, C: Character, Model: Model): v
 				DrawTextFitKD(TextGet("KDPropField_" + field), X + width/2 + 10, YY + 10, width, "#ffffff", "#000000", 20);
 
 
-				let FF = KDTextField("KDPropField" + field, X, YY, width, 20, undefined, undefined, "20", "18");
+				let FF = KDTextField("KDPropField" + field, X, YY, width, 20,
+					undefined, undefined, "100", "18");
 				if (FF.Created) {
 					if (Model.Properties && Model.Properties[KDCurrentLayer])
 						ElementValue("KDPropField" + field, Model.Properties[KDCurrentLayer][field]);
@@ -384,7 +385,7 @@ function KDDrawColorSliders(X: number, Y: number, C: Character, Model: Model): v
 									return str != "";
 								});
 							} else parsed = parseFloat(value) || parseFloat(value + "0") || value;
-							if (value) {
+							if (value || value === "") {
 								KDChangeWardrobe(C);
 								if (!Model.Properties) Model.Properties = {};
 								if (!Model.Properties[KDCurrentLayer])

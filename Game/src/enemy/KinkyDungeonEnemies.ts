@@ -8388,6 +8388,33 @@ function KDRemoveFromParty(enemy: entity, capture: boolean): boolean {
 	return false;
 }
 
+/**
+ * Removes a party member and optionally adds to capture list
+ * @param enemy - The enemy to be removed
+ * @param capture - Whether to add to CapturedParty
+ * @returns - Whether the party member was found or not
+ */
+function KDRemoveFromPartyID(id: number, capture: boolean): boolean {
+	if (!KDGameData.Party) KDGameData.Party = []; // Null protection
+	if (!KDGameData.CapturedParty) KDGameData.CapturedParty = [];
+	for (let pm of (KDGameData.Party)) {
+		if (pm.id == id) {
+			KDGameData.Party.splice(KDGameData.Party.indexOf(pm), 1);
+			let enemy = KDGetGlobalEntity(id);
+			if (enemy) {
+				let enn = KinkyDungeonGetEnemyByName(enemy.Enemy);
+				if (capture && (!enemy.maxlifetime || enemy.maxlifetime > 9000) && enn?.bound && KDCapturableType(enn)) {
+					//if (!enemy.hostile) { // In the future player will be able to keep as slaves
+					KDAddToCapturedParty(pm);
+					//}
+				}
+			}
+			return true;
+		}
+	}
+	return false;
+}
+
 
 /**
  * @param entity

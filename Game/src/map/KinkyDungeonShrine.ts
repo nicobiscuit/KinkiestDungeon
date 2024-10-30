@@ -327,7 +327,8 @@ function KinkyDungeonPayShrine(type: string, mult: number = 1) {
 				});
 			if (!KDGameData.ShopRewardProgramThreshold) KDGameData.ShopRewardProgramThreshold = KDRewardProgramBase;
 			if (!KDGameData.ShopRewardProgram) KDGameData.ShopRewardProgram = 0;
-			if (point && KinkyDungeonGroundTiles.includes(KinkyDungeonMapGet(point.x, point.y)) && KDGameData.ShopRewardProgram > KDGameData.ShopRewardProgramThreshold) {
+			if (point && "02".includes(KinkyDungeonMapGet(point.x, point.y))
+				&& KDGameData.ShopRewardProgram > KDGameData.ShopRewardProgramThreshold) {
 				KDGameData.ShopRewardProgram = 0;
 				KDGameData.ShopRewardProgramThreshold += KDRewardProgramScaling;
 				KinkyDungeonMapSet(point.x, point.y, ';');
