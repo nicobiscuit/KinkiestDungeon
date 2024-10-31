@@ -641,8 +641,14 @@ let KinkyDungeonSpellSpecials: Record<string, KDSpellSpecialCode> = {
 		let en = KinkyDungeonEnemyAt(targetX, targetY);
 		if (en && en.Enemy.bound && KinkyDungeonIsDisabled(en) && !en.Enemy.nonHumanoid) {
 			KDTieUpEnemy(en, spell.power, "Metal");
-			KinkyDungeonApplyBuffToEntity(en, KDChastity);
-			KinkyDungeonChangeMana(-KinkyDungeonGetManaCost(spell));
+			if (KDBindEnemyWithTags(en.id,
+				["magicBeltForced"], 50,
+				MiniGameKinkyDungeonLevel + 10,
+				true, undefined, false, false).length > 0) {
+					KinkyDungeonChangeMana(-KinkyDungeonGetManaCost(spell));
+				} else {
+					KinkyDungeonChangeMana(-KinkyDungeonGetManaCost(spell)/2);
+				}
 			return "Cast";
 		} else {
 			if (KinkyDungeonPlayerEntity.x == tX && KinkyDungeonPlayerEntity.y == tY) {

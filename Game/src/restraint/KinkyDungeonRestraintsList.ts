@@ -111,7 +111,7 @@ const KinkyDungeonRestraints: restraint[] = [
 			Cloth: {color: "LightNeutral", override: false},
 		},
 		Model: "ClothBlindfold",
-		blindfold: 2, enemyTags: {"scarfRestraints":8, "ropeAuxiliary": 1}, playerTags: {}, minLevel: 0, allFloors: true, shrine: ["Rope", "Blindfolds", "Tape"]},
+		blindfold: 2, enemyTags: {"scarfRestraints":8, "ropeAuxiliary": 1, "blindfoldSpell": 0.1}, playerTags: {}, minLevel: 0, allFloors: true, shrine: ["Rope", "Blindfolds", "Tape"]},
 	// endregion
 
 	// region Kigu
@@ -6753,7 +6753,7 @@ const KinkyDungeonRestraints: restraint[] = [
 		},
 		events: [
 			{trigger: "tick", type: "EnchantedAnkleCuffs"},
-			{trigger: "tick", type: "AllyHealingAura", aoe: 3.9, power: 1.5, inheritLinked: true},
+			{trigger: "tick", type: "AllyHealingAura", aoe: 3.9, power: 1.5, energyCost: 0.0025, inheritLinked: true},
 			{trigger: "tick", type: "EvasionBuff", power: 0.25, requireEnergy: true, inheritLinked: true},
 			{trigger: "missPlayer", type: "EnergyCost", requireEnergy: true, energyCost: 0.0075, inheritLinked: true}
 		]},

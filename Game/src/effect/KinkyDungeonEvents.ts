@@ -1526,6 +1526,7 @@ let KDEventMapInventory: Record<string, Record<string, (e: KinkyDungeonEvent, it
 	},
 	"postRemoval": {
 		"replaceItem": (e, item, data) => {
+			if (data.Character != KinkyDungeonPlayer) return;
 			if (data.item === item && !data.add && !data.shrine && e.list
 				&& (!e.requireFlag || KinkyDungeonFlags.get(e.requireFlag)
 			)
@@ -1545,6 +1546,7 @@ let KDEventMapInventory: Record<string, Record<string, (e: KinkyDungeonEvent, it
 			}
 		},
 		"RequireHogtie": (_e, item, data) => {
+			if (data.Character != KinkyDungeonPlayer) return;
 			if (!data.add && data.item !== item && KDRestraint(item).Group) {
 				let upper = false;
 				let lower = false;
@@ -1590,6 +1592,7 @@ let KDEventMapInventory: Record<string, Record<string, (e: KinkyDungeonEvent, it
 			}
 		},
 		"RequireBaseArmCuffs": (_e, item, data) => {
+			if (data.Character != KinkyDungeonPlayer) return;
 			if (!data.add && data.item !== item && KDRestraint(item).Group) {
 				let cuffsbase = false;
 				for (let inv of KinkyDungeonAllRestraint()) {
@@ -1616,6 +1619,7 @@ let KDEventMapInventory: Record<string, Record<string, (e: KinkyDungeonEvent, it
 			}
 		},
 		"RequireTag": (e, item, data) => {
+			if (data.Character != KinkyDungeonPlayer) return;
 			if (!data.add && data.item !== item && KDRestraint(item).Group) {
 				let cuffsbase = false;
 				for (let inv of KinkyDungeonAllRestraint()) {
@@ -1642,6 +1646,7 @@ let KDEventMapInventory: Record<string, Record<string, (e: KinkyDungeonEvent, it
 			}
 		},
 		"RequireCollar": (_e, item, data) => {
+			if (data.Character != KinkyDungeonPlayer) return;
 			if (!data.add && data.item !== item && KDRestraint(item).Group) {
 				let collar = false;
 				if (data.item && KDRestraint(data.item)?.Group == "ItemNeck") {
@@ -1654,6 +1659,7 @@ let KDEventMapInventory: Record<string, Record<string, (e: KinkyDungeonEvent, it
 			}
 		},
 		"RequireBaseAnkleCuffs": (_e, item, data) => {
+			if (data.Character != KinkyDungeonPlayer) return;
 			if (!data.add && data.item !== item && KDRestraint(item).Group) {
 				let cuffsbase = false;
 				for (let inv of KinkyDungeonAllRestraint()) {
@@ -1680,6 +1686,7 @@ let KDEventMapInventory: Record<string, Record<string, (e: KinkyDungeonEvent, it
 			}
 		},
 		"RequireBaseLegCuffs": (_e, item, data) => {
+			if (data.Character != KinkyDungeonPlayer) return;
 			if (!data.add && data.item !== item && KDRestraint(item).Group) {
 				let cuffsbase = false;
 				for (let inv of KinkyDungeonAllRestraint()) {
@@ -1706,6 +1713,7 @@ let KDEventMapInventory: Record<string, Record<string, (e: KinkyDungeonEvent, it
 			}
 		},
 		"collarModule": (_e, item, data) => {
+			if (data.Character != KinkyDungeonPlayer) return;
 			if (!data.add && data.item !== item && KDRestraint(item).Group) {
 				let collar = false;
 				for (let inv of KinkyDungeonAllRestraint()) {
@@ -1732,6 +1740,7 @@ let KDEventMapInventory: Record<string, Record<string, (e: KinkyDungeonEvent, it
 			}
 		},
 		"armbinderHarness": (_e, item, data) => {
+			if (data.Character != KinkyDungeonPlayer) return;
 			if (!data.add && data.item !== item && KDRestraint(item).Group) {
 				let armbinder = false;
 				for (let inv of KinkyDungeonAllRestraint()) {
@@ -4023,7 +4032,7 @@ let KDEventMapSpell: Record<string, Record<string, (e: KinkyDungeonEvent, spell:
 	"calcInvolOrgasmChance": {
 		"OrgasmResist": (e, _spell, data) => {
 			if (KinkyDungeonStatWill >= 0.1 && !KinkyDungeonPlayerBuffs?.d_OrgasmResist) {
-				data.invol_chance *= e.power;
+				data.invol_chance *= Math.max(0, e.power - 0.1 * (KinkyDungeonTeaseLevel || 0));
 			}
 		},
 	},
@@ -7868,7 +7877,10 @@ let KDEventMapBullet: Record<string, Record<string, (e: KinkyDungeonEvent, b: an
 			if (enemies.length > 0) {
 				for (let en of enemies) {
 					if (en && en.Enemy.bound && en.boundLevel > e.power) {
-						KinkyDungeonApplyBuffToEntity(en, KDChastity);
+						KDBindEnemyWithTags(en.id,
+							["magicBeltForced"], 50,
+							MiniGameKinkyDungeonLevel + 10,
+							true, undefined, false, false);
 					}
 				}
 			}
@@ -7886,6 +7898,10 @@ let KDEventMapBullet: Record<string, Record<string, (e: KinkyDungeonEvent, b: an
 				for (let en of enemies) {
 					if (en && en.Enemy.bound) {
 						KinkyDungeonApplyBuffToEntity(en, KDToy);
+						KDBindEnemyWithTags(en.id,
+							["genericToys"], 0,
+							MiniGameKinkyDungeonLevel + 10,
+							true, undefined, false, false);
 					}
 				}
 			}

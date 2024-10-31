@@ -671,7 +671,7 @@ AddModel({
 	Categories: ["Panties"],
 	TopLevel: true,
 	Layers: ToLayerMap([
-		{ Name: "Pantyhose", Layer: "OverSocks", Pri: -40,
+		{ Name: "Pantyhose", Layer: "BodysuitOver", Pri: -40,
 			Poses: ToMap([...LEGPOSES]),
 			HidePrefixPose: ["Encase"],	HidePrefixPoseSuffix: ["TorsoLower"],
 			//MorphPoses: {Hogtie: "Hogtie"},

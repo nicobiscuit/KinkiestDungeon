@@ -1298,6 +1298,7 @@ let KinkyDungeonSpellList: Record<string, spell[]> = { // List of spells you can
 				name: "Slime",
 				duration: 8,
 			},
+			bindTags: ["slimeRestraintsRandom"],
 			onhit:"lingering", time: 4, delay: 1, range: 3.5, size: 3, aoe: 1.5, lifetime: 3, power: 3.5, damage: "glue", playerEffect: {name: "SlimeTrap", time: 3}}, // Creates a huge pool of slime, slowing enemies that try to enter. If you step in it, you have a chance of getting trapped!
 		{name: "SlimeSplash", color: "#ff00ff", prerequisite: "ApprenticeLatex", tags: ["latex", "slime", "aoe", "offense"], landsfx: "MagicSlash", school: "Conjure",
 			manacost: 1.4, components: ["Legs"], level:1, type:"inert",
@@ -1306,6 +1307,7 @@ let KinkyDungeonSpellList: Record<string, spell[]> = { // List of spells you can
 				name: "Slime",
 				duration: 6,
 			},
+			bindTags: ["slimeRestraintsRandom"],
 			onhit:"lingering", time: 0, delay: 1, range: 2.5, size: 1, aoe: 1.01, lifetime: 1, power: 1, damage: "glue", playerEffect: {name: "SlimeTrap", time: 3}}, // Creates a huge pool of slime, slowing enemies that try to enter. If you step in it, you have a chance of getting trapped!
 		{name: "SlimeEruption", color: "#ff00ff", prerequisite: "Slime", tags: ["latex", "slime", "aoe", "denial", "offense"], landsfx: "MagicSlash", school: "Conjure", manacost: 7, components: ["Legs"], level:1, type:"inert",
 			upcastFrom: "SlimeSplash", upcastLevel: 2,
@@ -1314,6 +1316,7 @@ let KinkyDungeonSpellList: Record<string, spell[]> = { // List of spells you can
 				name: "Slime",
 				duration: 8,
 			},
+			bindTags: ["slimeRestraintsRandom"],
 			onhit:"lingering", time: 4, delay: 1, range: 4, size: 3, aoe: 2.99, lifetime: 8, power: 4, lifetimeHitBonus: 4, damage: "glue", playerEffect: {name: "SlimeTrap", time: 3}},
 		//{name: "PinkGas", manacost: 4, components: ["Verbal"], level:1, type:"inert", onhit:"lingering", time: 1, delay: 2, range: 4, size: 3, aoe: 2.5, lifetime: 9999, damage: "stun", playerEffect: {name: "PinkGas", time: 3}}, // Dizzying gas, increases distraction
 		{name: "ChainBolt", color: "#ffffff", prerequisite: "ApprenticeMetal", tags: ["metal", "binding", "bolt", "offense"], noise: 5,
@@ -2064,8 +2067,10 @@ let KinkyDungeonSpellListEnemies: spell[] = [
 		trailcast: {spell: "SingleBelt", target: "onhit", directional:true, offset: false}},
 
 	{allySpell: true, name: "SingleBelt", sfx: "Struggle", manacost: 4, components: [], level:1, type:"inert", onhit:"aoe", time: 5, delay: 1, power: 4, bind: 4, range: 2, size: 1, lifetime: 1, damage: "chain", playerEffect: {name: "TrapBindings",  text: "KinkyDungeonTrapBindingsLeatherWeak", tags: ["leatherRestraints", "leatherRestraintsHeavy"], power: 3, damage: "chain", count: 2, noGuard: true}},
-	{allySpell: true, name: "Slimethrower", landsfx: "FireSpell", noMiscast: true, manacost: 0, components: ["Legs"], level:1, type:"hit", onhit:"lingering", time: 3, range: 3.9, power: 3.5, size: 1, aoe: 1, lifetime: 1, lifetimeHitBonus: 9, damage: "glue", playerEffect: {name: "SlimeTrap", time: 3}}, // Creates a huge pool of slime, slowing enemies that try to enter. If you step in it, you have a chance of getting trapped!
-	{allySpell: true, name: "Slimethrower2", landsfx: "FireSpell", manacost: 0, components: [], level:1, type:"hit", onhit:"lingering", time: 3, range: 3.9, power: 2.5, size: 1, aoe: 1, lifetime: 1, lifetimeHitBonus: 9, damage: "glue"}, // Creates a huge pool of slime, slowing enemies that try to enter. If you step in it, you have a chance of getting trapped!
+	{allySpell: true, name: "Slimethrower",
+		bindTags: ["slimeRestraintsRandom"], landsfx: "FireSpell", noMiscast: true, manacost: 0, components: ["Legs"], level:1, type:"hit", onhit:"lingering", time: 3, range: 3.9, power: 3.5, size: 1, aoe: 1, lifetime: 1, lifetimeHitBonus: 9, damage: "glue", playerEffect: {name: "SlimeTrap", time: 3}}, // Creates a huge pool of slime, slowing enemies that try to enter. If you step in it, you have a chance of getting trapped!
+	{allySpell: true, name: "Slimethrower2",
+		bindTags: ["slimeRestraintsRandom"], landsfx: "FireSpell", manacost: 0, components: [], level:1, type:"hit", onhit:"lingering", time: 3, range: 3.9, power: 2.5, size: 1, aoe: 1, lifetime: 1, lifetimeHitBonus: 9, damage: "glue"}, // Creates a huge pool of slime, slowing enemies that try to enter. If you step in it, you have a chance of getting trapped!
 	{name: "SlimeSuit", sfx: "MagicSlash", school: "Illusion", manacost: 5, components: [], level:1, type:"special", special: "dress", outfit: "SlimeSuit", noMiscast: true,
 		onhit:"", time:25, power: 0, range: 1.5, size: 1, damage: ""},
 
@@ -2142,6 +2147,7 @@ let KinkyDungeonSpellListEnemies: spell[] = [
 		events: [
 			{trigger: "countRune", type: "rune"},
 		],
+		bindType: "MagicRope",
 		hitColor: 0xff73ef, hitLight: 6, hitsfx: "Struggle", manacost: 2, components: ["Legs"], level:1, type:"dot",
 		playerEffect: {name: "MagicRope", time: 3, count: 3, tags: ["ropeMagicWeak"], msg: "Rope"},
 		noTerrainHit: true, onhit:"aoe", delay: 3000, noDirectHit: true,
@@ -2536,15 +2542,18 @@ let KinkyDungeonSpellListEnemies: spell[] = [
 	{enemySpell: true, name: "RopeEngulf", color: "#ff2200", sfx: "Struggle", effectTileDurationMod: 10, effectTileDensity: 0.33, effectTile: {
 		name: "Ropes",
 		duration: 20,
-	}, manacost: 3, minRange: 0, components: ["Verbal"], level:1, type:"inert", onhit:"aoe", time: 5, delay: 1, power: 4.5, range: 2, size: 3, aoe: 1, lifetime: 1, damage: "chain", playerEffect: {name: "RopeEngulf", power: 3}},
+	}, manacost: 3, minRange: 0,
+	bindType: "MagicRope", components: ["Verbal"], level:1, type:"inert", onhit:"aoe", time: 5, delay: 1, power: 4.5, range: 2, size: 3, aoe: 1, lifetime: 1, damage: "chain", playerEffect: {name: "RopeEngulf", power: 3}},
 	{enemySpell: true, name: "RopeEngulfWeak", color: "#ff2200", sfx: "Struggle", effectTileDurationMod: 10, effectTile: {
 		name: "Ropes",
 		duration: 20,
-	}, manacost: 4, components: ["Verbal"], level:1, type:"inert", onhit:"aoe", time: 5, delay: 1, power: 3, range: 3.5, size: 3, aoe: 1, lifetime: 1, damage: "chain", playerEffect: {name: "RopeEngulfWeak", power: 1, damage: "chain"}},
+	}, manacost: 4, components: ["Verbal"],
+	bindType: "Rope", level:1, type:"inert", onhit:"aoe", time: 5, delay: 1, power: 3, range: 3.5, size: 3, aoe: 1, lifetime: 1, damage: "chain", playerEffect: {name: "RopeEngulfWeak", power: 1, damage: "chain"}},
 	{enemySpell: true, name: "Entangle", color: "#88ff88", minRange: 0, sfx: "Struggle", effectTileDurationMod: 10, effectTileAoE: 1.5, effectTileDensity: 0.5, effectTile: {
 		name: "Vines",
 		duration: 20,
-	}, manacost: 4, components: ["Verbal"], level:1, type:"inert", onhit:"aoe", time: 5, delay: 2, power: 4, range: 6, size: 3, aoe: 1, lifetime: 1, damage: "chain", playerEffect: {name: "VineEngulf", power: 2}},
+	}, manacost: 4,
+	bindType: "Vine", components: ["Verbal"], level:1, type:"inert", onhit:"aoe", time: 5, delay: 2, power: 4, range: 6, size: 3, aoe: 1, lifetime: 1, damage: "chain", playerEffect: {name: "VineEngulf", power: 2}},
 
 	{enemySpell: true, name: "BubbleBurst", color: "#88ffff", minRange: 0, sfx: "Grope", landsfx: "RubberBolt", effectTileDurationMod: 10, effectTileAoE: 1.5, effectTileDensity: 0.5, effectTile: {
 		name: "Water",
@@ -2607,7 +2616,9 @@ let KinkyDungeonSpellListEnemies: spell[] = [
 	},
 
 	{enemySpell: true, name: "Feathers", color: "#ffffff", sfx: "Tickle", manacost: 4, components: ["Verbal"], level:1, type:"inert", onhit:"aoe", time: 5, delay: 2, power: 5, range: 6, size: 3, aoe: 1.5, lifetime: 1, damage: "tickle", playerEffect: {name: "Damage"}},
-	{enemySpell: true, name: "NurseBola", color: "#ff2200", sfx: "Miss", manacost: 5, components: ["Arms"], level:1, type:"bolt", projectileTargeting:true, onhit:"",  power: 3, delay: 0, range: 50, damage: "chain", speed: 2, playerEffect: {name: "NurseBola"}}, // Throws a chain which stuns the target for 1 turn
+	{enemySpell: true, name: "NurseBola", color: "#ff2200", sfx: "Miss", manacost: 5, components: ["Arms"],
+		bindType: "Rope",
+		level:1, type:"bolt", projectileTargeting:true, onhit:"",  power: 3, delay: 0, range: 50, damage: "chain", speed: 2, playerEffect: {name: "NurseBola"}}, // Throws a chain which stuns the target for 1 turn
 	{enemySpell: true, name: "NurseSyringe", color: "#ff00ff", minRange: 1.5, sfx: "Miss", manacost: 2, castRange: 6, components: ["Arms"], level:1, speed: 1,
 		type:"bolt", projectileTargeting:true, onhit:"", power: 4, delay: 0, range: 50, damage: "pain", playerEffect: {name: "NurseSyringe", power: 4, type: "poison", time: 8},},
 	{enemySpell: true, name: "RibbonBurst", color: "#ff00ff", sfx: "MagicSlash", manacost: 5, components: ["Verbal"], level:1, type:"inert", onhit:"aoe", time: 5, delay: 2, power: 4, range: 6, size: 3, aoe: 1.5, lifetime: 1, damage: "chain", playerEffect: {name: "TrapBindings",  text: "KinkyDungeonTrapBindingsRibbons", tags: ["magicRibbons"], power: 3, damage: "chain", count: 2, noGuard: true}},
@@ -2689,7 +2700,7 @@ let KinkyDungeonSpellListEnemies: spell[] = [
 		name: "Belts",
 		duration: 20,
 	},},
-	{enemySpell: true, name: "MagicRope", color: "#ff00ff", sfx: "FireSpell", manacost: 5, components: ["Arms"], level:1, type:"bolt", projectileTargeting:true, onhit:"", time: 6,  power: 4, bindType: "Rope", bind: 8, delay: 0, range: 50, damage: "chain", speed: 2, playerEffect: {name: "SingleMagicBind", time: 1, msg: "MRope", tags: ["ropeMagicStrong"], sfx: "MagicSlash"}, effectTileDurationMod: 10, effectTile: {
+	{enemySpell: true, name: "MagicRope", color: "#ff00ff", sfx: "FireSpell", manacost: 5, components: ["Arms"], level:1, type:"bolt", projectileTargeting:true, onhit:"", time: 6,  power: 4, bindType: "MagicRope", bind: 8, delay: 0, range: 50, damage: "chain", speed: 2, playerEffect: {name: "SingleMagicBind", time: 1, msg: "MRope", tags: ["ropeMagicStrong"], sfx: "MagicSlash"}, effectTileDurationMod: 10, effectTile: {
 		name: "Ropes",
 		duration: 20,
 	},},
@@ -3102,7 +3113,7 @@ let KinkyDungeonSpellListEnemies: spell[] = [
 	{enemySpell: true, name: "ShadowScythe", color: "#0000ff", sfx: "MagicSlash", manacost: 4, components: ["Verbal"], level:1, type:"inert", noTerrainHit: true, onhit:"aoe", time: 5, delay: 1, power: 3.5, range: 2, size: 3, aoe: 1.5, lifetime: 1, damage: "cold", playerEffect: {name: "ShadowBind", time: 4}},
 	{enemySpell: true, name: "WitchSlime",  bindType: "Slime", color: "#ff00ff", minRange: 0, landsfx: "MagicSlash", manacost: 7, components: ["Legs"], level:1, type:"inert", onhit:"lingering",
 		time: 2, delay: 1, range: 4, power: 2, size: 3, aoe: 1, lifetime: 1, lifetimeHitBonus: 9, damage: "glue", playerEffect: {name: "SlimeTrap", time: 3},
-		effectTileDurationModLinger: 8, effectTileLinger: {
+		bindTags: ["slimeRestraintsRandom"], effectTileDurationModLinger: 8, effectTileLinger: {
 			name: "Slime",
 			duration: 10,
 		},}, // Creates a huge pool of slime, slowing enemies that try to enter. If you step in it, you have a chance of getting trapped!
@@ -3121,7 +3132,7 @@ let KinkyDungeonSpellListEnemies: spell[] = [
 	}, // Throws a ball of slime which oozes more slime
 	{enemySpell: true, name: "SlimePuddle", bindType: "Slime", color: "#ff00ff", sfx: "FireSpell", manacost: 3, components: ["Arms"], level:1, type:"bolt", projectileTargeting:true, onhit:"lingering",
 		time: 2, power: 2, lifetime: 5, lifetimeHitBonus: 5, aoe: 1.5, delay: 0, range: 50, damage: "glue", speed: 1, playerEffect: {name: "SlimeTrap", time: 3},
-		effectTileDurationModLinger: 8, effectTileLinger: {
+		bindTags: ["slimeRestraintsRandom"], effectTileDurationModLinger: 8, effectTileLinger: {
 			name: "Slime",
 			duration: 10,
 		},

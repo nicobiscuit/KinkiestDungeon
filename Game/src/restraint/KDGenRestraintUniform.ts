@@ -75,7 +75,7 @@ function KDGetNPCEligibleRestraints_fromTags(id: number, tags: string[], options
 	forceConjure?: boolean,
 }): EligibleRestraintEntry[] {
 	let ret: EligibleRestraintEntry[] = [];
-	let effLevel = (options?.forceEffLevel != undefined ? options.forceEffLevel : undefined) || KDGetEffLevel();
+	let effLevel = 4 + (options?.forceEffLevel != undefined ? options.forceEffLevel : undefined) || KDGetEffLevel();
 
 	let arousalMode = KinkyDungeonStatsChoice.get("arousalMode");
 
@@ -99,6 +99,8 @@ function KDGetNPCEligibleRestraints_fromTags(id: number, tags: string[], options
 				|| (restraint.ignoreFloorTags?.some((t) => {return tags.includes(t);}))
 
 		)) {
+			if (KDCanEquipItemOnNPC(restraint, id, false)) continue;
+
 			if (!restraint.arousalMode || arousalMode) {
 				let enabled = false;
 				let weight = restraint.weight;
@@ -169,7 +171,7 @@ function KDGetNPCEligibleRestraints_fromTags(id: number, tags: string[], options
 				}
 			}*/
 			//for (let v of variants) {
-			let slot = KDGetNPCBindingSlotForItem(c.r, id, false);
+			let slot = KDGetNPCBindingSlotForItem(c.r, id, false, -1000);
 			if (slot) cachePossible.push({r: c.r, w: c.w, v: c.v, row: slot.row, sgroup: slot.sgroup});
 			//}
 		}

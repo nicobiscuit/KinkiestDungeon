@@ -3190,9 +3190,12 @@ function KDCrackTile(x: number, y: number, allowCrack: boolean, data: any) {
 	}
 }
 
-function KDBindEnemyWithTags(id: number, tags: string[], amount: number = 0, power: number = 0, forceConjure: boolean = true, maxTries: number = 100, allowOverride: boolean = false,
-	allowVariants: boolean = true, maxAdded: number = 10) {
+function KDBindEnemyWithTags(id: number, tags: string[],
+	amount: number = 0, power: number = 0,
+	forceConjure: boolean = true, maxTries: number = 100, allowOverride: boolean = false,
+	allowVariants: boolean = true, maxAdded: number = 10): string[] {
 	let entity = KDGetGlobalEntity(id);
+	let addedItems: string[] = [];
 	if (entity) {
 		let maxBinding = entity.boundLevel + amount;
 		let expected = KDGetExpectedBondageAmountTotal(id, entity);
@@ -3250,6 +3253,7 @@ function KDBindEnemyWithTags(id: number, tags: string[], amount: number = 0, pow
 					events: variant?.events || undefined,
 				});
 				added += bondageStats.amount;
+				addedItems.push(variant?.name || restraintTry.restraint.name)
 				// Refresh the stats
 				expected = KDGetExpectedBondageAmountTotal(id, entity);
 
@@ -3257,5 +3261,7 @@ function KDBindEnemyWithTags(id: number, tags: string[], amount: number = 0, pow
 			}
 		}
 	}
+
+	return addedItems;
 
 }
