@@ -5751,8 +5751,8 @@ KinkyDungeonSpellDescriptionOrgasmFrequency2,"You are quite difficult to satisfy
 
 KinkyDungeonSpellOrgasmResist,Mental Resistance
 KinkyDungeonSpellDescriptionOrgasmResist,"+100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 or are teased directly by an enemy or damage (click the buff to toggle), and willpower drains 70% slower while edged."
-KinkyDungeonBuffe_OrgasmResist,"Mental Resistance: You cannot orgasm except by choice, or being forced by an enemy. Click to toggle."
-KinkyDungeonBuffd_OrgasmResist,"Mental Resistance: You are allowing yourself to let go if forced to. Click to toggle."
+KinkyDungeonBuffe_OrgasmResist,"Mental Resistance: You cannot orgasm except by choice, having 0 WP, or being forced by an enemy. Click to toggle."
+KinkyDungeonBuffd_OrgasmResist,"Mental Resistance: You are allowing yourself to let go. Click to toggle."
 
 
 KinkyDungeonSpellEdgeMana1,Way of Discipline
