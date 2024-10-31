@@ -4892,8 +4892,6 @@ The fun-gal produces a magical lock on all your restraints! (DamageTaken)
 ¡La fun-gal produce un candado mágico en todas tus ataduras! (Daño Recibido)
 The fun-gal rubs your chest with her long, slender fingers! (DamageTaken)
 ¡La fun-gal frota tu pecho con sus dedos largos y delgados! (Daño Recibido)
-Crystal Glyph
-Glifo de cristal
 ### Crystal Slash
 
 ### Crystal Bolt
@@ -9010,14 +9008,6 @@ The latex ampule shatters on impact and coats your body!
 ¡La ampolla de látex se rompe con el impacto y cubre tu cuerpo!
 The latex ampule shatters on impact and sticks to you!
 ¡La ampolla de látex se rompe con el impacto y se te pega!
-Gas Ampule
-ampollas de gas
-Glue Ampule
-ampollas de pegamento
-Rubber Ampule
-ampolla de goma
-Latex Ampule
-ampolla de látex
 
 
 Shadowy chains appear from a rift in space!
@@ -9114,9 +9104,9 @@ Como aprendiz, ha aprendido la técnica de inducir claridad a través de un esta
 
 Mental Resistance
 Resistencia Mental
-### +100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 (click the buff to toggle), and willpower drains 70% slower while edged.
+### +100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 or are teased directly by an enemy or damage (click the buff to toggle), and willpower drains 70% slower while edged.
 
-### Mental Resistance: You cannot orgasm except by choice. Click to toggle.
+### Mental Resistance: You cannot orgasm except by choice, or being forced by an enemy. Click to toggle.
 
 ### Mental Resistance: You are allowing yourself to let go if forced to. Click to toggle.
 
@@ -9434,20 +9424,12 @@ Shadowy Grip
 Agarre sombrío
 A dark hand latches onto you and holds you tight!
 ¡Una mano oscura se aferra a ti y te sujeta con fuerza!
-Celestial Orb
-Orbe celestial
 You are snugly wrapped in glowing ropes!
 ¡Estás cómodamente envuelto en cuerdas brillantes!
 Obsidian Orb
 Orbe de obsidiana
 Metallic restraints encircle your body!
 ¡Sujeciones metálicas rodean tu cuerpo!
-Rubberizing Bolt
-Perno de goma
-Rubber Bolt
-Perno de goma
-Latex Bolt
-Perno de látex
 The latex spreads across your limbs and rubberizes, forming a tough barrier!
 ¡El látex se esparce por tus extremidades y se vuelve gomoso, formando una barrera resistente!
 The latex spreads across your limbs and hardens, forming a stretchy layer!
@@ -9524,8 +9506,6 @@ Choose target 3x3 area
 Elija el área objetivo de 3x3
 
 
-Witch's Electricity
-Electricidad de bruja
 ### Firey Explosion
 
 ### Icey Explosion
@@ -9622,8 +9602,6 @@ You conjure a healing light!
 
 Crackle
 Crepitar
-Stun Blast
-Explosión de aturdimiento
 Storm Bolt
 Rayo de tormenta
 A bolt of lightning that does DamageDealt electric damage to enemies in a 4-range line and briefly stuns.
@@ -10904,8 +10882,6 @@ Seleccione un objetivo para tirar
 
 Slime Blast
 Explosión de limo
-Apprentice's Slime
-Baba de aprendiz
 Witch's Slime
 Baba de bruja
 Rubber Explosion
@@ -10972,14 +10948,6 @@ Select where to put the icicles (SpellArea radius)
 Seleccione dónde colocar los carámbanos (radio SpellArea)
 
 
-Zombie Orb
-Orbe zombi
-Lesser Zombie Orb
-Orbe zombie menor
-Freezing Zombie Orb
-Orbe zombi helado
-Mystic Bolt
-Rayo místico
 ### The mummy's curse paralyzes you!
 
 Rubber Bullets
@@ -11026,10 +10994,6 @@ You have been flummoxed!
 ¡Te has quedado desconcertado!
 
 
-Cuff Bola
-Bola de puño
-Throw Syringe
-Lanzar Jeringa
 You feel a prick as a small syringe hits you, and you start feeling drowsy...
 Sientes un pinchazo cuando te golpea una pequeña jeringa y empiezas a sentirte somnoliento...
 The thrown cuffs snap shut around your ankles and slow you down!!!
@@ -26754,8 +26718,6 @@ Cuerda de entrepierna de mitril
 
 ### The latex around you dampens your attacks, reducing physical damage by 30% and lowering your sight range.
 
-### Latex Bubbl
-
 ### Latex Ball
 
 ### ...Lab Assistant?
@@ -27176,11 +27138,11 @@ Ataque a distancia
 
 ### Fiery Greatsword
 
-### Enchanted Bubble
 
-### Latex Bubble
 
 ### Tangling Vines
+
+### Enchanted Bubble
 
 ### A bubble of magic water starts forming around you!
 
@@ -28644,7 +28606,7 @@ Hogtied!
 
 ### Former Faction: 
 
-### Minigun
+
 
 ### Miku
 
@@ -28696,7 +28658,7 @@ Hogtied!
 
 ### Back to Game
 
-### Slimy Spit
+
 
 ### Servants
 
@@ -30558,6 +30520,8 @@ You found a magical amulet! Choose one of the following to determine its benefit
 
 ### Need Positive Opinion to Promote
 
+### Remove From Party Before Promoting?
+
 ### Servant Cuddle Points: AMNT (+OPN opinion/cycle)
 
 ### Prisoner Cuddle Points: AMNT (+OPN opinion/cycle)
@@ -30926,31 +30890,23 @@ Te has perdido deambulando por las ruinas. ¡El orden de los mosaicos está inve
 
 ### Slime Encapsulation
 
-### Nature Bolt
-
-### Wind Blast
-
 ### Judgement Bolt
 
 ### Flame Bolt
 
 ### Electrification
 
-### Dazzle
-
 ### Charming Orb
 
 ### Freezing Orb
-
-### Hairpin
 
 ### Heavy Ordnance
 
 ### Entangle
 
-### Crystal Bind
-
 ### Blessed Orb
+
+### Slimy Sphere
 
 ### Rubberization Protocol
 
@@ -30960,45 +30916,7 @@ Te has perdido deambulando por las ruinas. ¡El orden de los mosaicos está inve
 
 ### Encasement Protocol
 
-### Homing Missile
-
 ### Electrical Discharge
-
-### Gravitation
-
-### Shadow Teleportation
-
-### Ice Blast
-
-### Poison Blast
-
-### Forbidden Rope
-
-### Enchanted Arrow
-
-### Flash
-
-### Crystal Barrage
-
-### Shadow Bolt
-
-### Obsidian Bolt
-
-### Shadow Grasp
-
-### Bound by Fate
-
-### Conjure Lock
-
-### Magical Rope
-
-### Hex
-
-### Rubber Projector
-
-### Enhance Ropes
-
-### Enchant Ropes
 
 ### Icebolt
 
@@ -31020,16 +30938,150 @@ Te has perdido deambulando por las ruinas. ¡El orden de los mosaicos está inve
 
 ### Sedative
 
-### Poison Dart
-
-### Bear Trap
-
-### Charming Orbs
+### Slime Barrage
 
 ### Seal of the 5th Era
 
-### Taunt
 
-### Magical Missile
 
-### Cursing Circle
+### Healing Flash
+
+### Undead Frenzy
+
+### Command Word
+
+### Rope Ambush
+
+### Defensive Charm
+
+### Tracer Rounds
+
+### The Spookening
+
+### The Muffling
+
+### Conjure Tickle Hands
+
+### Conjure Gags
+
+### Scriptum Ferri
+
+### Scrimptum Habena
+
+### Scriptum Ligni
+
+### Electric Storm
+
+### Flower Spores
+
+### Magnum Opus
+
+### Latex Integrator
+
+### Forcefield Protocol
+
+### Motivation
+
+### Drone Assault
+
+### Tape Drone Assault
+
+### *summon slime mold*
+
+### Vine Growth
+
+### Flower Growth
+
+### Thorn Whip
+
+### Crystal Surge
+
+### Shadow Shroud
+
+### Shadow Step
+
+### Ice Wall
+
+### Armor Up
+
+### Crystal Growth
+
+### Shadow Orb
+
+### Earthfield
+
+### Soul Beam
+
+### Summon Shadows
+
+### Observation
+
+### Conjure Latex Restraint
+
+### Rope Sealing
+
+### Slime Minion
+
+### Magical Wrappings
+
+### Capture Bolt
+
+### Training Protocol
+
+### Motivation Protocol
+
+### Conjure Tickle Hand
+
+### Conjure Locks
+
+### Chainstorm
+
+### Chain Wall
+
+### Binding Ribbons
+
+### Scriptum Limus
+
+### Scriptum Glacis
+
+### Scriptim Vinea
+
+### Scriptum Infernus
+
+### Scriptum Arcanum
+
+### Scriptum Celeste
+
+### Scriptum Electri
+
+### Blessed Rays
+
+### Ghostly Pets
+
+### Zombie Pets
+
+### Drone Support
+
+### Doll Training
+
+### Full Capture
+
+### Shadow Hands
+
+### Obsidian Orbs
+
+### Mithril Orbs
+
+
+
+
+
+### (The Warden perks an eyebrow at the sight of you,|before a wide grin overtakes her face)|Ahhh Fuuka. Chosen by the Goddess?|How does it feel to once again be under a leash?
+
+### Fuuka, take her down.
+
+### (Send Fuuka to fight her)
+
+### That is none of your business. Now kneel.
+
+### (Fight without listening.)

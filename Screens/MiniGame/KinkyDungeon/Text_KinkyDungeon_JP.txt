@@ -5062,8 +5062,6 @@ The fun-gal produces a magical lock on all your restraints! (DamageTaken)
 ファンガールはすべての拘束具に魔法のロックを生成してきた！(DamageTaken)
 The fun-gal rubs your chest with her long, slender fingers! (DamageTaken)
 ファンガールが細い指で胸を優しく揉んできた！ (DamageTaken)
-Crystal Glyph
-クリスタルグリフ
 Crystal Slash
 クリスタルスラッシュ
 Crystal Bolt
@@ -9368,14 +9366,6 @@ The latex ampule shatters on impact and coats your body!
 瓶が衝撃で粉々に砕け、中のラバーがまとわりついてきた！
 The latex ampule shatters on impact and sticks to you!
 瓶が衝撃で粉々に砕け、中のラバーがひっついてきた！
-Gas Ampule
-ガス入り瓶
-Glue Ampule
-接着剤入り瓶
-Rubber Ampule
-ラバー入り瓶
-Latex Ampule
-ラテックス入り瓶
 
 
 Shadowy chains appear from a rift in space!
@@ -9500,10 +9490,10 @@ You are quite difficult to satisfy. Letting go costs 50% less stamina (75% total
 
 Mental Resistance
 不屈の精神
-+100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 (click the buff to toggle), and willpower drains 70% slower while edged.
-精神、魅了耐性+100。気力が0でない限り、絶頂することがなくなり(切替可能)、絶頂中の気力減少-70%。
-Mental Resistance: You cannot orgasm except by choice. Click to toggle.
-不屈の精神：絶頂することができなくなる。クリックで切り替え。
+### +100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 or are teased directly by an enemy or damage (click the buff to toggle), and willpower drains 70% slower while edged.
+
+### Mental Resistance: You cannot orgasm except by choice, or being forced by an enemy. Click to toggle.
+
 Mental Resistance: You are allowing yourself to let go if forced to. Click to toggle.
 不屈の精神：絶頂可能。クリックで切り替え。
 
@@ -9828,20 +9818,12 @@ Shadowy Grip
 シャドーグリップ
 A dark hand latches onto you and holds you tight!
 影の手が全身に絡みつき、締め上げてくる！
-Celestial Orb
-天体のオーブ
 You are snugly wrapped in glowing ropes!
 光るロープで縛られてしまった！
 Obsidian Orb
 黒曜石のオーブ
 Metallic restraints encircle your body!
 黒曜石の拘束具に取り付かれた！
-Rubberizing Bolt
-ラバーボルト
-Rubber Bolt
-ラバーボルト
-Latex Bolt
-ラテックスボルト
 The latex spreads across your limbs and rubberizes, forming a tough barrier!
 ラバーが全身に広がり、行動を制限される！
 The latex spreads across your limbs and hardens, forming a stretchy layer!
@@ -9918,8 +9900,6 @@ Choose target 3x3 area
 3x3エリアを選択
 
 
-Witch's Electricity
-エレクトリファイ
 Firey Explosion
 エクスプロージョン
 Icey Explosion
@@ -10020,8 +10000,6 @@ You conjure a healing light!
 
 Crackle
 ライトニング
-Stun Blast
-スタンブラスト
 Storm Bolt
 ストームボルト
 A bolt of lightning that does DamageDealt electric damage to enemies in a 4-range line and briefly stuns.
@@ -11350,8 +11328,6 @@ Select a target to pull
 
 Slime Blast
 スライムブラスト
-Apprentice's Slime
-見習いのスライム
 Witch's Slime
 魔女のスライム
 Rubber Explosion
@@ -11418,14 +11394,6 @@ Select where to put the icicles (SpellArea radius)
 場所を選択
 
 
-Zombie Orb
-ゾンビオーブ
-Lesser Zombie Orb
-レッサーゾンビオーブ
-Freezing Zombie Orb
-凍結ゾンビオーブ
-Mystic Bolt
-ミスティックボルト
 The mummy's curse paralyzes you!
 バスト教団の呪いで身体が痺れた！
 
@@ -11474,10 +11442,6 @@ You have been flummoxed!
 混乱した！
 
 
-Cuff Bola
-投げ枷
-Throw Syringe
-注射器投げ
 You feel a prick as a small syringe hits you, and you start feeling drowsy...
 小さな注射器が刺さり、意識が薄れていく……
 The thrown cuffs snap shut around your ankles and slow you down!!!
@@ -27726,8 +27690,6 @@ The latex around you dampens your attacks, reducing physical damage by 30% and l
 周囲のラテックスに攻撃を減衰させられる。物理ダメージが30％減少し、視界の範囲が狭くなる。
 
 
-Latex Bubbl
-ラテックスバブル
 Latex Ball
 ラテックスボール
 
@@ -28238,14 +28200,10 @@ Fiery Greatsword
 炎の大剣
 
 
-Enchanted Bubble
-魔法の泡
-Latex Bubble
-ラテックスバブル
-
-
 Tangling Vines
 タングルバイン
+Enchanted Bubble
+魔法の泡
 A bubble of magic water starts forming around you!
 周囲に魔法の水の泡が形成され始めた！
 The gap in the bubble closes, and you are fully sealed within the bubble!
@@ -30004,10 +29962,6 @@ Former Faction:
 元派閥:
 
 
-Minigun
-ミニガン
-
-
 Miku
 ミク
 Nevermere
@@ -30070,10 +30024,6 @@ Enlarged View
 拡大表示
 Back to Game
 ゲームに戻る
-
-
-Slimy Spit
-スピットスライム
 
 
 Servants
@@ -32270,7 +32220,7 @@ OVERWRITE All!
 
 Need Positive Opinion to Promote
 昇格させるには好感度が足りない
-
+### Remove From Party Before Promoting?
 
 Servant Cuddle Points: AMNT (+OPN opinion/cycle)
 使用人の幸福度: AMNT (+OPN 追加ポイント/サイクル)
@@ -32728,31 +32678,23 @@ Crystal Storm
 
 ### Slime Encapsulation
 
-### Nature Bolt
-
-### Wind Blast
-
 ### Judgement Bolt
 
 ### Flame Bolt
 
 ### Electrification
 
-### Dazzle
-
 ### Charming Orb
 
 ### Freezing Orb
-
-### Hairpin
 
 ### Heavy Ordnance
 
 ### Entangle
 
-### Crystal Bind
-
 ### Blessed Orb
+
+### Slimy Sphere
 
 ### Rubberization Protocol
 
@@ -32762,45 +32704,7 @@ Crystal Storm
 
 ### Encasement Protocol
 
-### Homing Missile
-
 ### Electrical Discharge
-
-### Gravitation
-
-### Shadow Teleportation
-
-### Ice Blast
-
-### Poison Blast
-
-### Forbidden Rope
-
-### Enchanted Arrow
-
-### Flash
-
-### Crystal Barrage
-
-### Shadow Bolt
-
-### Obsidian Bolt
-
-### Shadow Grasp
-
-### Bound by Fate
-
-### Conjure Lock
-
-### Magical Rope
-
-### Hex
-
-### Rubber Projector
-
-### Enhance Ropes
-
-### Enchant Ropes
 
 ### Icebolt
 
@@ -32822,16 +32726,150 @@ Crystal Storm
 
 ### Sedative
 
-### Poison Dart
-
-### Bear Trap
-
-### Charming Orbs
+### Slime Barrage
 
 ### Seal of the 5th Era
 
-### Taunt
 
-### Magical Missile
 
-### Cursing Circle
+### Healing Flash
+
+### Undead Frenzy
+
+### Command Word
+
+### Rope Ambush
+
+### Defensive Charm
+
+### Tracer Rounds
+
+### The Spookening
+
+### The Muffling
+
+### Conjure Tickle Hands
+
+### Conjure Gags
+
+### Scriptum Ferri
+
+### Scrimptum Habena
+
+### Scriptum Ligni
+
+### Electric Storm
+
+### Flower Spores
+
+### Magnum Opus
+
+### Latex Integrator
+
+### Forcefield Protocol
+
+### Motivation
+
+### Drone Assault
+
+### Tape Drone Assault
+
+### *summon slime mold*
+
+### Vine Growth
+
+### Flower Growth
+
+### Thorn Whip
+
+### Crystal Surge
+
+### Shadow Shroud
+
+### Shadow Step
+
+### Ice Wall
+
+### Armor Up
+
+### Crystal Growth
+
+### Shadow Orb
+
+### Earthfield
+
+### Soul Beam
+
+### Summon Shadows
+
+### Observation
+
+### Conjure Latex Restraint
+
+### Rope Sealing
+
+### Slime Minion
+
+### Magical Wrappings
+
+### Capture Bolt
+
+### Training Protocol
+
+### Motivation Protocol
+
+### Conjure Tickle Hand
+
+### Conjure Locks
+
+### Chainstorm
+
+### Chain Wall
+
+### Binding Ribbons
+
+### Scriptum Limus
+
+### Scriptum Glacis
+
+### Scriptim Vinea
+
+### Scriptum Infernus
+
+### Scriptum Arcanum
+
+### Scriptum Celeste
+
+### Scriptum Electri
+
+### Blessed Rays
+
+### Ghostly Pets
+
+### Zombie Pets
+
+### Drone Support
+
+### Doll Training
+
+### Full Capture
+
+### Shadow Hands
+
+### Obsidian Orbs
+
+### Mithril Orbs
+
+
+
+
+
+### (The Warden perks an eyebrow at the sight of you,|before a wide grin overtakes her face)|Ahhh Fuuka. Chosen by the Goddess?|How does it feel to once again be under a leash?
+
+### Fuuka, take her down.
+
+### (Send Fuuka to fight her)
+
+### That is none of your business. Now kneel.
+
+### (Fight without listening.)

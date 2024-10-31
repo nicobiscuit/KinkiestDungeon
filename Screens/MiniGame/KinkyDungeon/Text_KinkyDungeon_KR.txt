@@ -4782,8 +4782,6 @@ The fun-gal retreats into the ground.
 
 ### The fun-gal rubs your chest with her long, slender fingers! (DamageTaken)
 
-Crystal Glyph
-크리스탈 문양
 ### Crystal Slash
 
 ### Crystal Bolt
@@ -8836,14 +8834,6 @@ The latex ampule shatters on impact and coats your body!
 라텍스 앰플이 충격에 깨지면서 몸을 코팅!
 The latex ampule shatters on impact and sticks to you!
 라텍스 앰플이 충격에 깨져 착 달라붙는!
-Gas Ampule
-가스 앰플
-Glue Ampule
-접착제 앰플
-Rubber Ampule
-고무 앰플
-Latex Ampule
-라텍스 앰플
 
 
 Shadowy chains appear from a rift in space!
@@ -8938,9 +8928,9 @@ The roaring inferno deals 10 damage to you!
 
 ### Mental Resistance
 
-### +100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 (click the buff to toggle), and willpower drains 70% slower while edged.
+### +100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 or are teased directly by an enemy or damage (click the buff to toggle), and willpower drains 70% slower while edged.
 
-### Mental Resistance: You cannot orgasm except by choice. Click to toggle.
+### Mental Resistance: You cannot orgasm except by choice, or being forced by an enemy. Click to toggle.
 
 ### Mental Resistance: You are allowing yourself to let go if forced to. Click to toggle.
 
@@ -9258,19 +9248,11 @@ The restraining device wraps many elastic cables around you!!!
 
 ### A dark hand latches onto you and holds you tight!
 
-### Celestial Orb
-
 ### You are snugly wrapped in glowing ropes!
 
 ### Obsidian Orb
 
 ### Metallic restraints encircle your body!
-
-### Rubberizing Bolt
-
-### Rubber Bolt
-
-### Latex Bolt
 
 ### The latex spreads across your limbs and rubberizes, forming a tough barrier!
 
@@ -9348,8 +9330,6 @@ Choose target 3x3 area
 대상 3x3 영역 선택
 
 
-Witch's Electricity
-마녀의 전기
 ### Firey Explosion
 
 ### Icey Explosion
@@ -9446,8 +9426,6 @@ You conjure a healing light!
 
 Crackle
 크랙클
-Stun Blast
-스턴 블래스트
 Storm Bolt
 스톰 볼트
 A bolt of lightning that does DamageDealt electric damage to enemies in a 4-range line and briefly stuns.
@@ -10726,8 +10704,6 @@ Select a target to pull
 
 Slime Blast
 슬라임 블래스트
-Apprentice's Slime
-견습생의 점액
 Witch's Slime
 마녀의 점액
 ### Rubber Explosion
@@ -10794,14 +10770,6 @@ Select where to put the icicles (SpellArea radius)
 고드름을 놓을 위치 선택(SpellArea 반경)
 
 
-Zombie Orb
-좀비 오브
-Lesser Zombie Orb
-하급 좀비 오브
-Freezing Zombie Orb
-얼어붙는 좀비 오브
-Mystic Bolt
-미스틱 볼트
 ### The mummy's curse paralyzes you!
 
 Rubber Bullets
@@ -10848,10 +10816,6 @@ You have been flummoxed!
 당신은 당황했습니다!
 
 
-Cuff Bola
-커프 볼라
-Throw Syringe
-던지기 주사기
 You feel a prick as a small syringe hits you, and you start feeling drowsy...
 당신은 작은 주사기가 몸을 찌르는 것을 느끼고, 어지러워집니다...
 The thrown cuffs snap shut around your ankles and slow you down!!!
@@ -26454,8 +26418,6 @@ Mithril Crotch Rope
 
 ### The latex around you dampens your attacks, reducing physical damage by 30% and lowering your sight range.
 
-### Latex Bubbl
-
 ### Latex Ball
 
 ### ...Lab Assistant?
@@ -26876,11 +26838,11 @@ Ranged Attack
 
 ### Fiery Greatsword
 
-### Enchanted Bubble
 
-### Latex Bubble
 
 ### Tangling Vines
+
+### Enchanted Bubble
 
 ### A bubble of magic water starts forming around you!
 
@@ -28344,7 +28306,7 @@ Hogtied!
 
 ### Former Faction: 
 
-### Minigun
+
 
 ### Miku
 
@@ -28396,7 +28358,7 @@ Hogtied!
 
 ### Back to Game
 
-### Slimy Spit
+
 
 ### Servants
 
@@ -30258,6 +30220,8 @@ You found a magical amulet! Choose one of the following to determine its benefit
 
 ### Need Positive Opinion to Promote
 
+### Remove From Party Before Promoting?
+
 ### Servant Cuddle Points: AMNT (+OPN opinion/cycle)
 
 ### Prisoner Cuddle Points: AMNT (+OPN opinion/cycle)
@@ -30626,31 +30590,23 @@ You've gotten yourself lost wandering in the ruins.|The order of tilesets is rev
 
 ### Slime Encapsulation
 
-### Nature Bolt
-
-### Wind Blast
-
 ### Judgement Bolt
 
 ### Flame Bolt
 
 ### Electrification
 
-### Dazzle
-
 ### Charming Orb
 
 ### Freezing Orb
-
-### Hairpin
 
 ### Heavy Ordnance
 
 ### Entangle
 
-### Crystal Bind
-
 ### Blessed Orb
+
+### Slimy Sphere
 
 ### Rubberization Protocol
 
@@ -30660,45 +30616,7 @@ You've gotten yourself lost wandering in the ruins.|The order of tilesets is rev
 
 ### Encasement Protocol
 
-### Homing Missile
-
 ### Electrical Discharge
-
-### Gravitation
-
-### Shadow Teleportation
-
-### Ice Blast
-
-### Poison Blast
-
-### Forbidden Rope
-
-### Enchanted Arrow
-
-### Flash
-
-### Crystal Barrage
-
-### Shadow Bolt
-
-### Obsidian Bolt
-
-### Shadow Grasp
-
-### Bound by Fate
-
-### Conjure Lock
-
-### Magical Rope
-
-### Hex
-
-### Rubber Projector
-
-### Enhance Ropes
-
-### Enchant Ropes
 
 ### Icebolt
 
@@ -30720,16 +30638,150 @@ You've gotten yourself lost wandering in the ruins.|The order of tilesets is rev
 
 ### Sedative
 
-### Poison Dart
-
-### Bear Trap
-
-### Charming Orbs
+### Slime Barrage
 
 ### Seal of the 5th Era
 
-### Taunt
 
-### Magical Missile
 
-### Cursing Circle
+### Healing Flash
+
+### Undead Frenzy
+
+### Command Word
+
+### Rope Ambush
+
+### Defensive Charm
+
+### Tracer Rounds
+
+### The Spookening
+
+### The Muffling
+
+### Conjure Tickle Hands
+
+### Conjure Gags
+
+### Scriptum Ferri
+
+### Scrimptum Habena
+
+### Scriptum Ligni
+
+### Electric Storm
+
+### Flower Spores
+
+### Magnum Opus
+
+### Latex Integrator
+
+### Forcefield Protocol
+
+### Motivation
+
+### Drone Assault
+
+### Tape Drone Assault
+
+### *summon slime mold*
+
+### Vine Growth
+
+### Flower Growth
+
+### Thorn Whip
+
+### Crystal Surge
+
+### Shadow Shroud
+
+### Shadow Step
+
+### Ice Wall
+
+### Armor Up
+
+### Crystal Growth
+
+### Shadow Orb
+
+### Earthfield
+
+### Soul Beam
+
+### Summon Shadows
+
+### Observation
+
+### Conjure Latex Restraint
+
+### Rope Sealing
+
+### Slime Minion
+
+### Magical Wrappings
+
+### Capture Bolt
+
+### Training Protocol
+
+### Motivation Protocol
+
+### Conjure Tickle Hand
+
+### Conjure Locks
+
+### Chainstorm
+
+### Chain Wall
+
+### Binding Ribbons
+
+### Scriptum Limus
+
+### Scriptum Glacis
+
+### Scriptim Vinea
+
+### Scriptum Infernus
+
+### Scriptum Arcanum
+
+### Scriptum Celeste
+
+### Scriptum Electri
+
+### Blessed Rays
+
+### Ghostly Pets
+
+### Zombie Pets
+
+### Drone Support
+
+### Doll Training
+
+### Full Capture
+
+### Shadow Hands
+
+### Obsidian Orbs
+
+### Mithril Orbs
+
+
+
+
+
+### (The Warden perks an eyebrow at the sight of you,|before a wide grin overtakes her face)|Ahhh Fuuka. Chosen by the Goddess?|How does it feel to once again be under a leash?
+
+### Fuuka, take her down.
+
+### (Send Fuuka to fight her)
+
+### That is none of your business. Now kneel.
+
+### (Fight without listening.)

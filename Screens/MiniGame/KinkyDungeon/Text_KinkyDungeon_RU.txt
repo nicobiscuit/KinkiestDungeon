@@ -5014,8 +5014,6 @@ The fun-gal produces a magical lock on all your restraints! (DamageTaken)
 Заражённая спорами создаете волшебные замки на всех ваших ограничителях! (DamageTaken)
 The fun-gal rubs your chest with her long, slender fingers! (DamageTaken)
 Заражённая спорами трёт вашу грудь своими длинными, тонкими пальцами! (DamageTaken)
-Crystal Glyph
-Кристаллический глиф
 ### Crystal Slash
 
 ### Crystal Bolt
@@ -9258,14 +9256,6 @@ The latex ampule shatters on impact and coats your body!
 Ампула с латексом разбивается при ударе и покрывает ваше тело!
 The latex ampule shatters on impact and sticks to you!
 Ампула с латексом разбивается при ударе и прилипает к вам!
-Gas Ampule
-Газовая ампула
-Glue Ampule
-Ампула с клеем
-Rubber Ampule
-Ампула с резиной
-Latex Ampule
-Ампула с латексом
 
 
 Shadowy chains appear from a rift in space!
@@ -9386,10 +9376,10 @@ You are quite difficult to satisfy. Letting go costs 50% less stamina (75% total
 
 Mental Resistance
 Ментальное сопротивление
-+100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 (click the buff to toggle), and willpower drains 70% slower while edged.
-+100 к сопротивлению Психическому урону и урону Очарованием. Вы больше не можете непроизвольно довести себя до оргазма, если ваша сила воли не равна 0 (нажмите на бафф для переключения), а сила воли истощается на 70% медленнее, когда вы на грани.
-Mental Resistance: You cannot orgasm except by choice. Click to toggle.
-Ментальное сопротивление: Вы не можете достичь оргазма иначе, как по собственному выбору. Нажмите, чтобы переключить.
+### +100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 or are teased directly by an enemy or damage (click the buff to toggle), and willpower drains 70% slower while edged.
+
+### Mental Resistance: You cannot orgasm except by choice, or being forced by an enemy. Click to toggle.
+
 Mental Resistance: You are allowing yourself to let go if forced to. Click to toggle.
 Ментальное сопротивление: Вы позволяете себе достигать оргазма, если вас к этому вынуждают. Нажмите, чтобы переключить.
 
@@ -9714,20 +9704,12 @@ Shadowy Grip
 Призрачная хватка
 A dark hand latches onto you and holds you tight!
 Темная рука вцепляется в вас и крепко держит!
-Celestial Orb
-Священный шар
 You are snugly wrapped in glowing ropes!
 Вы плотно обмотаны светящимися веревками!
 Obsidian Orb
 Обсидиановый шар
 Metallic restraints encircle your body!
 Металлические ограничители обхватывают ваше тело!
-Rubberizing Bolt
-Прорезинивающий заряд
-Rubber Bolt
-Резиновый заряд
-Latex Bolt
-Латексный заряд
 The latex spreads across your limbs and rubberizes, forming a tough barrier!
 Латекс распределяется по вашим конечностям и превращается в резину, образуя прочный барьер!
 The latex spreads across your limbs and hardens, forming a stretchy layer!
@@ -9804,8 +9786,6 @@ Choose target 3x3 area
 Выберите целевую область размером 3х3
 
 
-Witch's Electricity
-Ведьмино электричество
 Firey Explosion
 Огненный взрыв
 Icey Explosion
@@ -9906,8 +9886,6 @@ You conjure a healing light!
 
 Crackle
 Треск
-Stun Blast
-Оглушающий взрыв
 Storm Bolt
 Штормовой разряд
 A bolt of lightning that does DamageDealt electric damage to enemies in a 4-range line and briefly stuns.
@@ -11234,8 +11212,6 @@ Select a target to pull
 
 Slime Blast
 Взрыв слизи
-Apprentice's Slime
-Слизь ученицы
 Witch's Slime
 Слизь ведьмы
 Rubber Explosion
@@ -11302,14 +11278,6 @@ Select where to put the icicles (SpellArea radius)
 Выберите, куда поместить поле сосулек (SpellArea радиус)
 
 
-Zombie Orb
-Сфера зомби
-Lesser Zombie Orb
-Уменьшенная сфера зомби
-Freezing Zombie Orb
-Замораживающая сфера зомби
-Mystic Bolt
-Мистический разряд
 The mummy's curse paralyzes you!
 Проклятие мумии парализует вас!
 
@@ -11358,10 +11326,6 @@ You have been flummoxed!
 Вы были сбиты с толку!
 
 
-Cuff Bola
-Бола-мажеты
-Throw Syringe
-Метательный шприц
 You feel a prick as a small syringe hits you, and you start feeling drowsy...
 Вы чувствуете укол, когда в вас попадает маленький шприц, и начинаете чувствовать сонливость...
 The thrown cuffs snap shut around your ankles and slow you down!!!
@@ -27518,8 +27482,6 @@ The latex around you dampens your attacks, reducing physical damage by 30% and l
 Латекс вокруг вас ослабляет ваши атаки, уменьшая физический урон на 30% и снижая дальность видимости.
 
 
-Latex Bubbl
-Латексный пузырь
 Latex Ball
 Латексный шар
 
@@ -28026,14 +27988,10 @@ Fiery Greatsword
 Огненный двуручник
 
 
-Enchanted Bubble
-Зачарованный пузырь
-Latex Bubble
-Латексный пузырь
-
-
 Tangling Vines
 Переплетающиеся лозы
+Enchanted Bubble
+Зачарованный пузырь
 A bubble of magic water starts forming around you!
 Вокруг вас начинает формироваться пузырь магической воды!
 The gap in the bubble closes, and you are fully sealed within the bubble!
@@ -29784,8 +29742,6 @@ Select a character to examine
 Выберите персонажа для осмотра
 ### Former Faction: 
 
-Minigun
-Миниган
 
 
 Miku
@@ -29848,10 +29804,6 @@ Absolute Armor (1/2 crit mult)
 
 Back to Game
 Вернуться в игру
-
-
-Slimy Spit
-Слизевый плевальщик
 
 
 ### Servants
@@ -31890,6 +31842,8 @@ Willpower: +50 max willpower. +1 stamina regen/turn.
 
 ### Need Positive Opinion to Promote
 
+### Remove From Party Before Promoting?
+
 ### Servant Cuddle Points: AMNT (+OPN opinion/cycle)
 
 ### Prisoner Cuddle Points: AMNT (+OPN opinion/cycle)
@@ -32258,31 +32212,23 @@ You've gotten yourself lost wandering in the ruins.|The order of tilesets is rev
 
 ### Slime Encapsulation
 
-### Nature Bolt
-
-### Wind Blast
-
 ### Judgement Bolt
 
 ### Flame Bolt
 
 ### Electrification
 
-### Dazzle
-
 ### Charming Orb
 
 ### Freezing Orb
-
-### Hairpin
 
 ### Heavy Ordnance
 
 ### Entangle
 
-### Crystal Bind
-
 ### Blessed Orb
+
+### Slimy Sphere
 
 ### Rubberization Protocol
 
@@ -32292,45 +32238,7 @@ You've gotten yourself lost wandering in the ruins.|The order of tilesets is rev
 
 ### Encasement Protocol
 
-### Homing Missile
-
 ### Electrical Discharge
-
-### Gravitation
-
-### Shadow Teleportation
-
-### Ice Blast
-
-### Poison Blast
-
-### Forbidden Rope
-
-### Enchanted Arrow
-
-### Flash
-
-### Crystal Barrage
-
-### Shadow Bolt
-
-### Obsidian Bolt
-
-### Shadow Grasp
-
-### Bound by Fate
-
-### Conjure Lock
-
-### Magical Rope
-
-### Hex
-
-### Rubber Projector
-
-### Enhance Ropes
-
-### Enchant Ropes
 
 ### Icebolt
 
@@ -32352,16 +32260,150 @@ You've gotten yourself lost wandering in the ruins.|The order of tilesets is rev
 
 ### Sedative
 
-### Poison Dart
-
-### Bear Trap
-
-### Charming Orbs
+### Slime Barrage
 
 ### Seal of the 5th Era
 
-### Taunt
 
-### Magical Missile
 
-### Cursing Circle
+### Healing Flash
+
+### Undead Frenzy
+
+### Command Word
+
+### Rope Ambush
+
+### Defensive Charm
+
+### Tracer Rounds
+
+### The Spookening
+
+### The Muffling
+
+### Conjure Tickle Hands
+
+### Conjure Gags
+
+### Scriptum Ferri
+
+### Scrimptum Habena
+
+### Scriptum Ligni
+
+### Electric Storm
+
+### Flower Spores
+
+### Magnum Opus
+
+### Latex Integrator
+
+### Forcefield Protocol
+
+### Motivation
+
+### Drone Assault
+
+### Tape Drone Assault
+
+### *summon slime mold*
+
+### Vine Growth
+
+### Flower Growth
+
+### Thorn Whip
+
+### Crystal Surge
+
+### Shadow Shroud
+
+### Shadow Step
+
+### Ice Wall
+
+### Armor Up
+
+### Crystal Growth
+
+### Shadow Orb
+
+### Earthfield
+
+### Soul Beam
+
+### Summon Shadows
+
+### Observation
+
+### Conjure Latex Restraint
+
+### Rope Sealing
+
+### Slime Minion
+
+### Magical Wrappings
+
+### Capture Bolt
+
+### Training Protocol
+
+### Motivation Protocol
+
+### Conjure Tickle Hand
+
+### Conjure Locks
+
+### Chainstorm
+
+### Chain Wall
+
+### Binding Ribbons
+
+### Scriptum Limus
+
+### Scriptum Glacis
+
+### Scriptim Vinea
+
+### Scriptum Infernus
+
+### Scriptum Arcanum
+
+### Scriptum Celeste
+
+### Scriptum Electri
+
+### Blessed Rays
+
+### Ghostly Pets
+
+### Zombie Pets
+
+### Drone Support
+
+### Doll Training
+
+### Full Capture
+
+### Shadow Hands
+
+### Obsidian Orbs
+
+### Mithril Orbs
+
+
+
+
+
+### (The Warden perks an eyebrow at the sight of you,|before a wide grin overtakes her face)|Ahhh Fuuka. Chosen by the Goddess?|How does it feel to once again be under a leash?
+
+### Fuuka, take her down.
+
+### (Send Fuuka to fight her)
+
+### That is none of your business. Now kneel.
+
+### (Fight without listening.)
