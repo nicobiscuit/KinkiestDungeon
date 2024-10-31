@@ -3452,6 +3452,7 @@ const KDEventMapBuff: Record<string, Record<string, (e: KinkyDungeonEvent, buff:
 							}
 						}
 
+						if (!player) return;
 						if (KinkyDungeonCheckLOS(
 							enemy,
 							player,
@@ -3537,6 +3538,7 @@ const KDEventMapBuff: Record<string, Record<string, (e: KinkyDungeonEvent, buff:
 							}
 						}
 
+						if (!player) return;
 						if (KinkyDungeonCheckLOS(enemy, player,
 								KDistChebyshev(enemy.x - player.x, enemy.y - player.y), dist, false, true, 1)) {
 							let origin = enemy;
@@ -4032,7 +4034,9 @@ let KDEventMapSpell: Record<string, Record<string, (e: KinkyDungeonEvent, spell:
 	"calcInvolOrgasmChance": {
 		"OrgasmResist": (e, _spell, data) => {
 			if (KinkyDungeonStatWill >= 0.1 && !KinkyDungeonPlayerBuffs?.d_OrgasmResist) {
-				data.invol_chance *= Math.max(0, e.power - 0.1 * (KinkyDungeonTeaseLevel || 0));
+				data.invol_chance *= Math.max(0,
+					Math.min(1,
+						e.power + 0.3 * (KinkyDungeonTeaseLevel || 0)));
 			}
 		},
 	},
@@ -7235,7 +7239,7 @@ let KDEventMapBullet: Record<string, Record<string, (e: KinkyDungeonEvent, b: an
 						}
 					}
 
-
+					if (!player) return;
 					let origin = enemy;
 					let spell = KinkyDungeonFindSpell(e.spell, true);
 					for (let i = 0; i < (e.count || 1); i++) {

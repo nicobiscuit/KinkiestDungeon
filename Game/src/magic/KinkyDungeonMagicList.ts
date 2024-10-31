@@ -308,7 +308,7 @@ let KinkyDungeonSpellList: Record<string, spell[]> = { // List of spells you can
 		{name: "OrgasmResist", tags: ["will", "utility"], school: "Any", manacost: 0, components: [], level:1, passive: true, type:"", onhit:"", time: 0, delay: 0, range: 0, lifetime: 0, power: 0, damage: "inert",
 			events: [
 				{type: "OrgasmResistBuff", trigger: "tick"},
-				{type: "OrgasmResist", trigger: "calcInvolOrgasmChance", power: 0},
+				{type: "OrgasmResist", trigger: "calcInvolOrgasmChance", power: -0.3},
 				{type: "ChangeEdgeDrain", trigger: "calcEdgeDrain", mult: 0.3},
 				{type: "Buff", trigger: "tick", power: 1.0, buffType: "soulDamageResist"},
 				{type: "Buff", trigger: "tick", power: 1.0, buffType: "charmDamageResist"},
