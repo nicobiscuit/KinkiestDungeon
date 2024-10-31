@@ -9522,10 +9522,10 @@ Projection Magic
 投影魔法
 Unlocks illusory spells. Learn Summon Decoy.
 允许学习投影幻术 并习得幻术 “召唤诱饵”
-### Alteration Magic
-
-### Unlocks alteration spells. Learn Confuse.
-
+Alteration Magic
+变化魔术
+Unlocks alteration spells. Learn Confuse.
+解锁变化魔术。并习得幻术“迷惑”。
 Arcane Knowledge
 奥术知识
 Unlocks knowledge and critical-strike spells. Learn True Steel, and unlocks advanced tooltips for enemies.
@@ -9818,8 +9818,8 @@ Massively increases a creature's evasion for 5 attacks. Expires after 25 turns.
 大幅增加个体下 5 次被攻击时的闪避。 25回合后失效。
 Your movements intensify!
 你的动作加快了！
-### Choose creature to buff
-
+Choose creature to buff
+选择要buff的生物
 
 
 Magical Sight
@@ -9930,7 +9930,7 @@ Choose target AoE location (5x5)
 选择施放区域 (5x5)
 Zone of Frost
 霜冻区域
-### Freezes a 3x3 area (ice slows entities). Enemies in the area take DamageDealt damage per turn for LifeTime turns.
+Freezes a 3x3 area (ice slows entities). Enemies in the area take DamageDealt damage per turn for LifeTime turns.
 冻结3x3的区域并施加。该区域的敌人收到 DamageDealt 点伤害，持续LifeTime回合。
 You sweep your foot and call forth the storm!
 你跺脚召来风暴！
@@ -10096,8 +10096,8 @@ Animate Slime
 粘液团
 Summons up to 3 slimes on slime tiles in an AoE. The slimes are friendly to you.
 在目标区域的粘液上召唤最多 3 个友好粘液团。
-### You concentrate magical energy into the slime, giving it a will of it's own...
-
+You concentrate magical energy into the slime, giving it a will of it's own...
+你把魔法能量集中到黏液中，让它有自己的意志…
 Animate Large Slime
 大型粘液团
 Target an area with at least 3 slime tiles. Summons a large slime that is friendly to you.
@@ -10911,7 +10911,7 @@ Ropes encircle your body and tighten! (DamageDealt)
 绳索环绕你的身体并收紧(DamageDealt)
 Chains wrap around you! (DamageDealt)
 铁链缠绕着你！(DamageDealt)
-### A web of belts buckles in place around your body! (DamageDealt)
+ A web of belts buckles in place around your body! (DamageDealt)
 一个皮带扣在你的身体周围的地方！(DamageDealt)
 Awaken
 唤醒
@@ -12234,8 +12234,8 @@ Curse of Sensitivity: Makes it easier to lose control of yourself.
 敏感诅咒 : ‎使人更容易失去对自己的控制
 Curse of Distraction: Multiplies DP gain by 1.5x.
 分心诅咒 : ‎将 DP 增益乘以 1.5 倍
-### Curse of Exhaustion: -25% Stamina regen cap.
-
+Curse of Exhaustion: -25% Stamina regen cap.
+疲劳诅咒：-25%的耐力上限。
 Curse of Futility: Multiplies WP gain by 0.5x.
 徒劳诅咒 : ‎将 WP 增益乘以 0.5 倍
 Curse of Submission: Gain submissiveness when you lose control of yourself...
@@ -12502,7 +12502,7 @@ A vine crawls from the ground, already wrapping around your feet!
 
 You find a magic orb, containing a Spell Point. However, a Goddess owns this artifact..
 你发现了一个魔法球，里面有一个法术点。然而，女神拥有这件神器。
-### You find a magic orb, containing the SHCL spell 'SPLNME' and angering a goddess.
+You find a magic orb, containing the SHCL spell 'SPLNME' and angering a goddess.
 你发现了一个魔法球，里面有一个SHCL咒语“SPLNME”，激怒了一位女神。
 You find a magic orb, containing a random spell and angering a goddess.
 你发现了一个魔法球，其中包含一个随机法术并激怒了一位女神。
@@ -12696,8 +12696,8 @@ For 3 rep the goddess will grant you slipperiness, boosting your struggling.
 消耗 3 声望，女神将促进你的挣扎。
 For 3 rep the goddess will grant you a key.
 消耗 3 声望，女神授予你一把钥匙。
-### For 3 rep the goddess will grant you 
-
+For 3 rep the goddess will grant you 
+消耗3声望，女神授予你
 For 3 rep the goddess
 消耗 3 声望，女神
 For 3 rep the goddess 
@@ -13402,8 +13402,8 @@ Extreme
 极端模式
 A supposedly reasonable difficulty curve.
 合理的难度曲线
-### Play the game the way it was intended. Cruel and restrictive. 
-
+Play the game the way it was intended. Cruel and restrictive. 
+按照游戏的本意去玩游戏。残酷和限制。
 Play at your own peril. Unlocked by double-clicking the Hard Mode button.
 你将自食其果，该难度通过双击“困难模式”按钮解锁
 
@@ -15778,7 +15778,7 @@ Hey~! Let's have a talk.
 嘿~！我们谈谈吧
 Looks like you need additional training.
 看来你需要额外的训练
-### I spy a cute one!
+ I spy a cute one!
 我发现一个小可爱！
 Bad pet!
 坏宠物！
@@ -15951,7 +15951,7 @@ I regret to inform you that your battle ends here.
 我遗憾地通知你，你的战斗到此结束。
 There we go.
 走了。
-### You stand before PTRN, blessed by the Goddess Ninril.
+ You stand before PTRN, blessed by the Goddess Ninril.
 你站在PTRN面前，受到女神Ninril的祝福。
 By the Four...
 经过第四个...
@@ -16004,7 +16004,7 @@ Well met, outsider!
 你好，外来者！
 Intruder!
 入侵者！
-### My name? Uh... let's go with PTRN.
+My name? Uh... let's go with PTRN.
 我的名字？嗯就叫我PTRN吧。
 You will not get away with this, outsider!
 你逃不掉的，外来者！
@@ -16206,9 +16206,9 @@ You are a blight! My sister Myrtle would never stand for this!!!
 复仇的大幕即将开启！
 What an excellent oppertunity to expand my alters in the dark!
 这是一个在黑暗中扩大我的变化的好机会！
-### I see a chalice before me... it drips with shadow and overflows with darkness!
+I see a chalice before me... it drips with shadow and overflows with darkness!
 我看见面前有一个圣杯……它滴下阴影，溢出黑暗！
-### My late sister Myrtle was a much more proficent defender than I... Oh how I long for her *sob*
+My late sister Myrtle was a much more proficent defender than I... Oh how I long for her *sob*
 我已逝的妹妹默特莉奇（Myrtle）比我更擅长这个……哦，我好想你*啜泣*
 THE PATH OF MY RETRIBUTION IS PATHED WITH BRIMSTONE AND BATHED IN BLAZING HELLFIRE! BURN!
 我的报应之路用硫磺铺就，沐浴在炽热的地狱之中！燃烧吧！
@@ -16550,7 +16550,7 @@ Oh，闪闪发光！
 *叹气*
 You won't get away!
 你逃不掉的！
-### You can't get away!
+ You can't get away!
 你别想逃！
 You are helpless now!
 没人会来帮你！
@@ -16562,8 +16562,8 @@ Are you hiding?!
 你躲起来了吗？！
 You are my pet now!
 你现在是我的宠物了！
-### Yoink!
-
+Yoink!
+呦！
 You can't get out now!
 你现在不能出去！
 
@@ -16983,7 +16983,7 @@ I'll be taking you to your cell personally~
 我会亲自带你去你的牢房~
 Amateur.
 业余。
-### Bad girl. You need discipline.
+Bad girl. You need discipline.
 坏女孩。你需要纪律。
 I'll be keeping the keys.
 我会保管钥匙的。
@@ -17011,7 +17011,7 @@ Don't get ahead of yourself.
 别太自不量力了。
 I'll do this myself.
 我自己来做。
-### I'll support from the rear.
+I'll support from the rear.
 我会从后方支援。
 Whoops! That wasn't supposed to happen...
 Whoops！这是不应该发生的……
@@ -17234,7 +17234,7 @@ Come here please!
 请过来！
 Hah! I'm a genius!
 Hgh！我是个天才！
-### I'm sorry about this...
+I'm sorry about this...
 对此我很抱歉...
 Nice to meet you. I'm PTRN!
 很高兴认识你。我是PTRN！
@@ -18992,7 +18992,7 @@ Okay fine... I won't hurt the kitties. (Join them)
 ( SPEAKER 行了个屈膝礼)|你好|你有一个很棒的身亻，书|你愿意帮我吗？
 (The SPEAKER smiles briefly)|You have an opportunity to model for me!|I need someone to wear all of my wonderful inventions!
 ( SPEAKER 微微一笑)|你有机会为我做模特|我需要有人穿上我所有的精彩发明！
-### (The SPEAKER laces you up in the tight fabric...)|(You hear the click of a few locks going on...)|Oh my goodness... So pretty!|You'll make a fine assistant!
+ (The SPEAKER laces you up in the tight fabric...)|(You hear the click of a few locks going on...)|Oh my goodness... So pretty!|You'll make a fine assistant!
 ( SPEAKER 把你绑在紧身织物上…)|(你听到几把锁的咔嗒声…)|天哪...太漂亮了|你会成为一名出色的助手！
 (The SPEAKER frowns)|Aw...
 ( SPEAKER 皱着眉头)|噢...
@@ -19040,7 +19040,7 @@ Why don't you try it on yourself! (PERCENT chance to avoid)
 ( SPEAKER 看起来很沮丧)|不...我的工作并不疯狂|我们只追求知识！
 (The SPEAKER frowns)|Time for a test run!
 ( SPEAKER 皱着眉头)|是时候进行试运行了！
-### (The SPEAKER looks happy again)|Thank you! I'm super grateful!
+(The SPEAKER looks happy again)|Thank you! I'm super grateful!
 ( SPEAKER 看起来又高兴了)|谢谢！我非常感激！
 (The SPEAKER tilts her head)|Fine then. You win.|(As you leave, you hear a 'just kidding' as she breaks a glass vial)|(A suit of blue latex envelops you!)
 ( SPEAKER 歪着头)|那好吧。你赢了|(当你离开时，你听到她打碎了一个小玻璃瓶，她说：“开个玩笑。”)|(一套蓝色乳胶包着你！)
@@ -19054,7 +19054,7 @@ You guys are crazy.
 (拒绝提议)
 Fine. I'll be your assistant.
 好吧。我将成为你的助手。
-### Go find someone else. (PERCENT chance to avoid)
+Go find someone else. (PERCENT chance to avoid)
 去找别人。( PERCENT 的概率避开 )
 
 
@@ -19090,9 +19090,9 @@ I accept your gracious offer!
 (接受)
 I won't be a slave to you.
 我不会成为你的奴隶。
-### Fine, fine... I will accept.
+Fine, fine... I will accept.
 好吧，好吧...我会接受的。
-### No way. (PERCENT chance to avoid)
+No way. (PERCENT chance to avoid)
 不可能。( PERCENT 的概率避开 )
 
 
@@ -19164,7 +19164,7 @@ Fine... (Join)
 好吧...(加入)
 Go away. (PERCENT chance to avoid)
 走开。(对她皱眉头)(PERCENT 的机会避开)
-### (Frown at her) (PERCENT chance to avoid)
+(Frown at her) (PERCENT chance to avoid)
 (对她皱眉头)(对她皱眉头)(PERCENT 的机会避开)
 
 
@@ -19249,12 +19249,12 @@ Great! Sign me up!
 太棒了给我报名！
 (Join)
 (加入)
-### Fight for justice? Sounds restrictive...
+Fight for justice? Sounds restrictive...
 为正义而战？听起来限制太大...
 
 Actually, justice doesn't sound bad!
 事实上，正义听起来并不坏！
-### What are you going to do about it? (PERCENT chance to avoid)
+What are you going to do about it? (PERCENT chance to avoid)
 你打算怎么办？ ( PERCENT 的概率避开 )
 
 
@@ -21503,10 +21503,10 @@ Detected new hardware.
 检测到新硬件。
 [Restriction Protocol] Detected new hardware: RESTRAINTNAME. Install progress: PERCENT%
 [限制协议] 检测到新硬件 : ‎RESTRAINTNAME。安装进度 : ‎PERCENT%
-### [Restriction Protocol] Installation complete. Completing uniform.
-
-### [Punishment] Engage mobility restrictions.
-
+[Restriction Protocol] Installation complete. Completing uniform.
+[限制协议]安装完成。完成统一。
+[Punishment] Engage mobility restrictions.
+[惩罚]限制行动。
 
 
 [Training Protocol] Detected hardware: RESTRAINTNAME. Install progress: PERCENT%
@@ -21621,8 +21621,8 @@ Items on Ground:
 地面物品 : ‎
 
 
-### Preloading Character Assets: 
-
+Preloading Character Assets: 
+预加载角色资产：
 Uniforms
 制服
 Suits
@@ -21723,7 +21723,7 @@ CoatHogtieFree
 外套捆绑
 Cape
 披肩
-### Pauldrons
+Pauldrons
 肩甲
 Breastplate
 胸铠
@@ -21751,9 +21751,9 @@ ShirtChest
 衬衫胸部
 Shirt
 衬衫
-### ChainSkirt
+ChainSkirt
 链甲裙子
-### Skirt
+Skirt
 裙子
 ChainArmor
 链甲
@@ -21779,7 +21779,7 @@ ShoeRight
 右鞋子
 ShoeRightKneel
 右膝鞋子
-### ShoeLeftHogtie
+ ShoeLeftHogtie
 左鞋子拘束
 BanditBreastplate
 强盗胸甲
@@ -22021,7 +22021,7 @@ FootRightKneel
 右膝
 FootLeftHogtie
 左脚拘束
-### LegRight
+ LegRight
 右腿
 Butt
 臀部
@@ -22137,7 +22137,7 @@ CatsuitLower
 连体紧身裤
 TorsoLower
 躯干下部
-### FootRight
+FootRight
 右脚
 FootLeft
 左脚
@@ -22151,7 +22151,7 @@ ShortsLeft
 短裤左
 BanditPouch
 强盗腿环
-### Pouch
+Pouch
 喉
 BanditKnee
 强盗膝盖
@@ -22169,15 +22169,15 @@ SkirtOver
 裙侧带
 StockingLeft
 左长袜
-### FootSockLeftHogtie
-左脚袜捆
-### StripeSockLeft
+FootSockLeftHogtie
+左脚袜拘束
+StripeSockLeft
 左条纹袜
-### StockingRight
+StockingRight
 右长袜
-### FootSockRightKneel
+FootSockRightKneel
 右脚袜膝
-### StripeSockRight
+StripeSockRight
 右条纹袜
 Stockings
 丝袜
@@ -22243,7 +22243,7 @@ StrappyLower
 背带裤
 StrappyHarness
 系带
-### Strappy
+Strappy
 带
 StrappySwimsuit
 系带泳衣
@@ -22261,8 +22261,8 @@ BunnyGloveRight
 兔女郎手套(右)
 BunnyGloves
 兔女郎手套
-### BunnyGlovesRestraint
-兔女郎手套拘束装置
+BunnyGlovesRestraint
+兔女郎手套拘束
 BunnyLeotard
 兔女郎紧身衣
 Leotard
@@ -22275,7 +22275,7 @@ LaceCorsetHardware
 蕾丝紧身束胸设备
 LaceCorsetStripes
 蕾丝胸衣条纹
-### LaceCorsetCrystal
+LaceCorsetCrystal
 蕾丝胸衣水晶
 LaceBra
 蕾丝胸罩
@@ -23889,8 +23889,8 @@ AuraHair
 Aura发型
 HairAura_Front
 Aura发型(前)
-### HairAura
-
+HairAura
+Aura发型
 AuraBang_Left
 Aura刘海(左)
 HairAura_Left
@@ -23933,14 +23933,14 @@ Hair3_FrontD
 发型3(前D)
 Hair3_Short
 发型3(短)
-### Hair3_Bangs
-
+Hair3_Bangs
+发型3（刘海）
 ### Hair3_FrontE
-
-### Hair3Back
-
-### Hair3_Back
-
+发型3（前E）
+Hair3Back
+发型3（后）
+ Hair3_Back
+发型3（后）
 Hair4
 发型4
 ### Hair4_Front
@@ -30235,7 +30235,7 @@ Ready yourself!
 准备好了！
 Let's go!
 我们走！
-### I guess I have no choice...
+I guess I have no choice...
 我想我别无选择...
 (SPEAKER grins)|Very impressive.|You may have lost the battle, but you performed admirably~
 ( SPEAKER 笑了 ) |非常令人印象深刻。|虽然你输掉了这场战斗，但你的表现令人钦佩~
@@ -30649,8 +30649,8 @@ Worn by devotees to Fluffoth, demonic ruler of the plush abyss.
 毛绒深渊的恶魔统治者 弗拉弗斯(Fluffoth) 的信徒们佩戴的。
 When distraction reaches 90%, emit a wave of soft energies that envelops targets a 5x5 area. Deals 40 plush damage and snares for 3 turns. Recharges when your distraction goes below 50%. 5 turn internal cooldown.
 当性奋值达到 90% 时，发射一波软能量，将目标包围在 5x5 范围内。造成 40 点伤害并持续 3 回合。干扰低于 50% 时重新充能。 5 回合体内冷却。
-### When distraction is over 90%, emit a wave of soft energies that envelops targets a 5x5 area. Deals 30 plush damage and snares for 3 turns. Recharges when your distraction goes below 50%. 5 turn internal cooldown.
-当分心超过90%时，发出一股软能量波，将目标包围在5x5的区域。造成30点毛绒伤害，并持续3回合的陷阱。当你的分心低于50%时，充能。5回合冷却。
+When distraction is over 90%, emit a wave of soft energies that envelops targets a 5x5 area. Deals 30 plush damage and snares for 3 turns. Recharges when your distraction goes below 50%. 5 turn internal cooldown.
+当分心超过90%时，发出一道柔和的能量波，将目标包围在5x5的区域。造成30点毛绒伤害，并持续3回合的陷阱。当你的分心低于50%时，充能。5回合冷却。
 You find a sinister hood made of soft plush.
 你发现了一个由柔软的毛绒制成的阴险兜帽。
 
@@ -30891,7 +30891,7 @@ Kocaeli - Underground Jungle
 Kocaeli - 《地下丛林》
 Kocaeli - Lost Temple
 Kocaeli - 《失落的神殿》
-### Kocaeli - Orrery
+Kocaeli - Orrery
 Kocaeli - 《天文钟》
 Kocaeli - Bellows
 Kocaeli -《轰鸣声》
@@ -32789,9 +32789,9 @@ Electric Orb
 Chain Bolt
 锁链箭
 Skeleton Minion
-骨架奴才
+骷髅奴仆
 Skeleton Minions
-骨架奴才
+骷髅奴仆
 ### Flummoxing Orb
 
 Crystallize
