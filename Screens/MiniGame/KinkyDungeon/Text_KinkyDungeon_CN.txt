@@ -3012,43 +3012,43 @@ Slices through ghosts with ease!
 A sword that guides itself toward its target, making it easy to hit with.
 将自身导向目标的剑，使其易于击打。
 Dragonslaver
-驯龙者
+”驯龙者“
 A powerful weapon with an ancient mechanism that launches binding belts.
 一种强大的武器，具有发射捆绑带的古老机器。
 Deals slash damage. Can make ranged attacks.. Drains 0.75% ancient energy to fire a line of belts that deal 40 chain damage and 40 binding.
 造成斩击伤害，可以远程攻击。消耗 0.75% 远古能量来发射一连串的皮带，造成 40 点锁链伤害并增加 40 点束缚。
 Metamorphosis
-变形法杖
+“变形者”
 You can enter slime form for 25 turns, which lets you pass thru bars, +50 Evasion, and deals 25 glue damage when attacked.
 你可以进入粘液形态，持续25回合。在粘液形态下，你可以穿过栅栏，增加 50 点闪避，并在受到攻击时对攻击你的目标造成 25 点胶体伤害。
 Deals glue damage. Roots targets for 2 turns on a hit. Offhand: Roots targets on hit.
 造成胶体伤害。固定目标 2 回合。副手 : ‎命中时定身目标。
 Four Seasons
-四季法杖
+“四季”
 Activate to reduce the cost of your next fire, water/ice, air/lightning, and earth spell by 50, once per element.
 激活后，下一次使用时 -50% 火/水/冰/风/雷/岩属性法术的消耗，但每个属性仅可使用一次。
 Deals shadow damage. +25% fire, ice, soap, crush, electric, blast damage. Offhand: Applies passive bonus.
 造成暗影伤害，+25% 火/冰/皂化/风/雷/岩/压力/爆炸伤害。副手 : ‎应用被动奖励。
 The Arbiter
-仲裁者之杖
+“仲裁者”
 I have altered the rules. Pray I do not alter them further.
 我已改变规则，祈祷我不会再进一步改变它们。
 Deals chain damage with 125% binding efficiency, +40 shadow damage to summons. +25% glue and chain damage. Weapon Ability: Disarm
 以 125% 束缚效率造成连锁伤害，对召唤物造成 +40 暗影伤害。+25% 胶水和链条损坏。武器能力 : ‎缴械
 Bondage Buster EX
-束缚破坏者 EX
+“束缚破坏者 EX”
 Can fire a beam (1 turn channel) that deals 30 electric damage and applies an equal amount of energy bondage. Charges when not fired, dealing 90 total damage at 10 turns of charge.
 可以发射一道光束 ( 1 回合回合 ) ，造成 30 点电击伤害，并施加等量的能量束缚。未发射时会充能，充能 10 回合可造成 90 点总伤害。
 Melee mode deals tickle damage and marks enemies as vulnerable for 4 turns.
 近战模式造成挠痒伤害，并标记敌人为易受攻击状态，持续 4 回合。
 Bondage Buster MK II
-束缚破坏者 MK II
+”束缚破坏者 MK II“
 Can fire a beam (3 turn channel) that deals 35 electric damage in an area and applies an equal amount of energy bondage. While charge is below 50%, has a 10% chance to misfire.
 可以发射一道光束 ( 1 回合回合 )，对一定范围内造成 35 点电击伤害，并施加等量的能量束缚。当电荷低于 50% 时，有 10% 的几率会射不中。
 Melee mode deals tickle damage and marks enemies as vulnerable for 2 turns.
 近战模式会造成挠痒伤害，并将敌人标记为易受攻击，持续 2 回合。
 Nevermere Blaster
-永恒爆破者
+“奈文米尔爆破者“
 Can fire a blast that deals 25 electric damage.
 可以发射一道造成 25 点电击伤害的冲击波。
 Melee mode deals tickle damage.
@@ -3058,13 +3058,13 @@ Blaster Shot
 You set your blaster to stun and fire!
 你设置爆破枪为击晕状态，并开火射击！
 Messenger of Love
-爱的使者
+”爱之使者“
 Love shines in many ways...
 爱以多种方式闪耀...
 Can fire an arrow that makes an enemy extremely lustful, causing them to attack others. Lasts forever on lesser enemies, 30 turns on high-level enemies, and 10 turns on bosses.
 可以发射一支箭，使敌人极度精虫上脑，导致他们攻击其他人。对较低级别的敌人持续时间永久，对高级敌人持续30回合，对首领持续10回合。
 Moirai's Scissors
-Moirai的剪刀
+“命运女神之剪”
 Cutting the threads of fate.
 隔断命运的丝线。
 Deals slash damage. Ignores up to 100 Magic and Physical armor. Active ability: Spend 50 charge to free all nearby allies and disrobe enemies, increasing charm damage on them by 100% and applying the armor shred.
@@ -3116,7 +3116,7 @@ A frigid magical hammer useful for both climbing up and destroying ice.
 Deals crush damage. Deals 3x damage to frozen targets instead of 2x. Triggers Shatter.
 造成碾压伤害，对冰冻的目标造成 3 倍而不是 2 倍伤害，触发粉碎。
 Dreamcatcher
-梦网
+”逐梦者“
 Forged in nightmares, woven in steel. Summons a Shadow Warrior on unaware targets for 2% ancient energy.
 在噩梦中铸造，用钢铁编织。召唤一个暗影武士，对于未察觉的目标，消耗2%的远古能量。
 Deals shadow damage. Deals up to 30 bonus psychic damage on unaware (100%) or vulnerable (50%) targets. 
@@ -4026,15 +4026,15 @@ The wolfgirl trainer pins you and skillfully locks all of your restraints!
 
 
 Nevermere Operative
-Nevermere 特工
+“奈文米尔” 特工
 The operative does a fumbled retreat!
 特工笨手笨脚地撤退！
 The Nevermere Operative smiles and gropes your body! (DamageTaken)
-Nevermere 特工微笑着抚摸你的身体！ ( DamageTaken )
+“奈文米尔”特工微笑着抚摸你的身体！ ( DamageTaken )
 The Nevermere Operative apprehends you with training gear! (+RestraintAdded)
-Nevermere 特工用训练装备逮捕了你！ ( +RestraintAdded )
+“奈文米尔”特工用训练装备逮捕了你！ ( +RestraintAdded )
 The Nevermere Operative pins you and skillfully locks all of your restraints!
-Nevermere 特工将你钉住并巧妙地锁住你所有的束缚具！
+“奈文米尔”特工将你钉住并巧妙地锁住你所有的束缚具！
 
 
 Trainer's Apprentice
@@ -4074,13 +4074,13 @@ The instructor adds a lock to your restraints.
 
 
 Nevermere Drone
-Nevermere 无人机
+“奈文米尔”无人机
 The drone loses power and falls to the ground!
 无人机失去动力坠落地面！
 A Nevermere Drone takes off!
-一架 Nevermere 无人机起飞了！
+一架 “奈文米尔”无人机起飞了！
 You hear buzzing as several Nevermere Drones take to the air!
-当几架 Nevermere 无人机升空时，你会听到嗡嗡声！
+当几架 “奈文米尔”无人机升空时，你会听到嗡嗡声！
 
 
 Swarm of Tape Drones
@@ -6316,7 +6316,7 @@ Favorable:
 None
 无
 Nevermere Trainers
-Nevermere 训练师
+“奈文米尔”训练师
 DressUp Co.
 装扮公司
 Bounty Hunters Guild
@@ -8686,8 +8686,8 @@ Linked Ankle Shackles
 链接的脚踝镣铐
 The enemy attaches your ankle shackles together!
 敌人将你的脚镣绑在一起！
-### The ankle shackles chain detaches!
-
+The ankle shackles chain detaches!
+脚镣链铐脱落！
 Steel Muzzle
 钢口套
 A heavy muzzle with a rudimentary lock.
@@ -8891,25 +8891,25 @@ You pick up a bola.
 You pick up a bomb!
 你拿起了炸弹！
 You pick up Dragonslaver.
-你拿起了驯龙者。
-### You pick up Metamorphosis.
-你拿起了变形者。
+你拿起了“驯龙者”。
+You pick up Metamorphosis.
+你拿起了”变形者“。
  You pick up Four Seasons.
-你拿起了四季。
+你拿起了”四季“。
 You pick up The Arbiter.
-你拿起了仲裁者。
+你拿起了”仲裁者“。
 You pick up Dreamcatcher.
-你拿起了逐梦者
+你拿起了”逐梦者“.
 You retrieve the Bondage Buster EX.
-你取回了束缚破坏者 EX。
+你取回了”束缚破坏者 EX“。
 You salvage a Bondage Buster MK II.
-你挽救了一台束缚破坏者 MK II.
+你挽救了一台”束缚破坏者 MK II“.
 You retrieve a Nevermere Blaster Mark IV.
-你取回了一架“永恒”爆破者 Mark IV。
+你取回了一架““奈文米尔”爆破者 Mark IV。
 You retrieve the Messenger of Love.
-你取回了爱之使者
+你取回了”爱之使者“.
 You retrieve Moirai's scissors.
-你取回了命运女神之剪。
+你取回了“命运女神之剪”。
 
 
 You pick up a bunch of scrolls!
@@ -9108,8 +9108,8 @@ Button
 按钮
 Conveyor
 传送带
-### Safety Conveyor
-
+Safety Conveyor
+安全运输
 Doll Terminal
 玩偶终端
 Doll Supply
@@ -15813,7 +15813,7 @@ Such speed!
 Clever!
 聪明！
 PTRN, Nevermere associate. Here's my card.
-PTRN，“Nevermere”的一员。这是我的名片。
+PTRN，“奈文米尔”的一员。这是我的名片。
 I run a legitimate business, I promise!
 我保证，我经营的是合法的生意！
 Is it the tax collectors? Oh, no, it's just you...
@@ -18870,7 +18870,7 @@ Go away! (PERCENT chance to avoid)
 (The SPEAKER perks her ears as she sees you)|You've got a nice body.|I think it'll do better with some training!
 ( SPEAKER 一看到你就竖起耳朵 ) |你的体型很完美。|我想通过一些训练会做得更好！
 (The SPEAKER grins and hands you a paper)|Nevermere Training is always looking for new recruits!|I'll just have you sign here...
-( SPEAKER 咧嘴笑着递给你一张纸 ) |Nevermere 训练师一直在寻找新人！|你只需要在这里签字……
+( SPEAKER 咧嘴笑着递给你一张纸 ) |“奈文米尔” 训练师一直在寻找新人！|你只需要在这里签字……
 (The SPEAKER gets you suited up)|There you go! Now go be a good girl!
 ( SPEAKER 让你穿上衣服 ) |现在去！去做一个好女孩吧！
 (The SPEAKER scoffs)|That's what they all say.
@@ -19668,7 +19668,7 @@ You're giving me everything you have.
 (The SPEAKER reaches for her hip)|I'd think twice if I were you...
 ( SPEAKER 伸手抚摸她的臀部 ) |如果我是你，我会三思而后行......
 (The SPEAKER smiles)|Nevermere keeps a tight grip on their blueprints.|Thank you.
-( SPEAKER 微笑 ) |Nevermere 紧紧抓住他们的蓝图。|谢谢。
+( SPEAKER 微笑 ) |“奈文米尔”牢牢掌握着他们的蓝图。|谢谢。
 (The SPEAKER smiles)|There's always a buyer.|That's just the way things are.
 ( SPEAKER 微笑 ) |总会有买家的。|事情就是这样。
 (The SPEAKER smiles)|Portable. Sustainable. A smart choice.
@@ -24013,8 +24013,8 @@ Hair6_TailRight
 
 ### Skirt2
 
-### FashionKiguMask
-
+FashionKiguMask
+时尚KIG面具
 ### SwimsuitUnder
 
 BunnyLeotardUnder
@@ -29156,7 +29156,7 @@ The cursed item drains all of the caster's mana. It demands more.
 Punishment Suit
 惩罚服
 A tool used by Nevermere on the most difficult and recalcitrant wolfgirls.
-Nevermere 用来对付最难对付、最顽固狼娘的工具。
+“奈文米尔” 用来对付最难对付、最顽固狼娘的工具。
 Designed to contain superhuman strength, struggling out of this would be a major feat.
 旨在容纳超人的力量，从中挣扎出来将是一项伟大的壮举。
 
@@ -29733,10 +29733,10 @@ Minigun
 机枪
 
 
-### Miku
-
-### Nevermere
-
+Miku
+未来
+Nevermere
+“奈文米尔”
 Bounty Hunter
 赏金猎人
 Dressup Co.
