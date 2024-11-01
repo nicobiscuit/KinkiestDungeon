@@ -1175,7 +1175,7 @@ The old civilization used significantly less cable-based restraints in their cap
 No Resin Bots
 无树脂机器人
 The old civilization did not use crystal resin-based restraints in their capture robots.
-旧文明并没有在他们的捕捉机器人中加入使用水晶树脂束缚的能力。
+旧文明并没有在他们的捕捉机器人中加入使用结晶固化的能力。
 Lexx Latex Bots
 减少乳胶机器人
 The old civilization used significantly less latex-based restraints in their capture robots.
@@ -2069,7 +2069,7 @@ Ancient Tombs
 Magic Library
 魔法图书馆
 Crystal Cave
-水晶洞
+结晶洞
 Orrery
 天文钟
 Training Center
@@ -2375,7 +2375,7 @@ Shadow Latex Dress
 A minidress made from shadow latex, a favorite of otherwordly patrons.
 由暗影乳胶制成的迷你裙，是其他顾客的最爱。
 Resistant to the elements, but is infused with crystals that amplify psychic damage to yourself.
-能够抵御各种元素，但注入的水晶会放大对自己的精神伤害。
+能够抵御各种元素，但被注入的结晶会放大对自己的精神伤害。
 
 
 Elemental Slave Dress
@@ -3410,15 +3410,15 @@ You have done a terrible deed.
 
 
 Crystal Monolith
-水晶巨石
+结晶巨石
 The crystal fades from the monolith.
-水晶从巨石上消失。
+结晶从巨石上消失。
 
 
 Orb Guardian
-水晶守卫
+球形守卫
 The Orb Guardian dissolves into sand and bone dust.
-水晶守卫溶解成沙子和骨灰。
+球形守卫溶解成沙子和骨灰。
 
 
 
@@ -3812,21 +3812,21 @@ The Dragonheart locks your restraint using natural magics! (DamageTaken)
 
 
 Crystal Dragonheart
-水晶龙心
+结晶龙心
 The Crystal Dragonheart screams and falls to the ground dramatically.
-水晶龙心惨叫一声，剧烈的倒在了地上。
+结晶龙心惨叫一声，戏剧性地倒在地上。
 The Crystal Dragonheart apprehends you! (+RestraintAdded)
-水晶龙心逮捕了你！  ( +RestraintAdded )
+结晶龙心逮捕了你！  ( +RestraintAdded )
 The Crystal Dragonheart squeezes you in a big hug! (DamageTaken)
-水晶龙心紧紧拥抱你！ (DamageTaken)
+结晶龙心紧紧拥抱你！ (DamageTaken)
 The Dragonheart grows a crystalline lock on your restraints! (DamageTaken)
-水晶龙心在你的拘束具上生长出结晶锁！(DamageTaken)
+结晶龙心在你的拘束具上生长出结晶锁！(DamageTaken)
 
 
 Many crystals rise up out of the ground!
-许多水晶从地下升起！
+许多结晶从地下升起！
 A crystal rises up out of the ground!
-一颗水晶从地底升起！
+一颗结晶从地底升起！
 
 
 
@@ -3844,31 +3844,31 @@ The statue kisses your gag! (DamageTaken)
 
 
 Chaotic Crystal
-混沌水晶
+混沌结晶
 The crystal shatters!
-水晶碎了！
+结晶碎了！
 The chaotic crystal leeches energy from you! (DamageTaken)
-混沌水晶汲取你的能量！(DamageTaken)
+混沌结晶汲取你的能量！(DamageTaken)
 
 
 Grand Chaotic Crystal
-大混沌水晶
+大混沌结晶
 The grand crystal shatters!
-大水晶碎裂！
+大结晶碎裂！
 The grand crystal leeches energy from you! (DamageTaken)
-大水晶汲取了你的能量 (DamageTaken)
+大结晶汲取了你的能量 (DamageTaken)
 Crystals erupt from the ground and slowly grow around your limbs! (+RestraintAdded)
-水晶从地下喷涌而出，在你的四肢周围慢慢生长！  ( +RestraintAdded )
+结晶从地下喷涌而出，在你的四肢周围慢慢生长！  ( +RestraintAdded )
 
 
 Soul Crystal
-灵魂水晶
+灵魂结晶
 The crystal shatters into a puff of soul dust!
-水晶碎成一团魂尘！
+结晶碎成一团魂尘！
 The soul crystal leeches strength from you! (DamageTaken)
-灵魂水晶汲取你的力量 (DamageTaken)
+灵魂结晶汲取你的力量 (DamageTaken)
 Active Soul Crystal
-活化灵魂水晶
+活化灵魂结晶
 
 
 Shadow Dragonheart
@@ -5064,11 +5064,11 @@ The fun-gal produces a magical lock on all your restraints! (DamageTaken)
 The fun-gal rubs your chest with her long, slender fingers! (DamageTaken)
 真菌用她修长的手指摩擦你的胸部！  ( DamageTaken )
 Crystal Glyph
-水晶雕文
+结晶符文
 Crystal Slash
-水晶猛劈
+结晶猛劈
 Crystal Bolt
-水晶插闩
+结晶箭
 
 
 Tailor
@@ -5618,13 +5618,13 @@ The lock is brimming with security features and is nigh impossible to pick!
 
 
 The lock is encased in magical crystals that block the keyhole.
-锁被包裹在神奇的水晶中，挡住了钥匙孔。
+锁被包裹在神奇的结晶中，挡住了钥匙孔。
 Your distraction makes the crystals regrow immediately after breaking them off.
 你的分心使晶体在断裂后立即再生。
 The crystal fragments in the lock make it difficult to pick.
-锁里的水晶碎片使得它很难撬开。
+锁里的结晶碎片使得它很难撬开。
 You need a key to actually unlock the ex-crystallized lock.
-你需要一把钥匙才能真正解锁前结晶锁
+你需要一把钥匙才能真正解锁结晶联锁
 The key sticks in the lock and jams, mangling the key!
 钥匙在锁里被卡住了，钥匙坏了！
 
@@ -6082,7 +6082,7 @@ Disc
 Rubber
 橡胶
 Crystal
-水晶
+结晶
 Runic
 符文
 Magic
@@ -6108,7 +6108,7 @@ Rubber Lock
 Divine Lock
 神圣锁
 Crystal Lock
-水晶锁
+结晶锁
 Runic Lock
 符文锁
 Purple Lock
@@ -8167,15 +8167,15 @@ Obsidian Ankle Cuffs
 
 
 Living Crystal Collar
-活体水晶项圈
+活体结晶项圈
 A collar made of a glowing, brittle material that adjusts itself to your neck. You feel your energy flowing into it...
 一种由发光的脆性材料制成的项圈，可以根据你的脖子进行调整。你感觉到你的能量流入其中...
 It will occasionally cause crystal to appear out of nowhere and bind the wearer.  Effect increases in speed based on the amount of crystal you have on you.
-它偶尔会使得水晶突然出现并束缚佩戴者。效果的速度增加取决于你身上的水晶数量。
+它偶尔会使得结晶突然出现并束缚佩戴者。效果的速度增加取决于你身上的结晶数量。
 
 
 Crystal Cuffs
-水晶手铐
+结晶手铐
 It's made of a glowing, brittle material. You feel your energy flowing into it...
 它由发光的易碎材料制成。
 
@@ -8183,11 +8183,11 @@ It's made of a glowing, brittle material. You feel your energy flowing into it..
 
 
 Crystal Leg Cuffs
-水晶腿铐
+结晶腿铐
 
 
 Crystal Ankle Cuffs
-水晶脚铐
+结晶脚铐
 
 
 Living Ice Collar
@@ -11534,11 +11534,11 @@ You feel your restraints squeeze you and tingle with painful sensations!
 Your restraints squeeze you painfully without mercy!
 你的束缚痛苦且无情地压迫着你！
 The crystals emit a powerful energy!
-水晶散发出强大的能量！
+结晶散发出强大的能量！
 You feel your body overflow with energy...
 你感觉你的身体充满了能量......
 The crystals react to your struggle attempts with a strange energy!
-水晶会以一种奇怪的能量对你的挣扎尝试做出反应！
+结晶会以一种奇怪的能量对你的挣扎尝试做出反应！
 
 
 Cast Spell (XXX turn delay)
@@ -11790,7 +11790,7 @@ Shadow Latex Trap
 Demonic Sigil
 恶魔封印
 Unstable Crystals
-不稳定晶体
+不稳定结晶
 Gas Trap
 气体陷阱
 Latex Engulfment
@@ -12031,7 +12031,7 @@ Coast
 (A page from the Book of Aeons)|The Overgown Ruins remain a puzzle to scholars. Hardly any light comes through the cracks in the ceiling, and yet the area teems with life. It is known that the regenerative powers that keep humans from dying relies on an individual's own mana supply. So how do plants and beasts without mana survive? The devout say it is the Goddess of Restoration who preserves the jungle, but could it be that the Old Civilization developed a means of sustaining life underground? 
 ( 《万古之书》中的一页 ) |长袍遗址仍然是学者们的一个谜。天花板的裂缝里几乎没有光线，但这个地区充满了生机。众所周知，使人类免于死亡的再生能力依赖于个人自身的法力供应。那么，没有魔法的植物和动物是如何生存的呢？虔诚的信徒们说，是恢复女神保护了丛林，但旧文明是否开发了一种维持地下生命的方法？
 (A page from the Book of Aeons)|The problem of Energy has plagued civilization for millenia. Before the leylines were discovered, humankind relied on natural sources of power such as rivers and firewood. When the Crystal Caves were discovered, a great revolution occurred. No longer reliant on natural sources, civilizations could tap the wellsprings of chaotic energy underground to power machinery like never seen before.
-( 《万古之书》中的一页 ) |能源问题已经困扰了文明数千年。在地脉被发现之前，人类依赖河流和木柴等自然资源。当水晶洞被发现时，发生了一场伟大的革命。文明不再依赖自然资源，可以利用地下混沌能量的源泉为机械提供前所未有的动力。
+( 《万古之书》中的一页 ) |能源问题已经困扰了文明数千年。在地脉被发现之前，人类依赖河流和木柴等自然资源。当结晶洞被发现时，发生了一场伟大的革命。文明不再依赖自然资源，可以利用地下混沌能量的源泉为机械提供前所未有的动力。
 (A page from the Book of Aeons)|The 'Lost Temple' as they call it, is a subject of great speculation. It seems that its creators worshipped only four creator goddesses, rather than all the Eight. It was perhaps abandoned several hundred years ago when a flood caused great panic, and it seems that this must have occurred before humanity was made immortal by the archmagus, as there are many remains still found inside.
 ( 《万古之书》中的一页 ) |他们所说的 '失落的神殿'，是一个饱受猜测的对象。看来它的创造者只崇拜四位造物主女神，而不是所有的八女神。它可能是几百年前被遗弃的，当时一场洪水引起了巨大的恐慌，这似乎发生在大法师使人类永生之前，因为里面仍然发现了许多遗骸。
 (A page from the Book of Aeons)|The Stars have been a mystery to scholars since the beginning of time. At one point, humans believed that every star was a god, and they made offerings by throwing sugar into the night, thinking that as the stars were innumerable, so were the grains of sugar that pleased humans so much. Religion has moved past that, but the Orrery remains a relic from a time when humanity worshipped the stars rather than the Eight.
@@ -12129,7 +12129,7 @@ SOMEBODY STABBED MY FROG AND I AM PISSED.
 I don't think it's neccessary to tell people that dragons resist fire... right?
 我认为没有必要告诉人们龙抗火……对吧？
 I've been studying the dragonheart's weaknesses. So far I've found that the ones bearing the powers of ice dragons are actually weak to fire unlike the others, and the ones who summon crystals to block attacks are nonetheless unable to grab a spear to stop it from reaching them.
-我一直在研究龙之心的弱点。到现在我发现，拥有冰龙之力的人，其实跟其他人不一样，开火能力很弱，而召唤水晶格挡攻击的人，却是连长矛都拿不到。
+我一直在研究龙之心的弱点。到现在我发现，拥有冰龙之力的人，其实跟其他人不一样，开火能力很弱，而召唤结晶格挡攻击的人，却是连长矛都拿不到。
 
 
 They say a ninja can catch a sword in her hands, but can she stop a spear? Ha, thought not!
@@ -18082,7 +18082,7 @@ Hey! Stop! (PERCENT chance to avoid)
 (You push her out of the way, but get caught in the cloud yourself)|(The gas crystalizes into a RESTRAINT across your body)|Oh no, that could have been me!
 ( 你把她推开，但你自己却被困在雾里 ) | ( 气体在你的身体上结晶成 RESTRAINT ) |哦不，那本来应该在我身上发生！
 (The gas moves toward you, as if by its own will)|(The gas crystalizes into a RESTRAINT across your body)|That wasn't supposed to happen...
-( 气体向你移动，仿佛按照自己的意志一样 ) | ( 气体在你的身体上结晶成 RESTRAINT ) |那不应该发生......
+( 气体向你移动，仿佛按照自己的意志一样 ) | ( 气体在你的身体上凝结成 RESTRAINT ) |那不应该发生......
 
 
 Seems interesting!
@@ -30680,33 +30680,33 @@ Took
 
 
 (As you slay the dragon, it begins shapeshifting into human form!)
-( 当你杀死龙时，它开始变身为人形！ )
+( 当你杀死龙时，它开始变形为人形！ )
 
 
 Crystal Dragon Queen
-水晶龙娘王
+结晶龙女皇
 The crystal dragon shapeshifts back to human form!
-水晶龙变回人形！
+结晶龙变回人形！
 The crystal dragon strikes you with its claws! (DamageTaken)
-水晶龙用爪子攻击你！ ( DamageTaken )
+结晶龙用爪子攻击你！ ( DamageTaken )
 The crystal dragon breaths a sparkling dust, which hardens into crystal! (+RestraintAdded)
-水晶龙喷出闪闪发光的粉末，粉末凝固后便变成了水晶！ ( +RestraintAdded )
+结晶龙喷出闪闪发光的粉末，粉末凝固后便变成了水晶！ ( +RestraintAdded )
 The crystal dragon takes flight and swoops toward you!
-水晶龙飞起来并向你俯冲过来！
+结晶龙飞起来并向你俯冲过来！
 The crystal dragon takes flight and slams into you! (Stunned!)
-水晶龙飞起来撞向你！ ( 眩晕！ )
+结晶龙飞起来撞向你！ ( 眩晕！ )
 Crystal Dragon Girl
-水晶龙娘
+结晶龙娘
 The dragon girl submits to you!
 龙娘臣服于你！
 The dragon girl slams you with several hurled crystals! (DamageTaken)
-龙娘向你投掷数颗水晶！ ( DamageTaken )
+龙娘向你投掷数颗结晶！ ( DamageTaken )
 The dragon girl conjures a cloud of crystals that solidify! (+RestraintAdded)
-龙娘召唤出一团凝固的水晶云！ ( +RestraintAdded )
+龙娘召唤出一团凝固的结晶云！ ( +RestraintAdded )
 
 
 Poison Dragon Queen
-毒龙娘王
+毒龙女皇
 The poison dragon shapeshifts back to human form!
 毒龙变回人形！
 The poison dragon strikes you with its claws! (DamageTaken)
@@ -30728,7 +30728,7 @@ The dragon girl raises vines out of the ground to bind you! (+RestraintAdded)
 
 
 Ice Dragon Queen
-冰龙娘王
+冰龙女皇
 The ice dragon shapeshifts back to human form!
 冰龙变回人形！
 The ice dragon strikes you with its claws! (DamageTaken)
@@ -30746,7 +30746,7 @@ The dragon girl splashes you with instantly freezing ice! (+RestraintAdded)
 
 
 Shadow Dragon Queen
-暗影龙娘王
+暗影龙女皇
 The shadow dragon shapeshifts back to human form!
 暗影龙变回人形！
 The shadow dragon slashes directly at your mind! (DamageTaken)
@@ -30766,7 +30766,7 @@ The dragon girl reaches out with a shadowy grip! (+RestraintAdded)
 A cage falls from the ceiling on top of you!
 一个笼子从天花板上掉下来砸中了你！
 Crystals grow across your body and encase you!
-水晶在你的身体上生长并包裹住你！
+结晶在你的身体上生长并包裹住你！
 You are encased in a solid block of ice!
 你被包裹在一块坚固的冰块里！
 Shadows coalesce themselves around you in spherical form!
@@ -30774,9 +30774,9 @@ Shadows coalesce themselves around you in spherical form!
 
 
 Crystal Encasement
-水晶封
+结晶封印
 An overgrowth of magical crystals. Their chaotic energies flood into your mind and displace your thoughts!
-魔法水晶过度生长。它们的混乱能量涌入你的脑海，扰乱你的思维！
+魔法结晶过度生长。它们的混乱能量涌入你的脑海，扰乱你的思维！
 Being brittle, it will eventually crack and fail. Just keep wiggling...
 由于易碎，它最终会破裂并失效。只需继续扭动即可……
 Ice Encasement
@@ -30894,7 +30894,7 @@ Kocaeli - 《失落的神殿》
 Kocaeli - Orrery
 Kocaeli - 《天文钟》
 Kocaeli - Bellows
-Kocaeli -《轰鸣声》
+Kocaeli -《风箱》
 Kocaeli - Rubber Facility
 Kocaeli - 《橡胶工厂》
 Kocaeli - Edge of Reality
@@ -30910,7 +30910,7 @@ The wall of ice shatters!
 Icy Breath
 冰冷呼吸
 Ice Orb
-冰珠
+寒冰球
 The EnemyName breaths in deeply, causing the air around you to chill...
 EnemyName 深呼吸，让你周围的空气变得寒冷...
 
@@ -31124,21 +31124,21 @@ The RSTRT feels a little looser!
 
 
 Crystal Armbinder
-水晶单手套
+结晶单手套
 A growth of crystals fusing your arms together. Chaotic energies radiate in all directions, causing you to slowly lose control over your desires.
-生长的水晶将你的手臂融合在一起。混乱的能量向各个方向辐射，导致你慢慢失去对欲望的控制。
+生长的结晶将你的手臂融合在一起。混乱的能量向各个方向辐射，导致你慢慢失去对欲望的控制。
 Crystals are tough but not unbreakable.
-水晶很坚硬，但并非牢不可破。
+结晶很坚硬，但并非牢不可破。
 
 
 Crystal Ball Gag
-水晶口球
+结晶口球
 A growth of crystals inside your mouth. It emits a strange, pleasurable sensation.
-你嘴里长出了晶体。它散发出一种奇怪的、愉悦的感觉。
+你嘴里长出了结晶。它散发出一种奇怪的、愉悦的感觉。
 Crystal Gag Necklace
-水晶口球项链
+结晶口球项链
 An arousing accessory made of solid crystal!
-一个由固体水晶制成的令人兴奋的配件！
+一个由固体结晶制成的令人兴奋的配件！
 Simply popping it out of your mouth isn't enough to negate its effects entirely~
 简单地把它从嘴里拿出来并不足以完全消除它的影响~
 
@@ -31239,7 +31239,7 @@ The liquid latex sticks to your skin, forcing an airtight layer!
 液态乳胶会粘在你的皮肤上，形成一层气密层！
 The latex starts to build up layers, forcing a protective coating...
 乳胶开始分层，施加保护涂层...
- The latex starts adhering to your skin, becoming extremely difficult to remove...
+The latex starts adhering to your skin, becoming extremely difficult to remove...
 乳胶开始附着在你的皮肤上，变得非常难以去除...
 The latex seals you in, rendering escape impossible without alchemical methods.
 乳胶把你密封起来，如果没有炼金术的方法，是不可能逃脱的。
@@ -31496,13 +31496,13 @@ You are holding too many leashes!
 
 
 You feel a corrupting influence... (+AMNT Corruption)
-你感觉到了一种堕性的影响... (+AMNT 堕落)
+你感觉到了一种堕性的影响... (+AMNT Corruption)
 You feel a restoring influence! (-AMNT Corruption)
-你感觉到了一种恢复性的影响！ (-AMNT 堕落)
+你感觉到了一种恢复性的影响！ (-AMNT Corruption)
 Sticky latex fuses itself to your skin! (+AMNT LatexIntegration)
-粘稠的乳胶会与你的皮肤融合！ (+AMNT 乳胶融合)
+粘稠的乳胶会与你的皮肤融合！ (+AMNT LatexIntegration)
 The latex starts to detach from your skin... (-AMNT Latex Integration)
-乳胶开始从你的皮肤上脱落... (-AMNT 乳胶融合)
+乳胶开始从你的皮肤上脱落... (-AMNT Latex Integration)
 
 
 While you have an evasion penalty, even clumsy enemies...
@@ -32206,33 +32206,33 @@ Ancient Worshipper
 The ancient worshipper repents of her ways.
 古代追随者对自己的行为悔恨不已。
 The ancient worshipper's crystal restraints spread to you! (+RestraintAdded)
-古代追随者的水晶束缚扩散到你身上！（+束缚已添加）
+古代追随者的水晶束缚扩散到你身上！（+RestraintAdded）
 Crystals start to grow on one of your restraints! (DamageTaken)
-水晶开始在你的一拘束具上上生长！（受到伤害）
+结晶开始在你的一拘束具上上生长！（DamageTaken）
 The ancient worshipper mumbles at you for assistance! (DamageTaken)
-古代追随者喃喃地向你求助！（受到伤害）
+古代追随者喃喃地向你求助！（DamageTaken）
 Ancient Congregant
 古代教徒
 The ancient congregant repents of her ways.
 古代教徒悔悟了
 The ancient congregant's crystal restraints spread to you! (+RestraintAdded)
-古代教徒的水晶束缚扩散到你身上！（+束缚增加）
+古代教徒的结晶束缚扩散到你身上！（+RestraintAdded）
 Crystals start to grow on your restraints! (DamageTaken)
-水晶开始在你的一拘束具上上生长！（受到伤害）
+结晶开始在你的拘束具上开始生长！（DamageTaken）
 The ancient congregant mumbles at you for assistance! (DamageTaken)
-古代教徒喃喃地向你求助！（受到伤害）
+古代教徒喃喃地向你求助！（DamageTaken）
 Ancient Hierophant
 古代祭司
 The ancient hierophant repents of her ways.
 古代祭司悔悟了
 The ancient hierophant's crystal restraints spread to you! (+RestraintAdded)
-古代祭司的水晶束缚扩散到你身上！（+束缚增加）
+古代祭司的结晶束缚扩散到你身上！（+RestraintAdded）
 The ancient hierophant mumbles at you for assistance! (DamageTaken)
-古代祭司喃喃地向你求助！（受到伤害）
+古代祭司喃喃地向你求助！（DamageTaken）
 The crystals break off, revealing a keyhole and weakening the item.
-水晶断裂，露出一个钥匙孔，削弱了锁的强度。
+结晶断裂，露出一个钥匙孔，削弱了锁的强度。
 Your distraction causes the crystals to grow back, encasing the lock again!
-你的分心让水晶重新长出，再次把锁包住！
+你的分心让结晶重新长出，再次把锁包住！
 After popping the gag out of your mouth, it hangs loose around your neck.
 从你嘴里取出塞子后，它松松垮垮地挂在你脖子上。
 The gag is now in your mouth.
@@ -32682,7 +32682,7 @@ Barrage of Sealing Talisman
 Self Unlock
 自我解锁
 Crystal Storm
-水晶风暴
+结晶风暴
 Shadow Walk
 阴影步
 Your ITMN1 inflates inside your mouth to become a ITMN2!
@@ -32696,14 +32696,14 @@ Screen effect when letting go
 Screen flash when distracted
 分心时屏幕闪烁
 
-### Essentia Aliquam
-Aliquam精华
-### Aliquam Orbis
-Aliquam球
+Essentia Aliquam
+乳胶要素
+Aliquam Orbis
+乳胶球
 Potio Requiem
-休息饮料
+安魂曲魔药
 Ultimate Glue no. 91
-91号终极胶
+91号终极胶水
 Slime Encapsulation
 粘液封装
 Nature Bolt
@@ -32729,7 +32729,7 @@ Heavy Ordnance
 Entangle
 缠绕
 Crystal Bind
-水晶绑定
+结晶绑定
 Blessed Orb
 祝福球
 Rubberization Protocol
@@ -32759,7 +32759,7 @@ Enchanted Arrow
 Flash
 闪光
 Crystal Barrage
-水晶弹幕
+结晶弹幕
 Shadow Bolt
 暗影箭
 Obsidian Bolt
@@ -32795,7 +32795,7 @@ Skeleton Minions
 ### Flummoxing Orb
 
 Crystallize
-结晶
+结晶联盟
 Capture Device
 捕捉设备
 Sedative
