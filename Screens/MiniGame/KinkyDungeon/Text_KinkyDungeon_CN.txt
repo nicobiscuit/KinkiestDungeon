@@ -335,7 +335,7 @@ You get a penalty to the Remove and Unlock action, and escaping is 0.75x as fast
 Locksmith
 锁匠
 You get a bonus to lockpicking, allowing you to pick some high-security locks previously impossible.
-你可以获得撬锁奖励，并且允许撬一些以前不可能撬开的高安全性锁具。
+你可以获得撬锁加成，并且允许撬一些以前不可能撬开的高安全性锁具。
 Clueless
 一头雾水
 You have no idea how to pick locks. Picking is 0.5x as fast and you can't pick most advanced locks.
@@ -705,7 +705,7 @@ All humanoids that can bind you also apply Fuuka's special restraints.
 Collected
 搜集
 Start with The Warden's special belt which punishes you for defiling spell orbs.
-开局时穿戴典狱长的特殊贞操带，它会惩罚你玷污法术球。
+开局时穿戴典狱长的特殊贞操带，它会惩罚你玷污宝珠。
 Enforcers
 执法者
 All humanoids that can bind you also apply The Warden's cuffs.
@@ -973,11 +973,11 @@ Second Wind now regenerates up to 25% of your max WP
 Locked Up
 禁锢
 While wearing a chastity belt, your Desire lowers when you perform actions such as defeating enemies, opening chests, and breaking orbs. (Upgrades available in spell tree)
-佩戴贞操带时，每当你击败敌人、打开宝箱和打破球体等动作，你的欲望会降低。 ( 可在技能树中升级 )
+佩戴贞操带时，当你执行击败敌人、打开宝箱和打破宝珠等动作时，你的欲望会降低。 ( 可在技能树中升级 )
 Locked Up Perk
 禁锢技能
 While wearing a chastity belt, your Desire lowers when you perform actions such as capturing, opening chests, and breaking orbs.
-佩戴贞操带时，每当你击败敌人、打开宝箱和打破球体等动作，你的欲望会降低。
+佩戴贞操带时，每当你击败敌人、打开宝箱和打破宝珠等动作，你的欲望会降低。
 Controlled Urges
 抑制冲动
 Locked Up is 150% effective. Gain +70 psychic/charm resist from a chastity belt and +30 from a chastity bra. While not wearing a chastity belt, your Desire increases slowly.
@@ -989,7 +989,7 @@ Locked Up is 200% effective. +25% stamina regen per 100 current DP. Playing with
 Efficient Denial
 有效拒绝
 Locked Up is 300% effective. When Locked Up triggers, you gain -30% mana costs and +25% physical damage for 7 turns (35 when opening a chest or breaking orbs). You cannot orgasm unless you are wearing a chastity belt, and slow level is increased by 2.
-“禁锢”技能有效率为 300%。当该技能触发时，你获得-30%魔法消耗和+25%的物理伤害的增益，持续7回合 ( 打开箱子或打碎球体时为35 ) 。在未佩戴贞操带时，你将无法达到性高潮，并且缓慢等级增加至2。
+“禁锢”技能有效率为 300%。当该技能触发时，你获得-30%魔法消耗和+25%的物理伤害的增益，持续7回合 ( 打开箱子或打破宝珠时为35 ) 。在未佩戴贞操带时，你将无法达到性高潮，并且缓慢等级增加至2。
 Recalcitrant
 顽固的
 Relinquish the Locked Up perk. One time only. If you take the perk again, there is no going back.
@@ -1173,9 +1173,9 @@ Less Cable Bots
 The old civilization used significantly less cable-based restraints in their capture robots.
 旧文明仅在少数的捕捉机器人中加入了使用钢索束缚的能力。
 No Resin Bots
-无树脂机器人
+没有固化机器人
 The old civilization did not use crystal resin-based restraints in their capture robots.
-旧文明并没有在他们的捕捉机器人中加入使用水晶树脂束缚的能力。
+旧文明并没有在他们的捕捉机器人中加入使用结晶固化的能力。
 Lexx Latex Bots
 减少乳胶机器人
 The old civilization used significantly less latex-based restraints in their capture robots.
@@ -1629,9 +1629,9 @@ Beginner: Get a save code every 3 levels, autosave after each floor
 Roguelike: No save codes, only autosave
 Roguelike : ‎没有保存代码，只有自动保存
 Exciting: Orbs give random spells
-令人兴奋的 : ‎魔法水晶提供随机法术
+令人兴奋 : 宝珠提供随机法术
 Kinky: No save codes, orbs give random spells, start with very little
-Kinky : ‎没有保存代码，魔法水晶提供随机法术，开始时很少
+变态 : ‎没有保存代码，宝珠提供随机法术，开始时很少
 
 
 Journal
@@ -2069,7 +2069,7 @@ Ancient Tombs
 Magic Library
 魔法图书馆
 Crystal Cave
-水晶洞
+结晶洞
 Orrery
 天文钟
 Training Center
@@ -2175,7 +2175,7 @@ You found some high explosives!
 You find a magic scroll, which you place in your spellbook. (+SpellLearned)
 你找到一个魔法卷轴，你把它放在你的法术书中。  ( +习得法术 )
 You find an orb containing magical knowledge! (+AMOUNT spell points)
-你找到了一个包含魔法知识的球体！  ( +AMOUNT 法术点数 )
+你找到了一个包含魔法知识的宝球！  ( +AMOUNT 法术点数 )
 You find a weapon! (+WeaponAcquired)
 你找到了一个武器！ ( +WeaponAcquired )
 You find a wearable item! (+ArmorAcquired)
@@ -2279,7 +2279,7 @@ Adventurer's Outfit
 Your favorite outfit for adventuring.
 你最喜欢的冒险服装。
 Your original outfit. No bonuses, no penalties.
-你原来的服装。没有奖励，没有惩罚。
+你原来的服装。没有加成，没有惩罚。
 
 
 Tactical Catsuit
@@ -2333,7 +2333,7 @@ Lingerie
 A minimalist yet aesthetically pleasing outfit.
 简约而又美观的服装。
 No bonuses.
-没有奖励。
+没有加成。
 
 
 Dragonheart Uniform
@@ -2375,7 +2375,7 @@ Shadow Latex Dress
 A minidress made from shadow latex, a favorite of otherwordly patrons.
 由暗影乳胶制成的迷你裙，是其他顾客的最爱。
 Resistant to the elements, but is infused with crystals that amplify psychic damage to yourself.
-能够抵御各种元素，但注入的水晶会放大对自己的精神伤害。
+能够抵御各种元素，但被注入的结晶会放大对自己的精神伤害。
 
 
 Elemental Slave Dress
@@ -2603,9 +2603,9 @@ You ready a flashbang...
 A piece of rare special forces equipment. The secrets of its manufacture are strictly kept by the Alchemist's Guild.
 一件稀有的特种部队装备。其制造秘密由炼金术士公会严格保守。
 Blinds for 24 turns in a 3x3 area. Also Slows and Silences them for half the duration.
-在 3x3 区域内造成 24 回合的致盲。还会在一半的时间内减慢和沉默它们。
+在 3x3 区域内造成 24 回合的致盲。也会让他们在一半的时间内减速和沉默。
 Blinds for 24 turns in a 3x3 area. And also Slows and Silences them for half the duration.
-在 3x3 区域内造成 24 回合的致盲。并且还会在一半的时间内减慢和沉默它们。
+在 3x3 区域内造成 24 回合的致盲。也会让他们在一半的时间内减速和沉默。
 
 
 Invisibility Potion
@@ -2729,9 +2729,9 @@ Grants significantly increased cutting power for a short time.
 Dollmaker's Staff
 玩偶师法杖
 You remember this being used on someone else.
-你记得这被用在别人身上。
+你记得这曾被用在别人身上。
 +15% glue damage. Deals psychic damage. Fully bound enemies captured with this weapon become latex dolls which fight with you.
-+15% 胶体伤害，并造成精神伤害。被这把武器完全束缚的敌人将变成与你一起战斗的乳胶娃娃。
++15% 胶体伤害.造成精神伤害。被这把武器完全束缚的敌人将变成与你一起战斗的乳胶娃娃。
 You are unable to control more than 3 dolls. The new doll is protesting and remains bound.
 你无法控制超过3个娃娃，新的娃娃正在挣扎并保持束缚状态。
 
@@ -2739,7 +2739,7 @@ You are unable to control more than 3 dolls. The new doll is protesting and rema
 Staff of Incineration
 燃烧之杖
 A magical weapon made for intermediates to use.
-专供中级使用的魔法武器。
+专供老手使用的魔杖。
 +25% fire damage. Deals fire damage. Burning enemies take an additional 5 fire damage per turn. Offhand: Applies %fire damage bonus.
 +25% 火焰伤害，造成火焰伤害。燃烧的敌人每回合受到额外 5 点火焰伤害。副手 : ‎施加 %fire 伤害加成。
 Staff of Storms
@@ -2747,9 +2747,9 @@ Staff of Storms
 +20% electric damage. Deals electric damage. Enemies hit by electric damage echo 15 additional Electric damage in a 5x5 area. Offhand: Applies electric damage bonus.
 +20% 电击伤害，造成电击伤害。受到电击伤害的敌人会在 5x5 范围内受到额外 15点电击伤害。副手 : ‎应用电伤害加成。
 Staff of Frostbite
-冰冻法杖
+极寒法杖
 A magical weapon with a 33% chance to freeze the target for 4 turns.
-魔法武器，有 33% 的几率冻结目标 4 回合。
+一件魔杖，有 33% 的几率冻结目标 4 回合。
 +20% ice damage. Deals ice damage. Frozen enemies take 5 ice damage per turn. Offhand: Applies ice damage bonus.
 +20% 寒冰伤害，造成寒冰伤害。被冰冻的敌人每回合受到额外 5 点寒冰伤害。副手 : ‎应用冰伤害加成。
 Staff of Binding
@@ -2769,25 +2769,25 @@ Deals arcane damage. Can be used without hands. Can not critically strike.
 You find a purple crystal. You feel your mystic powers flood into it.
 你找到了一个紫色水晶。你感受到自己的神秘力量涌入其中。
 Staff of Flame
-烈焰法杖
+火焰法杖
 A magical weapon made for novices to use.
-供新手使用的魔法武器。
+供新手使用的魔杖。
 +15% fire damage. Deals fire damage. Offhand: Applies passive bonus.
-+15% 火焰伤害，造成火焰伤害。副手 : ‎应用被动奖励。
++15% 火焰伤害，造成火焰伤害。副手 : ‎应用被动加成。
 Staff of Slime
 粘液法杖
 A slimy and magical implement..
 一把又黏又神奇的工具。
 +10% glue damage. Deals glue damage. Offhand: Applies passive bonus.
-+10% 胶体伤害，造成胶体伤害。副手 : ‎应用被动奖励。
++10% 胶体伤害，造成胶体伤害。副手 : ‎应用被动加成。
 Staff of Shocking
 电击法杖
 +10% electric damage. Deals electric damage. 10% chance to stun for 3 turns. Offhand: Applies electric damage bonus.
 +10% 电击伤害，造成电击伤害。有 10% 的几率目标眩晕 3 回合。副手 : ‎应用电伤害加成。
 Staff of Permafrost
-冻土法杖
+冰冷法杖
 A magical weapon with a 15% chance to freeze the target for 4 turns.
-一把有着 15% 冻结目标 4 回合的神奇武器。
+一把有着 15% 几率冻结目标 4 回合的魔法武器。
 +10% ice damage. Deals ice damage. Multiplies the duration of freeze effects on enemies by 1.5x (min +1 duration). Offhand: Applies ice damage bonus.
 造成寒冰伤害，将敌人的冰冻效果持续时间乘以 1.5 倍 ( 最低增加一回合 ) ，且寒冰伤害增加 10%。副手 : ‎应用冰伤害加成。
 Staff of Chains
@@ -2907,7 +2907,7 @@ You pick up a fencing sword.
 Sledgehammer
 大锤
 Do you have what it takes?
-你够格吗
+你够格吗？
 Deals heavy crush damage and knocks the target back 2 spaces. Deals bonus damage to most solid barricades.
 造成重创并将目标击退 2 格。对大多数坚固路障造成额外伤害。
 You pick up a heavy sledgehammer.
@@ -2929,7 +2929,7 @@ Also deals 10 damage to targets next to you. Deals crush damage.
 Spear
 矛
 Speak softly and carry a pointy stick.
-说话要轻声细语，并拿起一根尖锐的棍子。
+说话轻声细语，随身带着尖棍。
 Deals pierce damage to the target and one square behind it. Can be used to make a ranged attack 2 tiles away.
 对目标和目标后方一个方格造成刺破伤害。可以在2格外进行远程攻击。
 Pike
@@ -2959,7 +2959,7 @@ You pick up a flashlight.
 Torch
 火把
 Second only to the mighty towel in usefulness.
-在实用性上仅次于强大的毛巾。
+在实用性上仅次于强力毛巾。
 Deals fire damage. Provides light.
 造成火焰伤害。可以提供光亮。
 Unarmed
@@ -2983,15 +2983,15 @@ Deals 20 bonus slash damage on hit. Offhand: Produces light.
 Escort Drone
 护航无人机
 A semi-autonomous drone with a personal defense beam. Does not require hands to equip.
-带有个人防御光束的半自主无人机。不需要双手装备。
+带有个人防御光束的半自主无人机。不用手也可装备。
 Deals electric damage. 33% chance to stun for 4 turns.
 造成电击伤害。有 33% 的几率眩晕目标 4 回合。
 Magic Wand
-魔法棒
+神奇妙妙棒
 Its powers extend beyond the traditional schools of magic.
 它的力量超越了传统的魔法。
 Deals charm damage. 20% chance to stun the target for 2 turns. Offhand: +5 charm damage on attack for 3 stamina.
-造成妩媚伤害，有 20% 的几率使目标眩晕 2 回合。副手 : ‎攻击时 +5 妩媚伤害，持续 3 点体力。
+造成妩媚伤害，有 20% 的几率使目标眩晕 2 回合。副手 : ‎攻击时造成 +5 妩媚伤害，消耗 3 点耐力。
 Ice Cube
 冰块
 A magical cube of ice that never melts. Convenient!
@@ -3013,7 +3013,7 @@ A sword that guides itself toward its target, making it easy to hit with.
 Dragonslaver
 ”驯龙者“
 A powerful weapon with an ancient mechanism that launches binding belts.
-一种强大的武器，具有发射捆绑带的古老机器。
+一种强大的武器，具有古老的机制，可以发射束缚带。
 Deals slash damage. Can make ranged attacks.. Drains 0.75% ancient energy to fire a line of belts that deal 40 chain damage and 40 binding.
 造成斩击伤害，可以远程攻击。消耗 0.75% 远古能量来发射一连串的皮带，造成 40 点锁链伤害并增加 40 点束缚。
 Metamorphosis
@@ -3025,9 +3025,9 @@ Deals glue damage. Roots targets for 2 turns on a hit. Offhand: Roots targets on
 Four Seasons
 “四季”
 Activate to reduce the cost of your next fire, water/ice, air/lightning, and earth spell by 50, once per element.
-激活后，下一次使用时 -50% 火/水/冰/风/雷/岩属性法术的消耗，但每个属性仅可使用一次。
+激活后，你的下一个火/水/冰/风/雷/岩属性法术的消耗降低50，但每个元素仅可使用一次。
 Deals shadow damage. +25% fire, ice, soap, crush, electric, blast damage. Offhand: Applies passive bonus.
-造成暗影伤害，+25% 火/冰/皂化/风/雷/岩/压力/爆炸伤害。副手 : ‎应用被动奖励。
+造成暗影伤害，+25% 火/冰/皂化/风/雷/岩/压力/爆炸伤害。副手 : ‎应用被动加成。
 The Arbiter
 “仲裁者”
 I have altered the rules. Pray I do not alter them further.
@@ -3037,7 +3037,7 @@ Deals chain damage with 125% binding efficiency, +40 shadow damage to summons. +
 Bondage Buster EX
 “束缚破坏者 EX”
 Can fire a beam (1 turn channel) that deals 30 electric damage and applies an equal amount of energy bondage. Charges when not fired, dealing 90 total damage at 10 turns of charge.
-可以发射一道光束 ( 1 回合回合 ) ，造成 30 点电击伤害，并施加等量的能量束缚。未发射时会充能，充能 10 回合可造成 90 点总伤害。
+可以发射一道光束 ( 引导1 回合 ) ，造成 30 点电击伤害，并施加等量的能量束缚。未发射时会充能，充能 10 回合可造成 90 点总伤害。
 Melee mode deals tickle damage and marks enemies as vulnerable for 4 turns.
 近战模式造成挠痒伤害，并标记敌人为易受攻击状态，持续 4 回合。
 Bondage Buster MK II
@@ -3047,13 +3047,13 @@ Can fire a beam (3 turn channel) that deals 35 electric damage in an area and ap
 Melee mode deals tickle damage and marks enemies as vulnerable for 2 turns.
 近战模式会造成挠痒伤害，并将敌人标记为易受攻击，持续 2 回合。
 Nevermere Blaster
-“奈文米尔爆破者“
+“奈文米尔爆能枪“
 Can fire a blast that deals 25 electric damage.
 可以发射一道造成 25 点电击伤害的冲击波。
 Melee mode deals tickle damage.
 近战模式造成挠痒伤害。
 Blaster Shot
-爆破射击
+爆裂射击
 You set your blaster to stun and fire!
 你设置爆破枪为击晕状态，并开火射击！
 Messenger of Love
@@ -3067,7 +3067,7 @@ Moirai's Scissors
 Cutting the threads of fate.
 隔断命运的丝线。
 Deals slash damage. Ignores up to 100 Magic and Physical armor. Active ability: Spend 50 charge to free all nearby allies and disrobe enemies, increasing charm damage on them by 100% and applying the armor shred.
-造成斩击伤害。忽略最多 100 点魔法和物理护甲。主动能力 : ‎花费 50 点能量来释放附近所有盟友并脱去敌人的衣服，使他们的妩媚伤害提高 100% 并施加护甲碎片。
+造成斩击伤害。忽略最多 100 点魔法和物理护甲。主动能力 : ‎花费 50 点能量来释放附近所有盟友并脱去敌人的衣服，使他们受到的妩媚伤害提高 100% 并施加破甲。
 With a single snip of the magic scissors, everyone's clothes fall off.
 魔法剪刀一剪，所有人的衣服都掉了下来。
 No eligible targets within 4 tiles
@@ -3081,7 +3081,7 @@ Spend 15 charge to create a pool of slime that deals 35 glue damage per tile and
 Magic Axe
 魔法斧
 Sick and vile, like the hearts of your enemies.
-病态和卑鄙，就像你敌人的心。
+病态而卑鄙，就像你敌人的心思。
 Deals shadow damage to the target and 20 shadow damage to enemies next to you. Slows for 3 turns.
 对目标造成暗影伤害，对身边的敌人造成20点暗影伤害。减速3回合。
 Pickaxe
@@ -3093,7 +3093,7 @@ Deals pierce damage. Reduces enemy armor by 15 for 6 turns.
 Magic Flail
 魔法流星锤
 A blessed censer that distributes pain equally.
-一个用于平等地分配伤害的受祝福的香炉。
+一个能平等分配痛苦的祝福香炉。
 Deals crush damage. Deals 20 bonus shadow damage to the target and enemies near the target.
 造成挤压伤害。对目标和目标附近的敌人造成20点额外的暗影伤害。
 Magic Spear
@@ -3113,11 +3113,11 @@ Icebreaker
 A frigid magical hammer useful for both climbing up and destroying ice.
 一把冰冷的魔法锤子，可以用来攀爬或破冰。
 Deals crush damage. Deals 3x damage to frozen targets instead of 2x. Triggers Shatter.
-造成碾压伤害，对冰冻的目标造成 3 倍而不是 2 倍伤害，触发粉碎。
+造成碾压伤害，对冰冻的目标造成 3 倍伤害而不是2倍，触发粉碎。
 Dreamcatcher
 ”逐梦者“
 Forged in nightmares, woven in steel. Summons a Shadow Warrior on unaware targets for 2% ancient energy.
-在噩梦中铸造，用钢铁编织。召唤一个暗影武士，对于未察觉的目标，消耗2%的远古能量。
+在噩梦中铸造，用钢铁编织。消耗 2% 的古代能量，在未察觉的目标身上召唤一个暗影战士。
 Deals shadow damage. Deals up to 30 bonus psychic damage on unaware (100%) or vulnerable (50%) targets. 
 造成阴影伤害。对未察觉（100%）或易受伤害（50%）的目标造成高达 30 的额外精神伤害。
 Axe
@@ -3187,7 +3187,7 @@ Your toys are buzzing strongly!
 Your toys vibrate intensely!
 你的玩具剧烈振动！
 The vibration is torturous!
-痛苦的震动
+令人痛苦的震动
 
 
 Edged!
@@ -3409,15 +3409,15 @@ You have done a terrible deed.
 
 
 Crystal Monolith
-水晶巨石
+结晶巨石
 The crystal fades from the monolith.
-水晶从巨石上消失。
+结晶从巨石上消失。
 
 
 Orb Guardian
-水晶守卫
+宝球守卫
 The Orb Guardian dissolves into sand and bone dust.
-水晶守卫溶解成沙子和骨灰。
+宝球守卫溶解成沙子和骨灰。
 
 
 
@@ -3811,21 +3811,21 @@ The Dragonheart locks your restraint using natural magics! (DamageTaken)
 
 
 Crystal Dragonheart
-水晶龙心
+结晶龙心
 The Crystal Dragonheart screams and falls to the ground dramatically.
-水晶龙心惨叫一声，剧烈的倒在了地上。
+结晶龙心惨叫一声，戏剧性地倒在地上。
 The Crystal Dragonheart apprehends you! (+RestraintAdded)
-水晶龙心逮捕了你！  ( +RestraintAdded )
+结晶龙心逮捕了你！  ( +RestraintAdded )
 The Crystal Dragonheart squeezes you in a big hug! (DamageTaken)
-水晶龙心紧紧拥抱你！ (DamageTaken)
+结晶龙心紧紧拥抱你！ (DamageTaken)
 The Dragonheart grows a crystalline lock on your restraints! (DamageTaken)
-水晶龙心在你的拘束具上生长出结晶锁！(DamageTaken)
+结晶龙心在你的拘束具上生长出结晶锁！(DamageTaken)
 
 
 Many crystals rise up out of the ground!
-许多水晶从地下升起！
+许多结晶从地下升起！
 A crystal rises up out of the ground!
-一颗水晶从地底升起！
+一颗结晶从地底升起！
 
 
 
@@ -3843,31 +3843,31 @@ The statue kisses your gag! (DamageTaken)
 
 
 Chaotic Crystal
-混沌水晶
+混沌结晶
 The crystal shatters!
-水晶碎了！
+结晶碎了！
 The chaotic crystal leeches energy from you! (DamageTaken)
-混沌水晶汲取你的能量！(DamageTaken)
+混沌结晶汲取你的能量！(DamageTaken)
 
 
 Grand Chaotic Crystal
-大混沌水晶
+大混沌结晶
 The grand crystal shatters!
-大水晶碎裂！
+大结晶碎裂！
 The grand crystal leeches energy from you! (DamageTaken)
-大水晶汲取了你的能量 (DamageTaken)
+大结晶汲取了你的能量 (DamageTaken)
 Crystals erupt from the ground and slowly grow around your limbs! (+RestraintAdded)
-水晶从地下喷涌而出，在你的四肢周围慢慢生长！  ( +RestraintAdded )
+结晶从地下喷涌而出，在你的四肢周围慢慢生长！  ( +RestraintAdded )
 
 
 Soul Crystal
-灵魂水晶
+灵魂结晶
 The crystal shatters into a puff of soul dust!
-水晶碎成一团魂尘！
+结晶碎成一团魂尘！
 The soul crystal leeches strength from you! (DamageTaken)
-灵魂水晶汲取你的力量 (DamageTaken)
+灵魂结晶汲取你的力量 (DamageTaken)
 Active Soul Crystal
-活化灵魂水晶
+活化灵魂结晶
 
 
 Shadow Dragonheart
@@ -4457,7 +4457,7 @@ The Bast Warrior collapses and meows loudly.
 The Bast Warrior restrains you! (+RestraintAdded)
 猫女神战士拘束了你！ ( +RestraintAdded )
 The Bast Warrior tickles you with her claws! (DamageTaken)
-猫女神 战士用她的爪子逗你！ ( DamageTake )
+猫女神战士用她的爪子逗你！ ( DamageTake )
 The Bast Warrior pulls out a lock and slips it on! (DamageTaken)
 猫女神战士拔出一把锁并把它锁上！ ( DamageTaken )
 
@@ -5065,11 +5065,11 @@ The fun-gal produces a magical lock on all your restraints! (DamageTaken)
 The fun-gal rubs your chest with her long, slender fingers! (DamageTaken)
 真菌用她修长的手指摩擦你的胸部！  ( DamageTaken )
 Crystal Glyph
-水晶雕文
+结晶符文
 Crystal Slash
-水晶猛劈
+结晶猛劈
 Crystal Bolt
-水晶插闩
+结晶箭
 
 
 Tailor
@@ -5619,13 +5619,13 @@ The lock is brimming with security features and is nigh impossible to pick!
 
 
 The lock is encased in magical crystals that block the keyhole.
-锁被包裹在神奇的水晶中，挡住了钥匙孔。
+锁被包裹在神奇的结晶中，挡住了钥匙孔。
 Your distraction makes the crystals regrow immediately after breaking them off.
 你的分心使晶体在断裂后立即再生。
 The crystal fragments in the lock make it difficult to pick.
-锁里的水晶碎片使得它很难撬开。
+锁里的结晶碎片使得它很难撬开。
 You need a key to actually unlock the ex-crystallized lock.
-你需要一把钥匙才能真正解锁前结晶锁
+你需要一把钥匙才能真正解锁结晶联锁
 The key sticks in the lock and jams, mangling the key!
 钥匙在锁里被卡住了，钥匙坏了！
 
@@ -6083,7 +6083,7 @@ Disc
 Rubber
 橡胶
 Crystal
-水晶
+结晶
 Runic
 符文
 Magic
@@ -6109,7 +6109,7 @@ Rubber Lock
 Divine Lock
 神圣锁
 Crystal Lock
-水晶锁
+结晶锁
 Runic Lock
 符文锁
 Purple Lock
@@ -6281,7 +6281,7 @@ Goddess Blessing:
 Goddess Curse: 
 女神诅咒 : ‎
 Mana Bonus: 
-法力值奖励：
+法力值加成：
 Lack of Mana Penalty: 
 缺乏法力惩罚：
 Your excess mana helps you suppress the enchantment!
@@ -8170,15 +8170,15 @@ Obsidian Ankle Cuffs
 
 
 Living Crystal Collar
-活体水晶项圈
+活体结晶项圈
 A collar made of a glowing, brittle material that adjusts itself to your neck. You feel your energy flowing into it...
 一种由发光的脆性材料制成的项圈，可以根据你的脖子进行调整。你感觉到你的能量流入其中...
 It will occasionally cause crystal to appear out of nowhere and bind the wearer.  Effect increases in speed based on the amount of crystal you have on you.
-它偶尔会使得水晶突然出现并束缚佩戴者。效果的速度增加取决于你身上的水晶数量。
+它偶尔会使得结晶突然出现并束缚佩戴者。效果的速度增加取决于你身上的结晶数量。
 
 
 Crystal Cuffs
-水晶手铐
+结晶手铐
 It's made of a glowing, brittle material. You feel your energy flowing into it...
 它由发光的易碎材料制成。
 
@@ -8186,11 +8186,11 @@ It's made of a glowing, brittle material. You feel your energy flowing into it..
 
 
 Crystal Leg Cuffs
-水晶腿铐
+结晶腿铐
 
 
 Crystal Ankle Cuffs
-水晶脚铐
+结晶脚铐
 
 
 Living Ice Collar
@@ -9084,7 +9084,7 @@ Bars
 Ruined Shrine
 毁坏的神泉
 Orb Altar
-珠宝祭坛
+宝球祭坛
 Empty Altar
 空祭坛
 Chest
@@ -9294,27 +9294,27 @@ A strange, chaotic energy flows into you! Your will is weakened and your mana fa
 Something gently, constantly tickles you!
 有什么东西温柔地、不断地挠你的痒痒！
 The ampule shatters on impact!
-细颈瓶一碰就碎了！
+安瓿瓶一碰就碎了！
 The gas ampule shatters on impact!
-气瓶一碰就碎了！
+气体安瓿瓶一碰就碎了！
 The glue ampule shatters on impact!
-胶水细颈瓶在撞击时破碎！
+胶水安瓿瓶在撞击时破碎！
 The rubber ampule shatters on impact!
-橡胶细颈瓶一碰就碎了！
+橡胶安瓿瓶一碰就碎了！
 The latex ampule shatters on impact and forms a restraint!
-乳胶细颈瓶在撞击时破碎并形成了拘束！
+乳胶安瓿瓶在撞击时破碎并形成了拘束！
 The latex ampule shatters on impact and coats your body!
-乳胶细颈瓶在撞击中破碎并覆盖您的身体！
+乳胶安瓿瓶在撞击中破碎并覆盖您的身体！
 The latex ampule shatters on impact and sticks to you!
-乳胶细颈瓶在撞击中破碎并粘在你身上！
+乳胶安瓿瓶在撞击中破碎并粘在你身上！
 Gas Ampule
-气体细颈瓶
+气体安瓿瓶
 Glue Ampule
-胶水细颈瓶
+胶水安瓿瓶
 Rubber Ampule
-橡胶细颈瓶
+橡胶安瓿瓶
 Latex Ampule
-乳胶细颈瓶
+乳胶安瓿瓶
 
 
 Shadowy chains appear from a rift in space!
@@ -11523,11 +11523,11 @@ You feel your restraints squeeze you and tingle with painful sensations!
 Your restraints squeeze you painfully without mercy!
 你的束缚痛苦且无情地压迫着你！
 The crystals emit a powerful energy!
-水晶散发出强大的能量！
+结晶散发出强大的能量！
 You feel your body overflow with energy...
 你感觉你的身体充满了能量......
 The crystals react to your struggle attempts with a strange energy!
-水晶会以一种奇怪的能量对你的挣扎尝试做出反应！
+结晶会以一种奇怪的能量对你的挣扎尝试做出反应！
 
 
 Cast Spell (XXX turn delay)
@@ -11779,7 +11779,7 @@ Shadow Latex Trap
 Demonic Sigil
 恶魔封印
 Unstable Crystals
-不稳定晶体
+不稳定结晶
 Gas Trap
 气体陷阱
 Latex Engulfment
@@ -12021,7 +12021,7 @@ Coast
 (A page from the Book of Aeons)|The Overgown Ruins remain a puzzle to scholars. Hardly any light comes through the cracks in the ceiling, and yet the area teems with life. It is known that the regenerative powers that keep humans from dying relies on an individual's own mana supply. So how do plants and beasts without mana survive? The devout say it is the Goddess of Restoration who preserves the jungle, but could it be that the Old Civilization developed a means of sustaining life underground? 
 ( 《万古之书》中的一页 ) |长袍遗址仍然是学者们的一个谜。天花板的裂缝里几乎没有光线，但这个地区充满了生机。众所周知，使人类免于死亡的再生能力依赖于个人自身的法力供应。那么，没有魔法的植物和动物是如何生存的呢？虔诚的信徒们说，是恢复女神保护了丛林，但旧文明是否开发了一种维持地下生命的方法？
 (A page from the Book of Aeons)|The problem of Energy has plagued civilization for millenia. Before the leylines were discovered, humankind relied on natural sources of power such as rivers and firewood. When the Crystal Caves were discovered, a great revolution occurred. No longer reliant on natural sources, civilizations could tap the wellsprings of chaotic energy underground to power machinery like never seen before.
-( 《万古之书》中的一页 ) |能源问题已经困扰了文明数千年。在地脉被发现之前，人类依赖河流和木柴等自然资源。当水晶洞被发现时，发生了一场伟大的革命。文明不再依赖自然资源，可以利用地下混沌能量的源泉为机械提供前所未有的动力。
+( 《万古之书》中的一页 ) |能源问题已经困扰了文明数千年。在地脉被发现之前，人类依赖河流和木柴等自然资源。当结晶洞被发现时，发生了一场伟大的革命。文明不再依赖自然资源，可以利用地下混沌能量的源泉为机械提供前所未有的动力。
 (A page from the Book of Aeons)|The 'Lost Temple' as they call it, is a subject of great speculation. It seems that its creators worshipped only four creator goddesses, rather than all the Eight. It was perhaps abandoned several hundred years ago when a flood caused great panic, and it seems that this must have occurred before humanity was made immortal by the archmagus, as there are many remains still found inside.
 ( 《万古之书》中的一页 ) |他们所说的 '失落的神殿'，是一个饱受猜测的对象。看来它的创造者只崇拜四位造物主女神，而不是所有的八女神。它可能是几百年前被遗弃的，当时一场洪水引起了巨大的恐慌，这似乎发生在大法师使人类永生之前，因为里面仍然发现了许多遗骸。
 (A page from the Book of Aeons)|The Stars have been a mystery to scholars since the beginning of time. At one point, humans believed that every star was a god, and they made offerings by throwing sugar into the night, thinking that as the stars were innumerable, so were the grains of sugar that pleased humans so much. Religion has moved past that, but the Orrery remains a relic from a time when humanity worshipped the stars rather than the Eight.
@@ -12119,7 +12119,7 @@ SOMEBODY STABBED MY FROG AND I AM PISSED.
 I don't think it's neccessary to tell people that dragons resist fire... right?
 我认为没有必要告诉人们龙抗火……对吧？
 I've been studying the dragonheart's weaknesses. So far I've found that the ones bearing the powers of ice dragons are actually weak to fire unlike the others, and the ones who summon crystals to block attacks are nonetheless unable to grab a spear to stop it from reaching them.
-我一直在研究龙之心的弱点。到现在我发现，拥有冰龙之力的人，其实跟其他人不一样，开火能力很弱，而召唤水晶格挡攻击的人，却是连长矛都拿不到。
+我一直在研究龙之心的弱点。到现在我发现，拥有冰龙之力的人，其实跟其他人不一样，开火能力很弱，而召唤结晶格挡攻击的人，却是连长矛都拿不到。
 
 
 They say a ninja can catch a sword in her hands, but can she stop a spear? Ha, thought not!
@@ -12491,11 +12491,11 @@ A vine crawls from the ground, already wrapping around your feet!
 
 
 You find a magic orb, containing a Spell Point. However, a Goddess owns this artifact..
-你发现了一个魔法球，里面有一个法术点。然而，女神拥有这件神器。
+你发现了一个宝珠，里面有一个法术点。然而，女神拥有这件神器。
 You find a magic orb, containing the SHCL spell 'SPLNME' and angering a goddess.
-你发现了一个魔法球，里面有一个SHCL咒语“SPLNME”，激怒了一位女神。
+你发现了一个宝珠，里面有一个SHCL咒语“SPLNME”，激怒了一位女神。
 You find a magic orb, containing a random spell and angering a goddess.
-你发现了一个魔法球，其中包含一个随机法术并激怒了一位女神。
+你发现了一个宝珠，其中包含一个随机法术并激怒了一位女神。
 Should you break it, she will send her minions after you. Which Goddess will you anger?
 如果你打破了它，她就会派出她的爪牙追杀你。你会激怒哪位女神呢？
 
@@ -13243,7 +13243,7 @@ EnemyName 设法带着你的物品撤退！
 
 
 The orb contains knowledge of SPELL.
-该水晶包含 SPELL 的知识。
+该宝珠包含 SPELL 的知识。
 You capture the EnemyName.
 你捕获了 EnemyName。
 You capture the EnemyName in the name of the goddess of GODDESS.
@@ -13433,9 +13433,9 @@ Choose Spells
 Random Spells
 随机法术
 Break orbs. Get points. Buy spells. It's that simple.
-打破水晶，获得积分，购买法术，就是这么简单
+打破宝珠，获得积分，购买法术，就是这么简单
 Break orbs and pray you get something good.
-打破水晶，祈祷你能得到好东西
+打破宝珠，祈祷你能得到好东西
 
 
 Save Mode:
@@ -16149,7 +16149,7 @@ That shrine scorns the memory of my sister! I hate it!
 True power doesn't come from old rickety crates...
 真正的力量不是来自破旧的箱子...
 Orbs? What a gruesome display of weakness! True power comes from the self!
-水晶？多么可怕的软弱表现啊！真正的力量来源于自我！
+宝珠？多么可怕的软弱表现啊！真正的力量来源于自我！
 YOU SCORN THE MEMORY OF MY LATE SISTER!!!
 你蔑视我已故妹妹的记忆！！！
 This is where you will remain until Myrtrice wills otherwise!
@@ -18072,7 +18072,7 @@ Hey! Stop! (PERCENT chance to avoid)
 (You push her out of the way, but get caught in the cloud yourself)|(The gas crystalizes into a RESTRAINT across your body)|Oh no, that could have been me!
 ( 你把她推开，但你自己却被困在雾里 ) | ( 气体在你的身体上结晶成 RESTRAINT ) |哦不，那本来应该在我身上发生！
 (The gas moves toward you, as if by its own will)|(The gas crystalizes into a RESTRAINT across your body)|That wasn't supposed to happen...
-( 气体向你移动，仿佛按照自己的意志一样 ) | ( 气体在你的身体上结晶成 RESTRAINT ) |那不应该发生......
+( 气体向你移动，仿佛按照自己的意志一样 ) | ( 气体在你的身体上凝结成 RESTRAINT ) |那不应该发生......
 
 
 Seems interesting!
@@ -25840,7 +25840,7 @@ Gigantic Slime
 The gigantic slime fizzles as its body becomes unstable!
 巨型史莱姆随着身体变得不稳定而嘶嘶作响！
 The gigantic slime stretches a pseudopod and engulfs you! (+RestraintAdded)
-巨型史莱姆伸展出伪足，将你吞没！ ( +添加约束 )
+巨型史莱姆伸展出伪足，将你吞没！ ( +RestraintAdded )
 The gigantic slime slowly engulfs you! (DamageTaken)
 巨型史莱姆正在慢慢吞没你！ ( DamageTaken )
 A group of slimes jump out!
@@ -25888,7 +25888,7 @@ Targe
 Hide behind it while you still can.
 还可以躲在它后面。
 +60 Block. Deals crush damage and stuns for 4 turns. Offhand: Gives the same block bonus. Offhand bonuses from shields do not stack with a currently equipped shield.
-+60 阻挡。造成挤压伤害并眩晕 4 回合。副手 : ‎提供相同的阻挡奖励。盾牌的副手奖励不会与当前装备的盾牌叠加。
++60 阻挡。造成挤压伤害并眩晕 4 回合。副手 : ‎提供相同的阻挡奖励。盾牌的副手加成不会与当前装备的盾牌叠加。
 You pick up a wooden shield.
 你拿起一个木盾。
 
@@ -25898,7 +25898,7 @@ Tower Shield
 Now with more leg room.
 在腿部空间更大。
 Slows you down by 1 level. +120 Block, +30 Physical Armor. Deals crush damage and stuns for 7 turns. Offhand: Slows you and gives the same block and armor bonus. Offhand bonuses from shields do not stack with a currently equipped shield.
-+120 阻挡，+30 物理防御。缓慢等级提高 1 级。造成挤压伤害并眩晕 7 回合。副手 : ‎提供相同的阻挡和防御加值。盾牌的副手奖励不会与当前装备的盾牌叠加。
++120 阻挡，+30 物理防御。缓慢等级提高 1 级。造成挤压伤害并眩晕 7 回合。副手 : ‎提供相同的阻挡和防御加值。盾牌的副手加成不会与当前装备的盾牌叠加。
 You pick up a metal tower shield.
 你拿起一个金属塔盾。
 
@@ -25908,7 +25908,7 @@ Reinforced Shield
 New and improved, but also clumsier.
 改进后的现代化盾牌，但也更笨拙。
 +80 Block, +15 Physical Armor. Deals crush damage and stuns for 5 turns. Offhand: Gives the same block and armor bonus. Offhand bonuses from shields do not stack with a currently equipped shield.
-+80 阻挡，+15 物理防御。造成挤压伤害并眩晕 5 回合。副手 : ‎提供相同的阻挡和防御加值。盾牌的副手奖励不会与当前装备的盾牌叠加。
++80 阻挡，+15 物理防御。造成挤压伤害并眩晕 5 回合。副手 : ‎提供相同的阻挡和防御加值。盾牌的副手加成不会与当前装备的盾牌叠加。
 You pick up a reinforced shield.
 你拿起一个强化盾牌。
 
@@ -25918,7 +25918,7 @@ Runic Shield
 For when you've been tied up one too many times...
 因为当你被束缚太多次时...
 +80 Block, +20 Magic Armor. Deals crush damage and stuns for 5 turns. Offhand: Gives the same block and armor bonus. Offhand bonuses from shields do not stack with a currently equipped shield.
-+80 阻挡，+20 魔法防御。造成挤压伤害并眩晕 5 回合。副手 : ‎提供相同的阻挡和防御加值。盾牌的副手奖励不会与当前装备的盾牌叠加。
++80 阻挡，+20 魔法防御。造成挤压伤害并眩晕 5 回合。副手 : ‎提供相同的阻挡和防御加值。盾牌的副手加成不会与当前装备的盾牌叠加。
 You pick up a runic shield.
 你拿起一个符文盾牌。
 
@@ -27395,7 +27395,7 @@ Steal Disguise
 Choose target to steal from
 选择要窃取的目标
 Steal's a helpless enemy's clothes, adding a great deal of distraction to her and stealing her disguise for yourself. Until you recast this on yourself, you gain a stealth bonus against members of the same faction.
-窃取完全束缚的敌人的衣服，给她增添了很大的性奋值，同时也窃取了她的伪装给自己。除非你对自己重新施放这个，否则你会在对抗同一派系的成员时获得隐身奖励。
+窃取完全束缚的敌人的衣服，给她增添了很大的分心值，并窃取了她的伪装。直到你对自己重新施展此技能之前，你对同一阵营的成员都会获得隐身加成。
 
 
 
@@ -27451,7 +27451,7 @@ You are caught in a constricting field! (Dmgdlt)
 
 
 Resin Coating
-树脂涂层
+树脂固化
 A layer of transparent resin derived from Green Latex. Unlike other forms of latex, this one is solid and fixes you in place.
 一层源自绿色乳胶的透明树脂。与其他形式的乳胶不同，这种乳胶是固体的，可以将你固定到位。
 It's like you're an art piece! If only you had some way to blast it off...
@@ -27585,7 +27585,7 @@ Ranged Attack
 Combat Training
 战斗训练
 Your training has granted a number of bonuses:|-Weapon stamina cost is reduced by 1% per 10 current WP, up to a max of 40%.|-Slow effects wear off more quickly.|-While you are above 0 WP you gain 1 slow resist.
-你的训练给予了许多奖励 : ‎|-每 10 个当前 WP，武器体力消耗减少 1%，最多 40%。|-缓慢效果消失得更快。|-当你的 WP 高于 0 时，你将获得 1 点缓慢抵抗力。
+你的训练给予了许多加成 : ‎|-每 10 个当前 WP，武器体力消耗减少 1%，最多 40%。|-缓慢效果消失得更快。|-当你的 WP 高于 0 时，你将获得 1 点缓慢抵抗力。
 
 
 This is your current offhand weapon.
@@ -27679,7 +27679,7 @@ Arcane Tome
 Contains advanced formulas and thrilling tales of thirsty wizards. Can not critically strike.
 包含高级咒语和饥渴魔法师的惊险故事。普通攻击无法暴击。
 +5% magic damage. Offhand: Applies passive bonus.
-+5% 魔法伤害。副手 : ‎应用被动奖励。
++5% 魔法伤害。副手 : ‎应用被动加成。
 You find a magical tome.
 你找到了一本神奇的书。
 Open the book. What can go wrong?
@@ -27689,7 +27689,7 @@ Open the book. What can go wrong?
 Contains a malevolent spirit that wishes only to tie up damsels. Can not critically strike.
 蕴含着只想捆绑少女的恶灵。无法暴击。
 +10% binding effectiveness. Offhand: Applies passive bonus.
-+10% 绑定效率。副手 : ‎应用被动奖励。
++10% 绑定效率。副手 : ‎应用被动加成。
 You find a magical tome with a sealed padlock on it.
 你发现一本魔法书，上面有一把密封的挂锁。
 
@@ -27829,7 +27829,7 @@ A rubber cube rushes out of the floor and engulfs you!
 Sharp Claws
 锋利的爪子
 While your hands aren't covered, your attacks deal 10 bonus slash damage on hit and you can cut restraints.
-当你的手没有被覆盖时，你的攻击击中时会造成 10 点额外的斩击伤害，并且你可以切断束缚。
+当你的手没有被覆盖时，你的攻击命中时会造成 10 点额外斩击伤害，并且你可以切断束缚。
 
 
 Powerful Bite
@@ -28709,7 +28709,7 @@ Consume 20 Battle Rhythm to increase escape power by +20% plus 1% of Bondage Res
 Problem Solving
 解决问题
 While active, struggling takes an additional 10 turns, but escape power bonuses from tools and buffs is increased by +(25 + 20% Bondage Resist)%
-活跃时，挣扎需要额外10回合，但工具和增益的逃脱力加成会增加+(25+20%束缚抵抗)%
+活跃时，挣扎需要额外10回合，但工具和增益的逃脱力会获得+(25+20%束缚抵抗)%的加成
 
 
 You run out of strength to keep dodging...
@@ -28881,11 +28881,11 @@ Shadow Dance no longer requires you to be in shadow in order to dash to another 
 
 
 Summon Holy Orb
-召唤圣球
+召唤神圣球体
 Select where to put the holy orb (cannot place on occupied squares)
-选择放置圣球的位置 ( 不能放置在已占用的方块上 )
+选择放置神圣球体的位置 ( 不能放置在已占用的方块上 )
 Create a stationary holy orb that lasts indefinitely and heals allies. It also fires blinding bolts at enemies within its aura. If you let go of yourself near a holy orb you are immediately punished. Should not be placed within 8 tiles of each other.
-创建一个永久持续并治愈盟友的固定圣球。它还会向其光环内的敌人发射致盲箭矢。如果你在圣球附近高潮，你会立即受到惩罚。彼此之间不应放置在 8 格以内。
+创建一个永久持续并治愈盟友的固定神圣球体。它还会向其光环内的敌人发射致盲箭矢。如果你在圣球附近高潮，你会立即受到惩罚。彼此之间不应放置在 8 格以内。
 A holy orb descends, blessing you with its roundness.
 一颗神圣的球体降临，赐予你圆满的祝福。
 You call upon the root of all enlightenment!
@@ -28893,9 +28893,9 @@ You call upon the root of all enlightenment!
 
 
 Holy Orb
-圣球
+神圣球体
 The holy orb returns to its place in the sky.
-圣球回到了天空中的位置。
+神圣球体回到了天空中的位置。
 
 
 Holy Bolt
@@ -28903,7 +28903,7 @@ Holy Bolt
 
 
 The holy orb observes your lack of discipline, and issues a punishment.
-圣球观察到你缺乏纪律，并发出惩罚。
+神圣球体观察到你缺乏纪律，并发出惩罚。
 
 
 Divine Chastity Belt
@@ -29937,7 +29937,7 @@ Warden's Belt
 You may go on your way, but only as long your freedom is useful to her.
 你可以继续走你的路，但前提是你的自由对她有用。
 A golden belt that enforces respect for the Goddesses. Breaking spell orbs results in a punishment.
-一条金色腰带，用来表达对女神的敬意。破坏法术球会受到惩罚。
+一条金色腰带，用来表达对女神的敬意。破坏宝珠会受到惩罚。
 
 
 Belt of Privilege
@@ -29945,7 +29945,7 @@ Belt of Privilege
 You've defeated the Warden, proving that you are worthy to take what you want.
 你已经打败了典狱长，证明你有资格得到你想要的东西。
 A golden belt that marks you as a person of great import. -50% rep penalty for breaking orbs.
-一条金腰带，标志着您是一位重要人物。打破球体的声誉惩罚 -50%。
+一条金腰带，标志着您是一位重要人物。打破宝珠的声望惩罚 -50%。
 
 
 Sharpshooter
@@ -30147,9 +30147,9 @@ This is a nice place you got here.
 (Admire the locale)
 ( 欣赏现场风光 )
 (SPEAKER smiles and nods)|It has existed for a thousand years,|and it shall exist for another thousand.|No thanks, of course, to the adventurers who storm through here,|breaking the orbs as if it all belongs to them...
-( SPEAKER 微笑着点头 ) |它已经存在了一千年，|它还将再存在一千年。|当然，对于那些冲过这里的冒险者来说，|他们不会心存感激，|他们打破了这些球体，好像它们都是属于他们的一样……
+( SPEAKER 微笑着点头 ) |它已经存在了一千年，|它还将再存在一千年。|当然，对于那些冲过这里的冒险者来说，|他们不会心存感激，|他们打破了这些宝珠，好像它们都是属于他们的一样……
 What are these orbs for anyway?
-这些球体到底有什么用处？
+这些宝珠到底有什么用处？
 (SPEAKER looks puzzled)|You don't know? Surely you must be joking?
 ( SPEAKER 一脸疑惑 ) |你不知道？你肯定在开玩笑吧？
 (SPEAKER shrugs)|They are important because...|Wait, you're stalling for time, aren't you?
@@ -30675,33 +30675,33 @@ Took
 
 
 (As you slay the dragon, it begins shapeshifting into human form!)
-( 当你杀死龙时，它开始变身为人形！ )
+( 当你杀死龙时，它开始变形为人形！ )
 
 
 Crystal Dragon Queen
-水晶龙娘王
+结晶龙女皇
 The crystal dragon shapeshifts back to human form!
-水晶龙变回人形！
+结晶龙变回人形！
 The crystal dragon strikes you with its claws! (DamageTaken)
-水晶龙用爪子攻击你！ ( DamageTaken )
+结晶龙用爪子攻击你！ ( DamageTaken )
 The crystal dragon breaths a sparkling dust, which hardens into crystal! (+RestraintAdded)
-水晶龙喷出闪闪发光的粉末，粉末凝固后便变成了水晶！ ( +RestraintAdded )
+结晶龙喷出闪闪发光的粉末，粉末凝固后便变成了水晶！ ( +RestraintAdded )
 The crystal dragon takes flight and swoops toward you!
-水晶龙飞起来并向你俯冲过来！
+结晶龙飞起来并向你俯冲过来！
 The crystal dragon takes flight and slams into you! (Stunned!)
-水晶龙飞起来撞向你！ ( 眩晕！ )
+结晶龙飞起来撞向你！ ( 眩晕！ )
 Crystal Dragon Girl
-水晶龙娘
+结晶龙娘
 The dragon girl submits to you!
 龙娘臣服于你！
 The dragon girl slams you with several hurled crystals! (DamageTaken)
-龙娘向你投掷数颗水晶！ ( DamageTaken )
+龙娘向你投掷数颗结晶！ ( DamageTaken )
 The dragon girl conjures a cloud of crystals that solidify! (+RestraintAdded)
-龙娘召唤出一团凝固的水晶云！ ( +RestraintAdded )
+龙娘召唤出一团凝固的结晶云！ ( +RestraintAdded )
 
 
 Poison Dragon Queen
-毒龙娘王
+毒龙女皇
 The poison dragon shapeshifts back to human form!
 毒龙变回人形！
 The poison dragon strikes you with its claws! (DamageTaken)
@@ -30723,7 +30723,7 @@ The dragon girl raises vines out of the ground to bind you! (+RestraintAdded)
 
 
 Ice Dragon Queen
-冰龙娘王
+冰龙女皇
 The ice dragon shapeshifts back to human form!
 冰龙变回人形！
 The ice dragon strikes you with its claws! (DamageTaken)
@@ -30741,7 +30741,7 @@ The dragon girl splashes you with instantly freezing ice! (+RestraintAdded)
 
 
 Shadow Dragon Queen
-暗影龙娘王
+暗影龙女皇
 The shadow dragon shapeshifts back to human form!
 暗影龙变回人形！
 The shadow dragon slashes directly at your mind! (DamageTaken)
@@ -30761,7 +30761,7 @@ The dragon girl reaches out with a shadowy grip! (+RestraintAdded)
 A cage falls from the ceiling on top of you!
 一个笼子从天花板上掉下来砸中了你！
 Crystals grow across your body and encase you!
-水晶在你的身体上生长并包裹住你！
+结晶在你的身体上生长并包裹住你！
 You are encased in a solid block of ice!
 你被包裹在一块坚固的冰块里！
 Shadows coalesce themselves around you in spherical form!
@@ -30769,9 +30769,9 @@ Shadows coalesce themselves around you in spherical form!
 
 
 Crystal Encasement
-水晶封
+结晶封印
 An overgrowth of magical crystals. Their chaotic energies flood into your mind and displace your thoughts!
-魔法水晶过度生长。它们的混乱能量涌入你的脑海，扰乱你的思维！
+魔法结晶过度生长。它们的混乱能量涌入你的脑海，扰乱你的思维！
 Being brittle, it will eventually crack and fail. Just keep wiggling...
 由于易碎，它最终会破裂并失效。只需继续扭动即可……
 Ice Encasement
@@ -30889,7 +30889,7 @@ Kocaeli - 《失落的神殿》
 Kocaeli - Orrery
 Kocaeli - 《天文钟》
 Kocaeli - Bellows
-Kocaeli -《轰鸣声》
+Kocaeli -《风箱》
 Kocaeli - Rubber Facility
 Kocaeli - 《橡胶工厂》
 Kocaeli - Edge of Reality
@@ -30905,7 +30905,7 @@ The wall of ice shatters!
 Icy Breath
 冰冷呼吸
 Ice Orb
-冰珠
+寒冰球
 The EnemyName breaths in deeply, causing the air around you to chill...
 EnemyName 深呼吸，让你周围的空气变得寒冷...
 
@@ -31119,21 +31119,21 @@ The RSTRT feels a little looser!
 
 
 Crystal Armbinder
-水晶单手套
+结晶单手套
 A growth of crystals fusing your arms together. Chaotic energies radiate in all directions, causing you to slowly lose control over your desires.
-生长的水晶将你的手臂融合在一起。混乱的能量向各个方向辐射，导致你慢慢失去对欲望的控制。
+生长的结晶将你的手臂融合在一起。混乱的能量向各个方向辐射，导致你慢慢失去对欲望的控制。
 Crystals are tough but not unbreakable.
-水晶很坚硬，但并非牢不可破。
+结晶很坚硬，但并非牢不可破。
 
 
 Crystal Ball Gag
-水晶口球
+结晶口球
 A growth of crystals inside your mouth. It emits a strange, pleasurable sensation.
-你嘴里长出了晶体。它散发出一种奇怪的、愉悦的感觉。
+你嘴里长出了结晶。它散发出一种奇怪的、愉悦的感觉。
 Crystal Gag Necklace
-水晶口球项链
+结晶口球项链
 An arousing accessory made of solid crystal!
-一个由固体水晶制成的令人兴奋的配件！
+一个由固体结晶制成的令人兴奋的配件！
 Simply popping it out of your mouth isn't enough to negate its effects entirely~
 简单地把它从嘴里拿出来并不足以完全消除它的影响~
 
@@ -31234,7 +31234,7 @@ The liquid latex sticks to your skin, forcing an airtight layer!
 液态乳胶会粘在你的皮肤上，形成一层气密层！
 The latex starts to build up layers, forcing a protective coating...
 乳胶开始分层，施加保护涂层...
- The latex starts adhering to your skin, becoming extremely difficult to remove...
+The latex starts adhering to your skin, becoming extremely difficult to remove...
 乳胶开始附着在你的皮肤上，变得非常难以去除...
 The latex seals you in, rendering escape impossible without alchemical methods.
 乳胶把你密封起来，如果没有炼金术的方法，是不可能逃脱的。
@@ -31339,9 +31339,9 @@ Willpower: +50 max willpower. +1 stamina regen/turn.
 
 
 A mystical orb stands before you.
-一个神秘的球体出现在你面前。
+一个神秘的宝珠出现在你面前。
 You break the orb and gain its secrets.
-你打破了球体并获得了它的秘密。
+你打破了宝珠并获得了它的秘密。
 
 
 Stun Resistance!
@@ -31491,13 +31491,13 @@ You are holding too many leashes!
 
 
 You feel a corrupting influence... (+AMNT Corruption)
-你感觉到了一种堕性的影响... (+AMNT 堕落)
+你感觉到了一种堕性的影响... (+AMNT Corruption)
 You feel a restoring influence! (-AMNT Corruption)
-你感觉到了一种恢复性的影响！ (-AMNT 堕落)
-Sticky latex fuses itself to your skin! (+AMNT LatexIntegration)
-粘稠的乳胶会与你的皮肤融合！ (+AMNT 乳胶融合)
+你感觉到了一种恢复性的影响！ (-AMNT Corruption)
+Sticky latex fuses itself to your skin! (+AMNT Latex Integration)
+粘稠的乳胶会与你的皮肤融合！(+AMNT Latex Integration)
 The latex starts to detach from your skin... (-AMNT Latex Integration)
-乳胶开始从你的皮肤上脱落... (-AMNT 乳胶融合)
+乳胶开始从你的皮肤上脱落... (-AMNT Latex Integration)
 
 
 While you have an evasion penalty, even clumsy enemies...
@@ -32206,14 +32206,14 @@ That item is blocked! You can't remove it.
 最小.
  max.
 最大.
- bonus
-倍数.
- penalty
-惩罚.
+bonus
+加成
+penalty
+惩罚
 
 
 You put it on, why would you want to take it off?~
-你戴上它了，干嘛要摘下来呢?~
+你都戴上它了，干嘛要摘下来呢?~
 You'll need an ancient key to unlock the ancient-made collar.
 你需要一把古老的钥匙来解开古老的项圈。
 
@@ -32223,41 +32223,33 @@ Ancient Worshipper
 The ancient worshipper repents of her ways.
 古代追随者对自己的行为悔恨不已。
 The ancient worshipper's crystal restraints spread to you! (+RestraintAdded)
-古代追随者的水晶束缚扩散到你身上！（+束缚已添加）
+古代追随者的水晶束缚扩散到你身上！（+RestraintAdded）
 Crystals start to grow on one of your restraints! (DamageTaken)
-水晶开始在你的一拘束具上上生长！（受到伤害）
+结晶在你的拘束具上开始生长！（DamageTaken）
 The ancient worshipper mumbles at you for assistance! (DamageTaken)
-古代追随者喃喃地向你求助！（受到伤害）
-
-
+古代追随者喃喃地向你求助！（DamageTaken）
 Ancient Congregant
 古代教徒
 The ancient congregant repents of her ways.
 古代教徒悔悟了
 The ancient congregant's crystal restraints spread to you! (+RestraintAdded)
-古代教徒的水晶束缚扩散到你身上！（+束缚增加）
+古代教徒的结晶束缚扩散到你身上！（+RestraintAdded）
 Crystals start to grow on your restraints! (DamageTaken)
-水晶开始在你的一拘束具上上生长！（受到伤害）
+结晶在你的拘束具上开始生长！（DamageTaken）
 The ancient congregant mumbles at you for assistance! (DamageTaken)
-古代教徒喃喃地向你求助！（受到伤害）
-
-
+古代教徒喃喃地向你求助！（DamageTaken）
 Ancient Hierophant
 古代祭司
 The ancient hierophant repents of her ways.
 古代祭司悔悟了
 The ancient hierophant's crystal restraints spread to you! (+RestraintAdded)
-古代祭司的水晶束缚扩散到你身上！（+束缚增加）
+古代祭司的结晶束缚扩散到你身上！（+RestraintAdded）
 The ancient hierophant mumbles at you for assistance! (DamageTaken)
-古代祭司喃喃地向你求助！（受到伤害）
-
-
+古代祭司喃喃地向你求助！（DamageTaken）
 The crystals break off, revealing a keyhole and weakening the item.
-水晶断裂，露出一个钥匙孔，削弱了锁的强度。
+结晶断裂，露出一个钥匙孔，削弱了锁的强度。
 Your distraction causes the crystals to grow back, encasing the lock again!
-你的分心让水晶重新长出，再次把锁包住！
-
-
+你的分心让结晶重新长出，再次把锁包住！
 After popping the gag out of your mouth, it hangs loose around your neck.
 从你嘴里取出塞子后，它松松垮垮地挂在你脖子上。
 The gag is now in your mouth.
@@ -32382,9 +32374,7 @@ Barrage of Sealing Talisman
 Self Unlock
 自我解锁
 Crystal Storm
-水晶风暴
-
-
+结晶风暴
 Shadow Walk
 阴影步
 
@@ -32400,15 +32390,14 @@ Screen effect when letting go
 Screen flash when distracted
 分心时屏幕闪烁
 
-
-### Essentia Aliquam
-Aliquam精华
-### Aliquam Orbis
-Aliquam球
+Essentia Aliquam
+乳胶要素
+Aliquam Orbis
+乳胶球
 Potio Requiem
-休息饮料
+安魂曲魔药
 Ultimate Glue no. 91
-91号终极胶
+91号终极胶水
 Slime Encapsulation
 粘液封装
 Nature Bolt
@@ -32434,7 +32423,7 @@ Heavy Ordnance
 Entangle
 缠绕
 Crystal Bind
-水晶绑定
+结晶绑定
 Blessed Orb
 祝福球
 Rubberization Protocol
@@ -32464,7 +32453,7 @@ Enchanted Arrow
 Flash
 闪光
 Crystal Barrage
-水晶弹幕
+结晶弹幕
 Shadow Bolt
 暗影箭
 Obsidian Bolt
@@ -32500,7 +32489,7 @@ Skeleton Minions
 ### Flummoxing Orb
 
 Crystallize
-结晶
+结晶联盟
 Capture Device
 捕捉设备
 Sedative
@@ -32510,7 +32499,7 @@ Poison Dart
 Bear Trap
 空头陷阱
 Charming Orbs
-迷人球体
+迷人宝珠
 Seal of the 5th Era
 第五纪元封印
 Taunt
