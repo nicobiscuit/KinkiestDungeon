@@ -1173,7 +1173,7 @@ Less Cable Bots
 The old civilization used significantly less cable-based restraints in their capture robots.
 旧文明仅在少数的捕捉机器人中加入了使用钢索束缚的能力。
 No Resin Bots
-无树脂机器人
+没有固化机器人
 The old civilization did not use crystal resin-based restraints in their capture robots.
 旧文明并没有在他们的捕捉机器人中加入使用结晶固化的能力。
 Lexx Latex Bots
@@ -2603,9 +2603,9 @@ You ready a flashbang...
 A piece of rare special forces equipment. The secrets of its manufacture are strictly kept by the Alchemist's Guild.
 一件稀有的特种部队装备。其制造秘密由炼金术士公会严格保守。
 Blinds for 24 turns in a 3x3 area. Also Slows and Silences them for half the duration.
-在 3x3 区域内造成 24 回合的致盲。还会在一半的时间内减慢和沉默它们。
+在 3x3 区域内造成 24 回合的致盲。也会让他们在一半的时间内减速和沉默。
 Blinds for 24 turns in a 3x3 area. And also Slows and Silences them for half the duration.
-在 3x3 区域内造成 24 回合的致盲。并且还会在一半的时间内减慢和沉默它们。
+在 3x3 区域内造成 24 回合的致盲。也会让他们在一半的时间内减速和沉默。
 
 
 Invisibility Potion
@@ -2729,9 +2729,9 @@ Grants significantly increased cutting power for a short time.
 Dollmaker's Staff
 玩偶师法杖
 You remember this being used on someone else.
-你记得这被用在别人身上。
+你记得这曾被用在别人身上。
 +15% glue damage. Deals psychic damage. Fully bound enemies captured with this weapon become latex dolls which fight with you.
-+15% 胶体伤害，并造成精神伤害。被这把武器完全束缚的敌人将变成与你一起战斗的乳胶娃娃。
++15% 胶体伤害.造成精神伤害。被这把武器完全束缚的敌人将变成与你一起战斗的乳胶娃娃。
 You are unable to control more than 3 dolls. The new doll is protesting and remains bound.
 你无法控制超过3个娃娃，新的娃娃正在挣扎并保持束缚状态。
 
@@ -2739,7 +2739,7 @@ You are unable to control more than 3 dolls. The new doll is protesting and rema
 Staff of Incineration
 燃烧之杖
 A magical weapon made for intermediates to use.
-专供中级使用的魔法武器。
+专供老手使用的魔杖。
 +25% fire damage. Deals fire damage. Burning enemies take an additional 5 fire damage per turn. Offhand: Applies %fire damage bonus.
 +25% 火焰伤害，造成火焰伤害。燃烧的敌人每回合受到额外 5 点火焰伤害。副手 : ‎施加 %fire 伤害加成。
 Staff of Storms
@@ -2747,9 +2747,9 @@ Staff of Storms
 +20% electric damage. Deals electric damage. Enemies hit by electric damage echo 15 additional Electric damage in a 5x5 area. Offhand: Applies electric damage bonus.
 +20% 电击伤害，造成电击伤害。受到电击伤害的敌人会在 5x5 范围内受到额外 15点电击伤害。副手 : ‎应用电伤害加成。
 Staff of Frostbite
-冰冻法杖
+极寒法杖
 A magical weapon with a 33% chance to freeze the target for 4 turns.
-魔法武器，有 33% 的几率冻结目标 4 回合。
+一件魔杖，有 33% 的几率冻结目标 4 回合。
 +20% ice damage. Deals ice damage. Frozen enemies take 5 ice damage per turn. Offhand: Applies ice damage bonus.
 +20% 寒冰伤害，造成寒冰伤害。被冰冻的敌人每回合受到额外 5 点寒冰伤害。副手 : ‎应用冰伤害加成。
 Staff of Binding
@@ -2769,9 +2769,9 @@ Deals arcane damage. Can be used without hands. Can not critically strike.
 You find a purple crystal. You feel your mystic powers flood into it.
 你找到了一个紫色水晶。你感受到自己的神秘力量涌入其中。
 Staff of Flame
-烈焰法杖
+火焰法杖
 A magical weapon made for novices to use.
-供新手使用的魔法武器。
+供新手使用的魔杖。
 +15% fire damage. Deals fire damage. Offhand: Applies passive bonus.
 +15% 火焰伤害，造成火焰伤害。副手 : ‎应用被动奖励。
 Staff of Slime
@@ -2785,9 +2785,9 @@ Staff of Shocking
 +10% electric damage. Deals electric damage. 10% chance to stun for 3 turns. Offhand: Applies electric damage bonus.
 +10% 电击伤害，造成电击伤害。有 10% 的几率目标眩晕 3 回合。副手 : ‎应用电伤害加成。
 Staff of Permafrost
-冻土法杖
+冰冷法杖
 A magical weapon with a 15% chance to freeze the target for 4 turns.
-一把有着 15% 冻结目标 4 回合的神奇武器。
+一把有着 15% 几率冻结目标 4 回合的魔法武器。
 +10% ice damage. Deals ice damage. Multiplies the duration of freeze effects on enemies by 1.5x (min +1 duration). Offhand: Applies ice damage bonus.
 造成寒冰伤害，将敌人的冰冻效果持续时间乘以 1.5 倍 ( 最低增加一回合 ) ，且寒冰伤害增加 10%。副手 : ‎应用冰伤害加成。
 Staff of Chains
@@ -2907,7 +2907,7 @@ You pick up a fencing sword.
 Sledgehammer
 大锤
 Do you have what it takes?
-你够格吗
+你够格吗？
 Deals heavy crush damage and knocks the target back 2 spaces. Deals bonus damage to most solid barricades.
 造成重创并将目标击退 2 格。对大多数坚固路障造成额外伤害。
 You pick up a heavy sledgehammer.
@@ -2929,7 +2929,7 @@ Also deals 10 damage to targets next to you. Deals crush damage.
 Spear
 矛
 Speak softly and carry a pointy stick.
-说话要轻声细语，并拿起一根尖锐的棍子。
+说话轻声细语，随身带着尖棍。
 Deals pierce damage to the target and one square behind it. Can be used to make a ranged attack 2 tiles away.
 对目标和目标后方一个方格造成刺破伤害。可以在2格外进行远程攻击。
 Pike
@@ -2959,7 +2959,7 @@ You pick up a flashlight.
 Torch
 火把
 Second only to the mighty towel in usefulness.
-在实用性上仅次于强大的毛巾。
+在实用性上仅次于强力毛巾。
 Deals fire damage. Provides light.
 造成火焰伤害。可以提供光亮。
 Unarmed
@@ -2984,15 +2984,15 @@ Deals 20 bonus slash damage on hit. Offhand: Produces light.
 Escort Drone
 护航无人机
 A semi-autonomous drone with a personal defense beam. Does not require hands to equip.
-带有个人防御光束的半自主无人机。不需要双手装备。
+带有个人防御光束的半自主无人机。不用手也可装备。
 Deals electric damage. 33% chance to stun for 4 turns.
 造成电击伤害。有 33% 的几率眩晕目标 4 回合。
 Magic Wand
-魔法棒
+神奇妙妙棒
 Its powers extend beyond the traditional schools of magic.
 它的力量超越了传统的魔法。
 Deals charm damage. 20% chance to stun the target for 2 turns. Offhand: +5 charm damage on attack for 3 stamina.
-造成妩媚伤害，有 20% 的几率使目标眩晕 2 回合。副手 : ‎攻击时 +5 妩媚伤害，持续 3 点体力。
+造成妩媚伤害，有 20% 的几率使目标眩晕 2 回合。副手 : ‎攻击时造成 +5 魅力伤害，消耗 3 点耐力。
 Ice Cube
 冰块
 A magical cube of ice that never melts. Convenient!
@@ -3014,7 +3014,7 @@ A sword that guides itself toward its target, making it easy to hit with.
 Dragonslaver
 ”驯龙者“
 A powerful weapon with an ancient mechanism that launches binding belts.
-一种强大的武器，具有发射捆绑带的古老机器。
+一种强大的武器，具有古老的机制，可以发射束缚带。
 Deals slash damage. Can make ranged attacks.. Drains 0.75% ancient energy to fire a line of belts that deal 40 chain damage and 40 binding.
 造成斩击伤害，可以远程攻击。消耗 0.75% 远古能量来发射一连串的皮带，造成 40 点锁链伤害并增加 40 点束缚。
 Metamorphosis
@@ -3026,7 +3026,7 @@ Deals glue damage. Roots targets for 2 turns on a hit. Offhand: Roots targets on
 Four Seasons
 “四季”
 Activate to reduce the cost of your next fire, water/ice, air/lightning, and earth spell by 50, once per element.
-激活后，下一次使用时 -50% 火/水/冰/风/雷/岩属性法术的消耗，但每个属性仅可使用一次。
+激活后，你的下一个火/水/冰/风/雷/岩属性法术的消耗降低50，但每个元素仅可使用一次。
 Deals shadow damage. +25% fire, ice, soap, crush, electric, blast damage. Offhand: Applies passive bonus.
 造成暗影伤害，+25% 火/冰/皂化/风/雷/岩/压力/爆炸伤害。副手 : ‎应用被动奖励。
 The Arbiter
@@ -3038,7 +3038,7 @@ Deals chain damage with 125% binding efficiency, +40 shadow damage to summons. +
 Bondage Buster EX
 “束缚破坏者 EX”
 Can fire a beam (1 turn channel) that deals 30 electric damage and applies an equal amount of energy bondage. Charges when not fired, dealing 90 total damage at 10 turns of charge.
-可以发射一道光束 ( 1 回合回合 ) ，造成 30 点电击伤害，并施加等量的能量束缚。未发射时会充能，充能 10 回合可造成 90 点总伤害。
+可以发射一道光束 ( 引导1 回合 ) ，造成 30 点电击伤害，并施加等量的能量束缚。未发射时会充能，充能 10 回合可造成 90 点总伤害。
 Melee mode deals tickle damage and marks enemies as vulnerable for 4 turns.
 近战模式造成挠痒伤害，并标记敌人为易受攻击状态，持续 4 回合。
 Bondage Buster MK II
@@ -3048,13 +3048,13 @@ Can fire a beam (3 turn channel) that deals 35 electric damage in an area and ap
 Melee mode deals tickle damage and marks enemies as vulnerable for 2 turns.
 近战模式会造成挠痒伤害，并将敌人标记为易受攻击，持续 2 回合。
 Nevermere Blaster
-“奈文米尔爆破者“
+“奈文米尔爆能枪“
 Can fire a blast that deals 25 electric damage.
 可以发射一道造成 25 点电击伤害的冲击波。
 Melee mode deals tickle damage.
 近战模式造成挠痒伤害。
 Blaster Shot
-爆破射击
+爆裂射击
 You set your blaster to stun and fire!
 你设置爆破枪为击晕状态，并开火射击！
 Messenger of Love
@@ -3068,7 +3068,7 @@ Moirai's Scissors
 Cutting the threads of fate.
 隔断命运的丝线。
 Deals slash damage. Ignores up to 100 Magic and Physical armor. Active ability: Spend 50 charge to free all nearby allies and disrobe enemies, increasing charm damage on them by 100% and applying the armor shred.
-造成斩击伤害。忽略最多 100 点魔法和物理护甲。主动能力 : ‎花费 50 点能量来释放附近所有盟友并脱去敌人的衣服，使他们的妩媚伤害提高 100% 并施加护甲碎片。
+造成斩击伤害。忽略最多 100 点魔法和物理护甲。主动能力 : ‎花费 50 点能量来释放附近所有盟友并脱去敌人的衣服，使他们受到的妩媚伤害提高 100% 并施加破甲。
 With a single snip of the magic scissors, everyone's clothes fall off.
 魔法剪刀一剪，所有人的衣服都掉了下来。
 No eligible targets within 4 tiles
@@ -3082,7 +3082,7 @@ Spend 15 charge to create a pool of slime that deals 35 glue damage per tile and
 Magic Axe
 魔法斧
 Sick and vile, like the hearts of your enemies.
-病态和卑鄙，就像你敌人的心。
+病态而卑鄙，就像你敌人的心思。
 Deals shadow damage to the target and 20 shadow damage to enemies next to you. Slows for 3 turns.
 对目标造成暗影伤害，对身边的敌人造成20点暗影伤害。减速3回合。
 Pickaxe
@@ -3094,7 +3094,7 @@ Deals pierce damage. Reduces enemy armor by 15 for 6 turns.
 Magic Flail
 魔法流星锤
 A blessed censer that distributes pain equally.
-一个用于平等地分配伤害的受祝福的香炉。
+一个能平等分配痛苦的祝福香炉。
 Deals crush damage. Deals 20 bonus shadow damage to the target and enemies near the target.
 造成挤压伤害。对目标和目标附近的敌人造成20点额外的暗影伤害。
 Magic Spear
@@ -3114,11 +3114,11 @@ Icebreaker
 A frigid magical hammer useful for both climbing up and destroying ice.
 一把冰冷的魔法锤子，可以用来攀爬或破冰。
 Deals crush damage. Deals 3x damage to frozen targets instead of 2x. Triggers Shatter.
-造成碾压伤害，对冰冻的目标造成 3 倍而不是 2 倍伤害，触发粉碎。
+造成碾压伤害，对冰冻的目标造成 3 倍伤害而不是2倍，触发粉碎。
 Dreamcatcher
 ”逐梦者“
 Forged in nightmares, woven in steel. Summons a Shadow Warrior on unaware targets for 2% ancient energy.
-在噩梦中铸造，用钢铁编织。召唤一个暗影武士，对于未察觉的目标，消耗2%的远古能量。
+在噩梦中铸造，用钢铁编织。消耗 2% 的古代能量，在未察觉的目标身上召唤一个暗影战士。
 Deals shadow damage. Deals up to 30 bonus psychic damage on unaware (100%) or vulnerable (50%) targets. 
 造成阴影伤害。对未察觉（100%）或易受伤害（50%）的目标造成高达 30 的额外精神伤害。
 Axe
@@ -3188,7 +3188,7 @@ Your toys are buzzing strongly!
 Your toys vibrate intensely!
 你的玩具剧烈振动！
 The vibration is torturous!
-痛苦的震动
+令人痛苦的震动
 
 
 Edged!
@@ -4458,7 +4458,7 @@ The Bast Warrior collapses and meows loudly.
 The Bast Warrior restrains you! (+RestraintAdded)
 猫女神战士拘束了你！ ( +RestraintAdded )
 The Bast Warrior tickles you with her claws! (DamageTaken)
-猫女神 战士用她的爪子逗你！ ( DamageTake )
+猫女神战士用她的爪子逗你！ ( DamageTake )
 The Bast Warrior pulls out a lock and slips it on! (DamageTaken)
 猫女神战士拔出一把锁并把它锁上！ ( DamageTaken )
 
@@ -9291,27 +9291,27 @@ A strange, chaotic energy flows into you! Your will is weakened and your mana fa
 Something gently, constantly tickles you!
 有什么东西温柔地、不断地挠你的痒痒！
 The ampule shatters on impact!
-细颈瓶一碰就碎了！
+安瓿瓶一碰就碎了！
 The gas ampule shatters on impact!
-气瓶一碰就碎了！
+气体安瓿瓶一碰就碎了！
 The glue ampule shatters on impact!
-胶水细颈瓶在撞击时破碎！
+胶水安瓿瓶在撞击时破碎！
 The rubber ampule shatters on impact!
-橡胶细颈瓶一碰就碎了！
+橡胶安瓿瓶一碰就碎了！
 The latex ampule shatters on impact and forms a restraint!
-乳胶细颈瓶在撞击时破碎并形成了拘束！
+乳胶安瓿瓶在撞击时破碎并形成了拘束！
 The latex ampule shatters on impact and coats your body!
-乳胶细颈瓶在撞击中破碎并覆盖您的身体！
+乳胶安瓿瓶在撞击中破碎并覆盖您的身体！
 The latex ampule shatters on impact and sticks to you!
-乳胶细颈瓶在撞击中破碎并粘在你身上！
+乳胶安瓿瓶在撞击中破碎并粘在你身上！
 Gas Ampule
-气体细颈瓶
+气体安瓿瓶
 Glue Ampule
-胶水细颈瓶
+胶水安瓿瓶
 Rubber Ampule
-橡胶细颈瓶
+橡胶安瓿瓶
 Latex Ampule
-乳胶细颈瓶
+乳胶安瓿瓶
 
 
 Shadowy chains appear from a rift in space!
@@ -25850,7 +25850,7 @@ Gigantic Slime
 The gigantic slime fizzles as its body becomes unstable!
 巨型史莱姆随着身体变得不稳定而嘶嘶作响！
 The gigantic slime stretches a pseudopod and engulfs you! (+RestraintAdded)
-巨型史莱姆伸展出伪足，将你吞没！ ( +添加约束 )
+巨型史莱姆伸展出伪足，将你吞没！ ( +RestraintAdded )
 The gigantic slime slowly engulfs you! (DamageTaken)
 巨型史莱姆正在慢慢吞没你！ ( DamageTaken )
 A group of slimes jump out!
@@ -27446,7 +27446,7 @@ You are caught in a constricting field! (Dmgdlt)
 
 
 Resin Coating
-树脂涂层
+树脂固化
 A layer of transparent resin derived from Green Latex. Unlike other forms of latex, this one is solid and fixes you in place.
 一层源自绿色乳胶的透明树脂。与其他形式的乳胶不同，这种乳胶是固体的，可以将你固定到位。
 It's like you're an art piece! If only you had some way to blast it off...
@@ -32196,7 +32196,7 @@ penalty
 惩罚.
 
 You put it on, why would you want to take it off?~
-你戴上它了，干嘛要摘下来呢?~
+你都戴上它了，干嘛要摘下来呢?~
 You'll need an ancient key to unlock the ancient-made collar.
 你需要一把古老的钥匙来解开古老的项圈。
 
