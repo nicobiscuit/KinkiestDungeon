@@ -5350,6 +5350,7 @@ function KinkyDungeonAdvanceTime(delta: number, NoUpdate?: boolean, NoMsgTick?: 
 	KinkyDungeonUpdateEnemies(delta, false); //console.log("Enemy Check " + (performance.now() - now));
 	KinkyDungeonSendEvent("afterEnemyTick", {delta: delta, allied: false});
 
+
 	KinkyDungeonUpdateBullets(delta); //console.log("Bullets Check " + (performance.now() - now));
 	KinkyDungeonUpdateBulletsCollisions(delta, true); //"catchup" phase for explosions!
 
@@ -5371,6 +5372,18 @@ function KinkyDungeonAdvanceTime(delta: number, NoUpdate?: boolean, NoMsgTick?: 
 	KinkyDungeonUpdateJailKeys();
 
 	KDCommanderUpdate(delta);
+
+
+	if (KDCustomDefeat) {
+		let CD = KDCustomDefeat;
+		let CDE = KDCustomDefeatEnemy;
+		KDCustomDefeat = "";
+		KDCustomDefeatEnemy = null;
+		if (CD && KDCustomDefeats[CD]) KDCustomDefeats[CD](CDE);
+		else if (!KinkyDungeonFlags.get("CustomDefeat"))
+			KinkyDungeonDefeat(KinkyDungeonFlags.has("LeashToPrison"), CDE);
+
+	}
 
 	if (pauseTime) {
 		delta = 1;

@@ -1313,6 +1313,8 @@ function KDApplyLivingCollars() {
 }
 
 function KinkyDungeonDefeat(PutInJail?: boolean, leashEnemy?: entity) {
+	KDCustomDefeat = "";
+	KDCustomDefeatEnemy = null;
 	KinkyDungeonInterruptSleep();
 	KDBreakAllLeashedTo(KinkyDungeonPlayerEntity);
 
@@ -1768,6 +1770,18 @@ let KDCustomDefeats: Record<string, (enemy: entity) => void> = {
 	"DemonTransition": (_enemy) => {
 		KDEnterDemonTransition();
 	},
+	"ShopkeeperRescue": (enemy) => {
+		KDRemoveEntity(enemy);
+		KinkyDungeonSendTextMessage(10, TextGet("KDShopkeeperTeleportToStart"), "#ffffff", 4);
+		MiniGameKinkyDungeonLevel = 0;
+		KDCurrentWorldSlot = {x: 0, y: 0};
+		let params = KinkyDungeonMapParams[(KinkyDungeonMapIndex[MiniGameKinkyDungeonCheckpoint] || MiniGameKinkyDungeonCheckpoint)];
+		KinkyDungeonCreateMap(params, "ShopStart", "", MiniGameKinkyDungeonLevel, undefined, undefined, undefined, undefined, false, undefined);
+		KDStartDialog("ShopkeeperTeleport", enemy.Enemy.name, true, "", enemy);
+
+	},
+
+
 	WolfgirlHunters: (enemy) => {
 		KinkyDungeonDefeat(true, enemy);
 		KDCustomDefeatUniforms.WolfgirlHunters();

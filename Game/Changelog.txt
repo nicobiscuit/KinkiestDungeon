@@ -31,9 +31,6 @@ TODO:
 TODO remove hogtie when released
 TODO Add Cuddle play type
 
-5.3.51
-- Mental resistance no longer prevents all orgasm if teased by an enemy or damage
-
 5.3.50
 - More sound effects
 - Giving Good Girl Gifts to NPCs will now temporarily increase their submissiveness

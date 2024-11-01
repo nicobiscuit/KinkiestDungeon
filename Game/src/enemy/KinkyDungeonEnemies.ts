@@ -3703,6 +3703,7 @@ function KinkyDungeonUpdateEnemies(maindelta: number, Allied: boolean) {
 					idle = ret.idle;
 					if (ret.defeat) {
 						defeat = true;
+						AIData.defeat = false;
 						KDCustomDefeatEnemy = enemy;
 						let fac = KDGetFaction(enemy);
 						if (!KDFactionProperties[fac]) {
@@ -3961,12 +3962,14 @@ function KinkyDungeonUpdateEnemies(maindelta: number, Allied: boolean) {
 	}
 
 	if (defeat) {
-		if (KDCustomDefeat && KDCustomDefeats[KDCustomDefeat]) KDCustomDefeats[KDCustomDefeat](KDCustomDefeatEnemy);
+		let CD = KDCustomDefeat;
+		let CDE = KDCustomDefeatEnemy;
+		KDCustomDefeat = "";
+		KDCustomDefeatEnemy = null;
+		if (CD && KDCustomDefeats[CD]) KDCustomDefeats[CD](CDE);
 		else if (!KinkyDungeonFlags.get("CustomDefeat"))
-			KinkyDungeonDefeat(KinkyDungeonFlags.has("LeashToPrison"), KDCustomDefeatEnemy);
+			KinkyDungeonDefeat(KinkyDungeonFlags.has("LeashToPrison"), CDE);
 	}
-	KDCustomDefeat = "";
-	KDCustomDefeatEnemy = null;
 }
 
 let KDCustomDefeat: string = "";
@@ -6800,7 +6803,7 @@ function KinkyDungeonSendEnemyEvent(Event: string, data: any) {
 	KDGetEnemyCache();
 	if (KDEnemyEventCache.get(Event))
 		for (let enemy of KDMapData.Entities) {
-			if (enemy.Enemy.events && KDEnemyEventCache.get(Event).get(enemy.id)) {
+			if (enemy.Enemy.events && KDEnemyEventCache.get(Event)?.get(enemy.id)) {
 				for (let e of enemy.Enemy.events) {
 					if (e.trigger === Event) {
 						KinkyDungeonHandleEnemyEvent(Event, e, enemy, data);

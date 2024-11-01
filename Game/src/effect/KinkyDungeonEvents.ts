@@ -4034,9 +4034,7 @@ let KDEventMapSpell: Record<string, Record<string, (e: KinkyDungeonEvent, spell:
 	"calcInvolOrgasmChance": {
 		"OrgasmResist": (e, _spell, data) => {
 			if (KinkyDungeonStatWill >= 0.1 && !KinkyDungeonPlayerBuffs?.d_OrgasmResist) {
-				data.invol_chance *= Math.max(0,
-					Math.min(1,
-						e.power + 0.3 * (KinkyDungeonTeaseLevel || 0)));
+				data.invol_chance *= Math.max(0, 1 -  4*KinkyDungeonStatWill/KinkyDungeonStatWillMax);
 			}
 		},
 	},
@@ -8938,15 +8936,9 @@ let KDEventMapEnemy: Record<string, Record<string, (e: KinkyDungeonEvent, enemy:
 						enemy.gy = KDMapData.StartPosition.y;
 						if (KDistChebyshev(enemy.x - KDMapData.StartPosition.x, enemy.y - KDMapData.StartPosition.y) < 1.5
 							&& KDistChebyshev(enemy.x - KinkyDungeonPlayerEntity.x, enemy.y - KinkyDungeonPlayerEntity.y) < 2.5) {
-							KinkyDungeonSendTextMessage(10, TextGet("KDShopkeeperTeleportToStart"), "#ffffff", 4);
-							KDRemoveEntity(enemy);
-							//KDGameData.RoomType = "ShopStart";
-							//KDGameData.MapMod = ""; // Reset the map mod
-							MiniGameKinkyDungeonLevel = 0;
-							KDCurrentWorldSlot = {x: 0, y: 0};
-							let params = KinkyDungeonMapParams[(KinkyDungeonMapIndex[MiniGameKinkyDungeonCheckpoint] || MiniGameKinkyDungeonCheckpoint)];
-							KinkyDungeonCreateMap(params, "ShopStart", "", MiniGameKinkyDungeonLevel, undefined, undefined, undefined, undefined, false, undefined);
-							KDStartDialog("ShopkeeperTeleport", enemy.Enemy.name, true, "", enemy);
+							AIData.defeat = true;
+							KDCustomDefeat = "ShopkeeperRescue";
+							KDCustomDefeatEnemy = enemy;
 						}
 					}
 				}
@@ -9562,17 +9554,20 @@ let KDEventMapGeneric: Record<string, Record<string, (e: string, data: any) => v
 	},
 
 	"beforePlayerLaunchAttack": {
-		"ReplacePerks": (_e, data) => {
-			if (KinkyDungeonPlayerDamage.unarmed && KDIsHumanoid(data.target)) {
+		"ReplacePerks": (_e: string, data: {attackData: damageInfo, attackCost: number, target: entity}) => {
+			if ((!KinkyDungeonPlayerDamage.name || KinkyDungeonPlayerDamage.name == "Unarmed")
+				&& KinkyDungeonPlayerDamage.unarmed
+				&& KDIsHumanoid(data.target)) {
 				if (!KinkyDungeonIsArmsBound()) {
 					if (KinkyDungeonStatsChoice.get("UnarmedGrope")) {data.attackData.type = "grope"; data.attackData.sfx = "Damage";}
 					else if (KinkyDungeonStatsChoice.get("UnarmedPain")) data.attackData.type = "pain";
 					else if (KinkyDungeonStatsChoice.get("UnarmedTickle")) {data.attackData.type = "tickle"; data.attackData.sfx = "Tickle";}
+					data.attackData.tease = true;
 				} else KinkyDungeonSendActionMessage(7, TextGet("KDKick"), "#ffaa88", 1, true);
 
 
 				if (KinkyDungeonStatsChoice.get("UnarmedSuck")) {
-					data.attackData.dmg *= 0.5;
+					data.attackData.damage *= 0.5;
 					data.attackCost *= 2;
 				}
 			}
