@@ -2412,6 +2412,15 @@ AttackMeleeCleric,"The Bast Warrior tickles you with her claws! (DamageTaken)"
 AttackMeleeClericLock,"The Bast Warrior pulls out a lock and slips it on! (DamageTaken)"
 
 
+
+NameClericHigh,Bast High Cleric
+KillClericHigh,"The Bast High Cleric vanishes into a puff of ribbons."
+AttackClericHigh,"A ray of light shoots out and paralyzes you! (DamageTaken)"
+AttackClericHighBind,"The Bast Cleric conjures wrappings upon you! (+RestraintAdded)"
+AttackClericHighStun,"A ray of light shoots out and paralyzes you! (DamageTaken)"
+AttackClericHighLock,"The Bast Cleric conjures a lock and slips it onto you! (DamageTaken)"
+
+
 NameCleric,Bast Cleric
 KillCleric,"The Bast Cleric collapses and meows softly."
 AttackCleric,"A ray of light shoots out and paralyzes you! (DamageTaken)"
@@ -5473,6 +5482,10 @@ KDEffectTileTooltipLatexBlue,Liquid Latex
 KDEffectTileTooltipLatexBlueDesc,"Engulfs creatures"
 KDEffectTileTooltipLatexThinBlue,Liquid Latex
 KDEffectTileTooltipLatexThinBlueDesc,"Engulfs creatures"
+KDEffectTileTooltipLatexGreen,Liquid Latex
+KDEffectTileTooltipLatexGreenDesc,"Engulfs pets (like you)"
+KDEffectTileTooltipLatexThinGreen,Liquid Latex
+KDEffectTileTooltipLatexThinGreeneDesc,"Engulfs pets (like you)"
 KDEffectTileTooltipSlime,Slime
 KDEffectTileTooltipSlimeDesc,"Slows creatures"
 KDEffectTileTooltipGlue,Glue
@@ -6113,6 +6126,7 @@ KinkyDungeonSpellEnemyCorona,Binding Light
 KinkyDungeonSpellEnemyCoronaBeam,Binding Light
 KinkyDungeonSpellMonolithBeamBeam,Chaos Beam
 KinkyDungeonSpellClericBeamBeam,Mystic Beam
+KinkyDungeonSpellClericBeamMulti,Mystic Barrage
 KinkyDungeonSpellDescriptionCorona,A beam of light that channels for 2 turns (stunning you briefly) then instantly deals DamageDealt holy damage to the first target hit. Blinds for 12 turns. 150% crit multiplier.
 KinkyDungeonSpellCastCorona,You charge a powerful beam attack!!!
 KinkyDungeonSpellTargetCorona,Choose line direction
@@ -7082,6 +7096,8 @@ KinkyDungeonSpellElfArrow,Elven Arrow
 KinkyDungeonEnchantedArrow,"The elven arrow flashes and wraps you in mithril ropes!"
 KinkyDungeonRopeEngulf,"Ropes wrap themselves around your body from all sides!"
 KinkyDungeonSarcoEngulf,"Wrappings appear and wrap you head to toe!"
+KinkyDungeonHexLatex,A spell transforms your wrappings into hexed latex!
+KinkyDungeonHexLatexFail,A spell engulfs you in wrappings!
 KinkyDungeonRopeEngulfWeak,"Ropes wrap themselves around your body from all sides!"
 KinkyDungeonVineEngulf,"Vines sprout around you and grab hold of your limbs!"
 KinkyDungeonRopeEngulfDress,"Your clothes are stripped and replaced!"
@@ -25424,6 +25440,7 @@ KDBindType_Tape,Tape
 KDBindType_Vine,Vine
 KDBindType_Ice,Ice
 KDBindType_Furniture,Furniture
+KDBindType_Wrapping,Wrapping
 
 KDSaving,Saving...
 KDSaved,Game Saved
@@ -25613,3 +25630,9 @@ dTheWardenFuuka_AggressiveF,"Fuuka, take her down."
 dTheWardenFuuka_AggressiveFGag,"(Send Fuuka to fight her)"
 dTheWardenFuuka_Aggressive,"That is none of your business. Now kneel."
 dTheWardenFuuka_AggressiveGag,"(Fight without listening.)"
+
+
+KinkyDungeonSpellHexWrapping,Blessed Hex
+KinkyDungeonSpellHexOrb,Hexing Orb
+KinkyDungeonSpellHexLatexExplosion,Hexed Latex Engulf
+KinkyDungeonSpellHexWrappingBind,Hex Binding

@@ -1967,13 +1967,15 @@ function KinkyDungeonDoPlayWithSelf(tease?: number): number {
 		affinity: affinity,
 		OrigAmount: OrigAmount,
 		power: power,
-		alertRadius: 3,
+		alertRadius: 4.5 - 4*Math.min(1, KinkyDungeonGagTotal()),
 		distractionCooldown: Math.max(KDGameData.DistractionCooldown, 13),
 	};
 
 	KinkyDungeonSendEvent("playSelf", data);
 
-	KinkyDungeonAlert = Math.max(KinkyDungeonAlert || 0, data.alertRadius); // Alerts nearby enemies because of your moaning~
+	//KinkyDungeonAlert = Math.max(KinkyDungeonAlert || 0, data.alertRadius); // Alerts nearby enemies because of your moaning~
+
+	KinkyDungeonMakeNoise(data.alertRadius, KDPlayer().x, KDPlayer().y);
 
 	KinkyDungeonChangeDistraction(Math.sqrt(Math.max(0, data.amount * KinkyDungeonPlayWithSelfMult)) * KinkyDungeonStatDistractionMax/KDMaxStatStart, false, 0.12);
 	KinkyDungeonChangeStamina(data.cost, true, 3);

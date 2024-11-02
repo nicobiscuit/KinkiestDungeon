@@ -1998,7 +1998,10 @@ let KDCommandBindBindings: Record<string, (spell: spell, x: number, y: number, f
 		KinkyDungeonCastSpell(x, y, KinkyDungeonFindSpell("BindRope", true), undefined, undefined, undefined, "Player");
 	},
 	"fabric": (_spell, x, y, _faction, _bullet, _miscast, _attacker, _counter) => {
-		KinkyDungeonCastSpell(x, y, KinkyDungeonFindSpell("BindRope", true), undefined, undefined, undefined, "Player");
+		KinkyDungeonCastSpell(x, y, KinkyDungeonFindSpell("BindFabric", true), undefined, undefined, undefined, "Player");
+	},
+	"wrapping": (_spell, x, y, _faction, _bullet, _miscast, _attacker, _counter) => {
+		KinkyDungeonCastSpell(x, y, KinkyDungeonFindSpell("BindWrapping", true), undefined, undefined, undefined, "Player");
 	},
 	"chain": (_spell, x, y, _faction, _bullet, _miscast, _attacker, _counter) => {
 		KinkyDungeonCastSpell(x, y, KinkyDungeonFindSpell("BindChain", true), undefined, undefined, undefined, "Player");

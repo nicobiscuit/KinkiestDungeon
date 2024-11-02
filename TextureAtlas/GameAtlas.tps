@@ -227,8 +227,10 @@
             <key type="filename">../Game/Bullets/BigBoulderLaunchHit.png</key>
             <key type="filename">../Game/Bullets/BindBeltHit.png</key>
             <key type="filename">../Game/Bullets/BindChainHit.png</key>
+            <key type="filename">../Game/Bullets/BindFabricHit.png</key>
             <key type="filename">../Game/Bullets/BindRopeHit.png</key>
             <key type="filename">../Game/Bullets/BindVineHit.png</key>
+            <key type="filename">../Game/Bullets/BindWrappingHit.png</key>
             <key type="filename">../Game/Bullets/BlasterBlast.png</key>
             <key type="filename">../Game/Bullets/BlasterBlastHit.png</key>
             <key type="filename">../Game/Bullets/BlindfoldBolt.png</key>
@@ -379,6 +381,10 @@
             <key type="filename">../Game/Bullets/HeatBolt_2.png</key>
             <key type="filename">../Game/Bullets/HeelShadowStrike.png</key>
             <key type="filename">../Game/Bullets/HeelShadowStrikeHit.png</key>
+            <key type="filename">../Game/Bullets/HexOrb.png</key>
+            <key type="filename">../Game/Bullets/HexOrbHit.png</key>
+            <key type="filename">../Game/Bullets/HexWrapping.png</key>
+            <key type="filename">../Game/Bullets/HexWrappingHit.png</key>
             <key type="filename">../Game/Bullets/HighBolt.png</key>
             <key type="filename">../Game/Bullets/HighBoltHit.png</key>
             <key type="filename">../Game/Bullets/IceBreathHit.png</key>
@@ -778,8 +784,10 @@
             <key type="filename">../Game/EffectTiles/LanternUnlit.png</key>
             <key type="filename">../Game/EffectTiles/Latex.png</key>
             <key type="filename">../Game/EffectTiles/LatexBlue.png</key>
+            <key type="filename">../Game/EffectTiles/LatexGreen.png</key>
             <key type="filename">../Game/EffectTiles/LatexThin.png</key>
             <key type="filename">../Game/EffectTiles/LatexThinBlue.png</key>
+            <key type="filename">../Game/EffectTiles/LatexThinGreen.png</key>
             <key type="filename">../Game/EffectTiles/LiquidMetal.png</key>
             <key type="filename">../Game/EffectTiles/Magicflies.png</key>
             <key type="filename">../Game/EffectTiles/ManaEmpty.png</key>
@@ -1299,6 +1307,7 @@
             <key type="filename">../Game/EnemiesBound/BanditPet.png</key>
             <key type="filename">../Game/EnemiesBound/ChainBeing.png</key>
             <key type="filename">../Game/EnemiesBound/Cleric.png</key>
+            <key type="filename">../Game/EnemiesBound/ClericHigh.png</key>
             <key type="filename">../Game/EnemiesBound/Conjurer.png</key>
             <key type="filename">../Game/EnemiesBound/ConjurerTickler.png</key>
             <key type="filename">../Game/EnemiesBound/CorruptedAdventurer.png</key>
@@ -3088,6 +3097,8 @@
             <key type="filename">../Game/Bullets/GravityPullHit.png</key>
             <key type="filename">../Game/Bullets/GreaterFlash.png</key>
             <key type="filename">../Game/Bullets/GreaterFlashHit.png</key>
+            <key type="filename">../Game/Bullets/HexLatexExplosion.png</key>
+            <key type="filename">../Game/Bullets/HexLatexExplosionHit.png</key>
             <key type="filename">../Game/Bullets/IceBreath.png</key>
             <key type="filename">../Game/Bullets/IceBreathChannel.png</key>
             <key type="filename">../Game/Bullets/IceBreathChannelHit.png</key>

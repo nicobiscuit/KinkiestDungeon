@@ -7189,7 +7189,7 @@ function KinkyDungeonHandleWeaponEvent(Event: string, e: KinkyDungeonEvent, weap
 let KDEventMapBullet: Record<string, Record<string, (e: KinkyDungeonEvent, b: any, data: any) => void>> = {
 	"countRune": {
 		"rune": (_e, b, data: KDRuneCountData) => {
-			if (!b.source || !KinkyDungeonFindID(b.source)) {
+			if (!b.bullet.source || !KinkyDungeonFindID(b.bullet.source)) {
 				data.runes += 1;
 				data.runeList.push(b);
 			}
@@ -7917,16 +7917,31 @@ let KDEventMapBullet: Record<string, Record<string, (e: KinkyDungeonEvent, b: an
 		},
 		"CastSpellNearbyEnemy": (e, b, data) => {
 			if (data.delta > 0) {
+				let source = b.bullet.source ? KinkyDungeonFindID(b.bullet.source) : null;
 				let born = b.born ? 0 : 1;
-				let enemies = KDNearbyEnemies(b.x + b.vx * data.delta * born, b.y + b.vy * data.delta * born, e.aoe).filter((enemy) => {
-					return (KDHostile(enemy) || (b.x == enemy.x && b.y == enemy.y && !KDAllied(enemy)));
+				let enemies = KDNearbyEnemies(b.x + b.vx * data.delta * born, b.y + b.vy * data.delta * born, e.aoe)
+				.filter((enemy) => {
+					return (!source || b.bullet.source == -1)
+						? (KDHostile(enemy) || (b.x == enemy.x && b.y == enemy.y && !KDAllied(enemy)))
+						: (KDFactionHostile(KDGetFaction(source), KDGetFaction(enemy)));
 				});
-				if (e.player && KDistEuclidean(b.x + b.vx * data.delta * born, b.y + b.vy * data.delta * born) < e.aoe) {
+				if (e.player
+					&& KDistEuclidean(
+						b.x + b.vx * data.delta * born - KDPlayer().x,
+						b.y + b.vy * data.delta * born - KDPlayer().y) < e.aoe
+					&& (!source
+						|| (
+							source
+							&& KDFactionHostile(KDGetFaction(source), "Player")
+						)
+					)
+				) {
 					enemies.push(KinkyDungeonPlayerEntity);
 				}
 				if (enemies.length > 0) {
 					let enemy = enemies[Math.floor(KDRandom() * enemies.length)];
-					KinkyDungeonCastSpell(enemy.x, enemy.y, KinkyDungeonFindSpell(e.spell, true), undefined, undefined, undefined, b.bullet.faction);
+					KinkyDungeonCastSpell(enemy.x, enemy.y,
+						KinkyDungeonFindSpell(e.spell, true), undefined, undefined, undefined, b.bullet.faction);
 				}
 			}
 		},
@@ -9385,7 +9400,9 @@ let KDEventMapEnemy: Record<string, Record<string, (e: KinkyDungeonEvent, enemy:
 				let enemies = KDNearbyEnemies(enemy.x, enemy.y, e.aoe).filter((enemy2) => {
 					return (KDHostile(enemy2) || (enemy.x == enemy2.x && enemy.y == enemy2.y && KDFactionRelation(KDGetFaction(enemy2), KDGetFaction(enemy)) < 0.5));
 				});
-				if (e.player && KDistEuclidean(enemy.x - KinkyDungeonPlayerEntity.x, enemy.y - KinkyDungeonPlayerEntity.y) < e.aoe) {
+				if (e.player
+					&& KDistEuclidean(enemy.x - KinkyDungeonPlayerEntity.x, enemy.y - KinkyDungeonPlayerEntity.y) < e.aoe
+					&& KDFactionHostile(KDGetFaction(enemy), "Player")) {
 					enemies.push(KinkyDungeonPlayerEntity);
 				}
 				if (enemies.length > 0) {

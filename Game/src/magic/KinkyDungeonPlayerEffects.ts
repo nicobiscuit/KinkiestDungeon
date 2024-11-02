@@ -731,6 +731,33 @@ let KDPlayerEffects: Record<string, (target: any, damage: string, playerEffect: 
 
 		return {sfx: "MagicSlash", effect: effect};
 	},
+
+	"HexLatex": (_target, damage, playerEffect, spell, faction, bullet, _entity) => {
+		let effect = false;
+		let dmg = KinkyDungeonDealDamage({damage: playerEffect?.power || spell?.power || 1, type: playerEffect?.damage || spell?.damage || damage}, bullet);
+		if (!dmg.happened) return{sfx: "Shield", effect: false};
+		let added = [];
+		let converted = [];
+		for (let i = 0; i < playerEffect.power; i++) {
+			let restraintAdd = KinkyDungeonGetRestraint({tags: ["mummyRestraints"]}, 100, "tmb");
+			if (restraintAdd) {
+				KDPlayerEffectRestrain(spell, 1, ["mummyRestraints"], faction);
+				KDSendStatus('bound', restraintAdd.name, "spell_" + spell.name);
+				added.push(restraintAdd);
+				effect = true;
+			}
+		}
+		if (converted.length > 0) {
+			KinkyDungeonSendTextMessage(6, TextGet("KinkyDungeonHexLatex").KDReplaceOrAddDmg( dmg.string), "#ff5277", 2);
+			effect = true;
+		} else
+		if (added.length > 0) {
+			KinkyDungeonSendTextMessage(6, TextGet("KinkyDungeonHexLatexFail").KDReplaceOrAddDmg( dmg.string), "#ff5277", 2);
+			effect = true;
+		}
+
+		return {sfx: "MagicSlash", effect: effect};
+	},
 	"SarcoHex": (_target, _damage, _playerEffect, spell, faction, _bullet, _entity) => {
 		let restraintAdd = KinkyDungeonGetRestraint({tags: ["mummyRestraints"]}, 100, "tmb");
 		if (!restraintAdd && !KinkyDungeonPlayerTags.get("Sarcophagus")) {
