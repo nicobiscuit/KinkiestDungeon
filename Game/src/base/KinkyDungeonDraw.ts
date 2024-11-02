@@ -1559,7 +1559,7 @@ function KinkyDungeonDrawGame() {
 					}
 
 					if (!enemy && KDGameData.CurrentDialog) {
-						enemy = KDGetSpeaker();
+						enemy = KDGetSpeaker(true);
 						if (enemy)
 							tooltips.push((offset: number) => KDDrawEnemyDialogue(enemy, offset));
 					}

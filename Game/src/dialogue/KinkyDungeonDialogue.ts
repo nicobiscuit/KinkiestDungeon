@@ -204,8 +204,9 @@ function KDEnemyHelpfulness(enemy: entity): number {
 	if (KDLoosePersonalities.includes(enemy.personality)) return 1.75;
 }
 
-function KDGetSpeaker(): entity {
-	let enemy = KinkyDungeonFindID(KDGameData.CurrentDialogMsgID);
+function KDGetSpeaker(global?: boolean): entity {
+	let enemy = global ? KDGetGlobalEntity(KDGameData.CurrentDialogMsgID)
+		: KinkyDungeonFindID(KDGameData.CurrentDialogMsgID);
 	if (enemy && enemy.Enemy.name == KDGameData.CurrentDialogMsgSpeaker) {
 		return enemy;
 	}
