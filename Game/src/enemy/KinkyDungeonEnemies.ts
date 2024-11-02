@@ -2505,7 +2505,7 @@ function KDDrawEnemyDialogue(enemy: entity, offset: number): number {
 		});
 	}
 
-	return KDDrawTooltip(TooltipList, offset);
+	return KDDrawTooltip(TooltipList, offset, true);
 }
 
 function KDGetColor(enemy: entity): string {
@@ -8565,8 +8565,10 @@ function KDRemoveEntity(enemy: entity, kill?: boolean, capture?: boolean, noEven
 					KDGameData.Collection[enemy.id + ""].escaped = false;
 				}
 			} else {
-				KDGetPersistentNPC(enemy.id).captured = true;
-				KDGetPersistentNPC(enemy.id).captureFaction = KDMapData.MapFaction;
+				if (KDEntityAtRiskOfCapture(enemy)) {
+					KDGetPersistentNPC(enemy.id).captured = true;
+					KDGetPersistentNPC(enemy.id).captureFaction = KDMapData.MapFaction;
+				}
 			}
 		}
 		if (KDGameData.SpawnedPartyPrisoners && KDGameData.SpawnedPartyPrisoners[enemy.id + ""]) {
@@ -9230,5 +9232,17 @@ function KDIsSubmissive(entity: entity, threshold: number = 0.5): boolean {
 	} else {
 		return KDIsSubmissiveEnough();
 	}
+	return false;
+}
+
+
+function KDEntityAtRiskOfCapture(enemy: entity): boolean {
+	let persistent = KDIsNPCPersistent(enemy.id) ? KDGetPersistentNPC(enemy.id) : undefined;
+	if (persistent.alwaysEscape) return false;
+	if (!KDGameData.Collection[enemy.id + ""]
+		&& enemy.hp >= enemy.Enemy?.maxhp
+		&& !enemy.boundLevel) return false;
+	if (KDGameData.Collection[enemy.id + ""] // #TODO #FixMe add support for having them simply wander around
+		|| KDFactionHostile(KDGetFaction(enemy), KDGetMainFaction())) return true;
 	return false;
 }

@@ -16,6 +16,8 @@ interface KDPersistentNPC {
 	jailed?: boolean,
 	/** NPC is special and should remain persistent */
 	special?: boolean,
+	/** NPC is very skilled and will never be captured */
+	alwaysEscape?: boolean,
 
 	/** Visual */
 	outfit?: string,

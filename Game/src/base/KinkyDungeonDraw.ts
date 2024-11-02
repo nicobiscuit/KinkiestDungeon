@@ -4395,7 +4395,7 @@ function KDDrawEffectTileTooltip(tile: effectTile, x: number, y: number, offset:
 	return KDDrawTooltip(TooltipList, offset);
 }
 
-function KDDrawTooltip(TooltipList: any[], offset: number): number {
+function KDDrawTooltip(TooltipList: any[], offset: number, hidebg?: boolean): number {
 	let TooltipWidth = 300;
 	let TooltipHeight = 0;
 	let extra = 5;
@@ -4407,16 +4407,17 @@ function KDDrawTooltip(TooltipList: any[], offset: number): number {
 	let tooltipY = 790 - TooltipHeight - offset;
 	let YY = 0;
 
-	FillRectKD(kdcanvas, kdpixisprites, "inspectTooltip" + offset, {
-		Left: tooltipX,
-		Top: tooltipY - 25,
-		Width: TooltipWidth,
-		Height: TooltipHeight + 20,
-		Color: "#000000",
-		LineWidth: 1,
-		zIndex: 112,
-		alpha: 0.7,
-	});
+	if (!hidebg)
+		FillRectKD(kdcanvas, kdpixisprites, "inspectTooltip" + offset, {
+			Left: tooltipX,
+			Top: tooltipY - 25,
+			Width: TooltipWidth,
+			Height: TooltipHeight + 20,
+			Color: "#000000",
+			LineWidth: 1,
+			zIndex: 112,
+			alpha: 0.7,
+		});
 
 	let pad = 10;
 

@@ -869,7 +869,11 @@ function SetpieceSpawnPrisoner(x: number, y: number, persistentOnly?: boolean, l
 		MiniGameKinkyDungeonLevel,
 		KDGameData.RoomType,
 		KDGameData.MapMod,
-		KDMapData.MapFaction);
+		KDMapData.MapFaction).filter(
+			(en) => {
+				return !en.entity?.Enemy?.tags?.noPrisoner;
+			}
+		);
 	let persistentAvailable =
 		KDGameData.CapturedParty?.length > 0
 		|| capturedPersistent.length > 0;
