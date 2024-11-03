@@ -862,6 +862,9 @@ interface enemy extends KDHasTags {
 		decay?: number,
 	},
 
+	/** Which subroutine to select spawnAI */
+	spawnAISetting?: string,
+
 	/** Behavior tags */
 	Behavior?: {
 		/** This enemy will hold still when near the player */

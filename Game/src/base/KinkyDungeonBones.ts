@@ -1269,7 +1269,10 @@ function KDProcessCustomPatron(Enemy: enemy, e: entity, chanceBoost: number, mak
 			if (custom.customIntro) {
 				e.intro = custom.customIntro;
 			}
-			if (makePersistent) KDGetPersistentNPC(e.id, e);
+			if (makePersistent) {
+				let npc = KDGetPersistentNPC(e.id, e);
+				KDSetSpawnAndWanderAI(npc);
+			}
 			return custom;
 		}
 	}

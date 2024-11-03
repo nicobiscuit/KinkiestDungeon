@@ -331,3 +331,15 @@ function KDGetCapturedPersistent(Level: number, RoomType: string, MapMod: string
 	return eligible;
 }
 
+
+
+function KDSetSpawnAndWanderAI(npc: KDPersistentNPC) {
+	let enemy = npc.entity.Enemy;
+	if (typeof npc.entity.Enemy == "string") {
+		enemy = KinkyDungeonGetEnemyByName(npc.entity.Enemy);
+	}
+	let aitype = "Default";
+	if (enemy.spawnAISetting) aitype = enemy.spawnAISetting;
+
+	if (SpawnAISettingList[aitype]) npc.spawnAI = SpawnAISettingList[aitype](npc, enemy);
+}

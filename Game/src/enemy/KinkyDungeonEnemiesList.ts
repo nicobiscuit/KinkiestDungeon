@@ -55,6 +55,7 @@ let KinkyDungeonEnemies: enemy[] = [
 	{name: "ShopkeeperStart", tags: KDMapInit(["human", "peaceful", "alwayshelp", "noshop", "opendoors"]), faction: "Prisoner", lowpriority: true, armor: 2, followRange: 100, AI: "guard",
 		visionRadius: 0, maxhp: 120, regen: 10, minLevel:0, weight:-1000, movePoints: 2, attackPoints: 0, attack: "", attackRange: 0, specialdialogue: "ShopkeeperStart",
 		Behavior: {noPlay: true},
+		spawnAISetting: "None",
 		noDisplace: false, keys: true,
 		terrainTags: {}, floors:KDMapInit([])},
 
@@ -6065,3 +6066,13 @@ let KDEnemyAction: Record<string, KDEnemyAction> = {
 		sprint: true,
 	},
 };
+
+
+let SpawnAISettingList: Record<string, (npc: KDPersistentNPC, enemy: enemy) => string> = {
+	Default: (npc: KDPersistentNPC, enemy: enemy) => {
+		return "Default";
+	},
+	None: (npc: KDPersistentNPC, enemy: enemy) => {
+		return "None";
+	},
+}
