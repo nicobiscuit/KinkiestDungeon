@@ -635,9 +635,11 @@ interface KDGameDataBase {
 	FacilitiesData:			FacilitiesData,
 	Regiments:			Record<string, KDRegiment>,
 	QuickLoadouts:			Record<string, string[]>,
+	PersistentNPCCache:			Record<string, number[]>,
 };
 
 let KDGameDataBase: KDGameDataBase = {
+	PersistentNPCCache: {},
 	Containers: {},
 	PersistentItems: {},
 	Regiments: {},

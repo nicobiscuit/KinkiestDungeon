@@ -926,6 +926,13 @@ function KinkyDungeonCreateMap (
 		if (!altType?.loadscript || altType.loadscript(false)) {
 			if (!altType?.noPersistentPrisoners && !mapMod?.noPersistentPrisoners)
 				KDRepopulatePersistentNPCs();
+			if (!altType?.noPersistentSpawn && !mapMod?.noPersistentSpawn)
+				// Spawn wandering persistent NPCs depending on spawn AI
+				KDSpawnPersistentNPCs({
+					mapX: worldLocation.x,
+					mapY: worldLocation.y,
+					room: KDGameData.RoomType,
+				}, true);
 		}
 		UpdateRegiments({
 			mapX: worldLocation.x,
@@ -1487,6 +1494,14 @@ function KinkyDungeonCreateMap (
 	if (!altType?.loadscript || altType.loadscript(true)) {
 		if (!altType?.noPersistentPrisoners && !mapMod?.noPersistentPrisoners)
 			KDRepopulatePersistentNPCs();
+
+		if (!altType?.noPersistentSpawn && !mapMod?.noPersistentSpawn)
+			// Spawn wandering persistent NPCs depending on spawn AI
+			KDSpawnPersistentNPCs({
+				mapX: worldLocation.x,
+				mapY: worldLocation.y,
+				room: KDGameData.RoomType,
+			}, true);
 	}
 
 	KinkyDungeonGenNavMap();

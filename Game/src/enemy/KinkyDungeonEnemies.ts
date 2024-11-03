@@ -8481,6 +8481,7 @@ function KDAddEntity(entity: entity, makepersistent?: boolean, dontteleportpersi
 			npc.entity.x = data.x;
 			npc.entity.y = data.y;
 			KDUpdateEnemyCache = true;
+
 		} else {
 			createpersistent = true;
 		}
@@ -8511,6 +8512,10 @@ function KDAddEntity(entity: entity, makepersistent?: boolean, dontteleportpersi
 	// Note: you have to do this yourself if you are manipulating enemies on other maps
 	if ((mapData == KDMapData) && KDIsNPCPersistent(data.enemy.id) && !KDGetAltType(MiniGameKinkyDungeonLevel)?.keepPrisoners)
 		KDGetPersistentNPC(data.enemy.id).collect = false;
+
+	if (KDIsNPCPersistent(data.enemy.id)) {
+		KDGetPersistentNPC(data.enemy.id).spawned = true;
+	}
 	return data.enemy;
 }
 
@@ -8519,6 +8524,7 @@ function KDSpliceIndex(index: number, num: number = 1) {
 		KDCommanderRoles.delete(KDMapData.Entities[index].id);
 	}
 	KDMapData.Entities.splice(index, num);
+
 	KDUpdateEnemyCache = true;
 }
 
@@ -8579,6 +8585,7 @@ function KDRemoveEntity(enemy: entity, kill?: boolean, capture?: boolean, noEven
 	}
 	if (KDIsNPCPersistent(enemy.id) && KDGetPersistentNPC(enemy.id)) {
 		KDGetPersistentNPC(enemy.id).jailed = undefined;
+		KDGetPersistentNPC(enemy.id).spawned = undefined;
 	}
 
 	KDSpliceIndex(forceIndex || KDMapData.Entities.indexOf(data.enemy), 1);
@@ -9242,7 +9249,6 @@ function KDEntityAtRiskOfCapture(enemy: entity): boolean {
 	if (!KDGameData.Collection[enemy.id + ""]
 		&& enemy.hp >= enemy.Enemy?.maxhp
 		&& !enemy.boundLevel) return false;
-	if (KDGameData.Collection[enemy.id + ""] // #TODO #FixMe add support for having them simply wander around
-		|| KDFactionHostile(KDGetFaction(enemy), KDGetMainFaction())) return true;
+	if (KDFactionHostile(KDGetFaction(enemy), KDGetMainFaction())) return true;
 	return false;
 }

@@ -56,12 +56,26 @@ function KDTickMaps(delta: number,
 	if (KinkyDungeonFlags.get("KDMapTick")) return false;
 	KinkyDungeonSetFlag("KDMapTick", KDMapTickTime);
 	let mapsToUpdate: WorldCoord[] = [];
+	let mapsWithUpdateNPCs: WorldCoord[] = [];
 
 	for (let y = minFloor; y <= maxFloor; y++) {
 		let mapSlot = KDWorldMap[0 + ',' + y];
 		if (mapSlot) {
 			for (let data of Object.values(mapSlot.data)) {
 				mapsToUpdate.push({
+					mapX: 0,
+					mapY: y,
+					room: data.RoomType,
+				})
+			}
+		}
+	}
+
+	for (let y = 0; y <= KDGameData.HighestLevelCurrent; y++) {
+		let mapSlot = KDWorldMap[0 + ',' + y];
+		if (mapSlot) {
+			for (let data of Object.values(mapSlot.data)) {
+				mapsWithUpdateNPCs.push({
 					mapX: 0,
 					mapY: y,
 					room: data.RoomType,
@@ -85,6 +99,23 @@ function KDTickMaps(delta: number,
 		if (updateChests)
 			KDRefillChests(data);
 	}
+
+	for (let coords of mapsToUpdate) {
+		let loc = KDGetWorldMapLocation({x: coords.mapX, y: coords.mapY});
+		if (!loc) continue;
+
+		let data = loc.data[coords.room]
+
+		if (data) {
+
+		}
+		KDSpawnPersistentNPCs(coords, data == KDMapData);
+		// TODO add wander
+
+
+	}
+
+
 
 	return true;
 }

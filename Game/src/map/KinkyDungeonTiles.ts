@@ -672,7 +672,15 @@ function KDEffectTileInteractions(x: number, y: number, b: any, d: number): void
  * @param [ignoreBlocked] - Ignore if the target is blocked--important if swapping
  * @param [forceHitBullets] - Forces the target to hit stationary bullets if in the way
  */
-function KDMoveEntity(enemy: entity, x: number, y: number, willing: boolean, dash?: boolean, forceHitBullets?: boolean, ignoreBlocked?: boolean) {
+function KDMoveEntity(enemy: entity, x: number, y: number, willing: boolean, dash?: boolean, forceHitBullets?: boolean, ignoreBlocked?: boolean, noEvent?: boolean) {
+	if (noEvent) {
+		enemy.x = x;
+		enemy.y = y;
+		if (enemy.x != enemy.lastx || enemy.y != enemy.lasty) KDUpdateEnemyCache = true;
+		enemy.lastx = enemy.x;
+		enemy.lasty = enemy.y;
+		return false;
+	}
 	enemy.lastx = enemy.x;
 	enemy.lasty = enemy.y;
 	let cancel = {cancelmove: false, returnvalue: false};

@@ -1622,6 +1622,9 @@ interface String {
 }
 
 interface entity {
+	/** If true, immediately run the spawn AI for this once loading the map */
+	runSpawnAI?: boolean,
+
 	refreshSprite?: boolean,
 	FacilityAction?: string,
 
@@ -2786,6 +2789,7 @@ type MapMod = {
 	altRoom: string,
 	escapeMethod?: string,
 	noPersistentPrisoners?: boolean,
+	noPersistentSpawn?: boolean,
 }
 
 type AIType = {

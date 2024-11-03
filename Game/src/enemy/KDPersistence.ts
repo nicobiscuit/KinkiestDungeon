@@ -18,6 +18,10 @@ interface KDPersistentNPC {
 	special?: boolean,
 	/** NPC is very skilled and will never be captured */
 	alwaysEscape?: boolean,
+	/** Wandering AI type, for moving between floors */
+	wanderAI?: string,
+	/** Spawn AI type, for setting goals and AI*/
+	spawnAI?: string,
 
 	/** Visual */
 	outfit?: string,
@@ -26,6 +30,11 @@ interface KDPersistentNPC {
 	facestyle?: string,
 	cosplaystyle?: string,
 	Palette?: string,
+
+	spawned?: boolean,
+
+	nextWanderTick?: number,
+	nextSpawnTick?: number,
 }
 
 interface WorldCoord {
@@ -34,11 +43,75 @@ interface WorldCoord {
 	room: string,
 }
 
+function KDMovePersistentNPC(id: number, coord: WorldCoord): boolean {
+	let PNPC = KDGetPersistentNPC(id)
+	if (PNPC) {
+		let oldCoord: WorldCoord = {
+			room: PNPC.room,
+			mapX: PNPC.mapX,
+			mapY: PNPC.mapY,
+		};
+
+
+		let altered = false;
+		if (PNPC.mapX != coord.mapX) {
+			altered = true;
+			PNPC.mapX = coord.mapX;
+		}
+		if (PNPC.mapY != coord.mapY) {
+			altered = true;
+			PNPC.mapY = coord.mapY;
+		}
+		if (PNPC.room != coord.room) {
+			altered = true;
+			PNPC.room = coord.room;
+		}
+
+		if (altered) {
+			PNPC.spawned = false;
+			// Force both caches to refresh
+			delete KDGameData.PersistentNPCCache[coordHash(oldCoord)];
+			delete KDGameData.PersistentNPCCache[coordHash(coord)];
+		}
+		return altered;
+	}
+
+	return false;
+}
+
+function coordHash(coord: WorldCoord) {
+	return coord.room + ',' + coord.mapX + ',' + coord.mapY;
+}
+
 let KDPersistentNPCs: {[_ : string]: KDPersistentNPC} = {};
 
 /** A 'graveyard' so to speak to store all NPCs which have been removed so they get deleted when spawned*/
 let KDDeletedIDs: {[_ : string]: number} = {};
 
+
+function KDGetPersistentNPCCache(coord: WorldCoord): number[] {
+	if (!KDGameData.PersistentNPCCache) KDGameData.PersistentNPCCache = {};
+	if (KDGameData.PersistentNPCCache[coordHash(coord)]) {
+		return KDGameData.PersistentNPCCache[coordHash(coord)];
+	}
+	let ret = KDGetPersistentNPCInlevel(coord);
+
+	KDGameData.PersistentNPCCache[coordHash(coord)] = ret;
+
+	return ret;
+}
+
+
+function KDGetPersistentNPCInlevel(coord: WorldCoord): number[] {
+	let ids: number[] = [];
+	for (let npc of Object.values(KDPersistentNPCs)) {
+		if (npc.mapX == coord.mapX && npc.mapY == coord.mapY && npc.room == coord.room) {
+			ids.push(npc.id);
+		}
+	}
+
+	return ids;
+}
 
 /**
  * Syncs a persistent NPC with the world entity, if present
@@ -67,7 +140,7 @@ function KDUpdatePersistentNPC(id: number, force: boolean = false) {
 					entry.entity.personality = value.personality;
 			}
 
-			KDSetNPCLocation(id, KDGetCurrentLocation());
+			KDMovePersistentNPC(id, KDGetCurrentLocation());
 
 			if (enemy.opinion == undefined && KDGameData.Collection[id]?.Opinion != undefined) {
 				enemy.opinion = KDGameData.Collection[id].Opinion;
@@ -102,8 +175,8 @@ function KDIsNPCPersistent(id: number): boolean {
 	return KDPersistentNPCs[id] != undefined;
 }
 
-function KDGetPersistentNPC(id: number, entity?: entity): KDPersistentNPC {
-	if (!KDPersistentNPCs[id]) {
+function KDGetPersistentNPC(id: number, entity?: entity, force: boolean = true): KDPersistentNPC {
+	if (!KDPersistentNPCs[id] && !force) {
 
 		let enemy = entity || KinkyDungeonFindID(id);
 		if (enemy) {
@@ -151,26 +224,6 @@ function KDGetNPCLocation(id: number): WorldCoord {
 	}
 	return undefined;
 }
-function KDSetNPCLocation(id: number, coord: WorldCoord): boolean {
-	let npc = KDPersistentNPCs[id];
-	if (npc) {
-		let altered = false;
-		if (npc.mapX != coord.mapX) {
-			altered = true;
-			npc.mapX = coord.mapX;
-		}
-		if (npc.mapY != coord.mapY) {
-			altered = true;
-			npc.mapY = coord.mapY;
-		}
-		if (npc.room != coord.room) {
-			altered = true;
-			npc.room = coord.room;
-		}
-		return altered;
-	}
-	return false;
-}
 function KDCompareLocation(loc1: WorldCoord, loc2: WorldCoord): boolean {
 	if (loc1.mapX != loc2.mapX) return false;
 	if (loc1.mapY != loc2.mapY) return false;
@@ -209,6 +262,37 @@ function KDRepopulatePersistentNPCs() {
 	}
 }
 
+
+function KDSpawnPersistentNPCs(coord: WorldCoord, searchEntities: boolean): number[] {
+	let spawned: number[] = [];
+
+	let slot = KDGetWorldMapLocation({x: coord.mapX, y: coord.mapY});
+	if (!slot) return spawned; // We dont generate new ones
+	let data = slot.data[coord.room];
+	if (!data) return spawned; // We dont generate new ones
+	let cache = KDGetPersistentNPCCache(coord);
+
+	if (cache.length > 0) {
+		// only spawn NPCs that are in the level
+		for (let id of cache) {
+			let PNPC = KDGetPersistentNPC(id, undefined, false);
+			if (PNPC && !PNPC.spawned) {
+				let spawnAI = PNPC.spawnAI || "Default";
+				let AI = KDPersistentSpawnAIList[spawnAI];
+				if (AI && AI.filter(id, data)) {
+					if (AI.chance(id, data) < KDRandom()) {
+						if (AI.doSpawn(id, data, searchEntities ? KinkyDungeonFindID(id, data) : undefined)) {
+							PNPC.nextSpawnTick = AI.cooldown + KinkyDungeonCurrentTick;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	return spawned;
+}
+
 function KDGetCapturedPersistent(Level: number, RoomType: string, MapMod: string, faction: string): KDPersistentNPC[] {
 	let altType = KDGetAltType(Level, MapMod, RoomType);
 	let mapFaction = faction || altType?.faction || KDMapMods[MapMod ? MapMod : KDGameData.MapMod]?.faction;
@@ -244,3 +328,4 @@ function KDGetCapturedPersistent(Level: number, RoomType: string, MapMod: string
 
 	return eligible;
 }
+

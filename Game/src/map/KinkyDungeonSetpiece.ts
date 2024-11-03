@@ -904,7 +904,7 @@ function SetpieceSpawnPrisoner(x: number, y: number, persistentOnly?: boolean, l
 			let index = Math.floor(KDRandom() * capturedPersistent.length);
 			let npc = capturedPersistent[index];
 			e = npc.entity;
-			KDSetNPCLocation(npc.id, KDGetCurrentLocation());
+			KDMovePersistentNPC(npc.id, KDGetCurrentLocation());
 			if (!altRoom || (!altRoom?.alwaysRegen && (altRoom?.makeMain || altRoom?.persist))) {
 				npc.jailed = true;
 			}

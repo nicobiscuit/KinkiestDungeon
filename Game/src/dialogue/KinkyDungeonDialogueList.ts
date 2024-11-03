@@ -3330,7 +3330,11 @@ let KDDialogue: Record<string, KinkyDialogue> = {
 							if (KDIsNPCPersistent(e.id) && KDGetPersistentNPC(e.id)) {
 								KDGetPersistentNPC(e.id).collect = true;
 								KDGetPersistentNPC(e.id).captured = false;
-								KDGetPersistentNPC(e.id).room = "Summit";
+								KDMovePersistentNPC(e.id, {
+									mapX: 0,
+									mapY: 0,
+									room: "Summit",
+								})
 							}
 							KinkyDungeonAdvanceTime(1);
 						}
