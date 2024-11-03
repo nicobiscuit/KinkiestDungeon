@@ -2448,7 +2448,7 @@ function KinkyDungeonSummonEnemy (
 				let e: entity = {summoned: true, boundTo: boundTo, weakBinding: weakBinding, faction: faction, hostile: hostile ? 100 : undefined, hideTimer: hideTimer, rage: Enemy.summonRage ? 9999 : undefined, Enemy: Enemy,
 					id: KinkyDungeonGetEnemyID(), gx: goToTarget ? KinkyDungeonTargetX : undefined, gy: goToTarget ? KinkyDungeonTargetY : undefined, ambushtrigger: startAware,
 					x:x+slot.x, y:y+slot.y, hp: (Enemy.startinghp) ? Enemy.startinghp : Enemy.maxhp, shield: Enemy.shield, movePoints: 0, attackPoints: 0, lifetime: lifetime, maxlifetime: lifetime, path: path};
-				KDProcessCustomPatron(Enemy, e, 0);
+				KDProcessCustomPatron(Enemy, e, 0, false);
 				if (teleportTime) {
 					e.teleporting = teleportTime;
 					e.teleportingmax = teleportTime;

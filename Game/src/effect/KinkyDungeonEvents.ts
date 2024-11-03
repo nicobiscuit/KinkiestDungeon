@@ -9957,7 +9957,7 @@ let KDEventMapGeneric: Record<string, Record<string, (e: string, data: any) => v
 						KDAddEntity(e);
 
 						if (!e.CustomName)
-							KDProcessCustomPatron(Enemy, e, 0.2);
+							KDProcessCustomPatron(Enemy, e, 0.2, true);
 						KinkyDungeonSetEnemyFlag(e, "NoFollow", -1);
 						let shop = KinkyDungeonGetShopForEnemy(e, false);
 						if (shop) {
@@ -10027,7 +10027,7 @@ let KDEventMapGeneric: Record<string, Record<string, (e: string, data: any) => v
 						KDAddEntity(e);
 
 						if (!e.CustomName)
-							KDProcessCustomPatron(Enemy, e, 0.2);
+							KDProcessCustomPatron(Enemy, e, 0.2, true);
 						KinkyDungeonSetEnemyFlag(e, "NoFollow", -1);
 						let shop = KinkyDungeonGetShopForEnemy(e, false);
 						if (shop) {

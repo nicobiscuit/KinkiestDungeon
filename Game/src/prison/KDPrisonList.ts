@@ -239,7 +239,7 @@ let KDPrisonTypes: Record<string, KDPrisonType> = {
 					let Enemy = KinkyDungeonGetEnemy([tag, "robot"], MiniGameKinkyDungeonLevel + 4, 'bel', '0', [tag], undefined, {[tag]: {mult: 4, bonus: 10}}, ["boss"]);
 					if (Enemy && !KinkyDungeonEnemyAt(KDMapData.EndPosition.x, KDMapData.EndPosition.y)) {
 						let en = DialogueCreateEnemy(KDMapData.EndPosition.x, KDMapData.EndPosition.y, Enemy.name);
-						KDProcessCustomPatron(Enemy, en, 0.5);
+						KDProcessCustomPatron(Enemy, en, 0.5, false);
 						en.AI = "looseguard";
 						en.faction = "Enemy";
 						en.keys = true;
@@ -264,7 +264,7 @@ let KDPrisonTypes: Record<string, KDPrisonType> = {
 							let Enemy = KinkyDungeonGetEnemy([tag, "robot"], MiniGameKinkyDungeonLevel + 4, 'bel', '0', [tag], undefined, {[tag]: {mult: 4, bonus: 10}}, ["boss"]);
 							if (Enemy && !KinkyDungeonEnemyAt(l.x, l.y)) {
 								let en = DialogueCreateEnemy(l.x, l.y, Enemy.name);
-								KDProcessCustomPatron(Enemy, en, 0.5);
+								KDProcessCustomPatron(Enemy, en, 0.5, false);
 								en.AI = "looseguard";
 								en.faction = "Enemy";
 								en.keys = true;
@@ -280,7 +280,7 @@ let KDPrisonTypes: Record<string, KDPrisonType> = {
 							let Enemy = KinkyDungeonGetEnemy([tag], MiniGameKinkyDungeonLevel + 4, 'bel', '0', [tag], undefined, {[tag]: {mult: 4, bonus: 10}}, ["boss", "oldrobot", "miniboss", "elite"]);
 							if (Enemy && !KinkyDungeonEnemyAt(l.x, l.y)) {
 								let en = DialogueCreateEnemy(l.x, l.y, Enemy.name);
-								KDProcessCustomPatron(Enemy, en, 0.1);
+								KDProcessCustomPatron(Enemy, en, 0.1, false);
 								en.AI = "hunt";
 								en.faction = "Enemy";
 								en.keys = true;

@@ -2042,7 +2042,7 @@ function KinkyDungeonPlaceEnemies(spawnPoints: any[], InJail: boolean, Tags: str
 				let clusterChance = 0.5; //1.1 + 0.9 * MiniGameKinkyDungeonLevel/KinkyDungeonMaxLevel;
 				let clusterLeader = !spawnPoint && !currentCluster && Enemy.clusterWith && KDRandom() < clusterChance;
 				// Give it a custom name, higher chance if cluster
-				let custom = KDProcessCustomPatron(Enemy, e, (clusterLeader) ? 1.0 : (!currentCluster ? 0.1 : 0.0));
+				let custom = KDProcessCustomPatron(Enemy, e, (clusterLeader) ? 1.0 : (!currentCluster ? 0.1 : 0.0), true);
 				let incrementCount = 1;
 				KinkyDungeonSetEnemyFlag(e, "NoFollow", -1);
 				let shop = KinkyDungeonGetShopForEnemy(e, false);

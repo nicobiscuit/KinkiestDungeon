@@ -5670,7 +5670,7 @@ let KDOndeath: Record<string, (enemy: entity, o: any) => void> = {
 	"summon": (enemy, o) => {
 		let e = KinkyDungeonSummonEnemy(enemy.x, enemy.y, o.enemy, o.count, o.range, o.strict, o.lifetime, o.hidden, undefined, o.faction || KDGetFaction(enemy), o.hostile, o.minradius, o.startAware, undefined, o.hideTimer);
 		for (let en of e) {
-			KDProcessCustomPatron(en.Enemy, en, 0);
+			KDProcessCustomPatron(en.Enemy, en, 0, false);
 		}
 	},
 	"dialogue": (enemy, o) => {

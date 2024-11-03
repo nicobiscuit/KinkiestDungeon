@@ -15,7 +15,7 @@ let KDPersistentSpawnAIList: Record<string, PersistentSpawnAI> = {
 		cooldown: 50,
 		filter: (id, mapData) => {
 			let npc = KDGetPersistentNPC(id);
-			return KinkyDungeonCurrentTick > (npc.nextSpawnTick || 0) && npc.captured && !npc.jailed;
+			return KinkyDungeonCurrentTick > (npc.nextSpawnTick || 0) && !npc.captured;
 		},
 		chance: (id, mapData) => {
 			return mapData == KDMapData ? 0.4 : 0.1;
@@ -34,8 +34,8 @@ let KDPersistentSpawnAIList: Record<string, PersistentSpawnAI> = {
 					ent.x = KDMapData.StartPosition.x;
 					ent.y = KDMapData.StartPosition.y;
 					ent.runSpawnAI = true;
+					return true;
 				}
-				return true;
 			}
 			if (entity && entity.runSpawnAI) {
 				let point = KinkyDungeonGetRandomEnemyPoint(

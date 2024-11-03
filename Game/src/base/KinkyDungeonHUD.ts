@@ -1668,7 +1668,7 @@ function KinkyDungeonHandleHUD() {
 				if (enemy) {
 					let en = KinkyDungeonSummonEnemy(KinkyDungeonPlayerEntity.x, KinkyDungeonPlayerEntity.y, enemy.name, 1, 1.5);
 					if (en[0]) {
-						KDProcessCustomPatron(en[0].Enemy, en[0], 0.2);
+						KDProcessCustomPatron(en[0].Enemy, en[0], 0.2, true);
 					}
 				}
 				return true;

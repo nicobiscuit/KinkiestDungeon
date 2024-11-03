@@ -2510,11 +2510,25 @@ interface KDInventoryActionDef {
 }
 
 interface KinkyDungeonSave {
+	stats: any;
+	KinkyDungeonEffectTiles: any;
+	KinkyDungeonTiles: any;
+	KinkyDungeonTilesSkin: any;
+	KinkyDungeonTilesMemory: any;
+	KinkyDungeonRandomPathablePoints: any;
+	KinkyDungeonEntities: any;
+	KinkyDungeonBullets: any;
+	KinkyDungeonStartPosition: any;
+	KinkyDungeonEndPosition: any;
+	KinkyDungeonGrid: any;
+	KinkyDungeonGridWidth: number;
+	KinkyDungeonGridHeight: number;
+	KinkyDungeonFogGrid: any;
 	/** Metadata */
 	saveStat: {
 		version: string,
 		appearance: any[],
-		default: string,
+		default: KinkyDungeonDress,
 		poses: Record<string, boolean>,
 		Palette: string,
 
@@ -2579,7 +2593,9 @@ interface KinkyDungeonSave {
 	KDMapData: KDMapDataType;
 	KDWorldMap: Record<string, KDWorldSlot>;
 	KDEventData: Object;
-	KDCurrentWorldSlot: {x: number, y: number};
+	KDCurrentWorldSlot: {
+		x: number, y: number
+	};
 	KDPersistentNPCs: string,
 	KDDeletedIDs: string,
 	KDPersonalAlt: string,

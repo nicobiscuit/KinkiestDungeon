@@ -1243,7 +1243,7 @@ let KDPatrons = [
  * @param e
  * @param chanceBoost
  */
-function KDProcessCustomPatron(Enemy: enemy, e: entity, chanceBoost: number): any {
+function KDProcessCustomPatron(Enemy: enemy, e: entity, chanceBoost: number, makePersistent: boolean): any {
 	let chance = 0.05 + (chanceBoost || 0); // Lower chance if 'subordinate'
 	if (!e.CustomName && KDPatronCustomEnemies.get(Enemy.name) && KDRandom() < chance) {
 		let customs: any[] = KDPatronCustomEnemies.get(Enemy.name).filter((element) => {
@@ -1269,6 +1269,7 @@ function KDProcessCustomPatron(Enemy: enemy, e: entity, chanceBoost: number): an
 			if (custom.customIntro) {
 				e.intro = custom.customIntro;
 			}
+			if (makePersistent) KDGetPersistentNPC(e.id, e);
 			return custom;
 		}
 	}

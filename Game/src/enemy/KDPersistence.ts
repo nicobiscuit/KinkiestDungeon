@@ -44,7 +44,7 @@ interface WorldCoord {
 }
 
 function KDMovePersistentNPC(id: number, coord: WorldCoord): boolean {
-	let PNPC = KDGetPersistentNPC(id)
+	let PNPC = KDPersistentNPCs[id];
 	if (PNPC) {
 		let oldCoord: WorldCoord = {
 			room: PNPC.room,
@@ -176,7 +176,7 @@ function KDIsNPCPersistent(id: number): boolean {
 }
 
 function KDGetPersistentNPC(id: number, entity?: entity, force: boolean = true): KDPersistentNPC {
-	if (!KDPersistentNPCs[id] && !force) {
+	if (!KDPersistentNPCs[id] && force) {
 
 		let enemy = entity || KinkyDungeonFindID(id);
 		if (enemy) {
@@ -271,6 +271,8 @@ function KDSpawnPersistentNPCs(coord: WorldCoord, searchEntities: boolean): numb
 	let data = slot.data[coord.room];
 	if (!data) return spawned; // We dont generate new ones
 	let cache = KDGetPersistentNPCCache(coord);
+
+
 
 	if (cache.length > 0) {
 		// only spawn NPCs that are in the level
