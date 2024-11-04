@@ -28631,7 +28631,7 @@ Slow down time by 1/4 for 10 turns (world time). Stamina does not regen.
 Time is slowed by 4x
 时间减慢了 4 倍
 Total Accel
-世界
+时停
 Stop time 10 turns (world time). Stamina does not regen.
 在 10 回合内暂停时间 ( 世界时间 ) 。体力不会恢复
 Time has come to a halt...
@@ -28640,7 +28640,7 @@ Time has come to a halt...
 
 Time slows down by 2x!
 时间慢了 2 倍！
-C!
+Double Accel!
 双重加速
 Time slows down by 3x!
 时间慢了 3 倍！
