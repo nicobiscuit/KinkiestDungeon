@@ -2964,8 +2964,8 @@ Deals fire damage. Provides light.
 造成火焰伤害。可以提供光亮。
 Unarmed
 徒手
-Fight with your hands and feet. 50% chance to stun target if the target is disarmed.
-用你的手脚进行战斗。若目标被解除武装，则有 50% 的几率使其昏迷。
+Fight with your hands and feet. Counts as teasing if arms are free. 50% chance to stun target if the target is disarmed.
+手脚并用的攻击。如果手臂未受拘束，则算作挑逗攻击。如果目标被缴械，则有 50% 的几率眩晕目标。
 Deals unarmed damage.
 造成徒手伤害。
 Sword
@@ -9358,7 +9358,7 @@ Stores 10% of the stamina cost of attacks as Rhythm, up to a total of 40. While 
 
 
 Limit Surge
-限制浪涌
+极限超载
 Spend 50 WP to fully restore Stamina, also stamina gain is increased by 30% for 20 turns. If your Willpower ends up 0 because of this, you are stunned for 2 turns.
 花费 50 WP 即可完全恢复体力，并且体力增益增加 30%，持续 20 回合。 如果你的意志力因此而变为 0，你将被眩晕 2 回合。
 
@@ -9441,10 +9441,10 @@ You are quite difficult to satisfy. Letting go costs 50% less stamina (75% total
 
 Mental Resistance
 心理抵抗
-### +100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 or are teased directly by an enemy or damage (click the buff to toggle), and willpower drains 70% slower while edged.
-
-### Mental Resistance: You cannot orgasm except by choice, or being forced by an enemy. Click to toggle.
-
++100 Psychic and Charm Resist. You can no longer let go involuntarily unless your willpower is 0 or are teased directly by an enemy or damage (click the buff to toggle), and willpower drains 70% slower while edged.
++100 精神和魅惑抗性。除非你的意志力为 0 或直接受到敌人的挑逗或伤害，否则你无法再不由自主地松手（点击该 BUFF 以切换），而且在高潮边缘的状态下，意志力消耗速度降低 70%。
+Mental Resistance: You cannot orgasm except by choice, or being forced by an enemy. Click to toggle.
+精神抵抗 : 除非自愿或被敌人强迫，否则你无法达到高潮。点击以切换。
 Mental Resistance: You are allowing yourself to let go if forced to. Click to toggle.
 精神抵抗 : ‎如果被迫的话，你就允许自己高潮。点击以切换。
 
@@ -9600,9 +9600,9 @@ You create a tear in space with your finger!
 
 
 Blink
-闪现
+瞬移
 Instantly teleport to an adjacent position and gain +50 evasion for 3 turns. Unlocks Blink and Warp when learned.
-瞬间传送到邻近位置，并获得 +50 闪避，持续 3 回合。学习后解锁闪现和扭曲。
+瞬间传送到邻近位置，并获得 +50 闪避，持续 3 回合。学习后解锁闪现和传送。
 You teleport!
 传送！
 Choose target location (1 tile range)
@@ -9614,9 +9614,9 @@ Instantly teleport up to 2 tiles away. Must have vision of the target point. Stu
 Choose target location (2 tile range)
 选择施放位置 ( 2 格范围 )
 Blink III
-扭曲
+传送
 Instantly teleport up to 3 tiles away. Must have vision of the target point.
-立即传送至 2 格之外。目标位置必须可视。
+立即传送至 3 格之外。目标位置必须可视。
 Choose target location (3 tile range)
 选择施放位置 ( 3 格范围 )
 
@@ -22331,7 +22331,7 @@ BowCorset
 
 LatexCorset
 乳胶束胸
-### HeavyCorset
+HeavyCorset
 重型紧身胸衣
 ### LatexBra
 
@@ -22711,38 +22711,38 @@ Harness
 
 ### IronBelt
 
-### WolfPanties
-
-### WolfCollar
-
+WolfPanties
+狼娘内裤
+WolfCollar
+狼娘项圈
 ### CollarBand
 
-### WolfCollarTag
-
+WolfCollarTag
+狼娘项圈（带标签）
 ### CollarHardware
 
 ### CollarTag
 
-### WolfCollarSmall
-
+WolfCollarSmall
+狼娘项圈（小）
 ### FCollar
 
 ### FCollarBand
 
-### WolfCollarSmallTag
-
+WolfCollarSmallTag
+狼娘项圈（带标签）（小）
 ### FCollarHardware
 
 ### FCollarTag
 
 ### WolfHarnessUpper
-
+狼娘背带（肩带）
 ### HarnessUpper
 
 ### HarnessBandUpper
 
 ### WolfHarnessBelt
-
+狼娘背带（腰带）
 ### BeltMid
 
 ### BeltBandMid
@@ -22750,25 +22750,25 @@ Harness
 ### BeltHardwareMid
 
 ### WolfHarnessLower
-
+狼娘背带（下装）
 ### HarnessHardwareMid
 
 ### HarnessBandLower
 
 ### HarnessHardwareLower
 
-### WolfHarness
-
-### WolfCuffsAnklesLeft
-
+WolfHarness
+狼娘背带（全部）
+WolfCuffsAnklesLeft
+狼娘左脚踝套
 ### BandAnkleLeft
 
-### WolfCuffsAnklesRight
-
+WolfCuffsAnklesRight
+狼娘右脚踝套
 ### BandAnkleRight
 
-### WolfCuffsAnkles
-
+WolfCuffsAnkles
+狼娘双脚踝套
 ### WolfCollarRestraint
 
 ### WolfCollarTagRestraint
@@ -22788,25 +22788,25 @@ Harness
 ### WolfHarnessRestraint
 
 ### WolfGloveLeft
-
+狼娘手套（左）
 ### WolfGloveRight
-
+狼娘手套（右）
 ### WolfGloves
-
+狼娘手套（一副）
 ### WolfSockLeft
-
+狼娘长袜（左）
 ### WolfSockRight
-
+狼娘长袜（右）
 ### WolfSocks
-
+狼娘长袜（一副）
 ### WolfSocksRestraint
 
 ### WolfTorsoLower
-
+狼娘躯干（下部）
 ### WolfTorsoUpper
-
+狼娘躯干（上部）
 ### WolfHeels
-
+狼娘高跟鞋（一双）
 ### CuffsWristLeft
 
 ### BandWristLeft
@@ -25589,8 +25589,8 @@ LatexPetsuitGlow
 
 ### LaceUpper
 
-### LightMaidKnight_Dress
-
+LightMaidKnight_Dress
+轻装女仆骑士-连衣裙
 ### DressChest
 
 ### DressDeco
@@ -25598,17 +25598,17 @@ LatexPetsuitGlow
 ### DressDecoBack
 
 ### LightMaidKnight_Bra
-
+轻装女仆骑士-胸衣
 ### LightMaidKnight_Top
-
+轻装女仆骑士-上衣
 ### LightMaidKnight_SleeveLeft
-
+轻装女仆骑士-袖子（左）
 ### LightMaidKnight_SleeveRight
-
+轻装女仆骑士-袖子（右）
 ### LightMaidKnight_Sleeves
-
-### LightMaidKnightHairband
-
+轻装女仆骑士-袖子
+LightMaidKnightHairband
+轻装女仆骑士-发带
 ### Headband
 
 ### HeadbandFrill
@@ -25637,40 +25637,40 @@ LightMaidKnight_Apron
 
 ### ApronBack
 
-### LightMaidKnight_Flower
-
+LightMaidKnight_Flower
+轻装女仆骑士-腰胸花
 ### Flower
 
-### LightMaidKnight_SockRight
-
-### LightMaidKnight_SockLeft
-
+LightMaidKnight_SockRight
+轻装女仆骑士-长袜（右）
+LightMaidKnight_SockLeft
+轻装女仆骑士-长袜（左）
 LightMaidKnight_Socks
-轻装女仆骑士-袜子
-### LightMaidKnight_GloveLeft
-
-### LightMaidKnight_GloveRight
-
+轻装女仆骑士-长袜
+LightMaidKnight_GloveLeft
+轻装女仆骑士-手套（左）
+LightMaidKnight_GloveRight
+轻装女仆骑士-手套（右）
 LightMaidKnight_Gloves
 轻装女仆骑士-手套
-### LightMaidKnight_GuardLeft
-
-### GuardLeft
-
+LightMaidKnight_GuardLeft
+轻装女仆骑士-护臂（左）
+GuardLeft
+护臂（左）
 ### GuardCuffLeft
 
 ### GuardCuff2Left
 
-### LightMaidKnight_GuardRight
-
+LightMaidKnight_GuardRight
+轻装女仆骑士-护臂（右）
 ### GuardRight
 
 ### GuardCuffRight
 
 ### GuardCuff2Right
 
-### LightMaidKnight_Guards
-
+LightMaidKnight_Guards
+轻装女仆骑士-护臂
 LightMaidKnight_Boots
 轻装女仆骑士-靴子
 LightMaidKnight_Pauldron
@@ -25681,8 +25681,8 @@ LightMaidKnight_Pauldron
 
 LightMaidKnight
 轻装女仆骑士
-### HeavyMaidKnightHairband
-
+HeavyMaidKnightHairband
+重装女仆骑士-发带
 ### HeadbandRibbonBack
 
 ### FlowerLeaves
@@ -25693,45 +25693,45 @@ HeavyMaidKnight_Dress
 
 ### DressSkirtStripe
 
-### HeavyMaidKnight_SleeveLeft
-
+HeavyMaidKnight_SleeveLeft
+重装女仆骑士-袖子（左）
 ### SleeveLeftStripe
 
-### HeavyMaidKnight_SleeveRight
-
+HeavyMaidKnight_SleeveRight
+重装女仆骑士-袖子（右）
 ### SleeveRightStripe
 
 HeavyMaidKnight_ChestArmor
 重装女仆骑士-胸甲
 ### ChestArmor
 
-### HeavyMaidKnight_GloveLeft
-
-### HeavyMaidKnight_GloveRight
-
+HeavyMaidKnight_GloveLeft
+重装女仆骑士-手套（左）
+HeavyMaidKnight_GloveRight
+重装女仆骑士-手套（右）
 HeavyMaidKnight_Gloves
-重装女仆骑士-手套
-### HeavyMaidKnight_GauntletLeft
-
-### HeavyMaidKnight_GauntletRight
-
+重装女仆骑士-手套（双）
+HeavyMaidKnight_GauntletLeft
+重装女仆骑士-手套（左）
+HeavyMaidKnight_GauntletRight
+重装女仆骑士-护手（右）
 HeavyMaidKnight_Gauntlets
-重装女仆骑士-护手
-### HeavyMaidKnight_PauldronLeft
-
+重装女仆骑士-护手（双）
+HeavyMaidKnight_PauldronLeft
+重装女仆骑士-肩甲（左）
 ### PauldronLeftStraps
 
 ### PauldronLeftHardware
 
-### HeavyMaidKnight_PauldronRight
-
+HeavyMaidKnight_PauldronRight
+重装女仆骑士-肩甲（右）
 ### PauldronRight
 
 ### PauldronRightStraps
 
 HeavyMaidKnight_Pauldrons
-重装女仆骑士-肩甲
-### HeavyMaidKnight_SideArmor
+重装女仆骑士-肩甲（双）
+HeavyMaidKnight_SideArmor
 重装女仆骑士-侧边护甲
 SideArmor
 侧边护甲
@@ -25740,7 +25740,7 @@ HeavyMaidKnight_Corset
 ### HeavyMaidKnight_CorsetRestraint
 
 HeavyMaidKnight_Sleeves
-重装女仆骑士-袖子
+重装女仆骑士-袖子（双）
 HeavyMaidKnight_ApronBottom
 重装女仆骑士-围裙底
 ### ApronBelt
@@ -27601,11 +27601,11 @@ You can't hold the WPN in your current state.
 
 
 Charge!
-冲刺
+冲锋
 Dash and make an attack attack against a target within 2 tiles. If it deals 20% of their current hp in damage, you knock them back and take their place, otherwise they take +15% max hp crush damage from hitting the wall. If the attack misses, you still dash. Costs stamina equal to your sprint cost plus your attack cost.
-冲刺并对 2 格内的目标进行攻击。如果它造成了他们当前生命值 20% 的伤害，你会将他们击退并取代他们的位置，否则他们会因撞墙而受到 +15% 最大生命值挤压伤害。如果攻击未命中，你仍然会冲刺。体力消耗等于你的冲刺消耗加上你的攻击消耗。
+冲向 2 格内的目标并进行攻击。如果它造成了他们当前生命值 20% 的伤害，你会将他们击退并取代他们的位置，否则他们会因撞墙而受到 +15% 最大生命值挤压伤害。如果攻击未命中，你仍然会冲刺。体力消耗等于你的冲刺消耗加上你的攻击消耗。
 You charge at the target!
-你向目标冲刺！
+你向目标发起冲锋！
 
 
 You need to target an enemy.
@@ -27621,7 +27621,7 @@ There is no room to dash!
 
 
 Tools of the Trade
-贸易工具
+专业工具
 Allows you to craft bombs, smoke bombs, flash bombs, and invisibility potions.
 允许你制作炸弹、烟雾弹、闪光弹和隐形药水。
 
@@ -28607,7 +28607,7 @@ of Destruction
 Phase Dance
 相位之舞
 For 4 turns, your movement does not advance time. Attacking or casting counts as one move and passes time as normal.
-在 4 回合内，你的移动不会使时间提前。攻击或施法算作一招，并正常流逝时间。
+在 4 个回合内，你的移动不会推进时间。攻击或施法算作一次移动，并且时间照常流逝。
 You are F A S T
 你 超 越 了 光 速
 
@@ -28631,16 +28631,16 @@ Slow down time by 1/4 for 10 turns (world time). Stamina does not regen.
 Time is slowed by 4x
 时间减慢了 4 倍
 Total Accel
-完全加速
+世界
 Stop time 10 turns (world time). Stamina does not regen.
 在 10 回合内暂停时间 ( 世界时间 ) 。体力不会恢复
 Time has come to a halt...
-时间已经静止了……
+时间停止流动...
 
 
 Time slows down by 2x!
 时间慢了 2 倍！
-Double Accel!
+C!
 双重加速
 Time slows down by 3x!
 时间慢了 3 倍！
@@ -28651,9 +28651,9 @@ Time slows down by 4x!
 Quadro Accel!
 四重加速器！
 Time has ceased to pass.
-时间已经停止流逝。
+时间已经停止流动。
 Total Accel!
-完全加速！
+世界！
 
 
 You begin to move at lightning speed!
@@ -28709,7 +28709,7 @@ Consume 20 Battle Rhythm to increase escape power by +20% plus 1% of Bondage Res
 Problem Solving
 解决问题
 While active, struggling takes an additional 10 turns, but escape power bonuses from tools and buffs is increased by +(25 + 20% Bondage Resist)%
-活跃时，挣扎需要额外10回合，但工具和增益的逃脱力会获得+(25+20%束缚抵抗)%的加成
+激活时，挣扎时间增加 10 个回合，但工具和 BUFF 带来的逃脱能力加成增加 +(25 + 20% 束缚抗性)%。
 
 
 You run out of strength to keep dodging...
@@ -28753,7 +28753,7 @@ What is your name?
 
 
 Enrage
-狂暴
+激怒
 Scream loudly, causing nearby enemies to investigate and increasing Battle Rhythm by 10. Has a 100 turn cooldown.
 大声尖叫，使附近的敌人调查并增加10的战斗节拍。有100回合的冷却时间。
 
@@ -29777,7 +29777,7 @@ Select a weapon to attach it to your body. You can have one attached weapon at a
 Guerilla Fighting
 游击战
 Light weapons can be wielded if you have your mouth free, at 75% accuracy.
-如果你的嘴巴被堵住了，就可以使用轻型武器，命中率为 75%。
+如果嘴巴空着，就可以挥舞轻武器，准确率为 75%。
 
 
 Tough Armor (1/2 crit mult while aware)
@@ -31349,13 +31349,13 @@ Stun Resistance!
 
 
 Negate Rune
-否定符文
+否决符文
 Removes a rune on the target tile. If cast on self, removes all runes you've created instead. Casting on an enemy rune restores 10 mana instead.
 移除目标方块上的符文。如果对自己施放，则改为移除你创建的所有符文。如果对敌方符文施放，则改为恢复 10 点魔力。
 You scribe a negation rune!
-你写下了一个否定符文！
+你写下了一个否决符文！
 Target a single rune, or yourself to negate all your runes.
-瞄准单个符文或自己来否定所有符文。
+瞄准单个符文或自己来否决所有符文。
 You don't have enough mana
 你没有足够的魔力
 The enemy rune is wiped clean.
@@ -32599,12 +32599,13 @@ Latex Homunculus
 
 
 
-### (The Warden perks an eyebrow at the sight of you,|before a wide grin overtakes her face)|Ahhh Fuuka. Chosen by the Goddess?|How does it feel to once again be under a leash?
-
-### Fuuka, take her down.
-
-### (Send Fuuka to fight her)
-
-### That is none of your business. Now kneel.
-
-### (Fight without listening.)
+(The Warden perks an eyebrow at the sight of you,|before a wide grin overtakes her face)|Ahhh Fuuka. Chosen by the Goddess?|How does it feel to once again be under a leash?
+(典狱长看到你时，先是挑了挑眉毛、|然后她的脸上露出了灿烂的笑容）。|风香（Fuuka）。被女神选中了？|再次被拴住的感觉如何？
+Fuuka, take her down.
+风香（Fuuka），把她拿下
+(Send Fuuka to fight her)
+(派 Fuuka 与她战斗）
+That is none of your business. Now kneel.
+这不关你的事 现在跪下
+(Fight without listening.)
+(不听直接就打）
