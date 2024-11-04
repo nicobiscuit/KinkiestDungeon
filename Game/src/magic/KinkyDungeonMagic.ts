@@ -574,6 +574,7 @@ function KinkyDungeonGetManaCost(Spell: spell, Passive?: boolean, Toggle?: boole
 		lvlcostscale: KinkyDungeonGetBuffedStat(KinkyDungeonPlayerBuffs, "ManaCostLevelMult"),
 		efficiency: 0
 	};
+	KinkyDungeonSendEvent("beforeCalcMana", data);
 	KinkyDungeonSendEvent("calcMana", data);
 	if (data.costscale) data.cost = Math.floor(1000* data.cost * data.costscale)/1000;
 	//if (data.costscale > 0) data.cost = Math.max(0, data.cost); // Keep it from rounding to 0

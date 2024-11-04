@@ -74,12 +74,40 @@ function KDTickMaps(delta: number,
 	for (let y = 0; y <= KDGameData.HighestLevelCurrent; y++) {
 		let mapSlot = KDWorldMap[0 + ',' + y];
 		if (mapSlot) {
+			let visitedRooms: Record<string, boolean> = {};
 			for (let data of Object.values(mapSlot.data)) {
-				mapsWithUpdateNPCs.push({
+				if (KDGetPersistentNPCCache({
 					mapX: 0,
 					mapY: y,
 					room: data.RoomType,
-				})
+				})?.length > 0) {
+					mapsWithUpdateNPCs.push({
+						mapX: 0,
+						mapY: y,
+						room: data.RoomType,
+					})
+					visitedRooms[data.RoomType] = true;
+				}
+			}
+
+			let journeySlot =  KDGameData.JourneyMap[(mapSlot.jx != undefined ? mapSlot.jx : 0) + ',' + (mapSlot.jy != undefined ? mapSlot.jy : y)];
+			if (journeySlot?.SideRooms) {
+				for (let r of journeySlot.SideRooms) {
+					if (KDSideRooms[r]?.altRoom && !visitedRooms[KDSideRooms[r].altRoom]) {
+						if (KDGetPersistentNPCCache({
+							mapX: 0,
+							mapY: y,
+							room: KDSideRooms[r].altRoom,
+						})?.length > 0) {
+							mapsWithUpdateNPCs.push({
+								mapX: 0,
+								mapY: y,
+								room: KDSideRooms[r].altRoom,
+							})
+							visitedRooms[KDSideRooms[r].altRoom] = true;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -100,7 +128,7 @@ function KDTickMaps(delta: number,
 			KDRefillChests(data);
 	}
 
-	for (let coords of mapsToUpdate) {
+	for (let coords of mapsWithUpdateNPCs) {
 		let loc = KDGetWorldMapLocation({x: coords.mapX, y: coords.mapY});
 		if (!loc) continue;
 
@@ -110,10 +138,10 @@ function KDTickMaps(delta: number,
 
 		}
 		KDSpawnPersistentNPCs(coords, data == KDMapData);
-		// TODO add wander
-
+		KDWanderPersistentNPCs(coords, data == KDMapData);
 
 	}
+
 
 
 

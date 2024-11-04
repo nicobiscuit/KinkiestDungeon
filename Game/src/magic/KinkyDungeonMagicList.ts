@@ -650,7 +650,7 @@ let KinkyDungeonSpellList: Record<string, spell[]> = { // List of spells you can
 				{type: "ManaRegenSuspend", trigger: "afterSpellTrigger", time:16},
 				{type: "ManaRegenSuspend", trigger: "playerAttack", time:16},
 				//{type: "ManaRegenOld", trigger: "tick", mult: 0.2, power: 0.5},
-				{type: "ManaRegen", trigger: "beforeMultMana", mult: 0.2},
+				{type: "ManaRegen", trigger: "beforeCalcMana", mult: 0.2},
 			]},
 		{name: "ManaRegenPlus", tags: ["mana", "offense"], school: "Special", manacost: 0, components: [], prerequisite: "ManaRegen", classSpecific: "Mage", hideWithout: "ManaRegen", level:1, passive: true, type:"", onhit:"", time: 0, delay: 0, range: 0, lifetime: 0, power: 0, damage: "inert",},
 		{name: "ManaRegenPlus2", tags: ["mana", "offense"], school: "Special", manacost: 0, components: [], prerequisite: "ManaRegen", classSpecific: "Mage", hideWithout: "ManaRegen", level:1, passive: true, type:"", onhit:"", time: 0, delay: 0, range: 0, lifetime: 0, power: 0, damage: "inert",},
@@ -1694,7 +1694,10 @@ let KinkyDungeonSpellList: Record<string, spell[]> = { // List of spells you can
 				{id: "Camo", aura: "#3b7d4f", type: "SlowDetection", duration: 50, power: 49.0, player: true, enemies: true, endSleep: true, currentCount: -1, maxCount: 1, tags: ["SlowDetection", "moveOpen", "attack", "cast"]}
 			], onhit:"", time:50, power: 0, range: 2, size: 1, damage: ""},
 		{name: "ShadowBlade", prerequisite: "ApprenticeShadow", tags: ["buff", "offense", "shadow"], sfx: "MagicSlash", school: "Illusion", manacost: 6, components: ["Arms"], mustTarget: true, level:1, type:"buff",
-			buffs: [{id: "ShadowBlade", aura: "#7022a0", type: "AttackDmg", duration: 50, power: 2.0, player: true, enemies: true, maxCount: 5, tags: ["attack", "damage"]}], onhit:"", time:50, power: 0, range: 2, size: 1, damage: ""},
+			buffs: [
+				{id: "ShadowBlade", aura: "#7022a0", type: "AttackDmg", duration: 50, power: 2.0, player: true,
+					enemies: true, maxCount: 5, tags: ["damage"]}],
+					onhit:"", time:50, power: 0, range: 2, size: 1, damage: ""},
 		{name: "ShadowSlash", tags: ["aoe", "offense", "shadow"], prerequisite: "ShadowBlade", sfx: "Evil", school: "Illusion", manacost: 3, components: ["Arms"], level:1, type:"bolt", projectileTargeting:true, piercing: true, noTerrainHit: true, noEnemyCollision: true, onhit:"aoe", power: 4, delay: 0, range: 1.5, aoe: 1.5, size: 3, lifetime:1, damage: "cold", speed: 1, time: 2,
 			hitevents: [
 				{trigger: "bulletHitEnemy", type: "ShadowSlash"},

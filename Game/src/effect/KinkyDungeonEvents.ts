@@ -4100,16 +4100,18 @@ let KDEventMapSpell: Record<string, Record<string, (e: KinkyDungeonEvent, spell:
 					data.cost = Math.max(data.cost*e.mult);
 		},
 	},
-	"beforeMultMana": {
-		"KineticMastery": (e, _spell, data) => {
-			if (data.spell?.tags?.includes(e.requiredTag) && KinkyDungeonPlayerDamage?.light) {
-				data.cost = Math.max(0, data.cost*e.mult);
-			}
-		},
+	"beforeCalcMana": {
 		"ManaRegen": (e, _spell, data) => {
 			if (!KinkyDungeonPlayerBuffs.ManaRegenSuspend || KinkyDungeonPlayerBuffs.ManaRegenSuspend.duration < 1) {
 				if (data.spell && (data.spell.active || (!data.spell.passive && !data.passive)))
 					data.cost = Math.max(0, data.cost - KinkyDungeonStatManaMax*e.mult);
+			}
+		},
+	},
+	"beforeMultMana": {
+		"KineticMastery": (e, _spell, data) => {
+			if (data.spell?.tags?.includes(e.requiredTag) && KinkyDungeonPlayerDamage?.light) {
+				data.cost = Math.max(0, data.cost*e.mult);
 			}
 		},
 	},

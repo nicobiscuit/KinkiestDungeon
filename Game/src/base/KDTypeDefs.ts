@@ -864,6 +864,8 @@ interface enemy extends KDHasTags {
 
 	/** Which subroutine to select spawnAI */
 	spawnAISetting?: string,
+	/** Which subroutine to select wanderAI */
+	wanderAISetting?: string,
 
 	/** Behavior tags */
 	Behavior?: {
@@ -2658,6 +2660,8 @@ interface KDWorldSlot {
 	data: Record<string, KDMapDataType>;
 	x: number;
 	y: number;
+	jx: number;
+	jy: number;
 	color: string;
 	name: string;
 	main: string;
@@ -2691,6 +2695,8 @@ interface RepopQueueData {
 }
 
 interface KDMapDataType {
+	mapX: number,
+	mapY: number,
 	RepopulateQueue: RepopQueueData[],
 	Checkpoint: string,
 	Title: string,

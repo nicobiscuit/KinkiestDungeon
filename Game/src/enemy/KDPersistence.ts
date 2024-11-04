@@ -224,6 +224,7 @@ function KDGetNPCLocation(id: number): WorldCoord {
 	}
 	return undefined;
 }
+/** Returns true if they are the same */
 function KDCompareLocation(loc1: WorldCoord, loc2: WorldCoord): boolean {
 	if (loc1.mapX != loc2.mapX) return false;
 	if (loc1.mapY != loc2.mapY) return false;
@@ -282,9 +283,40 @@ function KDSpawnPersistentNPCs(coord: WorldCoord, searchEntities: boolean): numb
 				let spawnAI = PNPC.spawnAI || "Default";
 				let AI = KDPersistentSpawnAIList[spawnAI];
 				if (AI && AI.filter(id, data)) {
-					if (AI.chance(id, data) < KDRandom()) {
+					if (AI.chance(id, data) > KDRandom()) {
 						if (AI.doSpawn(id, data, searchEntities ? KinkyDungeonFindID(id, data) : undefined)) {
 							PNPC.nextSpawnTick = AI.cooldown + KinkyDungeonCurrentTick;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	return spawned;
+}
+
+function KDWanderPersistentNPCs(coord: WorldCoord, searchEntities: boolean): number[] {
+	let spawned: number[] = [];
+
+	let slot = KDGetWorldMapLocation({x: coord.mapX, y: coord.mapY});
+	if (!slot) return spawned; // We dont generate new ones
+	let data = slot.data[coord.room];
+	let cache = KDGetPersistentNPCCache(coord);
+
+
+
+	if (cache.length > 0) {
+		// only spawn NPCs that are in the level
+		for (let id of cache) {
+			let PNPC = KDGetPersistentNPC(id, undefined, false);
+			if (PNPC) { //  && !PNPC.spawned
+				let wanderAI = PNPC.wanderAI || "GoToMain";
+				let AI = KDPersistentWanderAIList[wanderAI];
+				if (AI && AI.filter(id, data)) {
+					if (AI.chance(id, data) > KDRandom()) {
+						if (AI.doWander(id, data, searchEntities ? KinkyDungeonFindID(id, data) : undefined)) {
+							PNPC.nextWanderTick = AI.cooldown + KinkyDungeonCurrentTick;
 						}
 					}
 				}
@@ -339,7 +371,10 @@ function KDSetSpawnAndWanderAI(npc: KDPersistentNPC) {
 		enemy = KinkyDungeonGetEnemyByName(npc.entity.Enemy);
 	}
 	let aitype = "Default";
+	let waitype = "Default";
 	if (enemy.spawnAISetting) aitype = enemy.spawnAISetting;
+	if (enemy.wanderAISetting) waitype = enemy.wanderAISetting;
 
 	if (SpawnAISettingList[aitype]) npc.spawnAI = SpawnAISettingList[aitype](npc, enemy);
+	if (WanderAISettingList[waitype]) npc.wanderAI = WanderAISettingList[waitype](npc, enemy);
 }

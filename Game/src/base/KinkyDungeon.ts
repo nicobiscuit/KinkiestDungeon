@@ -22,7 +22,8 @@ let KDModsAfterGameStart = () => {};
  */
 let KDModsAfterLoad = () => {};
 
-
+let KDFastWaitTime = 100;
+let KDSlowWaitTime = 300;
 
 let maxSaveSlots = 4;
 
@@ -2849,7 +2850,7 @@ function KinkyDungeonRun() {
 						if (KinkyDungeonTempWait && !KDGameData.KinkyDungeonLeashedPlayer && !KinkyDungeonInDanger())
 							KDDisableAutoWait();
 					}
-					KinkyDungeonSleepTime = CommonTime() + (KinkyDungeonFastWait ? 100 : 300);
+					KinkyDungeonSleepTime = CommonTime() + (KinkyDungeonFastWait ? KDFastWaitTime : KDSlowWaitTime);
 				}
 			} else if (KinkyDungeonAutoWaitStruggle) {
 				if (CommonTime() > KinkyDungeonSleepTime) {
@@ -5913,7 +5914,7 @@ function KinkyDungeonLoadGame(String: string = "") {
 			if (saveData.KinkyDungeonPlayerEntity) KinkyDungeonPlayerEntity = saveData.KinkyDungeonPlayerEntity;
 			if (saveData.KDMapData) {
 				if (!KDMapData)
-					KDMapData = Object.assign(KDDefaultMapData("", ""), JSON.parse(JSON.stringify(saveData.KDMapData)));
+					KDMapData = Object.assign(KDDefaultMapData(0, MiniGameKinkyDungeonLevel), JSON.parse(JSON.stringify(saveData.KDMapData)));
 				if (!KDMapData.Traffic || KDMapData.Traffic.length == 0) KDGenerateBaseTraffic();
 				KinkyDungeonGenNavMap();
 			} else {

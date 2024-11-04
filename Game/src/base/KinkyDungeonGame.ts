@@ -163,10 +163,13 @@ let KinkyDungeonSFX = [];
  * @param [RoomType]
  * @param [MapMod]
  */
-function KDDefaultMapData(RoomType: string = "", MapMod: string = ""): KDMapDataType {
+function KDDefaultMapData(mapX: number, mapY: number, RoomType: string = "", MapMod: string = ""): KDMapDataType {
 	return {
 		Checkpoint: MiniGameKinkyDungeonCheckpoint,
 		Title: "",
+
+		mapX: mapX,
+		mapY: mapY,
 
 		RepopulateQueue: [],
 
@@ -227,7 +230,7 @@ function KDDefaultMapData(RoomType: string = "", MapMod: string = ""): KDMapData
 	};
 }
 
-KDMapData = KDDefaultMapData();
+KDMapData = KDDefaultMapData(0, 0);
 
 
 /**
@@ -381,7 +384,7 @@ function KDResetEventData(Data?: any) {
 
 function KinkyDungeonInitialize(Level: number, Load?: any) {
 	KDWorldMap = {};
-	KDMapData = KDDefaultMapData();
+	KDMapData = KDDefaultMapData(0, 0);
 	KDCurrentWorldSlot = {x: 0, y: 0};
 	KDUpdateChokes = true;
 	KDUpdateItemEventCache = true;
@@ -569,11 +572,13 @@ function KDGetWorldMapLocation(point: { x: number, y: number }): KDWorldSlot {
  * @param y
  * @param [main] - The main maptype which you return to
  */
-function KDCreateWorldLocation(x: number, y: number, _main: string = "") {
+function KDCreateWorldLocation(x: number, y: number, jx: number, jy: number, _main: string = "") {
 	KDWorldMap[x + ',' + y] = {
 		data: {},
 		x: x,
 		y: y,
+		jx: jx,
+		jy: jy,
 		main: "",
 		name: "Tile" + x + ',' + y,
 		color: "#ffffff"
@@ -587,7 +592,7 @@ function KDCreateWorldLocation(x: number, y: number, _main: string = "") {
 function KDSaveRoom(slot: { x: number, y: number }, saveconstantX: boolean) {
 	slot = slot || KDCurrentWorldSlot;
 	let CurrentLocation = KDWorldMap[(saveconstantX ? 0 : slot.x) + "," + slot.y];
-	if (!CurrentLocation) KDCreateWorldLocation(0, slot.y);
+	if (!CurrentLocation) KDCreateWorldLocation(0, slot.y, KDGameData.JourneyX, KDGameData.JourneyY);
 
 	// Pack enemies
 	KDPackEnemies(KDMapData);
@@ -911,7 +916,8 @@ function KinkyDungeonCreateMap (
 
 	if (!worldLocation) worldLocation = {x: KDCurrentWorldSlot.x, y: KDCurrentWorldSlot.y};
 	if (!KDWorldMap[(constantX ? 0 : worldLocation.x) + "," + worldLocation.y]) {
-		KDCreateWorldLocation(constantX ? 0 : worldLocation.x, worldLocation.y, altType?.makeMain ? altRoom : "");
+		KDCreateWorldLocation(constantX ? 0 : worldLocation.x, worldLocation.y,
+			KDGameData.JourneyX, KDGameData.JourneyY, altType?.makeMain ? altRoom : "");
 		if (altType?.makeMain || !altType) {
 			KDPruneWorld();
 		}
@@ -921,6 +927,8 @@ function KinkyDungeonCreateMap (
 	if (useExisting && location.data[KDGameData.RoomType]) {
 		KDLoadMapFromWorld(worldLocation.x, worldLocation.y, KDGameData.RoomType, direction, constantX);
 
+		if (!location.jx) location.jx = KDGameData.JourneyX;
+		if (!location.jy) location.jy = KDGameData.JourneyY;
 		// Repopulate
 		altType = KDGetAltType(MiniGameKinkyDungeonLevel);
 		if (!altType?.loadscript || altType.loadscript(false)) {
@@ -961,7 +969,7 @@ function KinkyDungeonCreateMap (
 			}
 		}
 		/** @type {KDMapData} */
-		KDMapData = KDDefaultMapData(KDGameData.RoomType, KDGameData.MapMod);
+		KDMapData = KDDefaultMapData(worldLocation?.x || 0, worldLocation?.y || MiniGameKinkyDungeonLevel, KDGameData.RoomType, KDGameData.MapMod);
 		KDCurrentWorldSlot = worldLocation;
 
 		KDInitTempValues(seed);
@@ -5962,6 +5970,7 @@ function KDGetAltType(Floor: number, MapMod?: string, RoomType?: string): any {
 	let altType = altRoom ? KinkyDungeonAltFloor((mapMod && mapMod.altRoom) ? mapMod.altRoom : altRoom) : KinkyDungeonBossFloor(Floor);
 	return altType;
 }
+
 
 /**
  *
